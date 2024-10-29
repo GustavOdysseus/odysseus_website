@@ -143,3 +143,4 @@ dmypy.json
 /*.ipynb
 members
 .virtual_documents/
+*.duckdb
