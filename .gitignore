@@ -144,3 +144,4 @@ dmypy.json
 members
 .virtual_documents/
 *.duckdb
+.tmp.driveupload
