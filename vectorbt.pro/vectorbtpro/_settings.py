@@ -1871,14 +1871,14 @@ pbar = frozen_cfg(
     disable_registry=False,
     disable_machinery=False,
     type="tqdm_auto",
-    force_open_bar=False,
+    force_open_bar=True,
     reuse=True,
     kwargs=flex_cfg(
         delay=2,
     ),
     desc_kwargs=flex_cfg(
         as_postfix=True,
-        refresh=False,
+        refresh=True,
     ),
     silence_warnings=False,
 )

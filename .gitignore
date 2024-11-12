@@ -145,3 +145,4 @@ members
 .virtual_documents/
 *.duckdb
 .tmp.driveupload
+.tmp.drivedownload

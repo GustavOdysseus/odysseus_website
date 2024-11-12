@@ -15,5 +15,16 @@ bb = vbt.BBANDS.run(close, window=window, wtype=wtype, alpha=alpha, minp=minp, a
 bandwidth = bb.bandwidth
 percent_b = bb.percent_b
 
+print("Bandwidth")
 print(bandwidth)
+print("Max")
+print(bandwidth.max())
+print("Min")
+print(bandwidth.min())
+print("Percent_b")
 print(percent_b)
+print("Max")
+print(percent_b.max())
+print("Min")
+print(percent_b.min())
+
