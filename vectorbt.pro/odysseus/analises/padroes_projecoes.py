@@ -46,7 +46,7 @@ if __name__ == "__main__":
     )
     fig.show()
 
-    pattern = np.array([1, 2, 3, 2, 3, 2])
+    pattern = np.array([1, 4, 2, 4, 2, 4])
 
 
     fig = pd.Series(pattern).vbt.plot()
@@ -176,7 +176,7 @@ if __name__ == "__main__":
     )
     fig.show()
 
-    pct_pattern = np.array([1, 1.3, 1.6, 1.3, 1.6, 1.3])
+    pct_pattern = np.array([1, 1.6, 1.3, 1.6, 1.3, 1.6])
     resized_pct_pattern = vbt.nb.interp_resize_1d_nb(
         pct_pattern, len(preco_janela), vbt.enums.InterpMode.Mixed
     )
@@ -257,7 +257,7 @@ if __name__ == "__main__":
     )
     fig.show()
 
-    adj_pct_pattern = np.array([1, 1.3, 1.6, 1.45, 1.6, 1.3])
+    adj_pct_pattern = np.array([1, 1.6, 1.3, 1.6, 1.3, 1.6])
     
     print(vbt.nb.pattern_similarity_nb(
         preco_janela.values, 
@@ -857,7 +857,7 @@ if __name__ == "__main__":
 
     price_highs = vbt.PATSIM.run(
         h1_data.high, 
-        pattern=np.array([1, 3, 2, 4]), 
+        pattern=np.array([1, 3, 2, 3]), 
         window=40,
         max_window=50
     )
