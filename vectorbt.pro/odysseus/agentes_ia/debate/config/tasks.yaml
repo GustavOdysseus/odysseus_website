@@ -1,0 +1,15 @@
+debate:
+  description: >
+    Rodada {rodada_num}: Debatedor {i}, apresente sua solução parcial para o problema.
+    Depois, leia e reflita sobre as soluções dos outros debatedores. Atualize sua solução com base nessas reflexões. Todas as saídas devem ser em português do Brasil.
+    
+  expected_output: >
+    Uma solução atualizada para o problema. Todas as saídas devem ser em português do Brasil.
+
+consolidacao:
+  description: >
+    Leia todas as soluções finais dos debatedores e consolide uma solução final abrangente para o problema. Todas as saídas devem ser em português do Brasil.
+
+
+  expected_output: >
+    Uma solução final consolidada para o problema. Todas as saídas devem ser em português do Brasil.

@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "stock_analysis"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+crewai = "^0.79.4"
+python-dotenv = "^1.0.1"
+html2text = "^2024.2.26"
+sec-api = "^1.0.20"
+langchain-community = "^0.0.10"
+langchain-core = "^0.1.4"
+pydantic = "^2.9.2"
+
+[tool.poetry.scripts]
+stock_analysis = "stock_analysis.main:run"
+train = "stock_analysis.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

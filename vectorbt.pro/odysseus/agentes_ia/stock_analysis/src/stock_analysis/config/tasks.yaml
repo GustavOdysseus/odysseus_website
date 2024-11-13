@@ -1,0 +1,53 @@
+financial_analysis:
+  description: >
+    Realize uma análise completa da saúde financeira e desempenho de mercado da ação {company_stock}. 
+    Isso inclui examinar métricas financeiras importantes como índice P/L, crescimento do LPA, 
+    tendências de receita e relação dívida/patrimônio. Além disso, analise o desempenho da ação 
+    em comparação com seus concorrentes do setor e tendências gerais do mercado.
+
+  expected_output: >
+    O relatório final deve expandir o resumo fornecido, incluindo agora 
+    uma avaliação clara da situação financeira da ação, seus pontos fortes e fracos, 
+    e como ela se compara aos seus competidores no cenário atual de mercado.
+    Certifique-se de usar os dados mais recentes possíveis.
+
+research:
+  description: >
+    Colete e resuma artigos recentes, comunicados à imprensa 
+    e análises de mercado relacionadas à ação {company_stock} e seu setor.
+    Preste atenção especial a eventos significativos, sentimentos do mercado e opiniões de analistas.
+    Inclua também eventos futuros como divulgação de resultados e outros.
+
+  expected_output: >
+    Um relatório que inclua um resumo abrangente das últimas notícias,
+    quaisquer mudanças notáveis no sentimento do mercado e impactos potenciais na ação. 
+    Certifique-se também de retornar o código da ação como {company_stock}.
+    Use sempre os dados mais recentes possíveis.
+
+filings_analysis:
+  description: >
+    Analise os últimos relatórios 10-Q e 10-K do EDGAR para a ação {company_stock} em questão.
+    Concentre-se em seções importantes como Discussão e Análise da Administração, demonstrações financeiras,
+    atividade de insider trading e quaisquer riscos divulgados. Extraia dados e insights relevantes
+    que possam influenciar o desempenho futuro da ação.
+
+  expected_output: >
+    A resposta final deve ser um relatório expandido que destaque descobertas significativas
+    desses documentos, incluindo quaisquer sinais de alerta ou indicadores positivos para seu cliente.
+
+recommend:
+  description: >
+    Revise e sintetize as análises fornecidas pelo
+    Analista Financeiro e pelo Analista de Pesquisa.
+    Combine esses insights para formar uma recomendação
+    abrangente de investimento. Você DEVE considerar todos os aspectos, incluindo saúde
+    financeira, sentimento do mercado e dados qualitativos dos
+    documentos EDGAR.
+    
+    Certifique-se de incluir uma seção que mostre atividade de
+    insider trading e eventos futuros como divulgação de resultados.
+
+  expected_output: > 
+    Sua resposta final DEVE ser uma recomendação para seu cliente. Deve ser um relatório completo 
+    super detalhado, fornecendo uma posição clara de investimento e estratégia com evidências de suporte.
+    Faça de forma bem formatada e apresentável para seu cliente.
