@@ -1,0 +1,16 @@
+# Pastas a serem ignoradas
+QuantGPT-v2/
+vectorbt_pro_dashboard/
+vectorbt_pro_site/
+vectorbt.pro/
+venv/
+
+# Arquivos a serem ignorados
+vectorbt.pro-main.zip
+vectorbt.pro.zip
+
+# Exceções de pastas
+!vectorbt.pro/odysseus/agentes_ia/pesquisa/
+!vectorbt.pro/odysseus/agentes_ia/starter_template/
+!venv/Lib/site-packages/crewai/
+!venv/Lib/site-packages/crewai_tools/

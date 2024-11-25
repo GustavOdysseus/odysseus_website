@@ -1,0 +1,30 @@
+equipes:
+  - name: "EquipePesquisaArxiv"
+    description: "Equipe responsável pela pesquisa, análise e revisão de artigos científicos do Arxiv"
+    process: "sequential"
+    verbose: true
+    memory: true
+    cache: true
+    planning: true
+    max_rpm: 10
+    language: "portuguese"
+    tasks: ["Pesquisa_Arxiv", "Analise_Artigos", "Revisao_Analise"]
+    input_model: null
+    output_model: "ResearchOutput"
+    config:
+      max_articles: 100
+      min_relevance: 0.7
+      analysis_depth: "detailed"
+      review_quality_threshold: 0.8
+      cache_duration: 3600
+      retry_attempts: 3
+      output_format: "json"
+      output_template:
+        type: "ResearchOutput"
+        fields:
+          - query
+          - articles
+          - analyses
+          - review
+          - metadata
+          - timestamp

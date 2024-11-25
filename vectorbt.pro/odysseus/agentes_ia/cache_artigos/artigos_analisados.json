@@ -1,0 +1,222 @@
+{
+  "2301.13295v1": {
+    "title": "Quantum Boltzmann Machines: Applications in Quantitative Finance",
+    "authors": [
+      "Cameron Perot"
+    ],
+    "published": "2023-01-30",
+    "analyzed_date": "2024-11-18T23:23:31.041881",
+    "topic": "quantitative finance"
+  },
+  "2308.07979v2": {
+    "title": "Emerging Frontiers: Exploring the Impact of Generative AI Platforms on University Quantitative Finance Examinations",
+    "authors": [
+      "Rama K. Malladi"
+    ],
+    "published": "2023-08-15",
+    "analyzed_date": "2024-11-18T23:23:31.054536",
+    "topic": "quantitative finance"
+  },
+  "2311.06621v1": {
+    "title": "Quantum Computing for Financial Mathematics",
+    "authors": [
+      "Antoine Jacquier",
+      "Oleksiy Kondratyev",
+      "Gordon Lee",
+      "Mugad Oumgari"
+    ],
+    "published": "2023-11-11",
+    "analyzed_date": "2024-11-18T23:23:31.066783",
+    "topic": "quantitative finance"
+  },
+  "2309.12082v2": {
+    "title": "Estimating Stable Fixed Points and Langevin Potentials for Financial Dynamics",
+    "authors": [
+      "Tobias Wand",
+      "Timo Wiedemann",
+      "Jan Harren",
+      "Oliver Kamps"
+    ],
+    "published": "2023-09-21",
+    "analyzed_date": "2024-11-18T23:23:31.077995",
+    "topic": "quantitative finance"
+  },
+  "2401.05337v1": {
+    "title": "Optimal Linear Signal: An Unsupervised Machine Learning Framework to Optimize PnL with Linear Signals",
+    "authors": [
+      "Pierre Renucci"
+    ],
+    "published": "2023-11-22",
+    "analyzed_date": "2024-11-18T23:23:31.091227",
+    "topic": "quantitative finance"
+  },
+  "2304.04676v2": {
+    "title": "Adjust factor with volatility model using MAXFLAT low-pass filter and construct portfolio in China A share market",
+    "authors": [
+      "Ke Zhang"
+    ],
+    "published": "2023-03-29",
+    "analyzed_date": "2024-11-18T23:23:31.104265",
+    "topic": "quantitative finance"
+  },
+  "2301.13594v1": {
+    "title": "View fusion vis-à-vis a Bayesian interpretation of Black-Litterman for portfolio allocation",
+    "authors": [
+      "Trent Spears",
+      "Stefan Zohren",
+      "Stephen Roberts"
+    ],
+    "published": "2023-01-31",
+    "analyzed_date": "2024-11-18T23:23:31.116981",
+    "topic": "quantitative finance"
+  },
+  "2305.15821v1": {
+    "title": "Market Making with Deep Reinforcement Learning from Limit Order Books",
+    "authors": [
+      "Hong Guo",
+      "Jianwu Lin",
+      "Fanlin Huang"
+    ],
+    "published": "2023-05-25",
+    "analyzed_date": "2024-11-18T23:23:31.130059",
+    "topic": "quantitative finance"
+  },
+  "2309.12627v3": {
+    "title": "A Quantum Computing-based System for Portfolio Optimization using Future Asset Values and Automatic Reduction of the Investment Universe",
+    "authors": [
+      "Eneko Osaba",
+      "Guillaume Gelabert",
+      "Esther Villar-Rodriguez",
+      "Antón Asla",
+      "Izaskun Oregi"
+    ],
+    "published": "2023-09-22",
+    "analyzed_date": "2024-11-18T23:23:31.143507",
+    "topic": "quantitative finance"
+  },
+  "2310.13369v1": {
+    "title": "SigFormer: Signature Transformers for Deep Hedging",
+    "authors": [
+      "Anh Tong",
+      "Thanh Nguyen-Tang",
+      "Dongeun Lee",
+      "Toan Tran",
+      "Jaesik Choi"
+    ],
+    "published": "2023-10-20",
+    "analyzed_date": "2024-11-18T23:23:31.157564",
+    "topic": "quantitative finance"
+  },
+  "2311.16570v5": {
+    "title": "Epistemic Limits of Empirical Finance: Causal Reductionism and Self-Reference",
+    "authors": [
+      "Daniel Polakow",
+      "Tim Gebbie",
+      "Emlyn Flint"
+    ],
+    "published": "2023-11-28",
+    "analyzed_date": "2024-11-18T23:23:31.173793",
+    "topic": "quantitative finance"
+  },
+  "2304.11043v2": {
+    "title": "Can Perturbations Help Reduce Investment Risks? Risk-Aware Stock Recommendation via Split Variational Adversarial Training",
+    "authors": [
+      "Jiezhu Cheng",
+      "Kaizhu Huang",
+      "Zibin Zheng"
+    ],
+    "published": "2023-04-20",
+    "analyzed_date": "2024-11-18T23:23:31.188601",
+    "topic": "quantitative finance"
+  },
+  "2307.03119v1": {
+    "title": "Learning Multi-Agent Intention-Aware Communication for Optimal Multi-Order Execution in Finance",
+    "authors": [
+      "Yuchen Fang",
+      "Zhenggang Tang",
+      "Kan Ren",
+      "Weiqing Liu",
+      "Li Zhao",
+      "Jiang Bian",
+      "Dongsheng Li",
+      "Weinan Zhang",
+      "Yong Yu",
+      "Tie-Yan Liu"
+    ],
+    "published": "2023-07-06",
+    "analyzed_date": "2024-11-18T23:23:31.202813",
+    "topic": "quantitative finance"
+  },
+  "2309.03966v3": {
+    "title": "Fourier Neural Network Approximation of Transition Densities in Finance",
+    "authors": [
+      "Rong Du",
+      "Duy-Minh Dang"
+    ],
+    "published": "2023-09-07",
+    "analyzed_date": "2024-11-18T23:23:31.216599",
+    "topic": "quantitative finance"
+  },
+  "2309.13064v1": {
+    "title": "InvestLM: A Large Language Model for Investment using Financial Domain Instruction Tuning",
+    "authors": [
+      "Yi Yang",
+      "Yixuan Tang",
+      "Kar Yan Tam"
+    ],
+    "published": "2023-09-15",
+    "analyzed_date": "2024-11-18T23:23:31.229427",
+    "topic": "quantitative finance"
+  },
+  "2310.05551v2": {
+    "title": "PST: Improving Quantitative Trading via Program Sketch-based Tuning",
+    "authors": [
+      "Zhiming Li",
+      "Junzhe Jiang",
+      "Yushi Cao",
+      "Aixin Cui",
+      "Bozhi Wu",
+      "Bo Li",
+      "Yang Liu",
+      "Dongning Sun"
+    ],
+    "published": "2023-10-09",
+    "analyzed_date": "2024-11-18T23:23:31.246470",
+    "topic": "quantitative finance"
+  },
+  "2311.05046v2": {
+    "title": "On the Consistency of Maximum Likelihood Estimation of Probabilistic Principal Component Analysis",
+    "authors": [
+      "Arghya Datta",
+      "Sayak Chakrabarty"
+    ],
+    "published": "2023-11-08",
+    "analyzed_date": "2024-11-18T23:23:31.266231",
+    "topic": "quantitative finance"
+  },
+  "2312.03510v2": {
+    "title": "Towards Sobolev Pruning",
+    "authors": [
+      "Neil Kichler",
+      "Sher Afghan",
+      "Uwe Naumann"
+    ],
+    "published": "2023-12-06",
+    "analyzed_date": "2024-11-18T23:23:31.279048",
+    "topic": "quantitative finance"
+  },
+  "2303.02317v2": {
+    "title": "Fast American Option Pricing using Nonlinear Stencils",
+    "authors": [
+      "Zafar Ahmad",
+      "Reilly Browne",
+      "Rezaul Chowdhury",
+      "Rathish Das",
+      "Yushen Huang",
+      "Yimin Zhu"
+    ],
+    "published": "2023-03-04",
+    "analyzed_date": "2024-11-18T23:23:31.292952",
+    "topic": "quantitative finance"
+  }
+}

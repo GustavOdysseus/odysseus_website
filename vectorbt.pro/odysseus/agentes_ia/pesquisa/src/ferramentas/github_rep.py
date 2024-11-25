@@ -1,0 +1,1 @@
+#Ferramenta para buscar repositórios no GitHub, baixar os códigos e extrair as informações com o'github_search_tool', seguindo as configurações do arquivo '.yaml'

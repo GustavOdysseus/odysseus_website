@@ -1,0 +1,34 @@
+name: "Investment Flow"
+description: "Fluxo completo de gestão de investimentos por LLMs"
+
+execution:
+  mode: "dynamic"
+  error_handling: "continue"
+  max_retries: 3
+
+crews:
+  - name: "research_crew"
+    config_path: "src/equipes/research_equipe.yaml"
+    dependencies: []
+    feedback_targets: ["trading_crew", "admin_crew"]
+    
+  - name: "trading_crew"
+    config_path: "src/equipes/trading_equipe.yaml"
+    dependencies: ["research_crew"]
+    feedback_targets: ["research_crew"]
+    
+  - name: "admin_crew"
+    config_path: "src/equipes/admin_equipe.yaml"
+    dependencies: ["research_crew", "trading_crew"]
+    feedback_targets: ["research_crew", "trading_crew"]
+
+event_handlers:
+  config_path: "src/config/flows/events/handlers.yaml"
+
+state_management:
+  type: "structured"
+  persistence: true
+  shared_state_schema:
+    market_data: Dict[str, Any]
+    research_findings: List[Dict]
+    trading_signals: List[Dict]

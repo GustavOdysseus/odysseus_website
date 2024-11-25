@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+      "**/QuantGPT-v2": true,
+      "**/vectorbt_pro_dashboard": true,
+      "**/vectorbt_pro_site": true,
+      "**/vectorbt.pro-main.zip": true,
+      "**/vectorbt.pro.zip": true,
+
+    },
+    "windsurf.enableConfig": {
+
+
+
+        "*": true
+    },
+    "gitdoc.enabled": true,
+    "gitdoc.autoPull": "off"
+}

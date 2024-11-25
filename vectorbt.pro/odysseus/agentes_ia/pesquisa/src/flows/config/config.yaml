@@ -1,0 +1,21 @@
+# Configuração global dos fluxos do sistema Odysseus
+flows:
+  # Fluxo de pesquisa científica
+  pesquisa_cientifica:
+    flow_config: "pesquisa_cientifica.yaml"
+    dependencies: "dependencias_pesquisa.yaml"
+    description: "Fluxo para pesquisa científica e análise de literatura"
+
+  # Fluxo de investimentos
+  investment:
+    flow_config: "investment_flow.yaml"
+    dependencies: "investment_dependencies.yaml"
+    description: "Fluxo para análise e decisões de investimento"
+
+  # Você pode adicionar mais fluxos aqui conforme necessário...
+
+# Configurações globais do sistema
+system:
+  cache_dir: "cache"
+  log_level: "INFO"
+  default_timeout: 3600  # em segundos

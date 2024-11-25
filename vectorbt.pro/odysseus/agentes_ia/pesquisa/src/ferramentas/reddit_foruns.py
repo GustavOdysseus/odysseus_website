@@ -1,0 +1,1 @@
+#Ferramenta para buscar posts no Reddit, baixar os posts e extrair as informações, seguindo as configurações do arquivo '.yaml'

@@ -1,0 +1,84 @@
+# Configuração de dependências para o fluxo de pesquisa científica
+dependencies:
+  # Equipe de acesso ao ArXiv
+  arxiv_crew:
+    requires:
+      - arxiv_package     # Biblioteca Python arxiv
+      - storage_space     # Espaço para armazenar papers
+      - internet_access   # Acesso à internet para download
+    provides:
+      - paper_metadata    # Metadados dos papers
+      - paper_content     # Conteúdo dos papers em texto
+    resources:
+      network:
+        timeout: 30       # segundos por requisição
+        max_retries: 3    # tentativas por paper
+      storage:
+        min_space: "100MB"  # espaço mínimo por paper
+
+  # Equipe de processamento de texto
+  text_processing_crew:
+    requires:
+      - paper_content
+      - nlp_models        # Modelos de NLP carregados
+    provides:
+      - processed_text    # Texto processado e limpo
+      - text_embeddings   # Embeddings do texto
+    resources:
+      gpu_memory: "2GB"
+      cpu_cores: 2
+
+  # Equipe de análise semântica
+  semantic_analysis_crew:
+    requires:
+      - processed_text
+      - text_embeddings
+      - vector_db         # Banco de dados vetorial
+    provides:
+      - semantic_insights # Insights semânticos
+      - topic_clusters    # Clusters de tópicos
+    resources:
+      gpu_memory: "4GB"
+      cpu_cores: 4
+
+  # Equipe de síntese
+  synthesis_crew:
+    requires:
+      - semantic_insights
+      - topic_clusters
+      - paper_metadata
+    provides:
+      - research_summary  # Resumo da pesquisa
+      - key_findings     # Principais descobertas
+    resources:
+      cpu_cores: 2
+      memory: "4GB"
+
+# Configurações de recursos compartilhados
+shared_resources:
+  storage:
+    papers_cache: "10GB"
+    vector_db: "20GB"
+  
+  models:
+    nlp:
+      - name: "spacy_model"
+        size: "1GB"
+      - name: "sentence_transformer"
+        size: "2GB"
+
+  packages:
+    python:
+      - arxiv>=1.4.8
+      - spacy>=3.7.2
+      - sentence-transformers>=2.2.2
+
+# Configurações de fallback
+fallback:
+  storage:
+    min_free_space: "5GB"
+  memory:
+    min_free_ram: "2GB"
+  error_handling:
+    max_retries: 3
+    retry_delay: 5  # segundos

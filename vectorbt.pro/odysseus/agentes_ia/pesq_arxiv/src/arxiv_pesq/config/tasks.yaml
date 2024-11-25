@@ -1,0 +1,21 @@
+research_task:
+  description: >
+    Pesquisar no Arxiv artigos relevantes sobre {topic}, analisando apenas título, 
+    resumo e conclusões. Seguir os critérios definidos em CRITERIOS_PESQUISADOR 
+    e formatar saída conforme TEMPLATE_PESQUISADOR.
+  expected_output: >
+    Lista de artigos selecionados formatada conforme TEMPLATE_PESQUISADOR.
+
+leitor_de_pdf_task:
+  description: >
+    Realizar análise detalhada dos PDFs dos artigos selecionados, seguindo 
+    as SOLICITACOES e formatando conforme TEMPLATE_LEITOR_PDF.
+  expected_output: >
+    Análise detalhada formatada conforme TEMPLATE_LEITOR_PDF.
+
+revisor_de_leitura_task:
+  description: >
+    Revisar criticamente as análises produzidas, verificando conformidade 
+    com os templates e qualidade das informações extraídas.
+  expected_output: >
+    Revisão e validação das análises, com correções quando necessário.

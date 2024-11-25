@@ -1,9 +1,11 @@
 import os
 import vectorbtpro as vbt
-from vectorbtpro.utils.knowledge.custom_assets import PagesAsset, MessagesAsset
+#from vectorbtpro import *
+#from vectorbtpro.utils.knowledge.custom_assets import PagesAsset, MessagesAsset
+
 
 # Configurar o token
-token = "pvt_1606a55a"
+token = "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"
 
 # Configurar o token de duas maneiras possíveis:
 # 1. Via variável de ambiente
@@ -19,14 +21,14 @@ except:
 # Tentar carregar os assets com diferentes opções
 try:
     # Opção 1: Carregar diretamente do GitHub
-    pages_asset = PagesAsset.pull()
-    messages_asset = MessagesAsset.pull()
+    pages_asset = vbt.PagesAsset.pull()
+    messages_asset = vbt.MessagesAsset.pull()
 except Exception as e:
     print(f"Erro ao carregar do GitHub: {e}")
     try:
         # Opção 2: Carregar de arquivos locais
-        pages_asset = PagesAsset.from_json_file("pages.json.zip")
-        messages_asset = MessagesAsset.from_json_file("messages.json.zip")
+        pages_asset = vbt.PagesAsset.from_json_file("pages.json.zip")
+        messages_asset = vbt.MessagesAsset.from_json_file("messages.json.zip")
     except Exception as e:
         print(f"Erro ao carregar dos arquivos locais: {e}")
         raise

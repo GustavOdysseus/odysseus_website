@@ -1,0 +1,81 @@
+tasks:
+  - name: "Pesquisa_Arxiv"
+    description: |
+      Realizar busca sistemática no Arxiv seguindo os critérios definidos
+    input_model: null
+    output_model: "List[ArxivArticle]"
+    expected_output:
+      type: "json"
+      schema: "ArxivArticle"
+      fields:
+        - arxiv_id
+        - title
+        - authors
+        - year
+        - relevance_score
+        - justification
+        - categories
+    agent_role: "ArxivPesquisador"
+    config:
+      max_results: 100
+      sort_by: "relevance"
+      sort_order: "descending"
+      selection_criteria:
+        min_year: 2020
+        relevance_threshold: 0.7
+        categories: ["q-fin", "cs.LG"]
+    output_file: "resultados/pesquisa_arxiv.json"
+    create_directory: true
+
+  - name: "Analise_Artigos"
+    description: |
+      Analisar detalhadamente cada artigo selecionado
+    input_model: "ArxivArticle"
+    output_model: "ArticleAnalysis"
+    expected_output:
+      type: "json"
+      schema: "ArticleAnalysis"
+      fields:
+        - objectives
+        - gap
+        - methodology
+        - datasets
+        - results
+        - limitations
+        - conclusions
+        - future_recommendations
+        - critical_evaluation
+    agent_role: "ArxivAnalista"
+    config:
+      analysis_depth: "detailed"
+      max_words_methodology: 2500
+      quantitative_focus: true
+      comparative_analysis: true
+    output_file: "resultados/analise_artigos.json"
+    create_directory: true
+
+  - name: "Revisao_Analise"
+    description: |
+      Revisar criticamente o processo completo
+    input_model: "List[ArticleAnalysis]"
+    output_model: "ReviewReport"
+    expected_output:
+      type: "json"
+      schema: "ReviewReport"
+      fields:
+        - selection_evaluation
+        - analysis_evaluation
+        - identified_gaps
+        - recommendations
+        - consistency_score
+        - completeness_score
+    agent_role: "ArxivRevisor"
+    config:
+      review_aspects:
+        - "qualidade_selecao"
+        - "profundidade_analise"
+        - "consistencia"
+        - "completude"
+      review_depth: "detailed"
+    output_file: "resultados/revisao_analise.json"
+    create_directory: true

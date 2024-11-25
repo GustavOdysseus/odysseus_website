@@ -1,0 +1,58 @@
+tools:
+  arxiv_search:
+    name: "Arxiv Search Tool"
+    description: |
+      Pesquisa artigos científicos no Arxiv com base em uma query.
+      Use esta ferramenta quando precisar:
+      - Buscar artigos científicos por palavra-chave
+      - Encontrar publicações recentes em um tópico específico
+      - Obter metadados de artigos do Arxiv
+      
+      A ferramenta retorna uma lista de artigos com seus metadados.
+
+  arxiv_download:
+    name: "Arxiv Download Tool"
+    description: |
+      Realiza o download de artigos do Arxiv em PDF.
+      Use esta ferramenta quando precisar:
+      - Baixar o PDF completo de um artigo específico
+      - Salvar artigos para análise posterior
+      - Preparar artigos para extração de conteúdo
+      
+      A ferramenta retorna o caminho do arquivo PDF salvo.
+
+  arxiv_extract:
+    name: "Arxiv Extract Tool"
+    description: |
+      Extrai e estrutura o conteúdo de PDFs do Arxiv em diferentes formatos.
+      Use esta ferramenta quando precisar:
+      - Extrair o texto completo de um artigo PDF
+      - Obter metadados detalhados do documento
+      - Identificar elementos estruturais (imagens, links, tabelas)
+      - Converter o conteúdo para formatos mais analisáveis (JSON, TXT, MD)
+      
+      A ferramenta retorna o caminho do arquivo extraído no formato especificado.
+
+  arxiv_search_content:
+    name: "Arxiv Content Search Tool"
+    description: |
+      Realiza busca semântica no conteúdo de PDFs do Arxiv.
+      Use esta ferramenta quando precisar:
+      - Encontrar informações específicas dentro de um artigo
+      - Localizar conceitos ou definições no texto
+      - Buscar referências ou citações relevantes
+      - Extrair trechos específicos do conteúdo
+      
+      A ferramenta retorna os trechos mais relevantes do PDF relacionados à query.
+
+  arxiv_read_content:
+    name: "Arxiv Read Content Tool"
+    description: |
+      Lê e retorna o conteúdo de arquivos previamente extraídos pela ArxivExtractTool.
+      Use esta ferramenta quando precisar:
+      - Ler o conteúdo de um arquivo extraído nos formatos JSON, TXT ou MD
+      - Acessar o conteúdo estruturado gerado pela extração
+      - Obter o texto completo no formato escolhido durante a extração
+      - Visualizar metadados e informações do documento no formato salvo
+      
+      A ferramenta retorna o conteúdo do arquivo no formato em que foi salvo (JSON, TXT ou MD).

@@ -1,0 +1,129 @@
+flows:
+  pesquisa_cientifica:
+    name: "Análise Sistemática de Literatura Científica"
+    description: "Flow para análise e extração de conhecimento de artigos científicos"
+    state_management: "structured"
+    execution:
+      mode: "sequential"
+      error_handling: "retry"
+      max_retries: 3
+      retry_interval: "10m"
+    
+    stages:
+      - name: "busca_artigos"
+        type: "task"
+        crew: "arxiv_crew"
+        agent: "ArxivPesquisador"
+        tools: ["ArxivSearchTool"]
+        state:
+          required: ["query", "filtros"]
+          provided: ["artigos_encontrados"]
+        conditions:
+          - type: "resource"
+            condition: "api_rate_limit > 0"
+            parameters:
+              resource: "arxiv_api"
+              min_limit: 1
+        next:
+          success: "download_artigos"
+          error: "error_handler"
+          
+      - name: "download_artigos"
+        type: "task"
+        crew: "arxiv_crew"
+        agent: "ArxivPesquisador"
+        tools: ["ArxivDownloadTool"]
+        state:
+          required: ["artigos_encontrados"]
+          provided: ["artigos_baixados"]
+        conditions:
+          - type: "dependency"
+            condition: "stage:busca_artigos == completed"
+        next:
+          success: "extracao_conteudo"
+          
+      - name: "extracao_conteudo"
+        type: "task"
+        crew: "arxiv_crew"
+        agent: "ArxivAnalista"
+        tools: ["ArxivExtractTool"]
+        state:
+          required: ["artigos_baixados"]
+          provided: ["conteudo_extraido"]
+        conditions:
+          - type: "dependency"
+            condition: "stage:download_artigos == completed"
+          - type: "resource"
+            condition: "memory_available > 1GB"
+        next:
+          success: "analise_conteudo"
+          
+      - name: "analise_conteudo"
+        type: "task"
+        crew: "arxiv_crew"
+        agent: "ArxivAnalista"
+        tools: ["ArxivSearchContentTool", "ArxivReadContentTool"]
+        state:
+          required: ["conteudo_extraido"]
+          provided: ["analise_preliminar"]
+        conditions:
+          - type: "dependency"
+            condition: "stage:extracao_conteudo == completed"
+        feedback_loops:
+          - target: "extracao_conteudo"
+            condition: "quality_score < 0.8"
+            max_iterations: 2
+        next:
+          success: "revisao_analise"
+          
+      - name: "revisao_analise"
+        type: "task"
+        crew: "arxiv_crew"
+        agent: "ArxivRevisor"
+        state:
+          required: ["analise_preliminar"]
+          provided: ["analise_final", "recomendacoes"]
+        conditions:
+          - type: "dependency"
+            condition: "stage:analise_conteudo == completed"
+          - type: "metric_threshold"
+            condition: "confidence_score >= 0.85"
+        feedback_loops:
+          - target: "analise_conteudo"
+            condition: "needs_revision"
+            max_iterations: 3
+            
+    metrics:
+      - type: "quality"
+        name: "confidence_score"
+        threshold: 0.85
+      - type: "performance"
+        name: "processing_time"
+        threshold: "30m"
+      - type: "quality"
+        name: "relevance_score"
+        threshold: 0.8
+        
+    storage:
+      base_dir: "data/pesquisa"
+      structure:
+        - "execucao/{timestamp}"
+        - "stage/{stage_name}"
+      filename_template: "{stage}_{agent}_{timestamp}.json"
+      
+    checkpoints:
+      enabled: true
+      frequency: "stage_end"
+      retention: "7d"
+      
+    error_handling:
+      retry_strategy:
+        max_attempts: 3
+        delay: "5m"
+        backoff_factor: 2
+      fallback:
+        enabled: true
+        actions:
+          - log_error
+          - notify_admin
+          - create_checkpoint
