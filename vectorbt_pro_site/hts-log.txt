@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 25 Nov 2024 18:54:40 at https://vectorbt.pro/pvt_1606a55a/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "pt_BR, en, *" https://vectorbt.pro/pvt_1606a55a/ -O1 "D:\Caleb\caleb\Python\meus_sites\vectorbt_pro_site" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:54:52	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 11): https://vectorbt.pro/pvt_1606a55a/assets/scripts/extra.js
+19:01:32	Error: 	"Not Found" (404) at link https://vectorbt.pro/pvt_1606a55a/api/indicators/custom/zigzag/ (from https://vectorbt.pro/pvt_1606a55a/getting-started/release-notes/2022/)
+19:01:40	Error: 	"Not Found" (404) at link https://vectorbt.pro/pvt_1606a55a/api/indicators/custom/olss/ (from https://vectorbt.pro/pvt_1606a55a/getting-started/release-notes/2022/)
+19:01:42	Error: 	"Not Found" (404) at link https://vectorbt.pro/pvt_1606a55a/api/utils/opt_packages/ (from https://vectorbt.pro/pvt_1606a55a/getting-started/release-notes/2021/)
+19:02:06	Error: 	"Not Found" (404) at link https://vectorbt.pro/pvt_1606a55a/api/generic/nb/resample/ (from https://vectorbt.pro/pvt_1606a55a/tutorials/mtf-analysis/aggregation/)
+19:03:15	Error: 	"Error when decompressing" (-1) at link https://vectorbt.pro/pvt_1606a55a/api/utils/knowledge/custom_assets/... (from https://vectorbt.pro/pvt_1606a55a/api/utils/knowledge/custom_assets/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 minutes 35 seconds : 1140 links scanned, 1134 files written (168002107 bytes overall) [40195580 bytes received at 78049 bytes/sec], 158307647 bytes transferred using HTTP compression in 1127 files, ratio 18%, 53.2 requests per connection
+(5 errors, 1 warnings, 0 messages)
