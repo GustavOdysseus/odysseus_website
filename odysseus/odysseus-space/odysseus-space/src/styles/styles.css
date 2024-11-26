@@ -1,0 +1,42 @@
+/* styles/styles.css */
+
+/* Tooltip Styling */
+.tooltip {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Botão no Controls */
+  button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4a5568; /* Um tom mais escuro */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Leve efeito de clique */
+  }
+  
+  /* Configurações gerais */
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
