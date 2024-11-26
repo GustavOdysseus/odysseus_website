@@ -1,79 +1,64 @@
 import React, { useState, useRef, useMemo } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Text, Stars, Html } from '@react-three/drei';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { OrbitControls, Text, Stars, Html, useGLTF } from '@react-three/drei';
+import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
+import { create } from 'zustand';
+import { useSpring, animated } from '@react-spring/three';
+import { useDrag } from '@use-gesture/react';
 import * as THREE from 'three';
-import { Perf } from 'r3f-perf';
+import { atom, useAtom } from 'jotai';
 
-// Planeta individual com atmosfera e brilho
-const Planet = ({ position, name, color, description, onHover }) => {
-  const [hovered, setHovered] = useState(false);
-  const meshRef = useRef();
-  const atmosphereRef = useRef();
+// Store para gerenciar o estado global
+const useStore = create((set) => ({
+  divisions: [],
+  connections: [],
+  selectedPlanet: null,
+  connectionMode: false,
+  hierarchyLevels: {},
+  addDivision: (division) => set((state) => ({
+    divisions: [...state.divisions, division]
+  })),
+  addConnection: (connection, type) => set((state) => ({
+    connections: [...state.connections, { ...connection, type }]
+  })),
+  updatePosition: (name, position) => set((state) => ({
+    divisions: state.divisions.map(d => 
+      d.name === name ? { ...d, position } : d
+    )
+  })),
+  setSelectedPlanet: (name) => set({ selectedPlanet: name }),
+  toggleConnectionMode: () => set((state) => ({ 
+    connectionMode: !state.connectionMode 
+  })),
+}));
 
-  // Rotação suave do planeta
-  useFrame(() => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += 0.002;
-    }
-    if (atmosphereRef.current) {
-      atmosphereRef.current.rotation.y -= 0.001;
-    }
-  });
-
-  const handlePointerOver = () => {
-    setHovered(true);
-    onHover({ description, position });
-  };
-
-  const handlePointerOut = () => {
-    setHovered(false);
-    onHover(null);
-  };
-
-  return (
-    <group position={position}>
-      {/* Atmosfera */}
-      <mesh ref={atmosphereRef}
-        scale={hovered ? 1.6 : 1.5}>
-        <sphereGeometry args={[1, 32, 32]} />
-        <meshBasicMaterial
-          color={color}
-          transparent
-          opacity={0.1}
-        />
-      </mesh>
-
-      {/* Planeta principal */}
-      <mesh
-        ref={meshRef}
-        onPointerOver={handlePointerOver}
-        onPointerOut={handlePointerOut}
-      >
-        <sphereGeometry args={[1, 32, 32]} />
-        <meshPhongMaterial
-          color={color}
-          emissive={color}
-          emissiveIntensity={0.2}
-          shininess={50}
-        />
-      </mesh>
-
-      {/* Nome do planeta */}
-      <Text
-        position={[0, 1.5, 0]}
-        fontSize={0.5}
-        color="white"
-        anchorX="center"
-        anchorY="middle"
-      >
-        {name}
-      </Text>
-    </group>
-  );
+// Tipos de conexões e suas propriedades visuais
+const connectionTypes = {
+  hierarchy: {
+    color: '#ff9966',
+    width: 3,
+    dash: false,
+    glow: true
+  },
+  collaboration: {
+    color: '#66ffff',
+    width: 2,
+    dash: true,
+    glow: false
+  },
+  information: {
+    color: '#9966ff',
+    width: 1,
+    dash: true,
+    glow: false
+  }
 };
 
-// Linha de conexão entre planetas
-const Connection = ({ start, end }) => {
+// Componente de linha melhorado
+const EnhancedConnection = ({ start, end, type = 'hierarchy' }) => {
+  const { color, width, dash, glow } = connectionTypes[type];
+  const lineRef = useRef();
+  
   const points = useMemo(() => {
     const curve = new THREE.QuadraticBezierCurve3(
       new THREE.Vector3(...start),
@@ -87,71 +72,144 @@ const Connection = ({ start, end }) => {
     return curve.getPoints(50);
   }, [start, end]);
 
+  useFrame(({ clock }) => {
+    if (dash && lineRef.current) {
+      lineRef.current.material.dashOffset = clock.getElapsedTime() * 0.5;
+    }
+  });
+
   return (
-    <line>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={points.length}
-          array={new Float32Array(points.flatMap(p => [p.x, p.y, p.z]))}
-          itemSize={3}
+    <group>
+      {glow && (
+        <line>
+          <bufferGeometry>
+            <bufferAttribute
+              attach="attributes-position"
+              count={points.length}
+              array={new Float32Array(points.flatMap(p => [p.x, p.y, p.z]))}
+              itemSize={3}
+            />
+          </bufferGeometry>
+          <lineBasicMaterial
+            color={color}
+            transparent
+            opacity={0.5}
+            linewidth={width + 2}
+          />
+        </line>
+      )}
+      <line ref={lineRef}>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            count={points.length}
+            array={new Float32Array(points.flatMap(p => [p.x, p.y, p.z]))}
+            itemSize={3}
+          />
+        </bufferGeometry>
+        <lineDashedMaterial
+          color={color}
+          dashSize={dash ? 0.5 : 0}
+          gapSize={dash ? 0.2 : 0}
+          linewidth={width}
         />
-      </bufferGeometry>
-      <lineBasicMaterial color="#ffffff" opacity={0.2} transparent />
-    </line>
+      </line>
+    </group>
   );
 };
 
-// Componente principal
-const SpaceGraph = () => {
-  const [tooltip, setTooltip] = useState(null);
+// Planeta interativo aprimorado
+const DraggablePlanet = ({ position: initialPosition, name, color, description, onHover }) => {
+  const { camera, size } = useThree();
+  const [dragging, setDragging] = useState(false);
+  const updatePosition = useStore((state) => state.updatePosition);
+  const connectionMode = useStore((state) => state.connectionMode);
+  const selectedPlanet = useStore((state) => state.selectedPlanet);
+  const addConnection = useStore((state) => state.addConnection);
 
-  const divisions = [
-    { name: "Olimpos", position: [-8, 4, -5], color: "#ff9999", 
-      description: "Conselho estratégico e governança adaptativa" },
-    { name: "Prometeus", position: [-4, 6, -3], color: "#ff9999",
-      description: "Inovação disruptiva e novos modelos de negócio" },
-    { name: "Mercúrios", position: [0, 8, 0], color: "#99ff99",
-      description: "Negociações e gestão de clientes" },
-    { name: "Skaldos", position: [4, 6, 3], color: "#99ff99",
-      description: "Comunicação estratégica e marketing" },
-    { name: "Apolo", position: [8, 4, 5], color: "#99ff99",
-      description: "Experiência do cliente e fidelização" },
-    { name: "Mirmidões", position: [-6, 0, -8], color: "#9999ff",
-      description: "Trading quantitativo e análise financeira" },
-    { name: "Plutus", position: [-3, 0, -6], color: "#9999ff",
-      description: "Gestão financeira e otimização de custos" },
-    { name: "Vikings", position: [0, 0, -4], color: "#ffff99",
-      description: "Exploração de mercados e tecnologias" },
-    { name: "Dédalo", position: [3, 0, -2], color: "#ffff99",
-      description: "Programação e arquitetura de soluções" },
-    { name: "Athena", position: [0, 3, 0], color: "#ffb366",
-      description: "Análise de dados e insights estratégicos" }
-  ];
+  const [spring, api] = useSpring(() => ({
+    position: initialPosition,
+    scale: 1,
+    config: { mass: 1, tension: 170, friction: 26 }
+  }));
 
-  const connections = [
-    ["Olimpos", "Prometeus"],
-    ["Prometeus", "Mercúrios"],
-    ["Mercúrios", "Skaldos"],
-    ["Skaldos", "Apolo"],
-    ["Mirmidões", "Plutus"],
-    ["Plutus", "Vikings"],
-    ["Vikings", "Dédalo"],
-    ["Athena", "Olimpos"],
-    ["Athena", "Prometeus"],
-    ["Athena", "Mercúrios"]
-  ];
+  const bind = useDrag(({ movement: [x, y], first, last }) => {
+    if (connectionMode) return;
+    
+    if (first) setDragging(true);
+    if (last) {
+      setDragging(false);
+      updatePosition(name, spring.position.get());
+    }
+
+    const factor = camera.position.z / 10;
+    const newX = initialPosition[0] + x / factor;
+    const newY = initialPosition[1] - y / factor;
+    
+    api.start({
+      position: [newX, newY, initialPosition[2]]
+    });
+  });
+
+  const handleClick = () => {
+    if (connectionMode) {
+      if (selectedPlanet && selectedPlanet !== name) {
+        addConnection({
+          start: selectedPlanet,
+          end: name
+        }, 'hierarchy');
+      }
+    }
+  };
 
   return (
-    <div className="w-full h-screen bg-black">
+    <animated.group {...spring} {...bind()}>
+      <Planet
+        name={name}
+        color={color}
+        description={description}
+        onHover={onHover}
+        onClick={handleClick}
+        scale={dragging ? 1.2 : 1}
+      />
+    </animated.group>
+  );
+};
+
+// Interface de controle
+const Controls = () => {
+  const toggleConnectionMode = useStore((state) => state.toggleConnectionMode);
+  const connectionMode = useStore((state) => state.connectionMode);
+
+  return (
+    <div className="absolute top-4 left-4 space-y-2">
+      <button
+        className={`px-4 py-2 rounded-lg ${
+          connectionMode ? 'bg-blue-600' : 'bg-gray-600'
+        } text-white`}
+        onClick={toggleConnectionMode}
+      >
+        {connectionMode ? 'Creating Connection' : 'Create Connection'}
+      </button>
+    </div>
+  );
+};
+
+// Componente principal atualizado
+const SpaceGraph = () => {
+  const divisions = useStore((state) => state.divisions);
+  const connections = useStore((state) => state.connections);
+  const [tooltip, setTooltip] = useState(null);
+
+  return (
+    <div className="relative w-full h-screen">
+      <Controls />
       <Canvas camera={{ position: [0, 5, 20], fov: 60 }}>
-        <color attach="background" args={['#000000']} />
+        <color attach="background" args={['#000008']} />
         
-        {/* Iluminação */}
         <ambientLight intensity={0.2} />
         <pointLight position={[10, 10, 10]} intensity={1} />
         
-        {/* Estrelas de fundo */}
         <Stars
           radius={100}
           depth={50}
@@ -159,9 +217,9 @@ const SpaceGraph = () => {
           factor={4}
           saturation={0}
           fade
+          speed={1}
         />
         
-        {/* Controles de órbita */}
         <OrbitControls
           enableZoom={true}
           enablePan={true}
@@ -171,29 +229,42 @@ const SpaceGraph = () => {
           rotateSpeed={0.4}
         />
 
-        {/* Planetas */}
         {divisions.map((div) => (
-          <Planet
+          <DraggablePlanet
             key={div.name}
             {...div}
             onHover={setTooltip}
           />
         ))}
 
-        {/* Conexões */}
-        {connections.map(([start, end], i) => {
-          const startPos = divisions.find(d => d.name === start)?.position;
-          const endPos = divisions.find(d => d.name === end)?.position;
-          if (startPos && endPos) {
-            return <Connection key={i} start={startPos} end={endPos} />;
+        {connections.map((conn, i) => {
+          const start = divisions.find(d => d.name === conn.start)?.position;
+          const end = divisions.find(d => d.name === conn.end)?.position;
+          if (start && end) {
+            return (
+              <EnhancedConnection
+                key={i}
+                start={start}
+                end={end}
+                type={conn.type}
+              />
+            );
           }
           return null;
         })}
 
-        {/* Tooltip */}
+        <EffectComposer>
+          <Bloom
+            intensity={1.5}
+            luminanceThreshold={0.1}
+            luminanceSmoothing={0.9}
+          />
+          <ChromaticAberration offset={[0.0005, 0.0005]} />
+        </EffectComposer>
+
         {tooltip && (
           <Html position={tooltip.position}>
-            <div className="bg-gray-900 text-white px-4 py-2 rounded-lg shadow-lg border border-gray-700 text-sm">
+            <div className="bg-gray-900/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg shadow-lg border border-gray-700/50 text-sm">
               {tooltip.description}
             </div>
           </Html>
