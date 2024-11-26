@@ -1,11 +1,8 @@
 import React, { useRef } from 'react';
-import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export default function SpaceStation({ position = [0, 0, 0] }) {
   const group = useRef();
-  // Note: You'll need to replace this with your actual space station model path
-  const { nodes } = useGLTF('/models/space_station.glb');
 
   useFrame((state, delta) => {
     // Add subtle rotation animation
@@ -14,13 +11,33 @@ export default function SpaceStation({ position = [0, 0, 0] }) {
 
   return (
     <group ref={group} position={position}>
-      <primitive object={nodes.Scene} />
-      <pointLight
-        position={[0, 5, 0]}
-        intensity={1}
-        color="#4090ff"
-        distance={20}
-      />
+      {/* Central Hub */}
+      <mesh>
+        <sphereGeometry args={[2, 32, 32]} />
+        <meshStandardMaterial color="#666666" metalness={0.8} roughness={0.2} />
+      </mesh>
+
+      {/* Ring Structure */}
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[4, 0.5, 16, 100]} />
+        <meshStandardMaterial color="#444444" metalness={0.8} roughness={0.2} />
+      </mesh>
+
+      {/* Solar Panels */}
+      <group rotation={[0, Math.PI / 4, 0]}>
+        <mesh position={[5, 0, 0]}>
+          <boxGeometry args={[4, 0.1, 1]} />
+          <meshStandardMaterial color="#1E90FF" metalness={0.6} roughness={0.2} />
+        </mesh>
+        <mesh position={[-5, 0, 0]}>
+          <boxGeometry args={[4, 0.1, 1]} />
+          <meshStandardMaterial color="#1E90FF" metalness={0.6} roughness={0.2} />
+        </mesh>
+      </group>
+
+      {/* Station Lights */}
+      <pointLight position={[0, 5, 0]} intensity={1} color="#4090ff" distance={20} />
+      <pointLight position={[0, -5, 0]} intensity={0.5} color="#4090ff" distance={15} />
     </group>
   );
 }

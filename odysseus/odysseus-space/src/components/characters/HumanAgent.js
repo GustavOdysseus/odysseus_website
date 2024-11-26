@@ -1,23 +1,26 @@
-import React, { useRef, useEffect } from 'react';
-import { useGLTF, useAnimations, Html } from '@react-three/drei';
+import React, { useRef } from 'react';
+import { Html } from '@react-three/drei';
 
 export default function HumanAgent({ position, name, role, status, onClick }) {
   const group = useRef();
-  // Note: You'll need to replace this with your actual character model path
-  const { nodes, animations } = useGLTF('/models/character.glb');
-  const { actions } = useAnimations(animations, group);
-
-  useEffect(() => {
-    // Play idle animation by default
-    if (actions.idle) {
-      actions.idle.play();
-    }
-  }, [actions]);
 
   return (
     <group ref={group} position={position} onClick={onClick}>
-      <primitive object={nodes.Scene} />
-      <Html position={[0, 2, 0]}>
+      {/* Temporary basic geometry instead of GLB model */}
+      <group>
+        {/* Body */}
+        <mesh position={[0, 1, 0]}>
+          <capsuleGeometry args={[0.3, 1, 4, 8]} />
+          <meshStandardMaterial color="#4287f5" />
+        </mesh>
+        {/* Head */}
+        <mesh position={[0, 2, 0]}>
+          <sphereGeometry args={[0.25, 16, 16]} />
+          <meshStandardMaterial color="#4287f5" />
+        </mesh>
+      </group>
+
+      <Html position={[0, 2.5, 0]}>
         <div className="character-info bg-black/50 text-white p-2 rounded">
           <div className="font-bold">{name}</div>
           <div className="text-sm">{role}</div>
