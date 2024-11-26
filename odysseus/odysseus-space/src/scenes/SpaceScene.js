@@ -10,11 +10,12 @@ import {
 } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
 import { useAtom } from 'jotai';
-import { agentsAtom, tasksAtom } from '../state/atoms';
+import { agentsAtom, tasksAtom, visualSettingsAtom } from '../state/atoms';
 
 import HumanAgent from '../components/characters/HumanAgent';
 import SpaceStation from '../components/environment/SpaceStation';
 import TaskModule from '../components/tasks/TaskModule';
+import Controls from '../components/Controls';
 
 function LoadingScreen() {
   const { progress } = useProgress();
@@ -34,6 +35,7 @@ function LoadingScreen() {
 export default function SpaceScene() {
   const [agents] = useAtom(agentsAtom);
   const [tasks] = useAtom(tasksAtom);
+  const [visualSettings] = useAtom(visualSettingsAtom);
   const [selectedEntity, setSelectedEntity] = useState(null);
 
   const handleAgentClick = (agent) => {
@@ -59,8 +61,8 @@ export default function SpaceScene() {
 
           {/* Environment and Lighting */}
           <Environment preset="night" />
-          <ambientLight intensity={0.1} />
-          <pointLight position={[10, 10, 10]} intensity={0.5} />
+          <ambientLight intensity={visualSettings.ambientLightIntensity} />
+          <pointLight position={[10, 10, 10]} intensity={visualSettings.pointLightIntensity} />
           <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
 
           {/* Space Station */}
@@ -74,6 +76,7 @@ export default function SpaceScene() {
               name={agent.name}
               role={agent.role}
               status={agent.status}
+              bodyParams={agent.bodyParams}
               onClick={() => handleAgentClick(agent)}
             />
           ))}
@@ -93,7 +96,7 @@ export default function SpaceScene() {
           {/* Post Processing Effects */}
           <EffectComposer>
             <Bloom
-              intensity={1.0}
+              intensity={visualSettings.glowIntensity}
               luminanceThreshold={0.9}
               luminanceSmoothing={0.025}
             />
@@ -102,7 +105,10 @@ export default function SpaceScene() {
         </Suspense>
       </Canvas>
 
-      {/* UI Overlay */}
+      {/* Controls */}
+      <Controls />
+
+      {/* Selected Entity Info */}
       {selectedEntity && (
         <div className="absolute top-4 right-4 bg-black/80 text-white p-4 rounded-lg max-w-md">
           <h2 className="text-xl font-bold mb-2">
