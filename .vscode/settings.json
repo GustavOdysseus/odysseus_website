@@ -14,5 +14,6 @@
         "*": true
     },
     "gitdoc.enabled": true,
-    "gitdoc.autoPull": "off"
+    "gitdoc.autoPull": "off",
+    "windsurf.autocompleteSpeed": "fast"
 }
