@@ -1,10 +1,11 @@
+// No início do arquivo SpaceGraph.js
 import React, { useState, useRef, useMemo, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, Text, Stars, Html } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
 import { useSpring, animated } from '@react-spring/three';
 import { useDrag } from '@use-gesture/react';
-import { atom, useAtom, Provider as JotaiProvider } from 'jotai';
+import { atom, useAtom } from 'jotai';
 import * as THREE from 'three';
 
 // Átomos Jotai para estado global
@@ -13,7 +14,6 @@ const connectionsAtom = atom([]);
 const selectedPlanetAtom = atom(null);
 const connectionModeAtom = atom(false);
 const tooltipAtom = atom(null);
-const historyAtom = atom([]);
 const visualSettingsAtom = atom({
   showLabels: true,
   connectionOpacity: 0.8,
@@ -288,22 +288,79 @@ const Controls = () => {
 
 // Componente principal
 const SpaceGraph = () => {
-  const [divisions] = useAtom(divisionsAtom);
+  const [divisions, setDivisions] = useAtom(divisionsAtom);
   const [connections] = useAtom(connectionsAtom);
   const [tooltip] = useAtom(tooltipAtom);
   const [visualSettings] = useAtom(visualSettingsAtom);
 
   useEffect(() => {
-    // Inicializar as divisões
     const initialDivisions = [
-      { name: "Olimpos", position: [-8, 4, -5], color: "#ff9999", 
+      // Direção Estratégica
+      { name: "Olimpos", position: [0, 8, 0], color: "#ff9999", 
         description: "Conselho estratégico e governança adaptativa" },
-      { name: "Prometeus", position: [-4, 6, -3], color: "#ff9999",
+      { name: "Prometeus", position: [-4, 8, -4], color: "#ff9999",
         description: "Inovação disruptiva e novos modelos de negócio" },
-      // ... adicione outras divisões aqui
+      
+      // Comercial e Relacionamento
+      { name: "Mercúrios", position: [4, 6, -4], color: "#99ff99",
+        description: "Negociações, fechamento de contratos e gestão de clientes" },
+      { name: "Skaldos", position: [8, 6, 0], color: "#99ff99",
+        description: "Comunicação estratégica e geração de demanda" },
+      { name: "Apolo", position: [4, 6, 4], color: "#99ff99",
+        description: "Satisfação do cliente e fidelização" },
+      
+      // Operações Financeiras
+      { name: "Mirmidões", position: [-8, 4, -4], color: "#9999ff",
+        description: "Trading quantitativo e análise financeira" },
+      { name: "Plutus", position: [-4, 4, -8], color: "#9999ff",
+        description: "Gestão financeira e otimização de custos" },
+      
+      // Pesquisa e Desenvolvimento
+      { name: "Vikings", position: [0, 4, -8], color: "#ffff99",
+        description: "Pesquisa de oportunidades e exploração de mercados" },
+      { name: "Dédalo", position: [4, 4, -4], color: "#ffff99",
+        description: "Programação e arquitetura de soluções" },
+      { name: "Delfos", position: [8, 4, 0], color: "#ffff99",
+        description: "Testes, simulações e prototipagem" },
+      
+      // Infraestrutura e Recursos
+      { name: "Atlas", position: [-8, 0, 0], color: "#ff99ff",
+        description: "Gestão computacional e escalabilidade" },
+      { name: "Argos", position: [-4, 0, -4], color: "#ff99ff",
+        description: "Proteção sistêmica e gestão de riscos" },
+      
+      // Qualidade e Processos
+      { name: "Espartanos", position: [0, 0, -4], color: "#99ffff",
+        description: "Garantia de qualidade e padrões de excelência" },
+      { name: "Hiparcos", position: [4, 0, 0], color: "#99ffff",
+        description: "Estruturação e eficiência operacional" },
+      
+      // Integração e Comunicação
+      { name: "Hermes", position: [-4, -4, 0], color: "#ffcc99",
+        description: "Integração entre divisões e fluxo de informação" },
+      { name: "Harmonia", position: [0, -4, 0], color: "#ffcc99",
+        description: "Equilíbrio do ecossistema e resolução de conflitos" },
+      
+      // Evolução e Conhecimento
+      { name: "Fenix", position: [4, -4, 4], color: "#cc99ff",
+        description: "Gestão de mudanças e renovação sistêmica" },
+      { name: "Quiron", position: [8, -4, 0], color: "#cc99ff",
+        description: "Mentoria e gestão do conhecimento" },
+      
+      // Coordenação Temporal
+      { name: "Chronos", position: [-8, -8, 0], color: "#99ccff",
+        description: "Timing de operações e coordenação temporal" },
+      
+      // Tecnologia e Integração
+      { name: "Janus", position: [0, -8, 0], color: "#ccff99",
+        description: "Integrações técnicas e APIs" },
+      
+      // Análise e Inteligência
+      { name: "Athena", position: [8, -8, 0], color: "#ffb366",
+        description: "Análise de dados e insights estratégicos" }
     ];
-    setDivisionsAtom(initialDivisions);
-  }, []);
+    setDivisions(initialDivisions);
+  }, [setDivisions]);
 
   return (
     <div className="relative w-full h-screen">

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos globais adicionais */
 body {
   margin: 0;
   padding: 0;
