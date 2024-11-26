@@ -6,7 +6,7 @@ import './styles/styles.css';
 function App() {
   return (
     <Provider>
-      <div className="App w-full h-screen bg-black">
+      <div className="App w-full h-screen bg-black overflow-hidden">
         <SpaceScene />
       </div>
     </Provider>
