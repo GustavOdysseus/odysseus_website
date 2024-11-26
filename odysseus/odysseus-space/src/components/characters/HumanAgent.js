@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useGLTF, useAnimations } from '@react-three/drei';
+import { useGLTF, useAnimations, Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export default function HumanAgent({ position, name, role, status, onClick }) {
