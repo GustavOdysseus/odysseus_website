@@ -2,6 +2,7 @@ import React, { useState, useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Text, Stars, Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { Perf } from 'r3f-perf';
 
 // Planeta individual com atmosfera e brilho
 const Planet = ({ position, name, color, description, onHover }) => {
