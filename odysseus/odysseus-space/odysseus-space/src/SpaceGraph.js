@@ -7,6 +7,8 @@ import { useSpring, animated } from '@react-spring/three';
 import { useDrag } from '@use-gesture/react';
 import { atom, useAtom } from 'jotai';
 import * as THREE from 'three';
+import { Provider as JotaiProvider } from 'jotai';
+
 
 // Átomos Jotai para estado global
 const divisionsAtom = atom([]);
