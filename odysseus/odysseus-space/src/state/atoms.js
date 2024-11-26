@@ -19,6 +19,14 @@ export const agentsAtom = atom([
     experience: 'Senior',
     avatar: '/models/commander.glb',
     position: [0, 0, 5],
+    bodyParams: {
+      height: 1.75,
+      neckGirth: 0.35,
+      chestGirth: 0.9,
+      waistGirth: 0.8,
+      hipGirth: 0.9,
+      bodyType: 'athletic'
+    }
   },
   {
     id: 2,
@@ -29,6 +37,14 @@ export const agentsAtom = atom([
     experience: 'Expert',
     avatar: '/models/scientist.glb',
     position: [5, 0, 0],
+    bodyParams: {
+      height: 1.82,
+      neckGirth: 0.38,
+      chestGirth: 0.95,
+      waistGirth: 0.85,
+      hipGirth: 0.95,
+      bodyType: 'ectomorph'
+    }
   },
   {
     id: 3,
@@ -39,7 +55,15 @@ export const agentsAtom = atom([
     experience: 'Mid-Level',
     avatar: '/models/engineer.glb',
     position: [-5, 0, 0],
-  },
+    bodyParams: {
+      height: 1.78,
+      neckGirth: 0.36,
+      chestGirth: 0.92,
+      waistGirth: 0.82,
+      hipGirth: 0.92,
+      bodyType: 'mesomorph'
+    }
+  }
 ]);
 
 // Estado das tarefas
@@ -53,7 +77,7 @@ export const tasksAtom = atom([
     priority: 'high',
     deadline: '2024-03-01',
     progress: 65,
-    position: [0, 5, 5],
+    position: [0, 5, 5]
   },
   {
     id: 2,
@@ -64,7 +88,7 @@ export const tasksAtom = atom([
     priority: 'medium',
     deadline: '2024-03-15',
     progress: 0,
-    position: [5, 5, 0],
+    position: [5, 5, 0]
   },
   {
     id: 3,
@@ -75,8 +99,8 @@ export const tasksAtom = atom([
     priority: 'high',
     deadline: '2024-02-28',
     progress: 100,
-    position: [-5, 5, 0],
-  },
+    position: [-5, 5, 0]
+  }
 ]);
 
 // Estado da entidade selecionada
@@ -97,5 +121,5 @@ export const visualSettingsAtom = atom({
   connectionOpacity: 0.8,
   glowIntensity: 1.5,
   ambientLightIntensity: 0.2,
-  pointLightIntensity: 1.0,
+  pointLightIntensity: 1.0
 });
