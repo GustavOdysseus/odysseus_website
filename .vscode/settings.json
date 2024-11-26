@@ -5,6 +5,7 @@
       "**/vectorbt_pro_site": true,
       "**/vectorbt.pro-main.zip": true,
       "**/vectorbt.pro.zip": true,
+      "**/venv": true
 
     },
     "windsurf.enableConfig": {
