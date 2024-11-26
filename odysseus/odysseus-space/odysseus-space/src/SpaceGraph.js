@@ -8,6 +8,14 @@ import { useDrag } from '@use-gesture/react';
 import { atom, useAtom } from 'jotai';
 import * as THREE from 'three';
 import { Provider as JotaiProvider } from 'jotai';
+import { throttle } from 'lodash';
+import { PerformanceMonitor } from '@react-three/drei';
+
+<PerformanceMonitor onChange={({ factor }) => console.log(`Performance adjusted: ${factor}`)}>
+  <Canvas camera={{ position: [0, 5, 20], fov: 60 }}>
+    {/* Resto do conteúdo */}
+  </Canvas>
+</PerformanceMonitor>
 
 
 // Átomos Jotai para estado global
@@ -16,6 +24,7 @@ const connectionsAtom = atom([]);
 const selectedPlanetAtom = atom(null);
 const connectionModeAtom = atom(false);
 const tooltipAtom = atom(null);
+const isDraggingAtom = atom(false); // Controla o estado de arraste
 const visualSettingsAtom = atom({
   showLabels: true,
   connectionOpacity: 0.8,
@@ -113,7 +122,7 @@ const EnhancedConnection = ({ start, end, type = 'hierarchy' }) => {
 };
 
 // Planeta base
-const Planet = ({ position, name, color, description, onHover, onClick, scale = 1 }) => {
+const Planet = React.memo(({ position, name, color, description, onHover, onClick, scale = 1 }) => {
   const [hovered, setHovered] = useState(false);
   const meshRef = useRef();
   const atmosphereRef = useRef();
@@ -177,11 +186,11 @@ const Planet = ({ position, name, color, description, onHover, onClick, scale = 
       )}
     </group>
   );
-};
+});
 
 // Planeta interativo
 const DraggablePlanet = ({ position: initialPosition, ...props }) => {
-  const { camera } = useThree();
+  const { camera, gl } = useThree(); // Acesse a instância do renderer
   const [dragging, setDragging] = useState(false);
   const [divisions, setDivisions] = useAtom(divisionsAtom);
   const [connectionMode] = useAtom(connectionModeAtom);
@@ -191,38 +200,47 @@ const DraggablePlanet = ({ position: initialPosition, ...props }) => {
   const [spring, api] = useSpring(() => ({
     position: initialPosition,
     scale: 1,
-    config: { mass: 1, tension: 170, friction: 26 }
+    config: { mass: 1, tension: 170, friction: 26 },
   }));
 
-  const bind = useDrag(({ movement: [x, y], first, last }) => {
-    if (connectionMode) return;
-    
-    if (first) setDragging(true);
-    if (last) {
-      setDragging(false);
-      const newPosition = spring.position.get();
-      setDivisions(divisions.map(d => 
-        d.name === props.name ? { ...d, position: newPosition } : d
-      ));
-    }
+  const bind = useDrag(
+    throttle(({ movement: [x, y], first, last, event }) => {
+      if (!event.altKey || connectionMode) return;
 
-    const factor = camera.position.z / 10;
-    const newX = initialPosition[0] + x / factor;
-    const newY = initialPosition[1] - y / factor;
-    
-    api.start({
-      position: [newX, newY, initialPosition[2]]
-    });
-  });
+      gl.domElement.style.cursor = first ? 'grabbing' : 'grab'; // Muda o cursor durante o drag
+      if (first) setDragging(true);
+      if (last) {
+        setDragging(false);
+        gl.domElement.style.cursor = 'default'; // Reseta o cursor
+        const newPosition = spring.position.get();
+        setDivisions(
+          divisions.map((d) =>
+            d.name === props.name ? { ...d, position: newPosition } : d
+          )
+        );
+      }
+
+      const factor = camera.position.z / 10;
+      const newX = initialPosition[0] + x / factor;
+      const newY = initialPosition[1] - y / factor;
+
+      api.start({
+        position: [newX, newY, initialPosition[2]],
+      });
+    }, 16)
+  );
 
   const handleClick = () => {
     if (connectionMode) {
       if (selectedPlanet && selectedPlanet !== props.name) {
-        setConnections([...connections, {
-          start: selectedPlanet,
-          end: props.name,
-          type: 'hierarchy'
-        }]);
+        setConnections([
+          ...connections,
+          {
+            start: selectedPlanet,
+            end: props.name,
+            type: 'hierarchy',
+          },
+        ]);
         setSelectedPlanet(null);
       } else {
         setSelectedPlanet(props.name);
@@ -231,23 +249,44 @@ const DraggablePlanet = ({ position: initialPosition, ...props }) => {
   };
 
   return (
-    <animated.group {...spring} {...bind()}>
-      <Planet
-        {...props}
-        onClick={handleClick}
-        scale={dragging ? 1.2 : 1}
-      />
+    <animated.group
+      {...spring}
+      {...bind()}
+      onPointerDown={(e) => e.stopPropagation()} // Evita conflito com OrbitControls
+    >
+      <Planet {...props} onClick={handleClick} scale={dragging ? 1.2 : 1} />
     </animated.group>
   );
 };
+
 
 // Interface de controle
 const Controls = () => {
   const [connectionMode, setConnectionMode] = useAtom(connectionModeAtom);
   const [visualSettings, setVisualSettings] = useAtom(visualSettingsAtom);
+  const [isAltPressed, setIsAltPressed] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Alt') setIsAltPressed(true);
+    };
+
+    const handleKeyUp = (e) => {
+      if (e.key === 'Alt') setIsAltPressed(false);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp);
+    };
+  }, []);
 
   return (
     <div className="absolute top-4 left-4 space-y-2">
+      {/* Botão para alternar modo de conexão */}
       <button
         className={`px-4 py-2 rounded-lg ${
           connectionMode ? 'bg-blue-600' : 'bg-gray-600'
@@ -256,15 +295,19 @@ const Controls = () => {
       >
         {connectionMode ? 'Creating Connection' : 'Create Connection'}
       </button>
+
+      {/* Configurações visuais */}
       <div className="space-y-2 mt-4">
         <label className="flex items-center space-x-2 text-white">
           <input
             type="checkbox"
             checked={visualSettings.showLabels}
-            onChange={(e) => setVisualSettings({
-              ...visualSettings,
-              showLabels: e.target.checked
-            })}
+            onChange={(e) =>
+              setVisualSettings({
+                ...visualSettings,
+                showLabels: e.target.checked,
+              })
+            }
           />
           <span>Show Labels</span>
         </label>
@@ -276,14 +319,23 @@ const Controls = () => {
             max="1"
             step="0.1"
             value={visualSettings.connectionOpacity}
-            onChange={(e) => setVisualSettings({
-              ...visualSettings,
-              connectionOpacity: parseFloat(e.target.value)
-            })}
+            onChange={(e) =>
+              setVisualSettings({
+                ...visualSettings,
+                connectionOpacity: parseFloat(e.target.value),
+              })
+            }
             className="w-full"
           />
         </div>
       </div>
+
+      {/* Indicador de tecla Alt */}
+      {isAltPressed && (
+        <div className="text-white text-sm bg-gray-800 p-2 rounded shadow-md">
+          Hold Alt to move planets
+        </div>
+      )}
     </div>
   );
 };
@@ -294,6 +346,7 @@ const SpaceGraph = () => {
   const [connections] = useAtom(connectionsAtom);
   const [tooltip] = useAtom(tooltipAtom);
   const [visualSettings] = useAtom(visualSettingsAtom);
+  const [isDragging, setIsDragging] = useAtom(isDraggingAtom);
 
   useEffect(() => {
     const initialDivisions = [
@@ -367,70 +420,88 @@ const SpaceGraph = () => {
   return (
     <div className="relative w-full h-screen">
       <Controls />
-      <Canvas camera={{ position: [0, 5, 20], fov: 60 }}>
-        <color attach="background" args={['#000008']} />
-        
-        <ambientLight intensity={0.2} />
-        <pointLight position={[10, 10, 10]} intensity={1} />
-        
-        <Stars
-          radius={100}
-          depth={50}
-          count={5000}
-          factor={4}
-          saturation={0}
-          fade
-          speed={1}
-        />
-        
-        <OrbitControls
-          enableZoom={true}
-          enablePan={true}
-          enableRotate={true}
-          zoomSpeed={0.6}
-          panSpeed={0.5}
-          rotateSpeed={0.4}
-        />
-
-        {divisions.map((div) => (
-          <DraggablePlanet
-            key={div.name}
-            {...div}
+      <Canvas
+        camera={{ position: [0, 5, 20], fov: 60 }}
+        performance={{
+          min: 0.1, // Define o limite mínimo de qualidade baseado no FPS
+          debounce: 200, // Ajusta a frequência de monitoramento de performance
+        }}
+      >
+        <PerformanceMonitor
+          onDecline={() => console.log('Performance está caindo, ajustando qualidade.')}
+          onIncline={() => console.log('Performance recuperada, aumentando qualidade.')}
+        >
+          {/* Configurações de iluminação e fundo */}
+          <color attach="background" args={['#000008']} />
+          <ambientLight intensity={0.2} />
+          <pointLight position={[10, 10, 10]} intensity={1} />
+          <Stars
+            radius={100}
+            depth={50}
+            count={5000}
+            factor={4}
+            saturation={0}
+            fade
+            speed={1}
           />
-        ))}
 
-        {connections.map((conn, i) => {
-          const start = divisions.find(d => d.name === conn.start)?.position;
-          const end = divisions.find(d => d.name === conn.end)?.position;
-          if (start && end) {
-            return (
-              <EnhancedConnection
-                key={i}
-                start={start}
-                end={end}
-                type={conn.type}
-              />
-            );
-          }
-          return null;
-        })}
-
-        <EffectComposer>
-          <Bloom
-            intensity={visualSettings.glowIntensity}
-            luminanceThreshold={0.1}
-            luminanceSmoothing={0.9}
+          {/* OrbitControls atualizado */}
+          <OrbitControls
+            enableZoom={true}
+            enablePan={true}
+            enableRotate={true}
+            zoomSpeed={0.6}
+            panSpeed={0.5}
+            rotateSpeed={0.4}
+            enabled={!isDragging} // Desativa o OrbitControls quando arrastando
           />
-          <ChromaticAberration offset={[0.0005, 0.0005]} />
-        </EffectComposer>
 
-        {tooltip && (
-          <Html position={tooltip.position}>
-            <div className="bg-gray-900/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg shadow-lg border border-gray-700/50 text-sm">
-              {tooltip.description}
-            </div>
-          </Html>
-        )}
+          {/* Renderização de planetas */}
+          {divisions.map((div) => (
+            <DraggablePlanet
+              key={div.name}
+              {...div}
+              onDragStart={() => setIsDragging(true)} // Ativa o estado de arraste
+              onDragEnd={() => setIsDragging(false)} // Desativa ao soltar
+            />
+          ))}
+
+          {/* Renderização de conexões */}
+          {connections.map((conn, i) => {
+            const start = divisions.find((d) => d.name === conn.start)?.position;
+            const end = divisions.find((d) => d.name === conn.end)?.position;
+            if (start && end) {
+              return (
+                <EnhancedConnection
+                  key={i}
+                  start={start}
+                  end={end}
+                  type={conn.type}
+                />
+              );
+            }
+            return null;
+          })}
+
+          {/* Pós-processamento e efeitos */}
+          <EffectComposer>
+            <Bloom
+              intensity={visualSettings.glowIntensity}
+              luminanceThreshold={0.1}
+              luminanceSmoothing={0.9}
+            />
+            <ChromaticAberration offset={[0.0005, 0.0005]} />
+          </EffectComposer>
+
+          {/* Tooltip */}
+          {tooltip && (
+            <Html position={tooltip.position}>
+              <div className="bg-gray-900/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg shadow-lg border border-gray-700/50 text-sm">
+                {tooltip.description}
+              </div>
+            </Html>
+          )}
+        </PerformanceMonitor>
       </Canvas>
     </div>
   );
