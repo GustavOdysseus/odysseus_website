@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Stars,
@@ -9,13 +9,12 @@ import {
   Html
 } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
-import { useAtom } from 'jotai';
-import { agentsAtom, tasksAtom, visualSettingsAtom } from '../state/atoms';
-
+import { useSpaceStore } from '../state/store';
 import HumanAgent from '../components/characters/HumanAgent';
 import SpaceStation from '../components/environment/SpaceStation';
 import TaskModule from '../components/tasks/TaskModule';
 import Controls from '../components/Controls';
+import CrewManager from '../components/crews/CrewManager';
 
 function LoadingScreen() {
   const { progress } = useProgress();
@@ -33,16 +32,18 @@ function LoadingScreen() {
 }
 
 export default function SpaceScene() {
-  const [agents] = useAtom(agentsAtom);
-  const [tasks] = useAtom(tasksAtom);
-  const [visualSettings] = useAtom(visualSettingsAtom);
-  const [selectedEntity, setSelectedEntity] = useState(null);
+  const {
+    agents,
+    tasks,
+    visualSettings,
+    setSelectedEntity
+  } = useSpaceStore();
 
-  const handleAgentClick = (agent) => {
+  const handleAgentClick = (agent: any) => {
     setSelectedEntity({ type: 'agent', data: agent });
   };
 
-  const handleTaskClick = (task) => {
+  const handleTaskClick = (task: any) => {
     setSelectedEntity({ type: 'task', data: task });
   };
 
@@ -62,33 +63,37 @@ export default function SpaceScene() {
           {/* Environment and Lighting */}
           <Environment preset="night" />
           <ambientLight intensity={visualSettings.ambientLightIntensity} />
-          <pointLight position={[10, 10, 10]} intensity={visualSettings.pointLightIntensity} />
-          <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+          <pointLight
+            position={[10, 10, 10]}
+            intensity={visualSettings.pointLightIntensity}
+          />
+          <Stars
+            radius={100}
+            depth={50}
+            count={5000}
+            factor={4}
+            saturation={0}
+            fade
+            speed={1}
+          />
 
           {/* Space Station */}
           <SpaceStation position={[0, 0, 0]} />
 
           {/* Agents */}
-          {agents.map((agent) => (
+          {agents.map((agent: any) => (
             <HumanAgent
               key={agent.id}
-              position={agent.position}
-              name={agent.name}
-              role={agent.role}
-              status={agent.status}
-              bodyParams={agent.bodyParams}
+              agent={agent}
               onClick={() => handleAgentClick(agent)}
             />
           ))}
 
           {/* Tasks */}
-          {tasks.map((task) => (
+          {tasks.map((task: any) => (
             <TaskModule
               key={task.id}
-              position={task.position}
               task={task}
-              status={task.status}
-              assignedAgents={task.assignedAgents}
               onClick={() => handleTaskClick(task)}
             />
           ))}
@@ -97,34 +102,17 @@ export default function SpaceScene() {
           <EffectComposer>
             <Bloom
               intensity={visualSettings.glowIntensity}
-              luminanceThreshold={0.9}
-              luminanceSmoothing={0.025}
+              luminanceThreshold={visualSettings.bloomThreshold}
+              luminanceSmoothing={visualSettings.bloomRadius}
             />
             <ChromaticAberration offset={[0.002, 0.002]} />
           </EffectComposer>
         </Suspense>
       </Canvas>
 
-      {/* Controls */}
+      {/* UI Components */}
       <Controls />
-
-      {/* Selected Entity Info */}
-      {selectedEntity && (
-        <div className="absolute top-4 right-4 bg-black/80 text-white p-4 rounded-lg max-w-md">
-          <h2 className="text-xl font-bold mb-2">
-            {selectedEntity.type === 'agent' ? 'Agent Details' : 'Task Details'}
-          </h2>
-          <pre className="text-sm overflow-auto">
-            {JSON.stringify(selectedEntity.data, null, 2)}
-          </pre>
-          <button
-            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-            onClick={() => setSelectedEntity(null)}
-          >
-            Close
-          </button>
-        </div>
-      )}
+      <CrewManager />
     </div>
   );
 }

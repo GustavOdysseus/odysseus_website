@@ -1,16 +1,13 @@
 import React from 'react';
-import { Provider } from 'jotai';
 import SpaceScene from './scenes/SpaceScene';
 import './styles/styles.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Provider>
-      <div className="App w-full h-screen bg-black overflow-hidden">
-        <SpaceScene />
-      </div>
-    </Provider>
+    <div className="App w-full h-screen bg-black overflow-hidden">
+      <SpaceScene />
+    </div>
   );
-}
+};
 
 export default App;
