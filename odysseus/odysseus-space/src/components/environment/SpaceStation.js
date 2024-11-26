@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber';
 export default function SpaceStation({ position = [0, 0, 0] }) {
   const group = useRef();
   // Note: You'll need to replace this with your actual space station model path
-  const { nodes, materials } = useGLTF('/models/space_station.glb');
+  const { nodes } = useGLTF('/models/space_station.glb');
 
   useFrame((state, delta) => {
     // Add subtle rotation animation

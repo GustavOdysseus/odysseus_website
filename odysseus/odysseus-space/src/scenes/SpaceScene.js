@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Stars,
@@ -10,7 +10,7 @@ import {
 } from '@react-three/drei';
 import { EffectComposer, Bloom, ChromaticAberration } from '@react-three/postprocessing';
 import { useAtom } from 'jotai';
-import { crewStateAtom, agentsAtom, tasksAtom } from '../state/atoms';
+import { agentsAtom, tasksAtom } from '../state/atoms';
 
 import HumanAgent from '../components/characters/HumanAgent';
 import SpaceStation from '../components/environment/SpaceStation';
@@ -32,7 +32,6 @@ function LoadingScreen() {
 }
 
 export default function SpaceScene() {
-  const [crew] = useAtom(crewStateAtom);
   const [agents] = useAtom(agentsAtom);
   const [tasks] = useAtom(tasksAtom);
   const [selectedEntity, setSelectedEntity] = useState(null);
@@ -68,29 +67,25 @@ export default function SpaceScene() {
           <SpaceStation position={[0, 0, 0]} />
 
           {/* Agents */}
-          {agents.map((agent, index) => (
+          {agents.map((agent) => (
             <HumanAgent
               key={agent.id}
-              position={[
-                Math.cos(index * (2 * Math.PI / agents.length)) * 10,
-                0,
-                Math.sin(index * (2 * Math.PI / agents.length)) * 10
-              ]}
-              {...agent}
+              position={agent.position}
+              name={agent.name}
+              role={agent.role}
+              status={agent.status}
               onClick={() => handleAgentClick(agent)}
             />
           ))}
 
           {/* Tasks */}
-          {tasks.map((task, index) => (
+          {tasks.map((task) => (
             <TaskModule
               key={task.id}
-              position={[
-                Math.cos(index * (2 * Math.PI / tasks.length)) * 15,
-                5,
-                Math.sin(index * (2 * Math.PI / tasks.length)) * 15
-              ]}
+              position={task.position}
               task={task}
+              status={task.status}
+              assignedAgents={task.assignedAgents}
               onClick={() => handleTaskClick(task)}
             />
           ))}

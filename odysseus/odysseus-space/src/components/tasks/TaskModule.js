@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useSpring, animated } from '@react-spring/three';
-import { Text, Html } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 export default function TaskModule({ position, task, status, assignedAgents, onClick }) {
