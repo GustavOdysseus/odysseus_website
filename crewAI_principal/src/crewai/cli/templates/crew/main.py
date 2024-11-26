@@ -2,7 +2,7 @@
 import sys
 import warnings
 
-from {{folder_name}}.crew import {{crew_name}}
+from crew import CrewName  # Replace with actual import
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -18,7 +18,7 @@ def run():
     inputs = {
         'topic': 'AI LLMs'
     }
-    {{crew_name}}().crew().kickoff(inputs=inputs)
+    CrewName().crew().kickoff(inputs=inputs)
 
 
 def train():
@@ -29,7 +29,7 @@ def train():
         "topic": "AI LLMs"
     }
     try:
-        {{crew_name}}().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+        CrewName().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
@@ -39,7 +39,7 @@ def replay():
     Replay the crew execution from a specific task.
     """
     try:
-        {{crew_name}}().crew().replay(task_id=sys.argv[1])
+        CrewName().crew().replay(task_id=sys.argv[1])
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
@@ -52,7 +52,10 @@ def test():
         "topic": "AI LLMs"
     }
     try:
-        {{crew_name}}().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
+        CrewName().crew().test(n_iterations=int(sys.argv[1]), openai_model_name=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
+
+if __name__ == "__main__":
+    run()
