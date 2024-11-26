@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Odysseus Space - CrewAI Visual Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma interface visual 3D imersiva para gerenciar agentes, tarefas e tripulações do CrewAI em um ambiente espacial interativo.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Visualização 3D Imersiva**: Interface espacial completa com modelos 3D realistas de personagens e ambiente
+- **Agentes como Personagens**: Agentes representados como personagens 3D humanoides com animações
+- **Tarefas como Módulos Holográficos**: Visualização interativa de tarefas com efeitos holográficos
+- **Estação Espacial Central**: Hub central para visualizar e gerenciar a tripulação
+- **Efeitos Visuais Avançados**: Bloom, aberração cromática e outros efeitos para maior imersão
+- **Interface Responsiva**: Controles intuitivos e informações detalhadas sob demanda
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js para a interface do usuário
+- Three.js (via @react-three/fiber) para renderização 3D
+- Jotai para gerenciamento de estado
+- TailwindCSS para estilização
+- React Spring para animações suaves
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Requisitos
 
-### `npm test`
+- Node.js 16+
+- NPM ou Yarn
+- WebGL compatível com navegador moderno
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação
 
-### `npm run build`
+1. Clone o repositório:
+```bash
+git clone [url-do-repositório]
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Adicione os modelos 3D necessários em `/public/models/` (veja `/public/models/README.md` para detalhes)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
 
-### `npm run eject`
+## Estrutura do Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+odysseus-space/
+├── public/
+│   └── models/          # Modelos 3D (GLB)
+├── src/
+│   ├── components/
+│   │   ├── characters/  # Componentes de personagens
+│   │   ├── environment/ # Componentes do ambiente
+│   │   └── tasks/       # Componentes de tarefas
+│   ├── scenes/          # Cenas principais
+│   ├── state/           # Gerenciamento de estado
+│   └── styles/          # Estilos CSS
+└── package.json
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Uso
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Visualização de Agentes**:
+   - Clique em um agente para ver seus detalhes
+   - Observe o status atual e especialidades
+   - Interaja com animações e efeitos visuais
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Gerenciamento de Tarefas**:
+   - Visualize tarefas como módulos holográficos
+   - Clique para ver detalhes e progresso
+   - Observe conexões entre agentes e tarefas
 
-## Learn More
+3. **Navegação**:
+   - Use controles orbitais para navegar pelo ambiente
+   - Zoom in/out para diferentes perspectivas
+   - Interaja com a estação espacial central
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contribuindo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork o projeto
+2. Crie sua branch de feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-### Code Splitting
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md para detalhes.
 
-### Analyzing the Bundle Size
+## Agradecimentos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- CrewAI pelo framework incrível
+- Comunidade Three.js pelos recursos e inspiração
+- Contribuidores de modelos 3D

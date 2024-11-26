@@ -1,12 +1,15 @@
 import React from 'react';
-import SpaceGraphWrapper from './scenes/SpaceGraph'; // Atualizado para usar o novo caminho
-import './styles/styles.css'; // Importa os estilos globais
+import { Provider } from 'jotai';
+import SpaceScene from './scenes/SpaceScene';
+import './styles/styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <SpaceGraphWrapper /> {/* Usa o SpaceGraph com JotaiProvider */}
-    </div>
+    <Provider>
+      <div className="App w-full h-screen bg-black">
+        <SpaceScene />
+      </div>
+    </Provider>
   );
 }
 
