@@ -1,11 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { useGLTF, useAnimations, Html } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
 
 export default function HumanAgent({ position, name, role, status, onClick }) {
   const group = useRef();
   // Note: You'll need to replace this with your actual character model path
-  const { nodes, materials, animations } = useGLTF('/models/character.glb');
+  const { nodes, animations } = useGLTF('/models/character.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
