@@ -287,3 +287,184 @@ Este sistema é essencial para:
 - Novos endpoints
 - Tipos de log
 - Payloads customizados
+
+# CrewAI Plus API
+
+## Visão Geral
+
+O CrewAI Plus API fornece uma interface de linha de comando para interagir com os serviços avançados do CrewAI, incluindo gerenciamento de tools, crews e deployments.
+
+## Comandos Principais
+
+### 1. Gerenciamento de Tools
+
+#### Login no Repositório de Tools
+```bash
+crewai plus tools login
+
+# Exemplo de output:
+Successfully logged in to the tool repository
+API Key: ********-****-****-****-************
+```
+
+#### Publicar uma Tool
+```bash
+crewai plus tools publish my-tool --version 1.0.0 --public
+
+# Opções:
+#   --version    Versão da tool
+#   --public     Se a tool deve ser pública
+#   --description    Descrição da tool
+```
+
+#### Obter Informações de uma Tool
+```bash
+crewai plus tools get my-tool
+
+# Exemplo de output:
+Tool: my-tool
+Version: 1.0.0
+Public: Yes
+Description: Uma tool incrível
+```
+
+### 2. Gerenciamento de Crews
+
+#### Listar Crews
+```bash
+crewai plus crews list
+
+# Exemplo de output:
+Available Crews:
+1. my-project (uuid: abc123)
+2. another-project (uuid: def456)
+```
+
+#### Deploy de um Crew
+```bash
+# Por nome do projeto
+crewai plus crews deploy --name my-project
+
+# Por UUID
+crewai plus crews deploy --uuid abc123
+```
+
+#### Status do Crew
+```bash
+# Verificar status por nome
+crewai plus crews status --name my-project
+
+# Verificar status por UUID
+crewai plus crews status --uuid abc123
+
+# Exemplo de output:
+Status: Running
+Uptime: 2h 30m
+Last Update: 2024-01-20 14:30:00
+```
+
+#### Logs do Crew
+```bash
+# Ver logs por nome
+crewai plus crews logs --name my-project
+
+# Ver logs por UUID
+crewai plus crews logs --uuid abc123
+
+# Opções de tipo de log:
+#   --type deployment    Logs de deployment (padrão)
+#   --type execution     Logs de execução
+```
+
+#### Criar um Novo Crew
+```bash
+crewai plus crews create --name my-new-project --config config.yaml
+
+# Opções:
+#   --name      Nome do projeto
+#   --config    Arquivo de configuração
+```
+
+#### Deletar um Crew
+```bash
+# Deletar por nome
+crewai plus crews delete --name my-project
+
+# Deletar por UUID
+crewai plus crews delete --uuid abc123
+```
+
+## Configuração
+
+### 1. Variáveis de Ambiente
+```bash
+# Configurar API Key
+export CREWAI_API_KEY=sua-api-key
+
+# Configurar URL Base (opcional)
+export CREWAI_BASE_URL=https://custom.crewai.com
+```
+
+### 2. Arquivo de Configuração
+```yaml
+# ~/.crewai/config.yaml
+api_key: sua-api-key
+base_url: https://app.crewai.com
+```
+
+## Troubleshooting
+
+### 1. Erros Comuns
+
+#### Autenticação Falhou
+```bash
+Error: Authentication failed
+Solução: Verifique sua API key e ambiente
+```
+
+#### Deploy Falhou
+```bash
+Error: Deployment failed
+Solução: Verifique logs e configuração
+```
+
+### 2. Soluções
+- Verificar API key
+- Confirmar conectividade
+- Validar configuração
+- Checar logs detalhados
+
+## Melhores Práticas
+
+### 1. Segurança
+- Nunca compartilhe sua API key
+- Use variáveis de ambiente
+- Mantenha logs seguros
+
+### 2. Operação
+- Monitore deployments
+- Verifique status regularmente
+- Mantenha logs organizados
+
+### 3. Manutenção
+- Atualize tools regularmente
+- Faça backup de configurações
+- Monitore uso de recursos
+
+## Notas Adicionais
+
+### 1. Dependências
+- Python 3.6+
+- Requests
+- Click
+- URLLib
+
+### 2. Recursos
+- Documentação oficial
+- Fórum da comunidade
+- Suporte técnico
+
+### 3. Limitações
+- Rate limits
+- Quotas de uso
+- Restrições de recursos
