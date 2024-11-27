@@ -292,179 +292,154 @@ Este sistema é essencial para:
 
 ## Visão Geral
 
-O CrewAI Plus API fornece uma interface de linha de comando para interagir com os serviços avançados do CrewAI, incluindo gerenciamento de tools, crews e deployments.
+O CrewAI Plus API fornece acesso aos serviços avançados do CrewAI através da linha de comando (CLI).
 
-## Comandos Principais
+## Comandos CLI
 
-### 1. Gerenciamento de Tools
+### Configuração Inicial
 
-#### Login no Repositório de Tools
 ```bash
-crewai plus tools login
+# Configurar a API key
+$ export CREWAI_API_KEY="sua-api-key"
 
-# Exemplo de output:
-Successfully logged in to the tool repository
-API Key: ********-****-****-****-************
+# Configurar URL base (opcional)
+$ export CREWAI_BASE_URL="https://custom.crewai.com"
 ```
 
-#### Publicar uma Tool
-```bash
-crewai plus tools publish my-tool --version 1.0.0 --public
+### Comandos de Tools
 
-# Opções:
-#   --version    Versão da tool
-#   --public     Se a tool deve ser pública
-#   --description    Descrição da tool
+```bash
+# Fazer login no repositório de tools
+$ crewai tool login
+
+# Publicar uma tool
+$ crewai tool publish --name my-tool --version 1.0.0 --description "Minha tool incrível"
+
+# Obter informações de uma tool
+$ crewai tool get my-tool
 ```
 
-#### Obter Informações de uma Tool
-```bash
-crewai plus tools get my-tool
+### Comandos de Crews
 
-# Exemplo de output:
-Tool: my-tool
-Version: 1.0.0
-Public: Yes
-Description: Uma tool incrível
+```bash
+# Listar todos os crews
+$ crewai crew list
+
+# Criar um novo crew
+$ crewai crew create --name my-project --file crew_config.yaml
+
+# Deploy de um crew
+$ crewai crew deploy --name my-project
+$ crewai crew deploy --uuid abc-123-def-456
+
+# Verificar status de um crew
+$ crewai crew status --name my-project
+$ crewai crew status --uuid abc-123-def-456
+
+# Ver logs de um crew
+$ crewai crew logs --name my-project --type deployment
+$ crewai crew logs --uuid abc-123-def-456 --type execution
+
+# Deletar um crew
+$ crewai crew delete --name my-project
+$ crewai crew delete --uuid abc-123-def-456
 ```
 
-### 2. Gerenciamento de Crews
+## Opções Comuns
 
-#### Listar Crews
 ```bash
-crewai plus crews list
-
-# Exemplo de output:
-Available Crews:
-1. my-project (uuid: abc123)
-2. another-project (uuid: def456)
+# Opções globais disponíveis para todos os comandos
+--help          # Mostra ajuda sobre o comando
+--verbose       # Aumenta o nível de detalhes do output
+--quiet         # Reduz o nível de detalhes do output
+--format json   # Output em formato JSON
 ```
 
-#### Deploy de um Crew
-```bash
-# Por nome do projeto
-crewai plus crews deploy --name my-project
+## Exemplos de Uso
 
-# Por UUID
-crewai plus crews deploy --uuid abc123
+### 1. Workflow Básico de Tools
+
+```bash
+# Login e publicação de uma tool
+$ export CREWAI_API_KEY="minha-api-key"
+$ crewai tool login
+$ crewai tool publish --name calculator --version 1.0.0 --description "Calculadora avançada"
 ```
 
-#### Status do Crew
+### 2. Workflow Básico de Crews
+
 ```bash
-# Verificar status por nome
-crewai plus crews status --name my-project
-
-# Verificar status por UUID
-crewai plus crews status --uuid abc123
-
-# Exemplo de output:
-Status: Running
-Uptime: 2h 30m
-Last Update: 2024-01-20 14:30:00
+# Criar e fazer deploy de um crew
+$ crewai crew create --name math-crew --file math_crew.yaml
+$ crewai crew deploy --name math-crew
+$ crewai crew status --name math-crew
+$ crewai crew logs --name math-crew --type deployment
 ```
 
-#### Logs do Crew
+## Mensagens de Erro Comuns
+
 ```bash
-# Ver logs por nome
-crewai plus crews logs --name my-project
+# Erro de autenticação
+Error: Authentication failed. Please check your API key.
 
-# Ver logs por UUID
-crewai plus crews logs --uuid abc123
+# Erro de deploy
+Error: Deployment failed. See logs for details.
+$ crewai crew logs --name my-project --type deployment
 
-# Opções de tipo de log:
-#   --type deployment    Logs de deployment (padrão)
-#   --type execution     Logs de execução
+# Erro de configuração
+Error: Invalid configuration file. Please check your YAML syntax.
 ```
 
-#### Criar um Novo Crew
-```bash
-crewai plus crews create --name my-new-project --config config.yaml
+## Arquivos de Configuração
 
-# Opções:
-#   --name      Nome do projeto
-#   --config    Arquivo de configuração
-```
-
-#### Deletar um Crew
-```bash
-# Deletar por nome
-crewai plus crews delete --name my-project
-
-# Deletar por UUID
-crewai plus crews delete --uuid abc123
-```
-
-## Configuração
-
-### 1. Variáveis de Ambiente
-```bash
-# Configurar API Key
-export CREWAI_API_KEY=sua-api-key
-
-# Configurar URL Base (opcional)
-export CREWAI_BASE_URL=https://custom.crewai.com
-```
-
-### 2. Arquivo de Configuração
+### crew_config.yaml
 ```yaml
-# ~/.crewai/config.yaml
-api_key: sua-api-key
-base_url: https://app.crewai.com
+name: my-project
+version: 1.0.0
+description: "Descrição do projeto"
+tools:
+  - calculator
+  - converter
 ```
 
-## Troubleshooting
+## Boas Práticas
 
-### 1. Erros Comuns
+1. **Segurança**
+   ```bash
+   # Use variáveis de ambiente para a API key
+   $ export CREWAI_API_KEY="sua-api-key"
+   
+   # Nunca inclua a API key em scripts ou repositórios
+   ```
 
-#### Autenticação Falhou
-```bash
-Error: Authentication failed
-Solução: Verifique sua API key e ambiente
-```
+2. **Monitoramento**
+   ```bash
+   # Verifique status regularmente
+   $ crewai crew status --name my-project
+   
+   # Monitore logs para problemas
+   $ crewai crew logs --name my-project --type execution
+   ```
 
-#### Deploy Falhou
-```bash
-Error: Deployment failed
-Solução: Verifique logs e configuração
-```
+3. **Manutenção**
+   ```bash
+   # Atualize tools regularmente
+   $ crewai tool publish --name my-tool --version 1.0.1
+   
+   # Mantenha backups de configurações
+   $ cp crew_config.yaml crew_config.backup.yaml
+   ```
 
-### 2. Soluções
-- Verificar API key
-- Confirmar conectividade
-- Validar configuração
-- Checar logs detalhados
+## Limitações
 
-## Melhores Práticas
+1. **Rate Limits**
+   - Máximo de 100 requisições por minuto
+   - Máximo de 1000 requisições por hora
 
-### 1. Segurança
-- Nunca compartilhe sua API key
-- Use variáveis de ambiente
-- Mantenha logs seguros
+2. **Tamanho de Arquivos**
+   - Tools: máximo 10MB
+   - Logs: máximo 100MB
 
-### 2. Operação
-- Monitore deployments
-- Verifique status regularmente
-- Mantenha logs organizados
-
-### 3. Manutenção
-- Atualize tools regularmente
-- Faça backup de configurações
-- Monitore uso de recursos
-
-## Notas Adicionais
-
-### 1. Dependências
-- Python 3.6+
-- Requests
-- Click
-- URLLib
-
-### 2. Recursos
-- Documentação oficial
-- Fórum da comunidade
-- Suporte técnico
-
-### 3. Limitações
-- Rate limits
-- Quotas de uso
-- Restrições de recursos
+3. **Tempo de Execução**
+   - Deploy: máximo 5 minutos
+   - Execução: máximo 1 hora
