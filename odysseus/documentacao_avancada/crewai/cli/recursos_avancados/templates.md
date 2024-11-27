@@ -2,13 +2,29 @@
 
 ## Visão Geral
 
-O sistema de templates do CrewAI CLI fornece estruturas pré-definidas para diferentes tipos de projetos, facilitando a criação de crews, flows, pipelines e tools.
+O sistema de templates do CrewAI CLI fornece estruturas pré-definidas para diferentes tipos de projetos:
 
-## Tipos de Templates
+- Crew: Template básico para criação de crews individuais
+- Flow: Template para flows que conectam múltiplos crews
+- Pipeline: Template para pipelines de processamento complexos
+- Pipeline Router: Template para roteamento entre diferentes pipelines
+- Tool: Template para desenvolvimento de tools personalizadas
 
-### 1. Template de Crew
+## Estrutura de Diretórios
 
-Estrutura básica para criação de crews:
+```
+templates/
+├── __init__.py
+├── crew/              # Template básico de crew
+├── flow/              # Template de flow
+├── pipeline/          # Template de pipeline
+├── pipeline_router/   # Template de roteamento
+└── tool/             # Template de tool
+```
+
+## Templates Disponíveis
+
+### 1. Template de Crew (`crew/`)
 
 ```
 crew/
@@ -16,29 +32,68 @@ crew/
 ├── README.md
 ├── __init__.py
 ├── config/
-│   └── ...
-├── crew.py
-├── main.py
+│   ├── agents.yaml    # Configuração dos agentes
+│   └── tasks.yaml     # Configuração das tasks
+├── crew.py           # Definição do crew
+├── main.py          # Ponto de entrada
+├── pyproject.toml   # Dependências e metadados
+└── tools/
+    └── custom_tool.py # Tools personalizadas
+```
+
+### 2. Template de Flow (`flow/`)
+
+```
+flow/
+├── .gitignore
+├── README.md
+├── __init__.py
+├── crews/           # Múltiplos crews
+│   └── poem_crew/   # Exemplo de crew
+├── main.py         # Ponto de entrada com Flow
+├── pyproject.toml  # Dependências e metadados
+└── tools/          # Tools compartilhadas
+```
+
+### 3. Template de Pipeline (`pipeline/`)
+
+```
+pipeline/
+├── .gitignore
+├── README.md
+├── __init__.py
+├── crews/
+│   ├── research_crew/      # Crew de pesquisa
+│   ├── write_linkedin_crew/ # Crew de LinkedIn
+│   └── write_x_crew/       # Crew de X/Twitter
+├── main.py                # Ponto de entrada
+├── pipelines/
+│   └── pipeline.py        # Definição do pipeline
+├── pyproject.toml         # Dependências
+└── tools/                 # Tools compartilhadas
+```
+
+### 4. Template de Pipeline Router (`pipeline_router/`)
+
+```
+pipeline_router/
+├── .gitignore
+├── README.md
+├── __init__.py
+├── crews/
+│   ├── classifier_crew/   # Crew classificador
+│   ├── normal_crew/      # Crew normal
+│   └── urgent_crew/      # Crew urgente
+├── main.py              # Router principal
+├── pipelines/
+│   ├── pipeline_classifier.py
+│   ├── pipeline_normal.py
+│   └── pipeline_urgent.py
 ├── pyproject.toml
 └── tools/
-    └── ...
 ```
 
-#### Uso via CLI
-```bash
-# Criar novo crew
-$ crewai crew create my-crew
-
-# Exemplo de output:
-Creating new crew my-crew...
-✓ Template structure created
-✓ Configuration initialized
-Created new crew my-crew. Run cd my-crew to start working.
-```
-
-### 2. Template de Tool
-
-Estrutura para desenvolvimento de tools personalizadas:
+### 5. Template de Tool (`tool/`)
 
 ```
 tool/
@@ -48,230 +103,130 @@ tool/
 └── src/
     └── {{tool_name}}/
         ├── __init__.py
-        └── main.py
+        └── tool.py    # Implementação da tool
 ```
 
-#### Uso via CLI
-```bash
-# Criar nova tool
-$ crewai tool create my-tool
+## Variáveis de Template
 
-# Exemplo de output:
-Creating custom tool my-tool...
-✓ Tool structure created
-✓ Git repository initialized
-Created custom tool my-tool. Run cd my-tool to start working.
-```
+Os templates utilizam as seguintes variáveis de substituição:
 
-### 3. Template de Flow
+- `{{crew_name}}`: Nome do crew
+- `{{folder_name}}`: Nome do diretório
+- `{{class_name}}`: Nome da classe principal
+- `{{tool_name}}`: Nome da tool
+- `{{pipeline_name}}`: Nome do pipeline
+- `{{version}}`: Versão do projeto
+- `{{description}}`: Descrição do projeto
 
-Estrutura para criação de flows:
+## Configuração
 
-```
-flow/
-├── .gitignore
-├── README.md
-├── __init__.py
-├── crews/
-│   └── ...
-├── main.py
-├── pyproject.toml
-└── tools/
-    └── ...
-```
-
-#### Uso via CLI
-```bash
-# Criar novo flow
-$ crewai flow create my-flow
-
-# Exemplo de output:
-Creating new flow my-flow...
-✓ Flow structure created
-✓ Dependencies configured
-Created new flow my-flow. Run cd my-flow to start working.
-```
-
-### 4. Template de Pipeline
-
-Estrutura para pipelines complexos:
-
-```
-pipeline/
-├── .gitignore
-├── README.md
-├── __init__.py
-├── config/
-│   └── settings.py
-├── flows/
-│   └── ...
-├── main.py
-├── pyproject.toml
-└── utils/
-    └── ...
-```
-
-#### Uso via CLI
-```bash
-# Criar novo pipeline
-$ crewai pipeline create my-pipeline
-
-# Exemplo de output:
-Creating new pipeline my-pipeline...
-✓ Pipeline structure created
-✓ Configuration initialized
-Created new pipeline my-pipeline. Run cd my-pipeline to start working.
-```
-
-## Configuração dos Templates
-
-### 1. pyproject.toml
+### pyproject.toml
 
 ```toml
-# Exemplo para crew
 [project]
-name = "my-crew"
+name = "{{project_name}}"
 version = "0.1.0"
-description = "Um crew incrível"
+description = "{{description}}"
 
 [project.dependencies]
 crewai = "^1.0.0"
 ```
 
-### 2. README.md
+### Configuração de Agentes (agents.yaml)
 
-Cada template inclui um README.md com:
-- Descrição do projeto
-- Instruções de instalação
-- Guia de uso
-- Exemplos práticos
-
-### 3. Arquivos de Configuração
-
-```python
-# config/settings.py
-CREW_NAME = "{{crew_name}}"
-VERSION = "{{version}}"
-DESCRIPTION = "{{description}}"
+```yaml
+researcher:
+  role: "Researcher"
+  goal: "Research and analyze information"
+  backstory: "Expert researcher with deep analytical skills"
 ```
 
-## Personalização de Templates
+### Configuração de Tasks (tasks.yaml)
 
-### 1. Variáveis de Template
-
-```bash
-# Variáveis disponíveis
-{{project_name}}    # Nome do projeto
-{{version}}        # Versão do projeto
-{{description}}    # Descrição do projeto
-{{author}}         # Autor do projeto
-```
-
-### 2. Hooks de Personalização
-
-```bash
-# Pre-create hook
-$ crewai template hook pre-create my-hook.sh
-
-# Post-create hook
-$ crewai template hook post-create my-hook.sh
+```yaml
+research_task:
+  description: "Research and analyze the topic"
+  expected_output: "Comprehensive research findings"
 ```
 
 ## Exemplos de Uso
 
-### 1. Criar Crew com Configuração Personalizada
+### 1. Criar um Crew
 
 ```bash
-# Criar crew com configuração
-$ crewai crew create my-crew --config custom_config.yaml
+$ crewai crew create my-research-crew
 ```
 
-### 2. Criar Tool com Template Personalizado
+### 2. Criar um Flow
 
 ```bash
-# Usar template personalizado
-$ crewai tool create my-tool --template custom_template
+$ crewai flow create my-analysis-flow
 ```
 
-### 3. Criar Flow com Dependencies
+### 3. Criar um Pipeline
 
 ```bash
-# Criar flow com dependências específicas
-$ crewai flow create my-flow --deps "numpy,pandas"
+$ crewai pipeline create my-processing-pipeline
 ```
 
-## Boas Práticas
+### 4. Criar uma Tool
 
-### 1. Estrutura de Projeto
 ```bash
-# Manter estrutura organizada
-$ tree my-project
+$ crewai tool create my-custom-tool
 ```
 
-### 2. Versionamento
+## Execução
+
+### Crew Individual
+
 ```bash
-# Usar .gitignore apropriado
-$ cat .gitignore
-__pycache__/
-*.pyc
-.env
+$ cd my-research-crew
+$ crewai run
 ```
 
-### 3. Documentação
-```bash
-# Manter README.md atualizado
-$ cat README.md
-```
-
-## Troubleshooting
-
-### 1. Problemas Comuns
+### Pipeline
 
 ```bash
-# Erro: Template não encontrado
-Error: Template 'custom' not found
-Solução: Verifique o nome do template
-
-# Erro: Variáveis não definidas
-Error: Required variable 'version' not set
-Solução: Defina todas as variáveis necessárias
-```
-
-### 2. Validação de Template
-
-```bash
-# Verificar template
-$ crewai template validate my-template
-
-# Exemplo de output:
-✓ Structure valid
-✓ Variables defined
-✓ Dependencies resolved
-```
-
-### 3. Debug
-
-```bash
-# Modo verbose
-$ crewai crew create my-crew --verbose
-
-# Modo debug
-$ crewai tool create my-tool --debug
+$ cd my-processing-pipeline
+$ crewai run
 ```
 
 ## Limitações
 
-1. **Personalização**
-   - Templates fixos
-   - Variáveis predefinidas
-   - Hooks limitados
+1. **Estrutura**
+   - Estrutura fixa dos templates
+   - Nomes de arquivos predefinidos
+   - Hierarquia de diretórios estabelecida
 
-2. **Compatibilidade**
-   - Python 3.6+
-   - CrewAI 1.0+
-   - Git necessário
+2. **Configuração**
+   - Formato YAML para configuração
+   - Variáveis de template predefinidas
+   - Dependências específicas do CrewAI
 
-3. **Recursos**
-   - Sem hot reload
-   - Sem templates dinâmicos
-   - Sem versionamento de templates
+3. **Execução**
+   - Python 3.10-3.13 requerido
+   - UV package manager necessário
+   - Git para versionamento
+
+## Troubleshooting
+
+### Problemas Comuns
+
+```bash
+# Erro: Versão do Python incompatível
+Error: Python version must be >=3.10, <=3.13
+Solução: Use uma versão compatível do Python
+
+# Erro: Dependências faltando
+Error: Missing dependencies
+Solução: Execute 'crewai install'
+```
+
+### Verificação de Ambiente
+
+```bash
+# Verificar versão do Python
+$ python --version
+
+# Verificar instalação do UV
+$ uv --version
