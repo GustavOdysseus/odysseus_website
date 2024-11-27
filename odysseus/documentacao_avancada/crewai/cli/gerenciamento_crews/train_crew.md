@@ -40,7 +40,7 @@ if n_iterations <= 0:
     raise ValueError("The number of iterations must be a positive integer.")
 
 if not filename.endswith(".pkl"):
-    raise ValueError("The filename must not end with .pkl")
+    raise ValueError("The filename must end with .pkl")
 ```
 
 **Regras de Validação:**
