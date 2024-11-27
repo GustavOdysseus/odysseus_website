@@ -278,3 +278,221 @@ Este sistema é essencial para:
 - Novos comandos
 - Hooks personalizados
 - Integrações adicionais
+
+# Integração Git do CrewAI
+
+## Visão Geral
+
+O módulo Git do CrewAI fornece funcionalidades para gerenciar e verificar o estado de repositórios Git através da linha de comando (CLI).
+
+## Comandos CLI
+
+### Verificação de Estado
+
+```bash
+# Verificar estado do repositório
+$ crewai git status
+
+# Exemplo de output:
+Repository Status:
+Branch: main
+Uncommitted changes: No
+Ahead/Behind remote: No
+Fully synced: Yes
+```
+
+### Verificação de Sincronização
+
+```bash
+# Verificar se o repositório está sincronizado
+$ crewai git sync-check
+
+# Exemplo de output:
+Checking repository sync status...
+✓ No uncommitted changes
+✓ Up to date with remote
+Repository is fully synced
+```
+
+### Informações do Repositório
+
+```bash
+# Obter URL do repositório remoto
+$ crewai git remote-url
+
+# Exemplo de output:
+Remote URL: https://github.com/user/repo.git
+```
+
+### Atualização do Repositório
+
+```bash
+# Atualizar repositório com o remoto
+$ crewai git fetch
+
+# Exemplo de output:
+Fetching updates from remote...
+Done
+```
+
+## Opções Comuns
+
+```bash
+# Opções disponíveis para comandos git
+--path          # Especifica o caminho do repositório (padrão: diretório atual)
+--verbose       # Mostra informações detalhadas
+--quiet         # Reduz output ao mínimo necessário
+```
+
+## Exemplos de Uso
+
+### 1. Verificação Rápida de Estado
+
+```bash
+# Verificar estado do repositório atual
+$ crewai git status
+```
+
+### 2. Verificação de Repositório Específico
+
+```bash
+# Verificar estado de um repositório em outro diretório
+$ crewai git status --path /caminho/do/repositorio
+```
+
+### 3. Verificação Detalhada
+
+```bash
+# Verificar estado com informações detalhadas
+$ crewai git status --verbose
+```
+
+## Mensagens de Erro Comuns
+
+```bash
+# Git não instalado
+Error: Git is not installed or not found in your PATH.
+Solução: Instale o Git e adicione ao PATH do sistema
+
+# Diretório não é um repositório Git
+Error: /caminho/do/diretorio is not a Git repository.
+Solução: Inicialize um repositório Git ou use um diretório válido
+
+# Erro de permissão
+Error: Permission denied
+Solução: Verifique as permissões do diretório
+```
+
+## Verificações de Status
+
+O comando `crewai git status` verifica:
+
+1. **Mudanças não Commitadas**
+   ```bash
+   $ crewai git status
+   Uncommitted changes: Yes
+   Files:
+     M  arquivo_modificado.txt
+     ??  novo_arquivo.txt
+   ```
+
+2. **Estado em Relação ao Remoto**
+   ```bash
+   $ crewai git status
+   Branch status:
+     Ahead by: 2 commits
+     Behind by: 1 commit
+   ```
+
+3. **Sincronização Completa**
+   ```bash
+   $ crewai git status
+   Sync status: ✓ Fully synced
+   ```
+
+## Boas Práticas
+
+### 1. Verificação Regular
+```bash
+# Verificar estado antes de operações importantes
+$ crewai git status
+$ crewai git sync-check
+```
+
+### 2. Manutenção
+```bash
+# Manter repositório atualizado
+$ crewai git fetch
+```
+
+### 3. Monitoramento
+```bash
+# Verificar estado detalhado periodicamente
+$ crewai git status --verbose
+```
+
+## Integração com Workflows
+
+### 1. CI/CD
+```bash
+# Verificar estado antes de deploy
+$ crewai git sync-check
+if [ $? -eq 0 ]; then
+    echo "Repository is synced, proceeding with deploy"
+else
+    echo "Repository is not synced, aborting deploy"
+    exit 1
+fi
+```
+
+### 2. Scripts de Automação
+```bash
+# Verificar estado em scripts
+$ crewai git status --quiet
+```
+
+## Limitações
+
+1. **Operações Suportadas**
+   - Apenas operações de leitura
+   - Sem suporte para commits/push
+   - Sem suporte para merges
+
+2. **Performance**
+   - Verificações síncronas
+   - Pode ser lento em repositórios grandes
+
+3. **Dependências**
+   - Requer Git instalado
+   - Requer permissões adequadas
+
+## Troubleshooting
+
+### 1. Problemas Comuns
+
+```bash
+# Erro de conexão
+$ crewai git fetch
+Error: Could not resolve host
+Solução: Verificar conexão de rede
+
+# Erro de autenticação
+$ crewai git fetch
+Error: Authentication failed
+Solução: Verificar credenciais do Git
+```
+
+### 2. Verificações
+```bash
+# Verificar instalação do Git
+$ git --version
+
+# Verificar configuração do repositório
+$ git config --list
+```
+
+### 3. Logs
+```bash
+# Ver logs detalhados
+$ crewai git status --verbose
+```
