@@ -175,20 +175,40 @@ def fetch_provider_data(cache_file):
 
 ## Exemplos de Uso
 
-### 1. Seleção de Provedor
-```python
-provider_models = get_provider_data()
-provider = select_provider(provider_models)
+### 1. Configuração de Provedor
+```bash
+# Selecionar e configurar um provedor
+crewai config provider
+
+# Exemplo de output:
+Select a provider to set up:
+1. openai
+2. anthropic
+3. google
+4. other
+q. Quit
 ```
 
 ### 2. Seleção de Modelo
-```python
-model = select_model(provider, provider_models)
+```bash
+# Após selecionar o provedor, escolher um modelo
+# O sistema mostrará os modelos disponíveis para o provedor selecionado
+1. gpt-4
+2. gpt-3.5-turbo
+3. gpt-4-32k
+q. Quit
 ```
 
-### 3. Atualização de Cache
-```python
-data = load_provider_data(cache_file, cache_expiry)
+### 3. Verificação de Configuração
+```bash
+# Verificar provedor e modelo atual
+crewai config show
+
+# Exemplo de output:
+Current Configuration:
+Provider: openai
+Model: gpt-4
+Cache Status: Valid (Updated 2 hours ago)
 ```
 
 ## Troubleshooting
