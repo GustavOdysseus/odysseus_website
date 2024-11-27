@@ -50,7 +50,7 @@ if not filename.endswith(".pkl"):
    - Quantidade adequada
 
 2. **Arquivo de Saída**
-   - Extensão não .pkl
+   - Extensão .pkl
    - Nome válido
    - Caminho acessível
 
