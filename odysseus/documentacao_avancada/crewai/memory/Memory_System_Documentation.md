@@ -1,18 +1,18 @@
-# CrewAI Memory System Documentation
+# Documentação do Sistema de Memória CrewAI
 
-## Overview
+## Visão Geral
 
-The CrewAI memory system is a sophisticated multi-layered memory architecture designed to provide AI agents with different types of memory capabilities. The system is built with modularity and extensibility in mind, supporting various storage backends and memory types to handle different aspects of agent interactions and knowledge retention.
+O sistema de memória CrewAI é uma arquitetura sofisticada de múltiplas camadas projetada para fornecer diferentes tipos de capacidades de memória aos agentes de IA. O sistema é construído com modularidade e extensibilidade em mente, suportando vários backends de armazenamento e tipos de memória para lidar com diferentes aspectos das interações dos agentes e retenção de conhecimento.
 
-## Core Components
+## Componentes Principais
 
-### 1. Base Memory System
+### 1. Sistema Base de Memória
 
-The foundation of CrewAI's memory system is built on the `Memory` class, which provides:
-- Basic save and search operations
-- Support for metadata and agent tagging
-- Integration with RAG (Retrieval-Augmented Generation) storage
-- Configurable search parameters with score thresholds
+A base do sistema de memória do CrewAI é construída na classe `Memory`, que fornece:
+- Operações básicas de salvamento e busca
+- Suporte para metadados e marcação de agentes
+- Integração com armazenamento RAG (Retrieval-Augmented Generation)
+- Parâmetros de busca configuráveis com limites de pontuação
 
 ```python
 class Memory:
@@ -20,19 +20,19 @@ class Memory:
     def search(self, query, limit=3, score_threshold=0.35)
 ```
 
-### 2. Memory Types
+### 2. Tipos de Memória
 
-#### 2.1 Long-Term Memory (LTM)
-Purpose: Manages persistent data across multiple runs and crew executions.
+#### 2.1 Memória de Longo Prazo (LTM)
+Propósito: Gerencia dados persistentes entre múltiplas execuções e operações da equipe.
 
-Features:
-- Task-specific memory storage
-- Quality scoring system
-- Temporal tracking (datetime-based)
-- Metadata enrichment
-- SQLite-based storage backend
+Características:
+- Armazenamento de memória específico por tarefa
+- Sistema de pontuação de qualidade
+- Rastreamento temporal (baseado em data/hora)
+- Enriquecimento de metadados
+- Backend de armazenamento baseado em SQLite
 
-Key Components:
+Componentes Principais:
 ```python
 class LongTermMemory:
     def save(self, item: LongTermMemoryItem)
@@ -40,185 +40,185 @@ class LongTermMemory:
     def reset()
 ```
 
-#### 2.2 Entity Memory
-Purpose: Manages structured information about entities and their relationships.
+#### 2.2 Memória de Entidade
+Propósito: Gerencia informações estruturadas sobre entidades e seus relacionamentos.
 
-Features:
-- Entity type classification
-- Relationship tracking
-- Multiple storage backend support (SQLite, Mem0)
-- Rich metadata support
-- Customizable embeddings
+Características:
+- Classificação de tipos de entidade
+- Rastreamento de relacionamentos
+- Suporte a múltiplos backends de armazenamento (SQLite, Mem0)
+- Suporte rico a metadados
+- Embeddings personalizáveis
 
-Implementation:
+Implementação:
 ```python
 class EntityMemory:
     def save(self, item: EntityMemoryItem)
     def search(self, query: str)
 ```
 
-#### 2.3 Short-Term Memory
-Purpose: Handles temporary, session-based information.
+#### 2.3 Memória de Curto Prazo
+Propósito: Lida com informações temporárias baseadas em sessão.
 
-Features:
-- Immediate context retention
-- Session-scoped storage
-- Quick retrieval capabilities
-- Temporary data management
+Características:
+- Retenção de contexto imediato
+- Armazenamento com escopo de sessão
+- Capacidades de recuperação rápida
+- Gerenciamento de dados temporários
 
-#### 2.4 User Memory
-Purpose: Maintains user interaction history and preferences.
+#### 2.4 Memória do Usuário
+Propósito: Mantém histórico de interações e preferências do usuário.
 
-Features:
-- User interaction tracking
-- Preference storage
-- Historical context retention
-- Personalization support
+Características:
+- Rastreamento de interação do usuário
+- Armazenamento de preferências
+- Retenção de contexto histórico
+- Suporte à personalização
 
-### 3. Storage Systems
+### 3. Sistemas de Armazenamento
 
-#### 3.1 RAG Storage
-- Vector-based storage for semantic search
-- Embedding support for better retrieval
-- Configurable similarity thresholds
-- Metadata management
+#### 3.1 Armazenamento RAG
+- Armazenamento baseado em vetores para busca semântica
+- Suporte a embeddings para melhor recuperação
+- Limites de similaridade configuráveis
+- Gerenciamento de metadados
 
-#### 3.2 SQLite Storage
-- Persistent storage for structured data
-- Efficient querying capabilities
-- Data relationship management
-- Backup and recovery support
+#### 3.2 Armazenamento SQLite
+- Armazenamento persistente para dados estruturados
+- Capacidades eficientes de consulta
+- Gerenciamento de relacionamento de dados
+- Suporte a backup e recuperação
 
-#### 3.3 Mem0 Storage (Optional)
-- External memory provider integration
-- Enhanced memory capabilities
-- Cloud-based storage option
-- Advanced retrieval features
+#### 3.3 Armazenamento Mem0 (Opcional)
+- Integração com provedor de memória externo
+- Capacidades aprimoradas de memória
+- Opção de armazenamento em nuvem
+- Recursos avançados de recuperação
 
-## Integration Capabilities
+## Capacidades de Integração
 
-### 1. Memory Providers
-The system supports multiple memory providers:
-- Default SQLite-based storage
-- Mem0 integration for enhanced capabilities
-- Extensible architecture for custom providers
+### 1. Provedores de Memória
+O sistema suporta múltiplos provedores de memória:
+- Armazenamento padrão baseado em SQLite
+- Integração Mem0 para capacidades aprimoradas
+- Arquitetura extensível para provedores personalizados
 
-### 2. Embedding Systems
-- Configurable embedding models
-- Custom embedding support
-- Vector storage integration
-- Similarity search capabilities
+### 2. Sistemas de Embedding
+- Modelos de embedding configuráveis
+- Suporte a embeddings personalizados
+- Integração com armazenamento vetorial
+- Capacidades de busca por similaridade
 
-## Advanced Features
+## Recursos Avançados
 
-### 1. Memory Context Management
-- Cross-session persistence
-- Context windowing
-- Priority-based retention
-- Automatic cleanup
+### 1. Gerenciamento de Contexto de Memória
+- Persistência entre sessões
+- Janelamento de contexto
+- Retenção baseada em prioridade
+- Limpeza automática
 
-### 2. Memory Search and Retrieval
-- Semantic search capabilities
-- Score-based filtering
-- Limit-based retrieval
-- Metadata-based filtering
+### 2. Busca e Recuperação de Memória
+- Capacidades de busca semântica
+- Filtragem baseada em pontuação
+- Recuperação baseada em limites
+- Filtragem baseada em metadados
 
-### 3. Memory Organization
-- Hierarchical storage
-- Type-based classification
-- Temporal organization
-- Relationship mapping
+### 3. Organização de Memória
+- Armazenamento hierárquico
+- Classificação baseada em tipo
+- Organização temporal
+- Mapeamento de relacionamentos
 
-## Best Practices
+## Melhores Práticas
 
-1. Memory Usage
-   - Use appropriate memory types for different needs
-   - Implement proper cleanup strategies
-   - Monitor memory usage and performance
-   - Regular maintenance and optimization
+1. Uso de Memória
+   - Use tipos apropriados de memória para diferentes necessidades
+   - Implemente estratégias adequadas de limpeza
+   - Monitore uso e desempenho da memória
+   - Manutenção e otimização regulares
 
-2. Storage Configuration
-   - Choose appropriate storage backends
-   - Configure proper retention policies
-   - Implement backup strategies
-   - Monitor storage performance
+2. Configuração de Armazenamento
+   - Escolha backends de armazenamento apropriados
+   - Configure políticas adequadas de retenção
+   - Implemente estratégias de backup
+   - Monitore desempenho do armazenamento
 
-3. Integration
-   - Use proper abstraction layers
-   - Implement error handling
-   - Monitor memory operations
-   - Regular testing and validation
+3. Integração
+   - Use camadas apropriadas de abstração
+   - Implemente tratamento de erros
+   - Monitore operações de memória
+   - Testes e validação regulares
 
-## Potential Applications
+## Aplicações Potenciais
 
-1. Complex Agent Systems
-   - Multi-agent coordination
-   - Knowledge sharing
-   - Experience retention
-   - Learning from past interactions
+1. Sistemas Complexos de Agentes
+   - Coordenação multi-agente
+   - Compartilhamento de conhecimento
+   - Retenção de experiência
+   - Aprendizado com interações passadas
 
-2. User Interaction Systems
-   - Personalization
-   - Context awareness
-   - User preference learning
-   - Interaction history tracking
+2. Sistemas de Interação com Usuário
+   - Personalização
+   - Consciência de contexto
+   - Aprendizado de preferências do usuário
+   - Rastreamento de histórico de interação
 
-3. Knowledge Management
-   - Information organization
-   - Relationship tracking
-   - Knowledge base building
-   - Pattern recognition
+3. Gestão de Conhecimento
+   - Organização de informações
+   - Rastreamento de relacionamentos
+   - Construção de base de conhecimento
+   - Reconhecimento de padrões
 
-## Extension Points
+## Pontos de Extensão
 
-1. Custom Storage Backends
-   - Implement custom storage solutions
-   - Add new storage features
-   - Optimize for specific use cases
-   - Scale storage capabilities
+1. Backends de Armazenamento Personalizados
+   - Implemente soluções personalizadas de armazenamento
+   - Adicione novos recursos de armazenamento
+   - Otimize para casos de uso específicos
+   - Escale capacidades de armazenamento
 
-2. Memory Types
-   - Add new memory types
-   - Customize existing types
-   - Implement specialized features
-   - Extend memory capabilities
+2. Tipos de Memória
+   - Adicione novos tipos de memória
+   - Personalize tipos existentes
+   - Implemente recursos especializados
+   - Estenda capacidades de memória
 
-3. Integration Interfaces
-   - Add new provider support
-   - Implement custom protocols
-   - Extend API capabilities
-   - Add new features
+3. Interfaces de Integração
+   - Adicione suporte a novos provedores
+   - Implemente protocolos personalizados
+   - Estenda capacidades da API
+   - Adicione novos recursos
 
-## Security Considerations
+## Considerações de Segurança
 
-1. Data Protection
-   - Implement proper access controls
-   - Secure storage backends
-   - Protect sensitive information
-   - Regular security audits
+1. Proteção de Dados
+   - Implemente controles de acesso adequados
+   - Proteja backends de armazenamento
+   - Proteja informações sensíveis
+   - Auditorias regulares de segurança
 
-2. Privacy
-   - User data protection
-   - Data retention policies
-   - Privacy-preserving features
-   - Compliance requirements
+2. Privacidade
+   - Proteção de dados do usuário
+   - Políticas de retenção de dados
+   - Recursos de preservação de privacidade
+   - Requisitos de conformidade
 
-## Performance Optimization
+## Otimização de Desempenho
 
-1. Memory Management
-   - Implement caching strategies
-   - Optimize search operations
-   - Configure proper limits
-   - Monitor performance metrics
+1. Gerenciamento de Memória
+   - Implemente estratégias de cache
+   - Otimize operações de busca
+   - Configure limites adequados
+   - Monitore métricas de desempenho
 
-2. Storage Optimization
-   - Index optimization
-   - Query optimization
-   - Storage compression
-   - Regular maintenance
+2. Otimização de Armazenamento
+   - Otimização de índices
+   - Otimização de consultas
+   - Compressão de armazenamento
+   - Manutenção regular
 
-## Conclusion
+## Conclusão
 
-The CrewAI memory system provides a robust and flexible foundation for building sophisticated AI agents with various memory capabilities. Its modular design, extensible architecture, and comprehensive feature set make it suitable for a wide range of applications, from simple chatbots to complex multi-agent systems.
+O sistema de memória CrewAI fornece uma base robusta e flexível para construir agentes de IA sofisticados com várias capacidades de memória. Seu design modular, arquitetura extensível e conjunto abrangente de recursos o tornam adequado para uma ampla gama de aplicações, desde chatbots simples até sistemas multi-agentes complexos.
 
-The system's ability to handle different types of memory, support various storage backends, and integrate with external providers makes it a powerful tool for building intelligent applications that require sophisticated memory management capabilities.
+A capacidade do sistema de lidar com diferentes tipos de memória, suportar vários backends de armazenamento e integrar com provedores externos o torna uma ferramenta poderosa para construir aplicações inteligentes que requerem capacidades sofisticadas de gerenciamento de memória.
