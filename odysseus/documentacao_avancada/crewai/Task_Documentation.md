@@ -37,7 +37,7 @@ A classe `Task` é um componente fundamental do CrewAI que representa uma tarefa
 
 #### Configuração e Contexto
 - `config`: Configurações específicas da tarefa
-- `context`: Lista de tarefas relacionadas
+- `context`: Dados de entrada e/ou lista de tarefas relacionadas que fornecem contexto para a execução da tarefa atual
 - `converter_cls`: Classe para conversão de saída
 
 ## Funcionalidades Avançadas
