@@ -1,19 +1,19 @@
 # JSONKnowledgeSource - Documentação
 
 ## Visão Geral
-`JSONKnowledgeSource` é uma implementação especializada de `BaseFileKnowledgeSource` projetada para processar e armazenar conteúdo de arquivos JSON como fonte de conhecimento no CrewAI. A classe utiliza o módulo `json` nativo do Python para manipulação eficiente de dados JSON.
+`JSONKnowledgeSource` é uma implementação especializada de `BaseFileKnowledgeSource` projetada para processar e armazenar conteúdo de arquivos JSON e JSONL como fonte de conhecimento no CrewAI. A classe utiliza o módulo `json` nativo do Python para manipulação eficiente de dados JSON.
 
 ## Estrutura da Classe
 
 ```python
 class JSONKnowledgeSource(BaseFileKnowledgeSource):
-    """Fonte de conhecimento para conteúdo de arquivos JSON usando embeddings."""
+    """Fonte de conhecimento para conteúdo de arquivos JSON e JSONL usando embeddings."""
 ```
 
 ### Herança
 - Estende: `BaseFileKnowledgeSource`
 - Herda: Funcionalidades de manipulação de arquivos
-- Implementa: Processamento específico para JSON
+- Implementa: Processamento específico para JSON e JSONL
 
 ## Dependências
 
@@ -29,24 +29,33 @@ from pathlib import Path
 ### 1. load_content
 ```python
 def load_content(self) -> Dict[Path, str]:
-    """Carrega e pré-processa conteúdo do arquivo JSON."""
+    """Carrega e pré-processa conteúdo de arquivos JSON e JSONL."""
     super().load_content()  # Validação do caminho
     paths = [self.file_path] if isinstance(self.file_path, Path) else self.file_path
 
     content: Dict[Path, str] = {}
     for path in paths:
         with open(path, "r", encoding="utf-8") as json_file:
-            data = json.load(json_file)
-        content[path] = self._json_to_text(data)
+            if path.suffix == ".jsonl":  # Verifica se é arquivo JSONL
+                lines = json_file.readlines()
+                data = [json.loads(line.strip()) for line in lines]
+                text = "\n".join([self._json_to_text(item) for item in data])
+            else:
+                data = json.load(json_file)
+                text = self._json_to_text(data)
+        content[path] = text
     return content
 ```
 
 #### Pipeline de Processamento
 1. Validação do arquivo
 2. Normalização do caminho
-3. Leitura do JSON
-4. Conversão para texto
-5. Retorno do conteúdo formatado
+3. Detecção do tipo de arquivo (JSON/JSONL)
+4. Processamento específico por tipo
+   - JSONL: Leitura linha por linha e parsing individual
+   - JSON: Leitura completa do arquivo
+5. Conversão para texto
+6. Retorno do conteúdo formatado
 
 ### 2. _json_to_text
 ```python
@@ -96,7 +105,7 @@ def _chunk_text(self, text: str) -> List[str]:
 
 ## Uso Prático
 
-### 1. Inicialização Básica
+### 1. Inicialização com JSON
 ```python
 from pathlib import Path
 from crewai.knowledge.source import JSONKnowledgeSource
@@ -109,15 +118,12 @@ source = JSONKnowledgeSource(
 source.add()
 ```
 
-### 2. Com Metadados
+### 2. Inicialização com JSONL
 ```python
 source = JSONKnowledgeSource(
-    file_path=Path("config.json"),
-    metadata={
-        "tipo": "configuracao",
-        "ambiente": "producao",
-        "versao": "1.0"
-    }
+    file_path=Path("registros.jsonl"),
+    chunk_size=1000,
+    chunk_overlap=100
 )
 source.add()
 ```
@@ -280,4 +286,4 @@ class CachedJSONSource(JSONKnowledgeSource):
 - Limite de memória
 
 ## Conclusão
-`JSONKnowledgeSource` oferece uma implementação robusta e flexível para processar arquivos JSON como fonte de conhecimento no CrewAI. Sua integração com o módulo `json` nativo do Python permite manipulação eficiente de dados estruturados, mantendo a simplicidade de uso e extensibilidade do sistema.
+`JSONKnowledgeSource` oferece uma implementação robusta e flexível para processar arquivos JSON e JSONL como fonte de conhecimento no CrewAI. Sua integração com o módulo `json` nativo do Python permite manipulação eficiente de dados estruturados, mantendo a simplicidade de uso e extensibilidade do sistema.
