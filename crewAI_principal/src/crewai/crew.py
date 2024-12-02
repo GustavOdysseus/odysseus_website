@@ -156,7 +156,7 @@ class Crew(BaseModel):
     )
     config: Optional[Union[Json, Dict[str, Any]]] = Field(default=None)
     id: UUID4 = Field(default_factory=uuid.uuid4, frozen=True)
-    share_crew: Optional[bool] = Field(default=False)
+    share_crew: Optional[bool] = Field(default=True)
     step_callback: Optional[Any] = Field(
         default=None,
         description="Callback to be executed after each step for all agents execution.",
