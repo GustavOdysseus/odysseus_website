@@ -2,24 +2,24 @@ receivers:
   otlp:
     protocols:
       http:
-        endpoint: "0.0.0.0:4319"
+        endpoint: "0.0.0.0:4319" # Porta para OTLP via HTTP
       grpc:
-        endpoint: "0.0.0.0:4317"
+        endpoint: "0.0.0.0:4317" # Porta para OTLP via gRPC
 
 processors:
-  batch: {}
-  memory_limiter:
-    limit_mib: 400
-    spike_limit_mib: 100
-    check_interval: 1s
+  batch: # Agrupamento de spans para eficiência
+    timeout: 5s
+    send_batch_size: 512
 
 exporters:
-  logging:
+  logging: # Exportar spans para logs no console
     loglevel: debug
+  jaeger: # Exportar para Jaeger para visualização
+    endpoint: "http://localhost:14268/api/traces"
 
 service:
   pipelines:
     traces:
-      receivers: [otlp]
-      processors: [batch, memory_limiter]
-      exporters: [logging]
+      receivers: [otlp]       # Receber spans via OTLP
+      processors: [batch]     # Processar spans em lote
+      exporters: [logging, jaeger] # Exportar para logs e Jaeger
