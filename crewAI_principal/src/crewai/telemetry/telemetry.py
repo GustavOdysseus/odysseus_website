@@ -53,7 +53,7 @@ class Telemetry:
             return
 
         try:
-            telemetry_endpoint = "https://telemetry.crewai.com:4319"
+            telemetry_endpoint = "http://localhost:4319"
             self.resource = Resource(
                 attributes={SERVICE_NAME: "crewAI-telemetry"},
             )
