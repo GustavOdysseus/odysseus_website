@@ -1,0 +1,25 @@
+receivers:
+  otlp:
+    protocols:
+      http:
+        endpoint: "0.0.0.0:4319"
+      grpc:
+        endpoint: "0.0.0.0:4317"
+
+processors:
+  batch: {}
+  memory_limiter:
+    limit_mib: 400
+    spike_limit_mib: 100
+    check_interval: 1s
+
+exporters:
+  logging:
+    loglevel: debug
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch, memory_limiter]
+      exporters: [logging]
