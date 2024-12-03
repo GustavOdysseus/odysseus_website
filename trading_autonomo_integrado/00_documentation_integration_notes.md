@@ -200,6 +200,140 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Strategy System
+
+### Core Components
+1. Signal Generation
+   - Crossover signals
+   - Breakout detection
+   - Custom indicators
+   - Signal validation
+
+2. Strategy Optimization
+   - Parameter grid search
+   - Performance metrics
+   - Cross validation
+   - Cost analysis
+
+### Risk Management
+1. Position Sizing
+   - Risk-based sizing
+   - Stop loss calculation
+   - Position tracking
+   - Equity management
+
+2. Risk Controls
+   - Stop loss systems
+   - Take profit rules
+   - Exposure limits
+   - Drawdown controls
+
+### Strategy Types
+1. Momentum Strategies
+   - Trend following
+   - Breakout systems
+   - Volatility trading
+   - Parameter optimization
+
+2. Mean Reversion
+   - Statistical arbitrage
+   - Bollinger Bands
+   - RSI strategies
+   - Range trading
+
+### Real-Time Integration
+1. Strategy Execution
+   - Live data handling
+   - Order management
+   - Position tracking
+   - Performance monitoring
+
+2. Market Integration
+   - Broker APIs
+   - Data streams
+   - Order routing
+   - Status monitoring
+
+### Best Practices
+1. Development
+   - Vectorized code
+   - Risk management
+   - Testing protocols
+   - Documentation
+
+2. Production
+   - Performance monitoring
+   - Alert systems
+   - Backup procedures
+   - Process documentation
+
+## VectorBT Pro Extended Data Module
+
+### Core Infrastructure
+1. Data Management
+   - Unified interface
+   - Cache system
+   - Processing pipeline
+   - Source management
+
+2. Data Adapters
+   - Binance integration
+   - SQL databases
+   - DuckDB optimization
+   - Custom adapters
+
+### Data Processing
+1. Pipeline System
+   - Data cleaning
+   - Resampling
+   - Returns calculation
+   - Validation
+
+2. Persistence System
+   - HDF5 storage
+   - Parquet format
+   - Compression
+   - Versioning
+
+### Advanced Features
+1. Update System
+   - Periodic updates
+   - Data merging
+   - Retry logic
+   - Scheduling
+
+2. Performance
+   - Optimized formats
+   - Efficient caching
+   - Chunk processing
+   - Resource management
+
+### Best Practices
+1. Data Quality
+   - Validation
+   - Backup strategy
+   - Version control
+   - Documentation
+
+2. Production
+   - Latency monitoring
+   - Redundancy
+   - Cost management
+   - Resource optimization
+
+### Integration
+1. Market APIs
+   - Real-time data
+   - Historical data
+   - Order execution
+   - Market status
+
+2. Storage Systems
+   - Databases
+   - File systems
+   - Cloud services
+   - Cache layers
+
 ## VectorBT Pro Indicators Module
 
 ### Core Components
@@ -332,66 +466,6 @@
    - Failsafe systems
    - Backup strategies
    - Monitoring tools
-
-## VectorBT Pro Data Module
-
-### Core Components
-1. Data Management
-   - Market data handling
-   - Cache management
-   - Data persistence
-   - Source registration
-
-2. Data Sources
-   - Binance integration
-   - SQL databases
-   - DuckDB optimization
-   - Custom adapters
-
-### Data Processing
-1. Real-Time Systems
-   - Live data streaming
-   - Tick processing
-   - Update management
-   - Subscriber patterns
-
-2. Storage Systems
-   - HDF5 optimization
-   - Parquet handling
-   - Efficient partitioning
-   - Compression strategies
-
-3. Query Systems
-   - SQL optimization
-   - Date range handling
-   - Parallel processing
-   - Cache management
-
-### Advanced Features
-1. Time Series
-   - OHLCV handling
-   - Custom schemas
-   - Efficient indexing
-   - Data validation
-
-2. Performance
-   - Query optimization
-   - Memory management
-   - Resource monitoring
-   - Parallel execution
-
-### Data Integrity
-1. Validation
-   - Input verification
-   - Checksum implementation
-   - Backup strategies
-   - Temporal consistency
-
-2. Best Practices
-   - Partitioning strategies
-   - File format selection
-   - Index optimization
-   - Resource efficiency
 
 ## CrewAI Integration Details
 
