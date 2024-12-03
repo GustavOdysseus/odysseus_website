@@ -200,6 +200,73 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Live Execution System
+
+### Core Components
+1. Strategy Executor
+   - Real-time execution
+   - Signal processing
+   - Order management
+   - Error handling
+
+2. Live Data Manager
+   - Market data feeds
+   - Data caching
+   - Feed management
+   - Real-time updates
+
+### Risk Management
+1. Live Risk Manager
+   - Position sizing
+   - Risk limits
+   - Exposure control
+   - Drawdown monitoring
+
+2. Performance Monitor
+   - Real-time metrics
+   - Performance tracking
+   - Report generation
+   - History logging
+
+### Advanced Features
+1. Alert System
+   - Risk alerts
+   - Market alerts
+   - Position alerts
+   - System alerts
+
+2. Error Handling
+   - Retry logic
+   - Error recovery
+   - Logging system
+   - Backup procedures
+
+### Best Practices
+1. Execution
+   - Latency monitoring
+   - Order validation
+   - Event logging
+   - Position tracking
+
+2. Risk Control
+   - Exposure monitoring
+   - Stop management
+   - Drawdown control
+   - Position validation
+
+### Production Guidelines
+1. Development
+   - Extensive testing
+   - Failure simulation
+   - Process documentation
+   - System redundancy
+
+2. Maintenance
+   - Performance review
+   - Process optimization
+   - System updates
+   - Log management
+
 ## VectorBT Pro Portfolio System
 
 ### Core Components
@@ -263,7 +330,7 @@
 
 2. Maintenance
    - Strategy review
-   - Parameter updates
+   - Data updates
    - Code optimization
    - Log management
 
