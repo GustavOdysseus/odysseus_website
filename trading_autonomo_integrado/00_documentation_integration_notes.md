@@ -154,6 +154,137 @@
    - Access control
    - Environment isolation
 
+## CrewAI Core Capabilities
+
+### Architecture Components
+1. Core Components
+   - Agent tracking system (AgentOps)
+   - Contextual memory management
+   - Cache system
+   - LLM integration
+   - Custom prompt templates
+   - Monitoring callbacks
+
+2. Knowledge System
+   - Custom embeddings
+   - Multiple knowledge sources
+   - Flexible storage system
+   - Processing utilities
+   - Embedder integrations
+
+### Trading-Specific Features
+1. Market Data Integration
+   - DataFrame source integration
+   - Market data knowledge management
+   - Custom metadata handling
+
+2. Strategy Execution
+   - Structured trading tools
+   - Order execution system
+   - Market analysis agents
+   - Strategy optimization
+
+3. VectorBT.pro Integration
+   - Backtesting tools
+   - Strategy optimization
+   - Performance analysis
+   - Portfolio management
+
+### Security & Best Practices
+1. Secure Execution
+   - Docker isolation
+   - Input validation
+   - Rate limiting
+   - Configurable timeouts
+
+2. Resource Management
+   - Credential management
+   - Resource monitoring
+   - Performance tracking
+   - Caching strategies
+
+## CrewAI Native Resources
+
+### Agent System
+1. Agent Executor
+   - Maximum iterations control
+   - Callback management
+   - Error handling
+   - Integrated logging
+   - RPM limits
+   - Context validation
+
+2. Agent Builder
+   - Role and goal system
+   - LLM integration
+   - Tool management
+   - Memory control
+   - Prompt formatting
+
+### Knowledge System
+1. Knowledge Sources
+   - CSV support
+   - Excel support
+   - JSON support
+   - PDF support
+   - Text file support
+   - String source support
+
+2. Embedding System
+   - Custom embeddings
+   - Multiple model integration
+   - Embedding cache
+
+### Memory System
+1. Memory Types
+   - Contextual memory
+   - Entity memory
+   - Long-term memory
+   - Short-term memory
+   - User memory
+
+2. Storage Options
+   - Multiple backends
+   - Indexing support
+   - Compression
+   - Efficient retrieval
+
+### Flow System
+1. Flow Management
+   - Pipeline definition
+   - Execution control
+   - Dependency management
+   - Parallelism support
+
+2. Flow Visualization
+   - Diagram generation
+   - HTML templates
+   - Custom legends
+   - Visualization utilities
+
+### Trading Implementation
+1. Market Data Sources
+   - Price data integration
+   - Fundamentals data
+   - Custom metadata
+
+2. Trading Memory
+   - Redis storage
+   - Trade recording
+   - Configurable TTL
+
+3. Trading Flow
+   - Parallel execution
+   - Timeout configuration
+   - Pipeline setup
+   - Node dependencies
+
+4. Specialized Agents
+   - Market analysis
+   - Technical analysis
+   - Fundamental analysis
+   - Sentiment analysis
+
 ## Padrões Identificados
 
 ### 1. Estrutura de Documentação
