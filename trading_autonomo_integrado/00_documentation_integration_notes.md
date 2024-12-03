@@ -200,6 +200,139 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Indicators Module
+
+### Core Components
+1. Indicator Factory
+   - Base factory system
+   - Custom indicators
+   - Expression system
+   - Parameter handling
+
+2. Built-in Indicators
+   - Bollinger Bands
+   - MACD
+   - RSI
+   - Custom implementations
+
+### Advanced Systems
+1. Signal Detection
+   - Pattern recognition
+   - Threshold detection
+   - Signal analysis
+   - Performance metrics
+
+2. Statistical Analysis
+   - OLS regression
+   - Trend analysis
+   - Pivot points
+   - Support/resistance
+
+3. Vectorized Operations
+   - Rolling windows
+   - Parallel processing
+   - Memory optimization
+   - Cache management
+
+### Performance Features
+1. Optimization
+   - Vectorized calculations
+   - Parallel execution
+   - Memory efficiency
+   - Cache strategies
+
+2. Best Practices
+   - Factory patterns
+   - Documentation
+   - Validation
+   - Compatibility
+
+### Implementation Details
+1. Technical Analysis
+   - Price indicators
+   - Volume indicators
+   - Momentum studies
+   - Volatility measures
+
+2. Custom Development
+   - Factory extension
+   - Parameter handling
+   - Signal generation
+   - Performance tuning
+
+## VectorBT Pro Portfolio Module
+
+### Core Components
+1. Portfolio Management
+   - Portfolio simulation
+   - Order management
+   - Trade analysis
+   - Performance metrics
+
+2. Order System
+   - Order creation
+   - Execution handling
+   - Context management
+   - Trade tracking
+
+### Advanced Features
+1. Portfolio Optimization
+   - Sharpe optimization
+   - Risk parity
+   - Custom objectives
+   - Constraint handling
+
+2. Trade Analysis
+   - Performance metrics
+   - Trade statistics
+   - Win/loss analysis
+   - Risk assessment
+
+3. Data Preparation
+   - Price data handling
+   - Returns calculation
+   - Weight normalization
+   - Data validation
+
+### System Features
+1. Logging System
+   - Trade logging
+   - Performance tracking
+   - Error handling
+   - Report generation
+
+2. Chunking System
+   - Large data handling
+   - Memory optimization
+   - Parallel processing
+   - Result merging
+
+### Best Practices
+1. Risk Management
+   - Dynamic stops
+   - Exposure control
+   - Drawdown management
+   - Diversification
+
+2. Performance
+   - Vectorized operations
+   - Caching strategies
+   - Resource monitoring
+   - Optimization techniques
+
+### Implementation
+1. Development
+   - Testing protocols
+   - Code standards
+   - Documentation
+   - Validation
+
+2. Production
+   - Resource management
+   - Failsafe systems
+   - Backup strategies
+   - Monitoring tools
+
 ## VectorBT Pro Data Module
 
 ### Core Components
@@ -259,88 +392,6 @@
    - File format selection
    - Index optimization
    - Resource efficiency
-
-## VectorBT Pro Base Module
-
-### Core Components
-1. File Structure
-   - Accessors module
-   - Chunking system
-   - Combining utilities
-   - Indexing system
-   - Merging tools
-   - Reshaping functions
-   - Wrapping system
-
-2. Data Handling
-   - Custom accessors
-   - Cached operations
-   - Efficient chunking
-   - Memory optimization
-
-### Specialized Systems
-1. Chunking System
-   - Large dataset processing
-   - Memory-adaptive chunks
-   - Efficient operations
-   - Result merging
-
-2. Combining System
-   - Series combination
-   - Indicator merging
-   - Weighted operations
-   - Multiple object handling
-
-3. Indexing System
-   - Date-based indexing
-   - Mask-based filtering
-   - Position-based access
-   - Multi-type support
-
-### Data Processing
-1. Reshaping System
-   - Multi-dimensional arrays
-   - Broadcasting support
-   - 2D transformations
-   - Name preservation
-
-2. Wrapping System
-   - Array wrapping
-   - DataFrame handling
-   - Group operations
-   - Flexible adaptation
-
-3. Merging System
-   - DataFrame merging
-   - Mapped data handling
-   - Custom operations
-   - Flexible configurations
-
-### Advanced Features
-1. Resampling System
-   - Temporal resampling
-   - OHLCV handling
-   - Custom aggregations
-   - Flexible frequencies
-
-2. Grouping System
-   - Time-based grouping
-   - Custom grouping
-   - Array operations
-   - Flexible axes
-
-### Optimization
-1. Memory Management
-   - Type optimization
-   - Chunked operations
-   - Efficient processing
-   - Memory monitoring
-
-2. Caching System
-   - Computation cache
-   - Property caching
-   - LRU implementation
-   - Persistent storage
 
 ## CrewAI Integration Details
 
