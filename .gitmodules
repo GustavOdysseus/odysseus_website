@@ -1,0 +1,3 @@
+[submodule "agentops"]
+	path = agentops
+	url = git@github.com:AgentOps-AI/agentops.git
