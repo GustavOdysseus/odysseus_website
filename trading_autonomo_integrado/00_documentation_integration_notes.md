@@ -114,6 +114,46 @@
   - Incluir métricas de qualidade
   - Documentar processos de review
 
+## CrewAI Integration Details
+
+### Agent Architecture
+1. Development Agent
+   - Code execution capabilities
+   - File management
+   - Docker environment control
+   - Project structure setup
+
+2. Research Agent
+   - Scientific paper search
+   - Content analysis
+   - Model extraction
+   - Results compilation
+
+### Core Components
+1. Safe Code Execution
+   - Docker containerization
+   - Resource allocation
+   - Code validation
+   - Security checks
+
+2. File Management System
+   - Directory structure creation
+   - File versioning
+   - Git integration
+   - Automated commits
+
+3. Task Orchestration
+   - Development pipeline
+   - Resource management
+   - Task validation
+   - Result tracking
+
+4. Monitoring & Security
+   - Execution logging
+   - Performance monitoring
+   - Access control
+   - Environment isolation
+
 ## Padrões Identificados
 
 ### 1. Estrutura de Documentação
