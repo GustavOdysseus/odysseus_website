@@ -200,6 +200,73 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Records System
+
+### Core Components
+1. Trade Recorder
+   - Trade registration
+   - Position tracking
+   - Cost calculation
+   - Performance metrics
+
+2. Performance Analyzer
+   - Trade analysis
+   - Position analysis
+   - Return metrics
+   - Risk metrics
+
+### Report Generation
+1. Trade Reports
+   - Detailed metrics
+   - Performance stats
+   - Risk analysis
+   - Distribution analysis
+
+2. Summary Reports
+   - Overall metrics
+   - Position stats
+   - Trading activity
+   - Risk exposure
+
+### Log Management
+1. Trade Logs
+   - Trade details
+   - Position updates
+   - Error tracking
+   - System events
+
+2. Analysis Logs
+   - Performance metrics
+   - Risk metrics
+   - System status
+   - Error reports
+
+### Analysis Tools
+1. Trade Analysis
+   - Distribution analysis
+   - Size analysis
+   - Value analysis
+   - Pattern detection
+
+2. Risk Analysis
+   - Exposure tracking
+   - Drawdown analysis
+   - Position sizing
+   - Risk metrics
+
+### Best Practices
+1. Development
+   - Record validation
+   - Data consistency
+   - Documentation
+   - Error handling
+
+2. Production
+   - System monitoring
+   - Data validation
+   - Log maintenance
+   - Backup systems
+
 ## VectorBT Pro Labels System
 
 ### Core Components
