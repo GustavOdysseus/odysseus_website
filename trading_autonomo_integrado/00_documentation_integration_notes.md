@@ -200,6 +200,73 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Portfolio System
+
+### Core Components
+1. Portfolio Management
+   - Portfolio creation
+   - Performance analysis
+   - Position tracking
+   - Order management
+
+2. Portfolio Optimization
+   - Weight optimization
+   - Sharpe ratio maximization
+   - Variance minimization
+   - Constraint handling
+
+### Risk Analysis
+1. Risk Metrics
+   - Volatility calculation
+   - VaR and CVaR
+   - Beta and Alpha
+   - Drawdown analysis
+
+2. Trade Analysis
+   - Trade statistics
+   - PnL tracking
+   - Win rate calculation
+   - Profit factor analysis
+
+### Advanced Features
+1. Portfolio Simulation
+   - Monte Carlo simulation
+   - Return modeling
+   - Signal generation
+   - Performance evaluation
+
+2. Order Management
+   - Trade execution
+   - Position sizing
+   - Cost analysis
+   - Slippage modeling
+
+### Best Practices
+1. Portfolio Management
+   - Diversification
+   - Rebalancing
+   - Risk control
+   - Monitoring
+
+2. Performance Analysis
+   - Multiple metrics
+   - Robustness testing
+   - Cross validation
+   - Sensitivity analysis
+
+### Production Guidelines
+1. Execution
+   - Cost control
+   - Liquidity management
+   - Risk monitoring
+   - Real-time tracking
+
+2. Maintenance
+   - Strategy review
+   - Parameter updates
+   - Code optimization
+   - Log management
+
 ## VectorBT Pro Strategy System
 
 ### Core Components
@@ -581,7 +648,9 @@
    - JSON support
    - PDF support
    - Text file support
-   - String source support
+   - XML support
+   - MDX support
+   - DOCX support
 
 2. Embedding System
    - Custom embeddings
@@ -896,122 +965,6 @@
    - Criar sistema de feedback
    - Implementar CI/CD
    - Desenvolver portal
-
-## Padrões Identificados
-
-### 1. Estrutura de Código
-- Classes bem definidas
-- Tipagem forte
-- Documentação inline
-- Tratamento de erros
-
-### 2. Padrões de Implementação
-- Desenvolvimento em fases
-- Testes automatizados
-- CI/CD integrado
-- Monitoramento contínuo
-
-### 3. Práticas de Qualidade
-- Code review
-- Testes automáticos
-- Métricas de qualidade
-- Documentação automática
-
-## Recomendações de Integração
-
-### 1. Documentação Técnica
-- **Estrutura de Código**:
-  ```python
-  class CoreComponents:
-      """Componentes principais do sistema"""
-      - Research
-      - Analysis
-      - Execution
-      - Monitoring
-  ```
-
-- **Padrões de Implementação**:
-  ```python
-  class ImplementationPatterns:
-      """Padrões de implementação"""
-      - Development
-      - Testing
-      - Deployment
-      - Maintenance
-  ```
-
-### 2. Fluxos de Trabalho
-- **Pipeline de Desenvolvimento**:
-  ```mermaid
-  graph TD
-      A[Código] --> B[Validação]
-      B --> C[Testes]
-      C --> D[Review]
-      D --> E[Deploy]
-  ```
-
-- **Pipeline de Qualidade**:
-  ```mermaid
-  graph TD
-      A[Análise] --> B[Correção]
-      B --> C[Testes]
-      C --> D[Métricas]
-      D --> E[Relatório]
-  ```
-
-### 3. Monitoramento e Métricas
-- **Métricas de Qualidade**:
-  - Complexidade de código
-  - Cobertura de testes
-  - Taxa de bugs
-  - Tempo de resolução
-
-- **Alertas**:
-  - Falhas de build
-  - Testes quebrados
-  - Métricas abaixo do limite
-  - Erros de deploy
-
-## Proposta de Nova Estrutura
-
-### 1. Documentação Core
-- **Arquitetura**
-  - Componentes
-  - Fluxos
-  - Interfaces
-  - Requisitos
-
-- **Implementação**
-  - Setup
-  - Configuração
-  - Deployment
-  - Manutenção
-
-### 2. Documentação Técnica
-- **Desenvolvimento**
-  - Padrões
-  - Práticas
-  - Ferramentas
-  - Processos
-
-- **Qualidade**
-  - Validação
-  - Testes
-  - Métricas
-  - Reviews
-
-### 3. Guias Operacionais
-- **DevOps**
-  - CI/CD
-  - Monitoring
-  - Alerting
-  - Maintenance
-
-- **Troubleshooting**
-  - Problemas comuns
-  - Soluções
-  - Prevenção
-  - Recuperação
 
 ## Padrões Identificados
 
