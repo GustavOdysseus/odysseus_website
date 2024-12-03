@@ -60,7 +60,7 @@ Sistema autônomo de trading que integra pesquisa científica, análise quantita
 ### 3.1 Setup Inicial
 ```bash
 # 1. Criar estrutura de diretórios
-mkdir -p mercado/{research_system,analysis_system,trading_autonomo,shared}/{src,tests,config,docs}
+mkdir -p mercado/{research_system,analysis_system,trading_autonomo,shared}/{src,tests,config,logs,reports}
 mkdir -p mercado/shared/{database,utils,models,config}
 mkdir -p mercado/notebooks
 
@@ -125,13 +125,10 @@ mercado/
 │   │   ├── papers/           # Processamento de papers
 │   │   ├── models/           # Extração de modelos
 │   │   └── knowledge/        # Base de conhecimento específica
-│   ├── tests/
-│   ├── config/
-│   ├── docs/
-│   └── notebooks/            # Notebooks específicos para pesquisa
-│       ├── exploration/      # Exploração de dados e APIs
-│       ├── prototypes/       # Prototipagem de algoritmos
-│       └── examples/         # Exemplos de uso
+│   ├── tests/                # Testes automatizados
+│   ├── config/               # Configurações do sistema
+│   ├── logs/                 # Logs detalhados do sistema
+│   └── reports/              # Relatórios automáticos gerados
 │
 ├── analysis_system/          # Sistema de Análise (Independente)
 │   ├── src/
@@ -139,13 +136,10 @@ mercado/
 │   │   ├── fundamental/      # Análise fundamental
 │   │   ├── statistical/      # Análise estatística
 │   │   └── models/          # Modelos de análise
-│   ├── tests/
-│   ├── config/
-│   ├── docs/
-│   └── notebooks/           # Notebooks específicos para análise
-│       ├── indicators/      # Desenvolvimento de indicadores
-│       ├── backtests/       # Testes de estratégias
-│       └── visualization/   # Visualizações e dashboards
+│   ├── tests/               # Testes automatizados
+│   ├── config/              # Configurações do sistema
+│   ├── logs/                # Logs detalhados
+│   └── reports/             # Relatórios e análises gerados
 │
 ├── trading_autonomo/         # Sistema de Trading Autônomo
 │   ├── src/
@@ -153,15 +147,14 @@ mercado/
 │   │   ├── backtesting/     # Sistema de backtesting
 │   │   ├── optimization/    # Sistema de otimização
 │   │   ├── execution/       # Sistema de execução
-│   │   └── integration/     # Integrações com outros sistemas
-│   ├── tests/
-│   ├── config/
-│   ├── data/
-│   ├── docs/
-│   └── notebooks/          # Notebooks específicos para trading
-│       ├── strategies/     # Desenvolvimento de estratégias
-│       ├── optimization/   # Otimização de parâmetros
-│       └── monitoring/     # Monitoramento de performance
+│   │   └── monitoring/      # Sistema de monitoramento
+│   ├── tests/               # Testes automatizados
+│   ├── config/              # Configurações do sistema
+│   ├── logs/                # Logs detalhados
+│   └── reports/             # Relatórios de performance
+│       ├── performance/     # Métricas de performance
+│       ├── risk/           # Análises de risco
+│       └── decisions/      # Log de decisões tomadas
 │
 └── shared/                   # Recursos Compartilhados
     ├── database/            # Configurações de banco de dados
@@ -169,120 +162,57 @@ mercado/
     ├── models/              # Modelos compartilhados
     └── config/              # Configurações globais
 
-### 4.1 Explicação da Nova Estrutura
+### 4.1 Sistema de Monitoramento e Relatórios Automáticos
 
-1. **research_system/**
-   - Sistema independente de pesquisa científica
-   - Pode ser utilizado por outros serviços
-   - Mantém sua própria base de conhecimento
-   - Interface clara para integração
+1. **Logs Estruturados**
+   - Registro detalhado de todas as operações
+   - Rastreamento de decisões do sistema
+   - Métricas de performance em tempo real
+   - Alertas e notificações automáticas
 
-2. **analysis_system/**
-   - Sistema independente de análise
-   - Serviços modulares de análise
-   - Pode ser usado por diferentes aplicações
-   - APIs bem definidas
+2. **Relatórios Automáticos**
+   - Geração automática de relatórios periódicos
+   - Análises de performance
+   - Métricas de risco
+   - Decisões tomadas e justificativas
 
-3. **trading_autonomo/**
-   - Sistema específico de trading
-   - Integra os outros sistemas
-   - Foco em backtesting e execução
-   - Orquestração via Pipeline Maestro
+3. **Sistema de Monitoramento**
+   - Dashboard em tempo real
+   - Métricas críticas
+   - Alertas configuráveis
+   - Histórico de performance
 
-4. **shared/**
-   - Recursos compartilhados entre sistemas
-   - Evita duplicação de código
-   - Mantém padrões consistentes
-   - Facilita manutenção
+4. **Auditoria e Rastreabilidade**
+   - Log completo de decisões
+   - Justificativas para cada ação
+   - Rastreamento de mudanças de estratégia
+   - Histórico de otimizações
 
-### 4.2 Benefícios da Nova Estrutura
+### 4.2 Autonomia do Sistema
 
-1. **Modularidade**
-   - Sistemas independentes
-   - Facilidade de manutenção
-   - Possibilidade de deploy separado
-   - Reutilização de código
+1. **Execução Autônoma**
+   - Pipeline automatizado de ponta a ponta
+   - Tomada de decisão baseada em regras e ML
+   - Auto-otimização de estratégias
+   - Gestão de risco automática
 
-2. **Escalabilidade**
-   - Sistemas podem crescer independentemente
-   - Facilidade de adicionar novos serviços
-   - Melhor gerenciamento de recursos
-   - Deploy flexível
+2. **Feedback Loop**
+   - Avaliação contínua de performance
+   - Ajuste automático de estratégias
+   - Aprendizado com histórico de decisões
+   - Adaptação a condições de mercado
 
-3. **Manutenibilidade**
-   - Separação clara de responsabilidades
-   - Código mais organizado
-   - Testes independentes
-   - Documentação específica
+3. **Transparência**
+   - Logs detalhados e estruturados
+   - Relatórios automáticos
+   - Métricas de performance em tempo real
+   - Rastreabilidade de decisões
 
-4. **Extensibilidade**
-   - Fácil adicionar novos sistemas
-   - Integração simplificada
-   - Reutilização de componentes
-   - Evolução independente
-
-### 4.3 Propósito dos Notebooks (Novo)
-
-Cada sistema tem sua própria pasta de notebooks com propósitos específicos:
-
-1. **Research System Notebooks**
-   - **exploration/**: Notebooks para explorar APIs científicas, testar queries e analisar resultados
-   - **prototypes/**: Desenvolvimento e teste de algoritmos de extração de modelos
-   - **examples/**: Exemplos documentados de uso do sistema de pesquisa
-
-2. **Analysis System Notebooks**
-   - **indicators/**: Desenvolvimento e teste de indicadores técnicos personalizados
-   - **backtests/**: Análise de estratégias e backtesting de indicadores
-   - **visualization/**: Desenvolvimento de visualizações e dashboards analíticos
-
-3. **Trading System Notebooks**
-   - **strategies/**: Desenvolvimento e teste de estratégias de trading
-   - **optimization/**: Notebooks para otimização de parâmetros e backtesting
-   - **monitoring/**: Análise de performance e monitoramento do sistema
-
-### 4.4 Benefícios da Nova Organização de Notebooks
-
-1. **Separação de Responsabilidades**
-   - Cada sistema mantém seus próprios notebooks
-   - Foco específico para cada tipo de análise
-   - Melhor organização e manutenção
-
-2. **Desenvolvimento Iterativo**
-   - Ambiente ideal para prototipagem
-   - Facilita experimentação
-   - Documentação interativa
-
-3. **Documentação e Exemplos**
-   - Casos de uso documentados
-   - Exemplos práticos
-   - Tutoriais interativos
-
-4. **Versionamento**
-   - Notebooks específicos são versionados com seus sistemas
-   - Facilita manutenção
-   - Histórico de desenvolvimento claro
-
-### 4.5 Boas Práticas para Notebooks
-
-1. **Desenvolvimento**
-   - Usar notebooks apenas para exploração, prototipagem e visualização
-   - Mover código produtivo para módulos Python
-   - Manter notebooks limpos e bem documentados
-
-2. **Organização**
-   - Nomear notebooks de forma clara e consistente
-   - Manter uma estrutura lógica de diretórios
-   - Documentar propósito no início do notebook
-
-3. **Versionamento**
-   - Limpar outputs antes de commitar
-   - Usar ferramentas como `nbstripout`
-   - Manter notebooks concisos e focados
-
-4. **Produção**
-   - Não usar notebooks em produção
-   - Converter código relevante em módulos Python
-   - Manter notebooks apenas para desenvolvimento e análise
+4. **Monitoramento e Controle**
+   - Dashboard em tempo real
+   - Alertas configuráveis
+   - Métricas críticas
+   - Controles de emergência
 
 ## 5. Implementação Detalhada
 
