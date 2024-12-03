@@ -9,15 +9,21 @@ class JSONKnowledgeSource(BaseFileKnowledgeSource):
     """A knowledge source that stores and queries JSON file content using embeddings."""
 
     def load_content(self) -> Dict[Path, str]:
-        """Load and preprocess JSON file content."""
+        """Load and preprocess JSONL or JSON file content."""
         super().load_content()  # Validate the file path
         paths = [self.file_path] if isinstance(self.file_path, Path) else self.file_path
 
         content: Dict[Path, str] = {}
         for path in paths:
             with open(path, "r", encoding="utf-8") as json_file:
-                data = json.load(json_file)
-            content[path] = self._json_to_text(data)
+                if path.suffix == ".jsonl":  # Check if the file is JSONL
+                    lines = json_file.readlines()
+                    data = [json.loads(line.strip()) for line in lines]
+                    text = "\n".join([self._json_to_text(item) for item in data])
+                else:
+                    data = json.load(json_file)
+                    text = self._json_to_text(data)
+            content[path] = text
         return content
 
     def _json_to_text(self, data: Any, level: int = 0) -> str:

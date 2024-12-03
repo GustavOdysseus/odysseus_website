@@ -16,5 +16,6 @@
     },
     "gitdoc.enabled": true,
     "gitdoc.autoPull": "off",
-    "windsurf.autocompleteSpeed": "fast"
+    "windsurf.autocompleteSpeed": "fast",
+    "editor.experimental.treeSitterTelemetry": true
 }
