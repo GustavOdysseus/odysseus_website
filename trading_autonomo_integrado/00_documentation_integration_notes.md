@@ -534,6 +534,60 @@
    - Backup strategies
    - Monitoring tools
 
+## VectorBT Pro Backtesting System
+
+### Core Components
+1. Backtest Engine
+   - Strategy execution
+   - Performance tracking
+   - Results analysis
+   - Report generation
+
+2. Performance Analysis
+   - Metric calculation
+   - Return analysis
+   - Risk assessment
+   - Trade statistics
+
+### Advanced Features
+1. Parameter Optimization
+   - Grid search
+   - Walk-forward analysis
+   - Cross validation
+   - Metric optimization
+
+2. Robustness Testing
+   - Monte Carlo simulation
+   - Data shuffling
+   - Statistical validation
+   - Sensitivity analysis
+
+### Best Practices
+1. Backtesting
+   - Historical data quality
+   - Transaction costs
+   - Slippage modeling
+   - Result validation
+
+2. Optimization
+   - Overfitting prevention
+   - Multiple metrics
+   - Cross validation
+   - Robustness checks
+
+### Production Guidelines
+1. Development
+   - Comprehensive testing
+   - Documentation
+   - Data validation
+   - Code modularity
+
+2. Maintenance
+   - Strategy review
+   - Data updates
+   - Code optimization
+   - Log management
+
 ## CrewAI Integration Details
 
 ### Agent Architecture
