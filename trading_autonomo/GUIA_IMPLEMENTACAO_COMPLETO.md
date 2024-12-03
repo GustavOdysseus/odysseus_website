@@ -102,21 +102,99 @@ docker-compose up -d  # Inicia PostgreSQL e Redis
 
 ## 4. Estrutura de Diretórios
 ```
-trading_autonomo/
-├── src/
-│   ├── maestro/          # Pipeline principal
-│   ├── research/         # Sistema de pesquisa
-│   ├── analysis/         # Sistema de análise
-│   ├── backtesting/      # Sistema de backtesting
-│   ├── knowledge/        # Base de conhecimento
-│   ├── optimization/     # Sistema de otimização
-│   └── execution/        # Sistema de execução
-├── tests/                # Testes unitários e integração
-├── config/               # Arquivos de configuração
-├── data/                 # Dados e cache
-├── docs/                 # Documentação
-└── notebooks/           # Jupyter notebooks
+mercado/
+├── research_system/           # Sistema de Pesquisa (Independente)
+│   ├── src/
+│   │   ├── arxiv/            # Integração com ArXiv
+│   │   ├── papers/           # Processamento de papers
+│   │   ├── models/           # Extração de modelos
+│   │   └── knowledge/        # Base de conhecimento específica
+│   ├── tests/
+│   ├── config/
+│   └── docs/
+│
+├── analysis_system/          # Sistema de Análise (Independente)
+│   ├── src/
+│   │   ├── technical/        # Análise técnica
+│   │   ├── fundamental/      # Análise fundamental
+│   │   ├── statistical/      # Análise estatística
+│   │   └── models/          # Modelos de análise
+│   ├── tests/
+│   ├── config/
+│   └── docs/
+│
+├── trading_autonomo/         # Sistema de Trading Autônomo
+│   ├── src/
+│   │   ├── maestro/         # Pipeline principal
+│   │   ├── backtesting/     # Sistema de backtesting
+│   │   ├── optimization/    # Sistema de otimização
+│   │   ├── execution/       # Sistema de execução
+│   │   └── integration/     # Integrações com outros sistemas
+│   ├── tests/
+│   ├── config/
+│   ├── data/
+│   └── docs/
+│
+├── shared/                   # Recursos Compartilhados
+│   ├── database/            # Configurações de banco de dados
+│   ├── utils/               # Utilitários comuns
+│   ├── models/              # Modelos compartilhados
+│   └── config/              # Configurações globais
+│
+└── notebooks/               # Jupyter notebooks para todos os sistemas
 ```
+
+### 4.1 Explicação da Nova Estrutura
+
+1. **research_system/**
+   - Sistema independente de pesquisa científica
+   - Pode ser utilizado por outros serviços
+   - Mantém sua própria base de conhecimento
+   - Interface clara para integração
+
+2. **analysis_system/**
+   - Sistema independente de análise
+   - Serviços modulares de análise
+   - Pode ser usado por diferentes aplicações
+   - APIs bem definidas
+
+3. **trading_autonomo/**
+   - Sistema específico de trading
+   - Integra os outros sistemas
+   - Foco em backtesting e execução
+   - Orquestração via Pipeline Maestro
+
+4. **shared/**
+   - Recursos compartilhados entre sistemas
+   - Evita duplicação de código
+   - Mantém padrões consistentes
+   - Facilita manutenção
+
+### 4.2 Benefícios da Nova Estrutura
+
+1. **Modularidade**
+   - Sistemas independentes
+   - Facilidade de manutenção
+   - Possibilidade de deploy separado
+   - Reutilização de código
+
+2. **Escalabilidade**
+   - Sistemas podem crescer independentemente
+   - Facilidade de adicionar novos serviços
+   - Melhor gerenciamento de recursos
+   - Deploy flexível
+
+3. **Manutenibilidade**
+   - Separação clara de responsabilidades
+   - Código mais organizado
+   - Testes independentes
+   - Documentação específica
+
+4. **Extensibilidade**
+   - Fácil adicionar novos sistemas
+   - Integração simplificada
+   - Reutilização de componentes
+   - Evolução independente
 
 ## 5. Implementação Detalhada
 
