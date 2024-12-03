@@ -7,11 +7,14 @@ Sistema autônomo de trading que integra pesquisa científica, análise quantita
 
 ### 1.2 Tecnologias Principais
 - Python 3.8+
-- VectorBT Pro
-- CrewAI
-- PostgreSQL
-- Redis
-- Docker
+- VectorBT Pro (análise quantitativa e backtesting)
+- CrewAI (orquestração de agentes e IA)
+- PostgreSQL (armazenamento principal)
+- Redis (cache e pub/sub)
+- Docker (containerização)
+- Sentence Transformers (embeddings)
+- ArXiv API (pesquisa científica)
+- DuckDB (análise de dados em memória)
 
 ### 1.3 Requisitos de Hardware
 - CPU: 8+ cores
@@ -56,49 +59,62 @@ Sistema autônomo de trading que integra pesquisa científica, análise quantita
 
 ### 3.1 Setup Inicial
 ```bash
-# 1. Criar ambiente virtual
+# 1. Criar estrutura de diretórios
+mkdir -p mercado/{research_system,analysis_system,trading_autonomo,shared}/{src,tests,config,docs}
+mkdir -p mercado/shared/{database,utils,models,config}
+mkdir -p mercado/notebooks
+
+# 2. Criar ambientes virtuais separados
+cd mercado/research_system
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\\Scripts\\activate   # Windows
+pip install -r requirements.txt
 
-# 2. Instalar dependências
+cd ../analysis_system
+python -m venv venv
+pip install -r requirements.txt
+
+cd ../trading_autonomo
+python -m venv venv
 pip install -r requirements.txt
 
 # 3. Configurar bancos de dados
+cd ../shared/database
 docker-compose up -d  # Inicia PostgreSQL e Redis
 ```
 
 ### 3.2 Ordem de Implementação
 
-1. **Base de Conhecimento**
-   - Implementar sistema de embeddings
-   - Configurar armazenamento vetorial
-   - Desenvolver sistema de recuperação
+1. **Shared System** (Novo)
+   - Implementar utilitários comuns
+   - Configurar bancos de dados
+   - Criar modelos base
+   - Estabelecer interfaces padrão
 
-2. **Sistema de Pesquisa**
-   - Integrar API do ArXiv
-   - Implementar análise de papers
-   - Desenvolver extração de modelos
+2. **Research System**
+   - Implementar API do ArXiv
+   - Desenvolver processamento de papers
+   - Criar sistema de extração de modelos
+   - Implementar base de conhecimento específica
 
-3. **Sistema de Análise**
-   - Implementar indicadores técnicos
+3. **Analysis System**
+   - Implementar análise técnica
    - Desenvolver análise fundamental
-   - Criar modelos estatísticos
+   - Criar análise estatística
+   - Integrar modelos de ML
 
-4. **Sistema de Backtesting**
-   - Implementar engine de backtesting
+4. **Trading System**
+   - Implementar backtesting
    - Desenvolver otimização
-   - Criar relatórios
+   - Criar sistema de execução
+   - Integrar outros sistemas
 
-5. **Pipeline Maestro**
-   - Implementar orquestração
-   - Desenvolver gerenciamento de fluxo
-   - Criar sistema de monitoramento
-
-6. **Sistema de Execução**
-   - Implementar execução em tempo real
-   - Desenvolver gerenciamento de risco
-   - Criar sistema de alertas
+5. **Integração Final**
+   - Implementar Pipeline Maestro
+   - Configurar orquestração
+   - Estabelecer monitoramento
+   - Realizar testes integrados
 
 ## 4. Estrutura de Diretórios
 ```
@@ -198,60 +214,115 @@ mercado/
 
 ## 5. Implementação Detalhada
 
-### 5.1 Base de Conhecimento
+### 5.1 Shared System (Novo)
 ```python
-# knowledge/base.py
-class KnowledgeBase:
+# shared/models/base.py
+from pydantic import BaseModel
+from datetime import datetime
+from typing import List, Dict, Any
+
+class BaseDocument(BaseModel):
+    """Modelo base para documentos."""
+    id: str
+    created_at: datetime
+    updated_at: datetime
+    metadata: Dict[str, Any]
+
+class BaseStrategy(BaseModel):
+    """Modelo base para estratégias."""
+    name: str
+    description: str
+    parameters: Dict[str, Any]
+    performance_metrics: Dict[str, float]
+
+# shared/database/connection.py
+class DatabaseConnection:
+    """Gerenciador de conexões."""
     def __init__(self):
-        self.vector_store = VectorStore()
-        self.embedding_model = SentenceTransformer()
-        
-    def add_knowledge(self, content):
-        embedding = self.embedding_model.encode(content)
-        self.vector_store.add(embedding)
-        
-    def query(self, query_text):
-        query_embedding = self.embedding_model.encode(query_text)
-        return self.vector_store.search(query_embedding)
+        self.postgres = PostgresConnection()
+        self.redis = RedisConnection()
+        self.duckdb = DuckDBConnection()
+
+# shared/utils/logger.py
+class Logger:
+    """Sistema unificado de logging."""
+    def __init__(self, service_name: str):
+        self.service = service_name
+        self.setup_logging()
 ```
 
-### 5.2 Sistema de Pesquisa
+### 5.2 Research System
 ```python
-# research/arxiv.py
-class ArxivResearcher:
-    def search_papers(self, query):
+# research_system/src/arxiv/client.py
+class ArxivClient:
+    """Cliente para API do ArXiv."""
+    def search_papers(self, query: str,
+                     categories: List[str]) -> List[Paper]:
+        """Busca papers no ArXiv."""
         papers = arxiv.Search(query)
-        return self.process_papers(papers)
-        
-    def extract_model(self, paper):
+        return [self.process_paper(p) for p in papers]
+
+# research_system/src/papers/processor.py
+class PaperProcessor:
+    """Processador de papers científicos."""
+    def extract_model(self, paper: Paper) -> Model:
+        """Extrai modelo matemático do paper."""
         text = self.extract_text(paper)
         return self.model_extractor.extract(text)
 ```
 
-### 5.3 Sistema de Análise
+### 5.3 Analysis System
 ```python
-# analysis/analyzer.py
-class MarketAnalyzer:
-    def technical_analysis(self, data):
-        return vbt.IndicatorFactory.run_analysis(data)
+# analysis_system/src/technical/indicators.py
+class TechnicalAnalyzer:
+    """Análise técnica avançada."""
+    def __init__(self):
+        self.vbt = vbt.IndicatorFactory()
         
-    def fundamental_analysis(self, data):
-        return self.analyze_fundamentals(data)
-        
-    def statistical_analysis(self, data):
-        return self.run_statistics(data)
+    def analyze(self, data: pd.DataFrame) -> Dict[str, Any]:
+        """Executa análise técnica completa."""
+        return {
+            'momentum': self.analyze_momentum(data),
+            'volatility': self.analyze_volatility(data),
+            'trends': self.analyze_trends(data)
+        }
+
+# analysis_system/src/fundamental/analyzer.py
+class FundamentalAnalyzer:
+    """Análise fundamental."""
+    def analyze_company(self, 
+                       ticker: str,
+                       metrics: List[str]) -> Dict[str, float]:
+        """Analisa métricas fundamentalistas."""
+        return self.get_fundamental_data(ticker, metrics)
 ```
 
-### 5.4 Sistema de Backtesting
+### 5.4 Trading System
 ```python
-# backtesting/engine.py
-class BacktestEngine:
-    def run_backtest(self, strategy, data):
-        portfolio = vbt.Portfolio.from_signals(data, strategy)
-        return self.analyze_results(portfolio)
+# trading_autonomo/src/integration/research.py
+class ResearchIntegration:
+    """Integração com sistema de pesquisa."""
+    def __init__(self):
+        self.research_client = ResearchClient()
         
-    def optimize_strategy(self, strategy, params):
-        return vbt.Optimizer.run(strategy, params)
+    async def get_research_insights(self,
+                                  market: str) -> List[Insight]:
+        """Obtém insights de pesquisa."""
+        papers = await self.research_client.search_papers(market)
+        return self.extract_insights(papers)
+
+# trading_autonomo/src/integration/analysis.py
+class AnalysisIntegration:
+    """Integração com sistema de análise."""
+    def __init__(self):
+        self.analysis_client = AnalysisClient()
+        
+    async def get_market_analysis(self,
+                                data: pd.DataFrame) -> Analysis:
+        """Obtém análise completa do mercado."""
+        technical = await self.analysis_client.technical_analysis(data)
+        fundamental = await self.analysis_client.fundamental_analysis(data)
+        return self.combine_analysis(technical, fundamental)
 ```
 
 ## 6. Integração CrewAI
@@ -338,27 +409,27 @@ services:
 ## 9. Checklist de Implementação
 
 ### 9.1 Fase 1: Fundação
-- [ ] Setup do ambiente de desenvolvimento
-- [ ] Implementação da base de conhecimento
-- [ ] Configuração dos bancos de dados
-- [ ] Setup do sistema de logging
+- [ ] Setup da estrutura de diretórios
+- [ ] Configuração de ambientes virtuais
+- [ ] Implementação do sistema compartilhado
+- [ ] Setup dos bancos de dados
 
-### 9.2 Fase 2: Core Systems
+### 9.2 Fase 2: Sistemas Core
 - [ ] Implementação do sistema de pesquisa
 - [ ] Desenvolvimento do sistema de análise
-- [ ] Criação do sistema de backtesting
-- [ ] Implementação do sistema de otimização
+- [ ] Testes unitários dos sistemas
+- [ ] Documentação das APIs
 
-### 9.3 Fase 3: Integração
-- [ ] Setup dos agentes CrewAI
-- [ ] Implementação da orquestração
-- [ ] Integração dos componentes
+### 9.3 Fase 3: Sistema de Trading
+- [ ] Implementação do backtesting
+- [ ] Desenvolvimento da otimização
+- [ ] Sistema de execução
+- [ ] Integrações
+
+### 9.4 Fase 4: Integração e Produção
+- [ ] Setup do Pipeline Maestro
 - [ ] Testes de integração
-
-### 9.4 Fase 4: Produção
-- [ ] Setup do ambiente de produção
 - [ ] Configuração de monitoramento
-- [ ] Implementação de alertas
 - [ ] Deployment do sistema
 
 ## 10. Manutenção e Atualizações
