@@ -200,6 +200,140 @@
    - Cleanup policies
    - Usage monitoring
 
+## VectorBT Pro Labels System
+
+### Core Components
+1. Market Labeler
+   - Trend labeling
+   - Volatility labeling
+   - Pattern detection
+   - Label validation
+
+2. Pattern Detector
+   - Candlestick patterns
+   - Chart patterns
+   - Technical patterns
+   - Pattern validation
+
+### Signal Generation
+1. Trend Signals
+   - Entry conditions
+   - Exit conditions
+   - Signal validation
+   - Performance tracking
+
+2. Pattern Signals
+   - Pattern recognition
+   - Signal generation
+   - Entry/exit rules
+   - Signal filtering
+
+### ML Integration
+1. Feature Engineering
+   - Technical features
+   - Pattern features
+   - Label features
+   - Feature validation
+
+2. Model Training
+   - Data preparation
+   - Model selection
+   - Training process
+   - Performance evaluation
+
+### Analysis Tools
+1. Label Analysis
+   - Label statistics
+   - Transition analysis
+   - Duration analysis
+   - Quality metrics
+
+2. Pattern Analysis
+   - Pattern detection
+   - Validation tools
+   - Performance metrics
+   - Optimization tools
+
+### Best Practices
+1. Development
+   - Label validation
+   - Pattern testing
+   - Documentation
+   - Code quality
+
+2. Production
+   - Quality monitoring
+   - Rule updates
+   - Signal validation
+   - Documentation
+
+## VectorBT Pro Live Execution System
+
+### Core Components
+1. Strategy Executor
+   - Real-time execution
+   - Order management
+   - Position tracking
+   - Error handling
+
+2. Live Data Manager
+   - Market data feeds
+   - Data caching
+   - Feed management
+   - Real-time updates
+
+### Risk Management
+1. Live Risk Manager
+   - Position sizing
+   - Risk limits
+   - Exposure control
+   - Drawdown monitoring
+
+2. Performance Monitor
+   - Real-time metrics
+   - Performance tracking
+   - Report generation
+   - History logging
+
+### Advanced Features
+1. Alert System
+   - Risk monitoring
+   - Market conditions
+   - Position alerts
+   - System status
+
+2. Error Handling
+   - Retry logic
+   - Error recovery
+   - System failover
+   - State management
+
+### Best Practices
+1. Execution
+   - Latency monitoring
+   - Order validation
+   - Event logging
+   - State tracking
+
+2. Risk Control
+   - Exposure limits
+   - Stop management
+   - Position validation
+   - Real-time monitoring
+
+### Production Guidelines
+1. Development
+   - Extensive testing
+   - Failure simulation
+   - Process documentation
+   - System redundancy
+
+2. Maintenance
+   - Performance review
+   - Process optimization
+   - System updates
+   - Log management
+
 ## VectorBT Pro Portfolio System
 
 ### Core Components
@@ -263,7 +397,7 @@
 
 2. Maintenance
    - Strategy review
-   - Parameter updates
+   - Data updates
    - Code optimization
    - Log management
 
@@ -1135,3 +1269,5 @@
   - Soluções
   - Prevenção
   - Recuperação
+
+```
