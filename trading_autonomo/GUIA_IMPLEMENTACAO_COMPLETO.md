@@ -127,7 +127,11 @@ mercado/
 │   │   └── knowledge/        # Base de conhecimento específica
 │   ├── tests/
 │   ├── config/
-│   └── docs/
+│   ├── docs/
+│   └── notebooks/            # Notebooks específicos para pesquisa
+│       ├── exploration/      # Exploração de dados e APIs
+│       ├── prototypes/       # Prototipagem de algoritmos
+│       └── examples/         # Exemplos de uso
 │
 ├── analysis_system/          # Sistema de Análise (Independente)
 │   ├── src/
@@ -137,7 +141,11 @@ mercado/
 │   │   └── models/          # Modelos de análise
 │   ├── tests/
 │   ├── config/
-│   └── docs/
+│   ├── docs/
+│   └── notebooks/           # Notebooks específicos para análise
+│       ├── indicators/      # Desenvolvimento de indicadores
+│       ├── backtests/       # Testes de estratégias
+│       └── visualization/   # Visualizações e dashboards
 │
 ├── trading_autonomo/         # Sistema de Trading Autônomo
 │   ├── src/
@@ -149,16 +157,17 @@ mercado/
 │   ├── tests/
 │   ├── config/
 │   ├── data/
-│   └── docs/
+│   ├── docs/
+│   └── notebooks/          # Notebooks específicos para trading
+│       ├── strategies/     # Desenvolvimento de estratégias
+│       ├── optimization/   # Otimização de parâmetros
+│       └── monitoring/     # Monitoramento de performance
 │
-├── shared/                   # Recursos Compartilhados
-│   ├── database/            # Configurações de banco de dados
-│   ├── utils/               # Utilitários comuns
-│   ├── models/              # Modelos compartilhados
-│   └── config/              # Configurações globais
-│
-└── notebooks/               # Jupyter notebooks para todos os sistemas
-```
+└── shared/                   # Recursos Compartilhados
+    ├── database/            # Configurações de banco de dados
+    ├── utils/               # Utilitários comuns
+    ├── models/              # Modelos compartilhados
+    └── config/              # Configurações globais
 
 ### 4.1 Explicação da Nova Estrutura
 
@@ -211,6 +220,69 @@ mercado/
    - Integração simplificada
    - Reutilização de componentes
    - Evolução independente
+
+### 4.3 Propósito dos Notebooks (Novo)
+
+Cada sistema tem sua própria pasta de notebooks com propósitos específicos:
+
+1. **Research System Notebooks**
+   - **exploration/**: Notebooks para explorar APIs científicas, testar queries e analisar resultados
+   - **prototypes/**: Desenvolvimento e teste de algoritmos de extração de modelos
+   - **examples/**: Exemplos documentados de uso do sistema de pesquisa
+
+2. **Analysis System Notebooks**
+   - **indicators/**: Desenvolvimento e teste de indicadores técnicos personalizados
+   - **backtests/**: Análise de estratégias e backtesting de indicadores
+   - **visualization/**: Desenvolvimento de visualizações e dashboards analíticos
+
+3. **Trading System Notebooks**
+   - **strategies/**: Desenvolvimento e teste de estratégias de trading
+   - **optimization/**: Notebooks para otimização de parâmetros e backtesting
+   - **monitoring/**: Análise de performance e monitoramento do sistema
+
+### 4.4 Benefícios da Nova Organização de Notebooks
+
+1. **Separação de Responsabilidades**
+   - Cada sistema mantém seus próprios notebooks
+   - Foco específico para cada tipo de análise
+   - Melhor organização e manutenção
+
+2. **Desenvolvimento Iterativo**
+   - Ambiente ideal para prototipagem
+   - Facilita experimentação
+   - Documentação interativa
+
+3. **Documentação e Exemplos**
+   - Casos de uso documentados
+   - Exemplos práticos
+   - Tutoriais interativos
+
+4. **Versionamento**
+   - Notebooks específicos são versionados com seus sistemas
+   - Facilita manutenção
+   - Histórico de desenvolvimento claro
+
+### 4.5 Boas Práticas para Notebooks
+
+1. **Desenvolvimento**
+   - Usar notebooks apenas para exploração, prototipagem e visualização
+   - Mover código produtivo para módulos Python
+   - Manter notebooks limpos e bem documentados
+
+2. **Organização**
+   - Nomear notebooks de forma clara e consistente
+   - Manter uma estrutura lógica de diretórios
+   - Documentar propósito no início do notebook
+
+3. **Versionamento**
+   - Limpar outputs antes de commitar
+   - Usar ferramentas como `nbstripout`
+   - Manter notebooks concisos e focados
+
+4. **Produção**
+   - Não usar notebooks em produção
+   - Converter código relevante em módulos Python
+   - Manter notebooks apenas para desenvolvimento e análise
 
 ## 5. Implementação Detalhada
 
