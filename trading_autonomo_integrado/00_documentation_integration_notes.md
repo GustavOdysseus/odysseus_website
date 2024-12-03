@@ -62,6 +62,32 @@
   - Adicionar casos de uso
   - Incluir benchmarks
 
+### 4. Base de Conhecimento (04_knowledge_base.md)
+- **Pontos Principais**:
+  - Sistema central de armazenamento
+  - Modelos de dados bem definidos
+  - Sistema de busca semântica
+  - Gerenciamento de versões
+
+- **Oportunidades de Integração**:
+  - Expandir schemas de dados
+  - Adicionar exemplos de queries
+  - Documentar padrões de uso
+  - Incluir métricas de performance
+
+### 5. Pipeline Maestro (05_maestro_pipeline.md)
+- **Pontos Principais**:
+  - Orquestração central do sistema
+  - Fluxos de trabalho detalhados
+  - Sistema de recuperação robusto
+  - Configuração via Docker
+
+- **Oportunidades de Integração**:
+  - Expandir exemplos de configuração
+  - Documentar cenários de falha
+  - Adicionar diagramas de fluxo
+  - Incluir métricas operacionais
+
 ## Padrões Identificados
 
 ### 1. Estrutura de Documentação
