@@ -1,0 +1,1260 @@
+[2024-12-11 01:07:15] === Iniciando processamento de todos os PDFs ===
+[2024-12-11 01:07:15] Encontrados 5 arquivos PDF
+[2024-12-11 01:07:15] 
+Processando PDF 1/5: simulado_port_4.pdf
+[2024-12-11 01:07:15] Iniciando processamento de simulado_port_4.pdf
+[2024-12-11 01:07:15] Fase 1: Extraindo texto do PDF...
+[2024-12-11 01:07:31] Texto extraído em 15.88 segundos
+[2024-12-11 01:07:31] Fase 2: Separando questões...
+[2024-12-11 01:07:31] Encontradas 200 questões em 0.01 segundos
+[2024-12-11 01:07:31] Fase 3: Iniciando análise das questões...
+[2024-12-11 01:07:36] Questão 1/200 analisada em 4.87 segundos
+[2024-12-11 01:07:40] Questão 2/200 analisada em 4.29 segundos
+[2024-12-11 01:07:44] Questão 3/200 analisada em 4.40 segundos
+[2024-12-11 01:07:49] Questão 4/200 analisada em 4.20 segundos
+[2024-12-11 01:07:53] Questão 5/200 analisada em 4.50 segundos
+[2024-12-11 01:07:57] Questão 6/200 analisada em 4.40 segundos
+[2024-12-11 01:08:01] Questão 7/200 analisada em 3.89 segundos
+[2024-12-11 01:08:05] Questão 8/200 analisada em 3.99 segundos
+[2024-12-11 01:08:13] Questão 9/200 analisada em 7.68 segundos
+[2024-12-11 01:08:20] Questão 10/200 analisada em 6.55 segundos
+[2024-12-11 01:08:20] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_10_20241211_010820
+[2024-12-11 01:08:20] Progresso: 10/200 questões. Tempo médio por questão: 4.88s. ETA: 928.13s
+[2024-12-11 01:08:25] Questão 11/200 analisada em 5.74 segundos
+[2024-12-11 01:08:30] Questão 12/200 analisada em 4.63 segundos
+[2024-12-11 01:08:34] Questão 13/200 analisada em 4.36 segundos
+[2024-12-11 01:08:39] Questão 14/200 analisada em 5.02 segundos
+[2024-12-11 01:08:45] Questão 15/200 analisada em 5.33 segundos
+[2024-12-11 01:08:49] Questão 16/200 analisada em 4.71 segundos
+[2024-12-11 01:08:55] Questão 17/200 analisada em 5.65 segundos
+[2024-12-11 01:09:00] Questão 18/200 analisada em 4.53 segundos
+[2024-12-11 01:09:06] Questão 19/200 analisada em 6.00 segundos
+[2024-12-11 01:09:10] Questão 20/200 analisada em 4.31 segundos
+[2024-12-11 01:09:10] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_20_20241211_010910
+[2024-12-11 01:09:10] Progresso: 20/200 questões. Tempo médio por questão: 4.96s. ETA: 892.16s
+[2024-12-11 01:09:16] Questão 21/200 analisada em 5.83 segundos
+[2024-12-11 01:09:21] Questão 22/200 analisada em 4.89 segundos
+[2024-12-11 01:09:28] Questão 23/200 analisada em 7.50 segundos
+[2024-12-11 01:09:35] Questão 24/200 analisada em 6.45 segundos
+[2024-12-11 01:09:39] Questão 25/200 analisada em 4.61 segundos
+[2024-12-11 01:09:46] Questão 26/200 analisada em 7.35 segundos
+[2024-12-11 01:09:53] Questão 27/200 analisada em 6.37 segundos
+[2024-12-11 01:10:00] Questão 28/200 analisada em 6.66 segundos
+[2024-12-11 01:10:04] Questão 29/200 analisada em 4.58 segundos
+[2024-12-11 01:10:11] Questão 30/200 analisada em 6.77 segundos
+[2024-12-11 01:10:11] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_30_20241211_011011
+[2024-12-11 01:10:11] Progresso: 30/200 questões. Tempo médio por questão: 5.34s. ETA: 907.49s
+[2024-12-11 01:10:16] Questão 31/200 analisada em 5.13 segundos
+[2024-12-11 01:10:22] Questão 32/200 analisada em 5.54 segundos
+[2024-12-11 01:10:27] Questão 33/200 analisada em 5.51 segundos
+[2024-12-11 01:10:34] Questão 34/200 analisada em 6.55 segundos
+[2024-12-11 01:10:41] Questão 35/200 analisada em 7.82 segundos
+[2024-12-11 01:10:47] Questão 36/200 analisada em 5.97 segundos
+[2024-12-11 01:10:53] Questão 37/200 analisada em 5.68 segundos
+[2024-12-11 01:10:58] Questão 38/200 analisada em 5.29 segundos
+[2024-12-11 01:11:06] Questão 39/200 analisada em 7.40 segundos
+[2024-12-11 01:11:11] Questão 40/200 analisada em 4.81 segundos
+[2024-12-11 01:11:11] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_40_20241211_011111
+[2024-12-11 01:11:11] Progresso: 40/200 questões. Tempo médio por questão: 5.50s. ETA: 879.48s
+[2024-12-11 01:11:18] Questão 41/200 analisada em 7.36 segundos
+[2024-12-11 01:11:23] Questão 42/200 analisada em 5.42 segundos
+[2024-12-11 01:11:29] Questão 43/200 analisada em 5.43 segundos
+[2024-12-11 01:11:34] Questão 44/200 analisada em 5.53 segundos
+[2024-12-11 01:11:40] Questão 45/200 analisada em 6.14 segundos
+[2024-12-11 01:11:46] Questão 46/200 analisada em 5.74 segundos
+[2024-12-11 01:11:54] Questão 47/200 analisada em 7.65 segundos
+[2024-12-11 01:12:00] Questão 48/200 analisada em 6.55 segundos
+[2024-12-11 01:12:07] Questão 49/200 analisada em 6.07 segundos
+[2024-12-11 01:12:13] Questão 50/200 analisada em 6.58 segundos
+[2024-12-11 01:12:13] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_50_20241211_011213
+[2024-12-11 01:12:13] Progresso: 50/200 questões. Tempo médio por questão: 5.65s. ETA: 847.10s
+[2024-12-11 01:12:19] Questão 51/200 analisada em 5.89 segundos
+[2024-12-11 01:12:25] Questão 52/200 analisada em 5.53 segundos
+[2024-12-11 01:12:31] Questão 53/200 analisada em 6.14 segundos
+[2024-12-11 01:12:36] Questão 54/200 analisada em 5.43 segundos
+[2024-12-11 01:12:41] Questão 55/200 analisada em 4.88 segundos
+[2024-12-11 01:12:46] Questão 56/200 analisada em 5.15 segundos
+[2024-12-11 01:12:52] Questão 57/200 analisada em 5.53 segundos
+[2024-12-11 01:12:57] Questão 58/200 analisada em 5.24 segundos
+[2024-12-11 01:13:06] Questão 59/200 analisada em 9.51 segundos
+[2024-12-11 01:13:11] Questão 60/200 analisada em 4.86 segundos
+[2024-12-11 01:13:11] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_60_20241211_011311
+[2024-12-11 01:13:11] Progresso: 60/200 questões. Tempo médio por questão: 5.68s. ETA: 794.59s
+[2024-12-11 01:13:17] Questão 61/200 analisada em 5.43 segundos
+[2024-12-11 01:13:24] Questão 62/200 analisada em 7.62 segundos
+[2024-12-11 01:13:31] Questão 63/200 analisada em 6.17 segundos
+[2024-12-11 01:13:37] Questão 64/200 analisada em 6.32 segundos
+[2024-12-11 01:13:43] Questão 65/200 analisada em 5.94 segundos
+[2024-12-11 01:13:51] Questão 66/200 analisada em 7.88 segundos
+[2024-12-11 01:13:55] Questão 67/200 analisada em 4.30 segundos
+[2024-12-11 01:14:01] Questão 68/200 analisada em 5.56 segundos
+[2024-12-11 01:14:08] Questão 69/200 analisada em 7.28 segundos
+[2024-12-11 01:14:13] Questão 70/200 analisada em 4.99 segundos
+[2024-12-11 01:14:13] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_70_20241211_011413
+[2024-12-11 01:14:13] Progresso: 70/200 questões. Tempo médio por questão: 5.74s. ETA: 746.67s
+[2024-12-11 01:14:18] Questão 71/200 analisada em 4.70 segundos
+[2024-12-11 01:14:24] Questão 72/200 analisada em 6.53 segundos
+[2024-12-11 01:14:30] Questão 73/200 analisada em 6.04 segundos
+[2024-12-11 01:14:36] Questão 74/200 analisada em 5.73 segundos
+[2024-12-11 01:14:40] Questão 75/200 analisada em 4.51 segundos
+[2024-12-11 01:14:45] Questão 76/200 analisada em 4.61 segundos
+[2024-12-11 01:14:51] Questão 77/200 analisada em 6.46 segundos
+[2024-12-11 01:14:58] Questão 78/200 analisada em 6.24 segundos
+[2024-12-11 01:15:02] Questão 79/200 analisada em 3.94 segundos
+[2024-12-11 01:15:07] Questão 80/200 analisada em 5.11 segundos
+[2024-12-11 01:15:07] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_80_20241211_011507
+[2024-12-11 01:15:07] Progresso: 80/200 questões. Tempo médio por questão: 5.70s. ETA: 683.95s
+[2024-12-11 01:15:13] Questão 81/200 analisada em 6.46 segundos
+[2024-12-11 01:15:18] Questão 82/200 analisada em 4.62 segundos
+[2024-12-11 01:15:23] Questão 83/200 analisada em 4.83 segundos
+[2024-12-11 01:15:27] Questão 84/200 analisada em 4.49 segundos
+[2024-12-11 01:15:33] Questão 85/200 analisada em 5.41 segundos
+[2024-12-11 01:15:36] Questão 86/200 analisada em 3.79 segundos
+[2024-12-11 01:15:42] Questão 87/200 analisada em 5.24 segundos
+[2024-12-11 01:15:47] Questão 88/200 analisada em 5.73 segundos
+[2024-12-11 01:15:53] Questão 89/200 analisada em 5.62 segundos
+[2024-12-11 01:15:59] Questão 90/200 analisada em 6.55 segundos
+[2024-12-11 01:16:00] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_90_20241211_011559
+[2024-12-11 01:16:00] Progresso: 90/200 questões. Tempo médio por questão: 5.65s. ETA: 621.83s
+[2024-12-11 01:16:04] Questão 91/200 analisada em 4.26 segundos
+[2024-12-11 01:16:10] Questão 92/200 analisada em 5.80 segundos
+[2024-12-11 01:16:15] Questão 93/200 analisada em 4.95 segundos
+[2024-12-11 01:16:19] Questão 94/200 analisada em 4.50 segundos
+[2024-12-11 01:16:24] Questão 95/200 analisada em 5.13 segundos
+[2024-12-11 01:16:29] Questão 96/200 analisada em 5.02 segundos
+[2024-12-11 01:16:35] Questão 97/200 analisada em 5.94 segundos
+[2024-12-11 01:16:42] Questão 98/200 analisada em 6.94 segundos
+[2024-12-11 01:16:48] Questão 99/200 analisada em 5.67 segundos
+[2024-12-11 01:16:53] Questão 100/200 analisada em 5.61 segundos
+[2024-12-11 01:16:53] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_100_20241211_011653
+[2024-12-11 01:16:53] Progresso: 100/200 questões. Tempo médio por questão: 5.63s. ETA: 562.63s
+[2024-12-11 01:17:00] Questão 101/200 analisada em 6.21 segundos
+[2024-12-11 01:17:05] Questão 102/200 analisada em 5.91 segundos
+[2024-12-11 01:17:11] Questão 103/200 analisada em 5.22 segundos
+[2024-12-11 01:17:20] Questão 104/200 analisada em 9.13 segundos
+[2024-12-11 01:17:25] Questão 105/200 analisada em 4.82 segundos
+[2024-12-11 01:17:29] Questão 106/200 analisada em 4.64 segundos
+[2024-12-11 01:17:34] Questão 107/200 analisada em 4.40 segundos
+[2024-12-11 01:17:40] Questão 108/200 analisada em 5.92 segundos
+[2024-12-11 01:17:47] Questão 109/200 analisada em 7.28 segundos
+[2024-12-11 01:18:02] Questão 110/200 analisada em 15.25 segundos
+[2024-12-11 01:18:02] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_110_20241211_011802
+[2024-12-11 01:18:02] Progresso: 110/200 questões. Tempo médio por questão: 5.74s. ETA: 516.63s
+[2024-12-11 01:18:07] Questão 111/200 analisada em 4.71 segundos
+[2024-12-11 01:18:13] Questão 112/200 analisada em 6.42 segundos
+[2024-12-11 01:18:26] Questão 113/200 analisada em 12.59 segundos
+[2024-12-11 01:18:31] Questão 114/200 analisada em 4.76 segundos
+[2024-12-11 01:18:36] Questão 115/200 analisada em 5.68 segundos
+[2024-12-11 01:18:43] Questão 116/200 analisada em 6.34 segundos
+[2024-12-11 01:18:48] Questão 117/200 analisada em 4.81 segundos
+[2024-12-11 01:18:54] Questão 118/200 analisada em 6.25 segundos
+[2024-12-11 01:18:59] Questão 119/200 analisada em 5.22 segundos
+[2024-12-11 01:19:12] Questão 120/200 analisada em 13.21 segundos
+[2024-12-11 01:19:12] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_120_20241211_011912
+[2024-12-11 01:19:12] Progresso: 120/200 questões. Tempo médio por questão: 5.85s. ETA: 467.65s
+[2024-12-11 01:19:26] Questão 121/200 analisada em 14.10 segundos
+[2024-12-11 01:19:31] Questão 122/200 analisada em 5.12 segundos
+[2024-12-11 01:19:36] Questão 123/200 analisada em 4.61 segundos
+[2024-12-11 01:19:41] Questão 124/200 analisada em 4.50 segundos
+[2024-12-11 01:19:45] Questão 125/200 analisada em 4.61 segundos
+[2024-12-11 01:19:50] Questão 126/200 analisada em 4.50 segundos
+[2024-12-11 01:19:54] Questão 127/200 analisada em 4.30 segundos
+[2024-12-11 01:20:00] Questão 128/200 analisada em 5.60 segundos
+[2024-12-11 01:20:05] Questão 129/200 analisada em 5.09 segundos
+[2024-12-11 01:20:09] Questão 130/200 analisada em 4.26 segundos
+[2024-12-11 01:20:09] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_130_20241211_012009
+[2024-12-11 01:20:09] Progresso: 130/200 questões. Tempo médio por questão: 5.83s. ETA: 408.27s
+[2024-12-11 01:20:15] Questão 131/200 analisada em 5.56 segundos
+[2024-12-11 01:20:21] Questão 132/200 analisada em 6.00 segundos
+[2024-12-11 01:20:27] Questão 133/200 analisada em 6.21 segundos
+[2024-12-11 01:20:31] Questão 134/200 analisada em 4.20 segundos
+[2024-12-11 01:20:36] Questão 135/200 analisada em 4.81 segundos
+[2024-12-11 01:20:41] Questão 136/200 analisada em 5.02 segundos
+[2024-12-11 01:20:45] Questão 137/200 analisada em 4.51 segundos
+[2024-12-11 01:20:50] Questão 138/200 analisada em 4.45 segundos
+[2024-12-11 01:20:54] Questão 139/200 analisada em 4.66 segundos
+[2024-12-11 01:20:59] Questão 140/200 analisada em 4.14 segundos
+[2024-12-11 01:20:59] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_140_20241211_012059
+[2024-12-11 01:20:59] Progresso: 140/200 questões. Tempo médio por questão: 5.77s. ETA: 346.21s
+[2024-12-11 01:21:03] Questão 141/200 analisada em 4.54 segundos
+[2024-12-11 01:21:08] Questão 142/200 analisada em 4.39 segundos
+[2024-12-11 01:21:12] Questão 143/200 analisada em 4.39 segundos
+[2024-12-11 01:21:16] Questão 144/200 analisada em 4.27 segundos
+[2024-12-11 01:21:22] Questão 145/200 analisada em 5.67 segundos
+[2024-12-11 01:21:27] Questão 146/200 analisada em 5.22 segundos
+[2024-12-11 01:21:32] Questão 147/200 analisada em 5.32 segundos
+[2024-12-11 01:21:37] Questão 148/200 analisada em 4.71 segundos
+[2024-12-11 01:21:41] Questão 149/200 analisada em 4.40 segundos
+[2024-12-11 01:21:47] Questão 150/200 analisada em 5.33 segundos
+[2024-12-11 01:21:47] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_150_20241211_012147
+[2024-12-11 01:21:47] Progresso: 150/200 questões. Tempo médio por questão: 5.71s. ETA: 285.38s
+[2024-12-11 01:21:51] Questão 151/200 analisada em 4.05 segundos
+[2024-12-11 01:21:56] Questão 152/200 analisada em 4.91 segundos
+[2024-12-11 01:22:02] Questão 153/200 analisada em 6.22 segundos
+[2024-12-11 01:22:13] Questão 154/200 analisada em 10.60 segundos
+[2024-12-11 01:22:18] Questão 155/200 analisada em 5.61 segundos
+[2024-12-11 01:22:23] Questão 156/200 analisada em 4.61 segundos
+[2024-12-11 01:22:28] Questão 157/200 analisada em 5.62 segundos
+[2024-12-11 01:22:33] Questão 158/200 analisada em 4.72 segundos
+[2024-12-11 01:22:38] Questão 159/200 analisada em 4.81 segundos
+[2024-12-11 01:22:43] Questão 160/200 analisada em 5.01 segundos
+[2024-12-11 01:22:43] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_160_20241211_012243
+[2024-12-11 01:22:43] Progresso: 160/200 questões. Tempo médio por questão: 5.70s. ETA: 228.08s
+[2024-12-11 01:22:48] Questão 161/200 analisada em 5.37 segundos
+[2024-12-11 01:22:54] Questão 162/200 analisada em 5.17 segundos
+[2024-12-11 01:22:59] Questão 163/200 analisada em 4.89 segundos
+[2024-12-11 01:23:02] Questão 164/200 analisada em 3.80 segundos
+[2024-12-11 01:23:08] Questão 165/200 analisada em 5.72 segundos
+[2024-12-11 01:23:13] Questão 166/200 analisada em 5.32 segundos
+[2024-12-11 01:23:18] Questão 167/200 analisada em 5.01 segundos
+[2024-12-11 01:23:24] Questão 168/200 analisada em 5.33 segundos
+[2024-12-11 01:23:30] Questão 169/200 analisada em 5.92 segundos
+[2024-12-11 01:23:34] Questão 170/200 analisada em 4.45 segundos
+[2024-12-11 01:23:34] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_170_20241211_012334
+[2024-12-11 01:23:34] Progresso: 170/200 questões. Tempo médio por questão: 5.67s. ETA: 170.00s
+[2024-12-11 01:23:38] Questão 171/200 analisada em 4.25 segundos
+[2024-12-11 01:23:44] Questão 172/200 analisada em 5.16 segundos
+[2024-12-11 01:23:48] Questão 173/200 analisada em 4.91 segundos
+[2024-12-11 01:23:53] Questão 174/200 analisada em 4.20 segundos
+[2024-12-11 01:23:58] Questão 175/200 analisada em 5.69 segundos
+[2024-12-11 01:24:02] Questão 176/200 analisada em 4.06 segundos
+[2024-12-11 01:24:08] Questão 177/200 analisada em 5.26 segundos
+[2024-12-11 01:24:13] Questão 178/200 analisada em 5.48 segundos
+[2024-12-11 01:24:18] Questão 179/200 analisada em 4.55 segundos
+[2024-12-11 01:24:21] Questão 180/200 analisada em 3.80 segundos
+[2024-12-11 01:24:22] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_180_20241211_012421
+[2024-12-11 01:24:22] Progresso: 180/200 questões. Tempo médio por questão: 5.62s. ETA: 112.31s
+[2024-12-11 01:24:26] Questão 181/200 analisada em 4.55 segundos
+[2024-12-11 01:24:30] Questão 182/200 analisada em 4.09 segundos
+[2024-12-11 01:24:34] Questão 183/200 analisada em 4.20 segundos
+[2024-12-11 01:24:39] Questão 184/200 analisada em 4.18 segundos
+[2024-12-11 01:24:44] Questão 185/200 analisada em 5.59 segundos
+[2024-12-11 01:24:49] Questão 186/200 analisada em 5.18 segundos
+[2024-12-11 01:24:55] Questão 187/200 analisada em 5.42 segundos
+[2024-12-11 01:25:02] Questão 188/200 analisada em 7.40 segundos
+[2024-12-11 01:25:07] Questão 189/200 analisada em 4.89 segundos
+[2024-12-11 01:25:13] Questão 190/200 analisada em 6.29 segundos
+[2024-12-11 01:25:13] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_190_20241211_012513
+[2024-12-11 01:25:13] Progresso: 190/200 questões. Tempo médio por questão: 5.59s. ETA: 55.93s
+[2024-12-11 01:25:19] Questão 191/200 analisada em 5.21 segundos
+[2024-12-11 01:25:25] Questão 192/200 analisada em 6.90 segundos
+[2024-12-11 01:25:29] Questão 193/200 analisada em 4.02 segundos
+[2024-12-11 01:25:33] Questão 194/200 analisada em 3.84 segundos
+[2024-12-11 01:25:38] Questão 195/200 analisada em 5.12 segundos
+[2024-12-11 01:25:43] Questão 196/200 analisada em 4.20 segundos
+[2024-12-11 01:25:47] Questão 197/200 analisada em 3.89 segundos
+[2024-12-11 01:25:50] Questão 198/200 analisada em 3.79 segundos
+[2024-12-11 01:25:55] Questão 199/200 analisada em 5.12 segundos
+[2024-12-11 01:26:00] Questão 200/200 analisada em 4.48 segundos
+[2024-12-11 01:26:00] Resultados salvos em: resultados/resultados_batch_simulado_port_4.pdf_200_20241211_012600
+[2024-12-11 01:26:00] Progresso: 200/200 questões. Tempo médio por questão: 5.55s. ETA: 0.00s
+[2024-12-11 01:26:00] Análise de simulado_port_4.pdf concluída em 1109.24 segundos
+[2024-12-11 01:26:00] Resultados salvos em: resultados/resultados_batch_completo_simulado_port_4.pdf_20241211_012600
+[2024-12-11 01:26:00] 
+Processando PDF 2/5: simulado_port_5.pdf
+[2024-12-11 01:26:00] Iniciando processamento de simulado_port_5.pdf
+[2024-12-11 01:26:00] Fase 1: Extraindo texto do PDF...
+[2024-12-11 01:26:17] Texto extraído em 16.88 segundos
+[2024-12-11 01:26:17] Fase 2: Separando questões...
+[2024-12-11 01:26:17] Encontradas 200 questões em 0.01 segundos
+[2024-12-11 01:26:17] Fase 3: Iniciando análise das questões...
+[2024-12-11 01:26:23] Questão 1/200 analisada em 6.42 segundos
+[2024-12-11 01:26:27] Questão 2/200 analisada em 4.08 segundos
+[2024-12-11 01:26:33] Questão 3/200 analisada em 5.63 segundos
+[2024-12-11 01:26:38] Questão 4/200 analisada em 4.71 segundos
+[2024-12-11 01:26:45] Questão 5/200 analisada em 6.78 segundos
+[2024-12-11 01:26:49] Questão 6/200 analisada em 4.48 segundos
+[2024-12-11 01:26:55] Questão 7/200 analisada em 5.94 segundos
+[2024-12-11 01:27:00] Questão 8/200 analisada em 4.59 segundos
+[2024-12-11 01:27:06] Questão 9/200 analisada em 6.12 segundos
+[2024-12-11 01:27:11] Questão 10/200 analisada em 4.89 segundos
+[2024-12-11 01:27:11] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_10_20241211_012711
+[2024-12-11 01:27:11] Progresso: 10/200 questões. Tempo médio por questão: 5.37s. ETA: 1019.78s
+[2024-12-11 01:27:16] Questão 11/200 analisada em 5.13 segundos
+[2024-12-11 01:27:22] Questão 12/200 analisada em 6.07 segundos
+[2024-12-11 01:27:26] Questão 13/200 analisada em 4.00 segundos
+[2024-12-11 01:27:31] Questão 14/200 analisada em 5.53 segundos
+[2024-12-11 01:27:37] Questão 15/200 analisada em 5.64 segundos
+[2024-12-11 01:27:41] Questão 16/200 analisada em 4.29 segundos
+[2024-12-11 01:27:47] Questão 17/200 analisada em 5.54 segundos
+[2024-12-11 01:27:50] Questão 18/200 analisada em 3.50 segundos
+[2024-12-11 01:27:55] Questão 19/200 analisada em 4.38 segundos
+[2024-12-11 01:27:59] Questão 20/200 analisada em 4.36 segundos
+[2024-12-11 01:27:59] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_20_20241211_012759
+[2024-12-11 01:27:59] Progresso: 20/200 questões. Tempo médio por questão: 5.11s. ETA: 919.04s
+[2024-12-11 01:28:04] Questão 21/200 analisada em 4.75 segundos
+[2024-12-11 01:28:09] Questão 22/200 analisada em 4.91 segundos
+[2024-12-11 01:28:15] Questão 23/200 analisada em 6.04 segundos
+[2024-12-11 01:28:21] Questão 24/200 analisada em 5.84 segundos
+[2024-12-11 01:28:25] Questão 25/200 analisada em 4.91 segundos
+[2024-12-11 01:28:32] Questão 26/200 analisada em 6.32 segundos
+[2024-12-11 01:28:38] Questão 27/200 analisada em 5.96 segundos
+[2024-12-11 01:28:43] Questão 28/200 analisada em 5.22 segundos
+[2024-12-11 01:28:48] Questão 29/200 analisada em 5.43 segundos
+[2024-12-11 01:28:52] Questão 30/200 analisada em 3.99 segundos
+[2024-12-11 01:28:52] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_30_20241211_012852
+[2024-12-11 01:28:52] Progresso: 30/200 questões. Tempo médio por questão: 5.18s. ETA: 881.31s
+[2024-12-11 01:28:57] Questão 31/200 analisada em 4.90 segundos
+[2024-12-11 01:29:02] Questão 32/200 analisada em 4.75 segundos
+[2024-12-11 01:29:07] Questão 33/200 analisada em 4.71 segundos
+[2024-12-11 01:29:12] Questão 34/200 analisada em 5.29 segundos
+[2024-12-11 01:29:18] Questão 35/200 analisada em 5.83 segundos
+[2024-12-11 01:29:23] Questão 36/200 analisada em 5.03 segundos
+[2024-12-11 01:29:31] Questão 37/200 analisada em 7.67 segundos
+[2024-12-11 01:29:39] Questão 38/200 analisada em 8.48 segundos
+[2024-12-11 01:29:45] Questão 39/200 analisada em 5.96 segundos
+[2024-12-11 01:29:49] Questão 40/200 analisada em 4.20 segundos
+[2024-12-11 01:29:49] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_40_20241211_012949
+[2024-12-11 01:29:49] Progresso: 40/200 questões. Tempo médio por questão: 5.31s. ETA: 849.43s
+[2024-12-11 01:29:54] Questão 41/200 analisada em 4.69 segundos
+[2024-12-11 01:30:00] Questão 42/200 analisada em 5.74 segundos
+[2024-12-11 01:30:04] Questão 43/200 analisada em 4.62 segundos
+[2024-12-11 01:30:08] Questão 44/200 analisada em 3.77 segundos
+[2024-12-11 01:30:16] Questão 45/200 analisada em 7.88 segundos
+[2024-12-11 01:30:21] Questão 46/200 analisada em 5.02 segundos
+[2024-12-11 01:30:26] Questão 47/200 analisada em 5.25 segundos
+[2024-12-11 01:30:41] Questão 48/200 analisada em 14.37 segundos
+[2024-12-11 01:30:47] Questão 49/200 analisada em 6.07 segundos
+[2024-12-11 01:30:53] Questão 50/200 analisada em 6.16 segundos
+[2024-12-11 01:30:53] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_50_20241211_013053
+[2024-12-11 01:30:53] Progresso: 50/200 questões. Tempo médio por questão: 5.52s. ETA: 827.84s
+[2024-12-11 01:30:58] Questão 51/200 analisada em 4.69 segundos
+[2024-12-11 01:31:02] Questão 52/200 analisada em 4.50 segundos
+[2024-12-11 01:31:07] Questão 53/200 analisada em 4.91 segundos
+[2024-12-11 01:31:14] Questão 54/200 analisada em 6.55 segundos
+[2024-12-11 01:31:18] Questão 55/200 analisada em 4.82 segundos
+[2024-12-11 01:31:28] Questão 56/200 analisada em 9.92 segundos
+[2024-12-11 01:31:36] Questão 57/200 analisada em 7.47 segundos
+[2024-12-11 01:31:40] Questão 58/200 analisada em 4.09 segundos
+[2024-12-11 01:31:47] Questão 59/200 analisada em 7.06 segundos
+[2024-12-11 01:31:55] Questão 60/200 analisada em 7.73 segundos
+[2024-12-11 01:31:55] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_60_20241211_013155
+[2024-12-11 01:31:55] Progresso: 60/200 questões. Tempo médio por questão: 5.63s. ETA: 788.09s
+[2024-12-11 01:32:00] Questão 61/200 analisada em 5.16 segundos
+[2024-12-11 01:32:08] Questão 62/200 analisada em 8.52 segundos
+[2024-12-11 01:32:14] Questão 63/200 analisada em 5.60 segundos
+[2024-12-11 01:32:19] Questão 64/200 analisada em 5.25 segundos
+[2024-12-11 01:32:25] Questão 65/200 analisada em 6.01 segundos
+[2024-12-11 01:32:30] Questão 66/200 analisada em 4.81 segundos
+[2024-12-11 01:32:35] Questão 67/200 analisada em 5.33 segundos
+[2024-12-11 01:32:43] Questão 68/200 analisada em 7.48 segundos
+[2024-12-11 01:32:48] Questão 69/200 analisada em 5.52 segundos
+[2024-12-11 01:32:55] Questão 70/200 analisada em 6.80 segundos
+[2024-12-11 01:32:55] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_70_20241211_013255
+[2024-12-11 01:32:55] Progresso: 70/200 questões. Tempo médio por questão: 5.69s. ETA: 739.61s
+[2024-12-11 01:33:00] Questão 71/200 analisada em 4.55 segundos
+[2024-12-11 01:33:05] Questão 72/200 analisada em 5.02 segundos
+[2024-12-11 01:33:09] Questão 73/200 analisada em 4.60 segundos
+[2024-12-11 01:33:14] Questão 74/200 analisada em 4.74 segundos
+[2024-12-11 01:33:19] Questão 75/200 analisada em 4.98 segundos
+[2024-12-11 01:33:23] Questão 76/200 analisada em 4.40 segundos
+[2024-12-11 01:33:33] Questão 77/200 analisada em 9.93 segundos
+[2024-12-11 01:33:37] Questão 78/200 analisada em 4.00 segundos
+[2024-12-11 01:33:43] Questão 79/200 analisada em 5.63 segundos
+[2024-12-11 01:33:49] Questão 80/200 analisada em 6.21 segundos
+[2024-12-11 01:33:49] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_80_20241211_013349
+[2024-12-11 01:33:49] Progresso: 80/200 questões. Tempo médio por questão: 5.65s. ETA: 678.53s
+[2024-12-11 01:33:55] Questão 81/200 analisada em 5.37 segundos
+[2024-12-11 01:34:00] Questão 82/200 analisada em 5.43 segundos
+[2024-12-11 01:34:05] Questão 83/200 analisada em 4.88 segundos
+[2024-12-11 01:34:10] Questão 84/200 analisada em 4.61 segundos
+[2024-12-11 01:34:18] Questão 85/200 analisada em 7.98 segundos
+[2024-12-11 01:34:24] Questão 86/200 analisada em 6.25 segundos
+[2024-12-11 01:34:30] Questão 87/200 analisada em 5.84 segundos
+[2024-12-11 01:34:34] Questão 88/200 analisada em 4.61 segundos
+[2024-12-11 01:34:40] Questão 89/200 analisada em 5.83 segundos
+[2024-12-11 01:34:45] Questão 90/200 analisada em 5.12 segundos
+[2024-12-11 01:34:45] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_90_20241211_013445
+[2024-12-11 01:34:45] Progresso: 90/200 questões. Tempo médio por questão: 5.65s. ETA: 621.26s
+[2024-12-11 01:34:50] Questão 91/200 analisada em 4.82 segundos
+[2024-12-11 01:34:55] Questão 92/200 analisada em 4.71 segundos
+[2024-12-11 01:34:59] Questão 93/200 analisada em 4.07 segundos
+[2024-12-11 01:35:03] Questão 94/200 analisada em 4.13 segundos
+[2024-12-11 01:35:08] Questão 95/200 analisada em 5.38 segundos
+[2024-12-11 01:35:13] Questão 96/200 analisada em 4.50 segundos
+[2024-12-11 01:35:19] Questão 97/200 analisada em 6.66 segundos
+[2024-12-11 01:35:26] Questão 98/200 analisada em 6.55 segundos
+[2024-12-11 01:35:31] Questão 99/200 analisada em 5.38 segundos
+[2024-12-11 01:35:36] Questão 100/200 analisada em 4.96 segundos
+[2024-12-11 01:35:36] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_100_20241211_013536
+[2024-12-11 01:35:36] Progresso: 100/200 questões. Tempo médio por questão: 5.60s. ETA: 559.50s
+[2024-12-11 01:35:44] Questão 101/200 analisada em 7.35 segundos
+[2024-12-11 01:35:50] Questão 102/200 analisada em 6.56 segundos
+[2024-12-11 01:35:55] Questão 103/200 analisada em 5.01 segundos
+[2024-12-11 01:36:00] Questão 104/200 analisada em 4.63 segundos
+[2024-12-11 01:36:06] Questão 105/200 analisada em 6.52 segundos
+[2024-12-11 01:36:11] Questão 106/200 analisada em 4.93 segundos
+[2024-12-11 01:36:18] Questão 107/200 analisada em 6.71 segundos
+[2024-12-11 01:36:22] Questão 108/200 analisada em 4.04 segundos
+[2024-12-11 01:36:28] Questão 109/200 analisada em 5.53 segundos
+[2024-12-11 01:36:32] Questão 110/200 analisada em 4.21 segundos
+[2024-12-11 01:36:32] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_110_20241211_013632
+[2024-12-11 01:36:32] Progresso: 110/200 questões. Tempo médio por questão: 5.59s. ETA: 503.21s
+[2024-12-11 01:36:38] Questão 111/200 analisada em 6.11 segundos
+[2024-12-11 01:36:44] Questão 112/200 analisada em 5.56 segundos
+[2024-12-11 01:36:48] Questão 113/200 analisada em 4.87 segundos
+[2024-12-11 01:36:54] Questão 114/200 analisada em 5.73 segundos
+[2024-12-11 01:36:59] Questão 115/200 analisada em 4.50 segundos
+[2024-12-11 01:37:04] Questão 116/200 analisada em 5.63 segundos
+[2024-12-11 01:37:09] Questão 117/200 analisada em 4.92 segundos
+[2024-12-11 01:37:16] Questão 118/200 analisada em 7.17 segundos
+[2024-12-11 01:37:23] Questão 119/200 analisada em 6.14 segundos
+[2024-12-11 01:37:28] Questão 120/200 analisada em 5.22 segundos
+[2024-12-11 01:37:28] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_120_20241211_013728
+[2024-12-11 01:37:28] Progresso: 120/200 questões. Tempo médio por questão: 5.59s. ETA: 447.29s
+[2024-12-11 01:37:34] Questão 121/200 analisada em 6.40 segundos
+[2024-12-11 01:37:40] Questão 122/200 analisada em 5.86 segundos
+[2024-12-11 01:37:45] Questão 123/200 analisada em 5.12 segundos
+[2024-12-11 01:37:53] Questão 124/200 analisada em 7.99 segundos
+[2024-12-11 01:37:58] Questão 125/200 analisada em 4.81 segundos
+[2024-12-11 01:38:04] Questão 126/200 analisada em 6.12 segundos
+[2024-12-11 01:38:11] Questão 127/200 analisada em 6.89 segundos
+[2024-12-11 01:38:16] Questão 128/200 analisada em 5.43 segundos
+[2024-12-11 01:38:21] Questão 129/200 analisada em 4.29 segundos
+[2024-12-11 01:38:27] Questão 130/200 analisada em 6.14 segundos
+[2024-12-11 01:38:27] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_130_20241211_013827
+[2024-12-11 01:38:27] Progresso: 130/200 questões. Tempo médio por questão: 5.62s. ETA: 393.09s
+[2024-12-11 01:38:33] Questão 131/200 analisada em 6.12 segundos
+[2024-12-11 01:38:49] Questão 132/200 analisada em 16.17 segundos
+[2024-12-11 01:38:53] Questão 133/200 analisada em 4.09 segundos
+[2024-12-11 01:39:00] Questão 134/200 analisada em 6.25 segundos
+[2024-12-11 01:39:04] Questão 135/200 analisada em 4.83 segundos
+[2024-12-11 01:39:11] Questão 136/200 analisada em 6.53 segundos
+[2024-12-11 01:39:18] Questão 137/200 analisada em 6.82 segundos
+[2024-12-11 01:39:22] Questão 138/200 analisada em 4.34 segundos
+[2024-12-11 01:39:31] Questão 139/200 analisada em 8.87 segundos
+[2024-12-11 01:39:36] Questão 140/200 analisada em 5.26 segundos
+[2024-12-11 01:39:36] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_140_20241211_013936
+[2024-12-11 01:39:36] Progresso: 140/200 questões. Tempo médio por questão: 5.71s. ETA: 342.58s
+[2024-12-11 01:39:42] Questão 141/200 analisada em 5.60 segundos
+[2024-12-11 01:39:54] Questão 142/200 analisada em 12.59 segundos
+[2024-12-11 01:40:00] Questão 143/200 analisada em 5.22 segundos
+[2024-12-11 01:40:05] Questão 144/200 analisada em 5.21 segundos
+[2024-12-11 01:40:11] Questão 145/200 analisada em 5.96 segundos
+[2024-12-11 01:40:17] Questão 146/200 analisada em 5.98 segundos
+[2024-12-11 01:40:23] Questão 147/200 analisada em 6.40 segundos
+[2024-12-11 01:40:31] Questão 148/200 analisada em 7.99 segundos
+[2024-12-11 01:40:37] Questão 149/200 analisada em 5.47 segundos
+[2024-12-11 01:40:42] Questão 150/200 analisada em 5.09 segundos
+[2024-12-11 01:40:42] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_150_20241211_014042
+[2024-12-11 01:40:42] Progresso: 150/200 questões. Tempo médio por questão: 5.77s. ETA: 288.30s
+[2024-12-11 01:40:47] Questão 151/200 analisada em 5.17 segundos
+[2024-12-11 01:40:54] Questão 152/200 analisada em 7.27 segundos
+[2024-12-11 01:41:03] Questão 153/200 analisada em 8.39 segundos
+[2024-12-11 01:41:09] Questão 154/200 analisada em 5.93 segundos
+[2024-12-11 01:41:14] Questão 155/200 analisada em 5.58 segundos
+[2024-12-11 01:41:19] Questão 156/200 analisada em 4.89 segundos
+[2024-12-11 01:41:24] Questão 157/200 analisada em 4.80 segundos
+[2024-12-11 01:41:28] Questão 158/200 analisada em 4.61 segundos
+[2024-12-11 01:41:34] Questão 159/200 analisada em 5.84 segundos
+[2024-12-11 01:41:40] Questão 160/200 analisada em 5.63 segundos
+[2024-12-11 01:41:40] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_160_20241211_014140
+[2024-12-11 01:41:40] Progresso: 160/200 questões. Tempo médio por questão: 5.77s. ETA: 230.76s
+[2024-12-11 01:41:46] Questão 161/200 analisada em 5.69 segundos
+[2024-12-11 01:41:51] Questão 162/200 analisada em 5.81 segundos
+[2024-12-11 01:41:57] Questão 163/200 analisada em 5.78 segundos
+[2024-12-11 01:42:03] Questão 164/200 analisada em 5.64 segundos
+[2024-12-11 01:42:08] Questão 165/200 analisada em 5.00 segundos
+[2024-12-11 01:42:13] Questão 166/200 analisada em 5.43 segundos
+[2024-12-11 01:42:17] Questão 167/200 analisada em 3.99 segundos
+[2024-12-11 01:42:22] Questão 168/200 analisada em 4.63 segundos
+[2024-12-11 01:42:28] Questão 169/200 analisada em 5.61 segundos
+[2024-12-11 01:42:32] Questão 170/200 analisada em 4.35 segundos
+[2024-12-11 01:42:32] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_170_20241211_014232
+[2024-12-11 01:42:32] Progresso: 170/200 questões. Tempo médio por questão: 5.74s. ETA: 172.06s
+[2024-12-11 01:42:37] Questão 171/200 analisada em 5.44 segundos
+[2024-12-11 01:42:42] Questão 172/200 analisada em 4.54 segundos
+[2024-12-11 01:42:47] Questão 173/200 analisada em 4.72 segundos
+[2024-12-11 01:42:51] Questão 174/200 analisada em 4.81 segundos
+[2024-12-11 01:42:56] Questão 175/200 analisada em 5.06 segundos
+[2024-12-11 01:43:00] Questão 176/200 analisada em 3.50 segundos
+[2024-12-11 01:43:04] Questão 177/200 analisada em 4.40 segundos
+[2024-12-11 01:43:10] Questão 178/200 analisada em 5.32 segundos
+[2024-12-11 01:43:14] Questão 179/200 analisada em 4.40 segundos
+[2024-12-11 01:43:19] Questão 180/200 analisada em 4.70 segundos
+[2024-12-11 01:43:19] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_180_20241211_014319
+[2024-12-11 01:43:19] Progresso: 180/200 questões. Tempo médio por questão: 5.68s. ETA: 113.55s
+[2024-12-11 01:43:23] Questão 181/200 analisada em 4.06 segundos
+[2024-12-11 01:43:27] Questão 182/200 analisada em 4.40 segundos
+[2024-12-11 01:43:32] Questão 183/200 analisada em 4.75 segundos
+[2024-12-11 01:43:37] Questão 184/200 analisada em 5.19 segundos
+[2024-12-11 01:43:42] Questão 185/200 analisada em 4.96 segundos
+[2024-12-11 01:43:47] Questão 186/200 analisada em 4.55 segundos
+[2024-12-11 01:43:55] Questão 187/200 analisada em 7.85 segundos
+[2024-12-11 01:43:59] Questão 188/200 analisada em 4.03 segundos
+[2024-12-11 01:44:03] Questão 189/200 analisada em 4.61 segundos
+[2024-12-11 01:44:08] Questão 190/200 analisada em 5.02 segundos
+[2024-12-11 01:44:08] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_190_20241211_014408
+[2024-12-11 01:44:08] Progresso: 190/200 questões. Tempo médio por questão: 5.64s. ETA: 56.39s
+[2024-12-11 01:44:13] Questão 191/200 analisada em 4.97 segundos
+[2024-12-11 01:44:18] Questão 192/200 analisada em 4.51 segundos
+[2024-12-11 01:44:22] Questão 193/200 analisada em 4.40 segundos
+[2024-12-11 01:44:27] Questão 194/200 analisada em 4.47 segundos
+[2024-12-11 01:44:33] Questão 195/200 analisada em 6.49 segundos
+[2024-12-11 01:44:39] Questão 196/200 analisada em 5.42 segundos
+[2024-12-11 01:44:44] Questão 197/200 analisada em 4.92 segundos
+[2024-12-11 01:44:50] Questão 198/200 analisada em 6.35 segundos
+[2024-12-11 01:44:56] Questão 199/200 analisada em 6.45 segundos
+[2024-12-11 01:45:02] Questão 200/200 analisada em 6.05 segundos
+[2024-12-11 01:45:02] Resultados salvos em: resultados/resultados_batch_simulado_port_5.pdf_200_20241211_014502
+[2024-12-11 01:45:02] Progresso: 200/200 questões. Tempo médio por questão: 5.63s. ETA: 0.00s
+[2024-12-11 01:45:02] Análise de simulado_port_5.pdf concluída em 1125.50 segundos
+[2024-12-11 01:45:02] Resultados salvos em: resultados/resultados_batch_completo_simulado_port_5.pdf_20241211_014502
+[2024-12-11 01:45:02] 
+Processando PDF 3/5: Simulado_port_1.pdf
+[2024-12-11 01:45:02] Iniciando processamento de Simulado_port_1.pdf
+[2024-12-11 01:45:02] Fase 1: Extraindo texto do PDF...
+[2024-12-11 01:45:20] Texto extraído em 17.13 segundos
+[2024-12-11 01:45:20] Fase 2: Separando questões...
+[2024-12-11 01:45:20] Encontradas 200 questões em 0.01 segundos
+[2024-12-11 01:45:20] Fase 3: Iniciando análise das questões...
+[2024-12-11 01:45:26] Questão 1/200 analisada em 6.55 segundos
+[2024-12-11 01:45:32] Questão 2/200 analisada em 5.52 segundos
+[2024-12-11 01:45:37] Questão 3/200 analisada em 5.63 segundos
+[2024-12-11 01:45:43] Questão 4/200 analisada em 5.33 segundos
+[2024-12-11 01:45:50] Questão 5/200 analisada em 7.15 segundos
+[2024-12-11 01:45:55] Questão 6/200 analisada em 5.54 segundos
+[2024-12-11 01:46:01] Questão 7/200 analisada em 5.33 segundos
+[2024-12-11 01:46:06] Questão 8/200 analisada em 5.57 segundos
+[2024-12-11 01:46:13] Questão 9/200 analisada em 7.02 segundos
+[2024-12-11 01:46:20] Questão 10/200 analisada em 6.45 segundos
+[2024-12-11 01:46:20] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_10_20241211_014620
+[2024-12-11 01:46:20] Progresso: 10/200 questões. Tempo médio por questão: 6.01s. ETA: 1142.08s
+[2024-12-11 01:46:25] Questão 11/200 analisada em 5.62 segundos
+[2024-12-11 01:46:32] Questão 12/200 analisada em 6.59 segundos
+[2024-12-11 01:46:41] Questão 13/200 analisada em 9.01 segundos
+[2024-12-11 01:46:46] Questão 14/200 analisada em 5.50 segundos
+[2024-12-11 01:46:52] Questão 15/200 analisada em 5.74 segundos
+[2024-12-11 01:46:57] Questão 16/200 analisada em 5.02 segundos
+[2024-12-11 01:47:02] Questão 17/200 analisada em 5.13 segundos
+[2024-12-11 01:47:07] Questão 18/200 analisada em 4.63 segundos
+[2024-12-11 01:47:13] Questão 19/200 analisada em 6.52 segundos
+[2024-12-11 01:47:20] Questão 20/200 analisada em 6.66 segundos
+[2024-12-11 01:47:20] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_20_20241211_014720
+[2024-12-11 01:47:20] Progresso: 20/200 questões. Tempo médio por questão: 6.03s. ETA: 1084.66s
+[2024-12-11 01:47:31] Questão 21/200 analisada em 10.85 segundos
+[2024-12-11 01:47:36] Questão 22/200 analisada em 5.43 segundos
+[2024-12-11 01:47:42] Questão 23/200 analisada em 5.94 segundos
+[2024-12-11 01:47:50] Questão 24/200 analisada em 7.37 segundos
+[2024-12-11 01:47:56] Questão 25/200 analisada em 6.76 segundos
+[2024-12-11 01:48:04] Questão 26/200 analisada em 7.15 segundos
+[2024-12-11 01:48:09] Questão 27/200 analisada em 5.34 segundos
+[2024-12-11 01:48:15] Questão 28/200 analisada em 6.04 segundos
+[2024-12-11 01:48:20] Questão 29/200 analisada em 5.32 segundos
+[2024-12-11 01:48:30] Questão 30/200 analisada em 9.73 segundos
+[2024-12-11 01:48:30] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_30_20241211_014830
+[2024-12-11 01:48:30] Progresso: 30/200 questões. Tempo médio por questão: 6.35s. ETA: 1079.34s
+[2024-12-11 01:48:37] Questão 31/200 analisada em 7.35 segundos
+[2024-12-11 01:48:45] Questão 32/200 analisada em 7.42 segundos
+[2024-12-11 01:48:52] Questão 33/200 analisada em 7.66 segundos
+[2024-12-11 01:48:59] Questão 34/200 analisada em 6.73 segundos
+[2024-12-11 01:49:08] Questão 35/200 analisada em 8.30 segundos
+[2024-12-11 01:49:14] Questão 36/200 analisada em 6.35 segundos
+[2024-12-11 01:49:21] Questão 37/200 analisada em 6.75 segundos
+[2024-12-11 01:49:27] Questão 38/200 analisada em 6.25 segundos
+[2024-12-11 01:49:32] Questão 39/200 analisada em 5.37 segundos
+[2024-12-11 01:49:38] Questão 40/200 analisada em 5.51 segundos
+[2024-12-11 01:49:38] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_40_20241211_014938
+[2024-12-11 01:49:38] Progresso: 40/200 questões. Tempo médio por questão: 6.45s. ETA: 1032.76s
+[2024-12-11 01:49:43] Questão 41/200 analisada em 5.38 segundos
+[2024-12-11 01:49:48] Questão 42/200 analisada em 4.61 segundos
+[2024-12-11 01:49:56] Questão 43/200 analisada em 8.19 segundos
+[2024-12-11 01:50:04] Questão 44/200 analisada em 7.68 segundos
+[2024-12-11 01:50:11] Questão 45/200 analisada em 7.17 segundos
+[2024-12-11 01:50:21] Questão 46/200 analisada em 9.73 segundos
+[2024-12-11 01:50:31] Questão 47/200 analisada em 10.24 segundos
+[2024-12-11 01:50:37] Questão 48/200 analisada em 6.55 segundos
+[2024-12-11 01:50:44] Questão 49/200 analisada em 6.76 segundos
+[2024-12-11 01:50:50] Questão 50/200 analisada em 6.04 segundos
+[2024-12-11 01:50:50] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_50_20241211_015050
+[2024-12-11 01:50:50] Progresso: 50/200 questões. Tempo médio por questão: 6.61s. ETA: 991.68s
+[2024-12-11 01:50:56] Questão 51/200 analisada em 5.92 segundos
+[2024-12-11 01:51:03] Questão 52/200 analisada em 6.56 segundos
+[2024-12-11 01:51:12] Questão 53/200 analisada em 9.42 segundos
+[2024-12-11 01:51:21] Questão 54/200 analisada em 9.32 segundos
+[2024-12-11 01:51:28] Questão 55/200 analisada em 6.55 segundos
+[2024-12-11 01:51:34] Questão 56/200 analisada em 6.35 segundos
+[2024-12-11 01:51:42] Questão 57/200 analisada em 7.48 segundos
+[2024-12-11 01:51:48] Questão 58/200 analisada em 6.14 segundos
+[2024-12-11 01:51:53] Questão 59/200 analisada em 5.37 segundos
+[2024-12-11 01:52:00] Questão 60/200 analisada em 7.02 segundos
+[2024-12-11 01:52:00] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_60_20241211_015200
+[2024-12-11 01:52:00] Progresso: 60/200 questões. Tempo médio por questão: 6.68s. ETA: 934.99s
+[2024-12-11 01:52:08] Questão 61/200 analisada em 8.07 segundos
+[2024-12-11 01:52:16] Questão 62/200 analisada em 7.58 segundos
+[2024-12-11 01:52:24] Questão 63/200 analisada em 8.50 segundos
+[2024-12-11 01:52:32] Questão 64/200 analisada em 7.43 segundos
+[2024-12-11 01:52:41] Questão 65/200 analisada em 9.15 segundos
+[2024-12-11 01:52:46] Questão 66/200 analisada em 5.40 segundos
+[2024-12-11 01:52:53] Questão 67/200 analisada em 6.19 segundos
+[2024-12-11 01:52:58] Questão 68/200 analisada em 5.50 segundos
+[2024-12-11 01:53:09] Questão 69/200 analisada em 10.54 segundos
+[2024-12-11 01:53:16] Questão 70/200 analisada em 7.28 segundos
+[2024-12-11 01:53:16] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_70_20241211_015316
+[2024-12-11 01:53:16] Progresso: 70/200 questões. Tempo médio por questão: 6.81s. ETA: 884.71s
+[2024-12-11 01:53:22] Questão 71/200 analisada em 5.71 segundos
+[2024-12-11 01:53:29] Questão 72/200 analisada em 7.58 segundos
+[2024-12-11 01:53:38] Questão 73/200 analisada em 9.01 segundos
+[2024-12-11 01:53:46] Questão 74/200 analisada em 7.27 segundos
+[2024-12-11 01:53:51] Questão 75/200 analisada em 5.73 segundos
+[2024-12-11 01:53:57] Questão 76/200 analisada em 6.04 segundos
+[2024-12-11 01:54:03] Questão 77/200 analisada em 5.48 segundos
+[2024-12-11 01:54:09] Questão 78/200 analisada em 6.00 segundos
+[2024-12-11 01:54:14] Questão 79/200 analisada em 4.89 segundos
+[2024-12-11 01:54:25] Questão 80/200 analisada em 11.67 segundos
+[2024-12-11 01:54:25] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_80_20241211_015425
+[2024-12-11 01:54:25] Progresso: 80/200 questões. Tempo médio por questão: 6.82s. ETA: 818.72s
+[2024-12-11 01:54:32] Questão 81/200 analisada em 6.67 segundos
+[2024-12-11 01:54:38] Questão 82/200 analisada em 5.60 segundos
+[2024-12-11 01:54:44] Questão 83/200 analisada em 5.99 segundos
+[2024-12-11 01:54:49] Questão 84/200 analisada em 5.46 segundos
+[2024-12-11 01:54:54] Questão 85/200 analisada em 5.12 segundos
+[2024-12-11 01:55:00] Questão 86/200 analisada em 5.53 segundos
+[2024-12-11 01:55:05] Questão 87/200 analisada em 5.32 segundos
+[2024-12-11 01:55:11] Questão 88/200 analisada em 5.53 segundos
+[2024-12-11 01:55:16] Questão 89/200 analisada em 5.02 segundos
+[2024-12-11 01:55:29] Questão 90/200 analisada em 13.58 segundos
+[2024-12-11 01:55:29] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_90_20241211_015529
+[2024-12-11 01:55:29] Progresso: 90/200 questões. Tempo médio por questão: 6.77s. ETA: 745.16s
+[2024-12-11 01:55:34] Questão 91/200 analisada em 4.52 segundos
+[2024-12-11 01:55:39] Questão 92/200 analisada em 5.12 segundos
+[2024-12-11 01:55:43] Questão 93/200 analisada em 4.03 segundos
+[2024-12-11 01:55:46] Questão 94/200 analisada em 3.55 segundos
+[2024-12-11 01:55:51] Questão 95/200 analisada em 5.02 segundos
+[2024-12-11 01:55:58] Questão 96/200 analisada em 6.25 segundos
+[2024-12-11 01:56:03] Questão 97/200 analisada em 4.79 segundos
+[2024-12-11 01:56:08] Questão 98/200 analisada em 5.43 segundos
+[2024-12-11 01:56:13] Questão 99/200 analisada em 5.12 segundos
+[2024-12-11 01:56:18] Questão 100/200 analisada em 5.12 segundos
+[2024-12-11 01:56:18] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_100_20241211_015618
+[2024-12-11 01:56:18] Progresso: 100/200 questões. Tempo médio por questão: 6.59s. ETA: 658.65s
+[2024-12-11 01:56:22] Questão 101/200 analisada em 4.16 segundos
+[2024-12-11 01:56:27] Questão 102/200 analisada em 4.92 segundos
+[2024-12-11 01:56:32] Questão 103/200 analisada em 4.95 segundos
+[2024-12-11 01:56:38] Questão 104/200 analisada em 5.39 segundos
+[2024-12-11 01:56:42] Questão 105/200 analisada em 4.18 segundos
+[2024-12-11 01:56:47] Questão 106/200 analisada em 4.72 segundos
+[2024-12-11 01:56:51] Questão 107/200 analisada em 3.99 segundos
+[2024-12-11 01:56:55] Questão 108/200 analisada em 4.81 segundos
+[2024-12-11 01:57:03] Questão 109/200 analisada em 7.27 segundos
+[2024-12-11 01:57:07] Questão 110/200 analisada em 4.09 segundos
+[2024-12-11 01:57:07] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_110_20241211_015707
+[2024-12-11 01:57:07] Progresso: 110/200 questões. Tempo médio por questão: 6.43s. ETA: 578.61s
+[2024-12-11 01:57:13] Questão 111/200 analisada em 6.71 segundos
+[2024-12-11 01:57:18] Questão 112/200 analisada em 4.93 segundos
+[2024-12-11 01:57:23] Questão 113/200 analisada em 4.42 segundos
+[2024-12-11 01:57:28] Questão 114/200 analisada em 5.51 segundos
+[2024-12-11 01:57:33] Questão 115/200 analisada em 4.34 segundos
+[2024-12-11 01:57:38] Questão 116/200 analisada em 4.86 segundos
+[2024-12-11 01:57:42] Questão 117/200 analisada em 4.72 segundos
+[2024-12-11 01:57:47] Questão 118/200 analisada em 4.61 segundos
+[2024-12-11 01:57:52] Questão 119/200 analisada em 5.32 segundos
+[2024-12-11 01:57:58] Questão 120/200 analisada em 5.53 segundos
+[2024-12-11 01:57:58] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_120_20241211_015758
+[2024-12-11 01:57:58] Progresso: 120/200 questões. Tempo médio por questão: 6.32s. ETA: 505.45s
+[2024-12-11 01:58:02] Questão 121/200 analisada em 4.68 segundos
+[2024-12-11 01:58:07] Questão 122/200 analisada em 4.50 segundos
+[2024-12-11 01:58:11] Questão 123/200 analisada em 4.43 segundos
+[2024-12-11 01:58:18] Questão 124/200 analisada em 6.63 segundos
+[2024-12-11 01:58:22] Questão 125/200 analisada em 4.20 segundos
+[2024-12-11 01:58:27] Questão 126/200 analisada em 4.54 segundos
+[2024-12-11 01:58:31] Questão 127/200 analisada em 4.57 segundos
+[2024-12-11 01:58:36] Questão 128/200 analisada em 4.41 segundos
+[2024-12-11 01:58:41] Questão 129/200 analisada em 4.82 segundos
+[2024-12-11 01:58:46] Questão 130/200 analisada em 5.51 segundos
+[2024-12-11 01:58:46] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_130_20241211_015846
+[2024-12-11 01:58:46] Progresso: 130/200 questões. Tempo médio por questão: 6.20s. ETA: 434.28s
+[2024-12-11 01:58:50] Questão 131/200 analisada em 3.75 segundos
+[2024-12-11 01:59:02] Questão 132/200 analisada em 11.94 segundos
+[2024-12-11 01:59:06] Questão 133/200 analisada em 4.54 segundos
+[2024-12-11 01:59:11] Questão 134/200 analisada em 4.31 segundos
+[2024-12-11 01:59:15] Questão 135/200 analisada em 4.21 segundos
+[2024-12-11 01:59:20] Questão 136/200 analisada em 5.30 segundos
+[2024-12-11 01:59:30] Questão 137/200 analisada em 9.93 segundos
+[2024-12-11 01:59:36] Questão 138/200 analisada em 5.83 segundos
+[2024-12-11 01:59:41] Questão 139/200 analisada em 5.22 segundos
+[2024-12-11 01:59:46] Questão 140/200 analisada em 5.32 segundos
+[2024-12-11 01:59:46] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_140_20241211_015946
+[2024-12-11 01:59:46] Progresso: 140/200 questões. Tempo médio por questão: 6.19s. ETA: 371.53s
+[2024-12-11 01:59:52] Questão 141/200 analisada em 5.65 segundos
+[2024-12-11 01:59:57] Questão 142/200 analisada em 4.37 segundos
+[2024-12-11 02:00:03] Questão 143/200 analisada em 6.37 segundos
+[2024-12-11 02:00:08] Questão 144/200 analisada em 5.50 segundos
+[2024-12-11 02:00:12] Questão 145/200 analisada em 3.79 segundos
+[2024-12-11 02:00:17] Questão 146/200 analisada em 4.91 segundos
+[2024-12-11 02:00:22] Questão 147/200 analisada em 4.81 segundos
+[2024-12-11 02:00:28] Questão 148/200 analisada em 5.84 segundos
+[2024-12-11 02:00:34] Questão 149/200 analisada em 5.94 segundos
+[2024-12-11 02:00:39] Questão 150/200 analisada em 5.22 segundos
+[2024-12-11 02:00:39] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_150_20241211_020039
+[2024-12-11 02:00:39] Progresso: 150/200 questões. Tempo médio por questão: 6.13s. ETA: 306.46s
+[2024-12-11 02:00:45] Questão 151/200 analisada em 6.21 segundos
+[2024-12-11 02:00:51] Questão 152/200 analisada em 6.10 segundos
+[2024-12-11 02:00:57] Questão 153/200 analisada em 6.08 segundos
+[2024-12-11 02:01:01] Questão 154/200 analisada em 4.05 segundos
+[2024-12-11 02:01:06] Questão 155/200 analisada em 4.70 segundos
+[2024-12-11 02:01:12] Questão 156/200 analisada em 6.00 segundos
+[2024-12-11 02:01:17] Questão 157/200 analisada em 4.91 segundos
+[2024-12-11 02:01:24] Questão 158/200 analisada em 7.17 segundos
+[2024-12-11 02:01:31] Questão 159/200 analisada em 6.35 segundos
+[2024-12-11 02:01:35] Questão 160/200 analisada em 4.92 segundos
+[2024-12-11 02:01:35] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_160_20241211_020135
+[2024-12-11 02:01:35] Progresso: 160/200 questões. Tempo médio por questão: 6.10s. ETA: 243.97s
+[2024-12-11 02:01:42] Questão 161/200 analisada em 6.39 segundos
+[2024-12-11 02:01:47] Questão 162/200 analisada em 4.66 segundos
+[2024-12-11 02:01:54] Questão 163/200 analisada em 7.66 segundos
+[2024-12-11 02:01:59] Questão 164/200 analisada em 5.12 segundos
+[2024-12-11 02:02:07] Questão 165/200 analisada em 7.32 segundos
+[2024-12-11 02:02:12] Questão 166/200 analisada em 5.55 segundos
+[2024-12-11 02:02:16] Questão 167/200 analisada em 4.25 segundos
+[2024-12-11 02:02:23] Questão 168/200 analisada em 6.53 segundos
+[2024-12-11 02:02:29] Questão 169/200 analisada em 6.25 segundos
+[2024-12-11 02:02:36] Questão 170/200 analisada em 7.06 segundos
+[2024-12-11 02:02:36] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_170_20241211_020236
+[2024-12-11 02:02:36] Progresso: 170/200 questões. Tempo médio por questão: 6.10s. ETA: 182.95s
+[2024-12-11 02:02:42] Questão 171/200 analisada em 5.57 segundos
+[2024-12-11 02:02:47] Questão 172/200 analisada em 5.18 segundos
+[2024-12-11 02:02:54] Questão 173/200 analisada em 6.72 segundos
+[2024-12-11 02:02:59] Questão 174/200 analisada em 5.55 segundos
+[2024-12-11 02:03:04] Questão 175/200 analisada em 4.70 segundos
+[2024-12-11 02:03:09] Questão 176/200 analisada em 4.81 segundos
+[2024-12-11 02:03:13] Questão 177/200 analisada em 4.51 segundos
+[2024-12-11 02:03:20] Questão 178/200 analisada em 6.45 segundos
+[2024-12-11 02:03:25] Questão 179/200 analisada em 5.32 segundos
+[2024-12-11 02:03:30] Questão 180/200 analisada em 5.12 segundos
+[2024-12-11 02:03:30] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_180_20241211_020330
+[2024-12-11 02:03:30] Progresso: 180/200 questões. Tempo médio por questão: 6.06s. ETA: 121.19s
+[2024-12-11 02:03:35] Questão 181/200 analisada em 4.86 segundos
+[2024-12-11 02:03:40] Questão 182/200 analisada em 4.57 segundos
+[2024-12-11 02:03:47] Questão 183/200 analisada em 7.16 segundos
+[2024-12-11 02:03:51] Questão 184/200 analisada em 4.54 segundos
+[2024-12-11 02:03:57] Questão 185/200 analisada em 5.33 segundos
+[2024-12-11 02:04:01] Questão 186/200 analisada em 4.71 segundos
+[2024-12-11 02:04:06] Questão 187/200 analisada em 4.90 segundos
+[2024-12-11 02:04:12] Questão 188/200 analisada em 5.17 segundos
+[2024-12-11 02:04:17] Questão 189/200 analisada em 5.77 segundos
+[2024-12-11 02:04:22] Questão 190/200 analisada em 5.02 segundos
+[2024-12-11 02:04:22] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_190_20241211_020422
+[2024-12-11 02:04:22] Progresso: 190/200 questões. Tempo médio por questão: 6.01s. ETA: 60.15s
+[2024-12-11 02:04:36] Questão 191/200 analisada em 13.33 segundos
+[2024-12-11 02:04:41] Questão 192/200 analisada em 5.47 segundos
+[2024-12-11 02:04:46] Questão 193/200 analisada em 4.72 segundos
+[2024-12-11 02:04:52] Questão 194/200 analisada em 5.63 segundos
+[2024-12-11 02:04:56] Questão 195/200 analisada em 4.91 segundos
+[2024-12-11 02:05:03] Questão 196/200 analisada em 6.85 segundos
+[2024-12-11 02:05:09] Questão 197/200 analisada em 5.74 segundos
+[2024-12-11 02:05:14] Questão 198/200 analisada em 4.81 segundos
+[2024-12-11 02:05:19] Questão 199/200 analisada em 5.12 segundos
+[2024-12-11 02:05:25] Questão 200/200 analisada em 5.88 segundos
+[2024-12-11 02:05:25] Resultados salvos em: resultados/resultados_batch_Simulado_port_1.pdf_200_20241211_020525
+[2024-12-11 02:05:25] Progresso: 200/200 questões. Tempo médio por questão: 6.03s. ETA: 0.00s
+[2024-12-11 02:05:25] Análise de Simulado_port_1.pdf concluída em 1205.29 segundos
+[2024-12-11 02:05:25] Resultados salvos em: resultados/resultados_batch_completo_Simulado_port_1.pdf_20241211_020525
+[2024-12-11 02:05:25] 
+Processando PDF 4/5: simulado_port_2.pdf
+[2024-12-11 02:05:25] Iniciando processamento de simulado_port_2.pdf
+[2024-12-11 02:05:25] Fase 1: Extraindo texto do PDF...
+[2024-12-11 02:05:42] Texto extraído em 17.09 segundos
+[2024-12-11 02:05:42] Fase 2: Separando questões...
+[2024-12-11 02:05:42] Encontradas 200 questões em 0.01 segundos
+[2024-12-11 02:05:42] Fase 3: Iniciando análise das questões...
+[2024-12-11 02:05:48] Questão 1/200 analisada em 6.00 segundos
+[2024-12-11 02:05:53] Questão 2/200 analisada em 4.72 segundos
+[2024-12-11 02:05:58] Questão 3/200 analisada em 5.07 segundos
+[2024-12-11 02:06:03] Questão 4/200 analisada em 5.10 segundos
+[2024-12-11 02:06:07] Questão 5/200 analisada em 4.11 segundos
+[2024-12-11 02:06:12] Questão 6/200 analisada em 4.61 segundos
+[2024-12-11 02:06:17] Questão 7/200 analisada em 5.33 segundos
+[2024-12-11 02:06:22] Questão 8/200 analisada em 4.71 segundos
+[2024-12-11 02:06:27] Questão 9/200 analisada em 5.50 segundos
+[2024-12-11 02:06:32] Questão 10/200 analisada em 5.18 segundos
+[2024-12-11 02:06:32] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_10_20241211_020632
+[2024-12-11 02:06:32] Progresso: 10/200 questões. Tempo médio por questão: 5.03s. ETA: 956.56s
+[2024-12-11 02:06:38] Questão 11/200 analisada em 5.63 segundos
+[2024-12-11 02:06:42] Questão 12/200 analisada em 4.30 segundos
+[2024-12-11 02:06:48] Questão 13/200 analisada em 5.28 segundos
+[2024-12-11 02:06:53] Questão 14/200 analisada em 5.22 segundos
+[2024-12-11 02:06:57] Questão 15/200 analisada em 4.50 segundos
+[2024-12-11 02:07:02] Questão 16/200 analisada em 4.99 segundos
+[2024-12-11 02:07:06] Questão 17/200 analisada em 3.81 segundos
+[2024-12-11 02:07:12] Questão 18/200 analisada em 5.94 segundos
+[2024-12-11 02:07:16] Questão 19/200 analisada em 4.39 segundos
+[2024-12-11 02:07:22] Questão 20/200 analisada em 5.44 segundos
+[2024-12-11 02:07:22] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_20_20241211_020722
+[2024-12-11 02:07:22] Progresso: 20/200 questões. Tempo médio por questão: 4.99s. ETA: 898.84s
+[2024-12-11 02:07:27] Questão 21/200 analisada em 4.80 segundos
+[2024-12-11 02:07:32] Questão 22/200 analisada em 5.69 segundos
+[2024-12-11 02:07:38] Questão 23/200 analisada em 5.37 segundos
+[2024-12-11 02:07:42] Questão 24/200 analisada em 4.20 segundos
+[2024-12-11 02:07:46] Questão 25/200 analisada em 4.20 segundos
+[2024-12-11 02:07:51] Questão 26/200 analisada em 4.81 segundos
+[2024-12-11 02:07:55] Questão 27/200 analisada em 4.50 segundos
+[2024-12-11 02:08:00] Questão 28/200 analisada em 4.81 segundos
+[2024-12-11 02:08:07] Questão 29/200 analisada em 6.35 segundos
+[2024-12-11 02:08:11] Questão 30/200 analisada em 4.50 segundos
+[2024-12-11 02:08:11] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_30_20241211_020811
+[2024-12-11 02:08:11] Progresso: 30/200 questões. Tempo médio por questão: 4.97s. ETA: 845.05s
+[2024-12-11 02:08:17] Questão 31/200 analisada em 5.72 segundos
+[2024-12-11 02:08:21] Questão 32/200 analisada em 3.84 segundos
+[2024-12-11 02:08:25] Questão 33/200 analisada em 4.65 segundos
+[2024-12-11 02:08:29] Questão 34/200 analisada em 4.00 segundos
+[2024-12-11 02:08:35] Questão 35/200 analisada em 5.84 segundos
+[2024-12-11 02:08:41] Questão 36/200 analisada em 5.94 segundos
+[2024-12-11 02:08:46] Questão 37/200 analisada em 5.02 segundos
+[2024-12-11 02:08:50] Questão 38/200 analisada em 3.89 segundos
+[2024-12-11 02:08:57] Questão 39/200 analisada em 6.66 segundos
+[2024-12-11 02:09:00] Questão 40/200 analisada em 3.68 segundos
+[2024-12-11 02:09:00] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_40_20241211_020900
+[2024-12-11 02:09:00] Progresso: 40/200 questões. Tempo médio por questão: 4.96s. ETA: 793.53s
+[2024-12-11 02:09:04] Questão 41/200 analisada em 3.97 segundos
+[2024-12-11 02:09:08] Questão 42/200 analisada em 4.11 segundos
+[2024-12-11 02:09:13] Questão 43/200 analisada em 4.53 segundos
+[2024-12-11 02:09:18] Questão 44/200 analisada em 4.57 segundos
+[2024-12-11 02:09:22] Questão 45/200 analisada em 4.50 segundos
+[2024-12-11 02:09:27] Questão 46/200 analisada em 5.12 segundos
+[2024-12-11 02:09:35] Questão 47/200 analisada em 7.81 segundos
+[2024-12-11 02:09:39] Questão 48/200 analisada em 4.48 segundos
+[2024-12-11 02:09:51] Questão 49/200 analisada em 11.67 segundos
+[2024-12-11 02:09:56] Questão 50/200 analisada em 5.12 segundos
+[2024-12-11 02:09:56] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_50_20241211_020956
+[2024-12-11 02:09:56] Progresso: 50/200 questões. Tempo médio por questão: 5.09s. ETA: 762.89s
+[2024-12-11 02:10:01] Questão 51/200 analisada em 5.02 segundos
+[2024-12-11 02:10:07] Questão 52/200 analisada em 5.22 segundos
+[2024-12-11 02:10:11] Questão 53/200 analisada em 4.79 segundos
+[2024-12-11 02:10:19] Questão 54/200 analisada em 8.19 segundos
+[2024-12-11 02:10:24] Questão 55/200 analisada em 4.10 segundos
+[2024-12-11 02:10:29] Questão 56/200 analisada em 4.91 segundos
+[2024-12-11 02:10:33] Questão 57/200 analisada em 4.79 segundos
+[2024-12-11 02:10:45] Questão 58/200 analisada em 11.28 segundos
+[2024-12-11 02:10:49] Questão 59/200 analisada em 4.51 segundos
+[2024-12-11 02:10:56] Questão 60/200 analisada em 7.23 segundos
+[2024-12-11 02:10:56] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_60_20241211_021056
+[2024-12-11 02:10:56] Progresso: 60/200 questões. Tempo médio por questão: 5.24s. ETA: 733.51s
+[2024-12-11 02:11:01] Questão 61/200 analisada em 5.04 segundos
+[2024-12-11 02:11:05] Questão 62/200 analisada em 3.18 segundos
+[2024-12-11 02:11:09] Questão 63/200 analisada em 3.99 segundos
+[2024-12-11 02:11:13] Questão 64/200 analisada em 4.91 segundos
+[2024-12-11 02:11:19] Questão 65/200 analisada em 5.33 segundos
+[2024-12-11 02:11:23] Questão 66/200 analisada em 4.68 segundos
+[2024-12-11 02:11:29] Questão 67/200 analisada em 5.30 segundos
+[2024-12-11 02:11:34] Questão 68/200 analisada em 4.82 segundos
+[2024-12-11 02:11:39] Questão 69/200 analisada em 5.37 segundos
+[2024-12-11 02:11:44] Questão 70/200 analisada em 5.54 segundos
+[2024-12-11 02:11:45] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_70_20241211_021144
+[2024-12-11 02:11:45] Progresso: 70/200 questões. Tempo médio por questão: 5.18s. ETA: 673.29s
+[2024-12-11 02:11:53] Questão 71/200 analisada em 8.78 segundos
+[2024-12-11 02:11:58] Questão 72/200 analisada em 4.71 segundos
+[2024-12-11 02:12:02] Questão 73/200 analisada em 4.32 segundos
+[2024-12-11 02:13:38] Questão 74/200 analisada em 95.72 segundos
+[2024-12-11 02:13:42] Questão 75/200 analisada em 4.30 segundos
+[2024-12-11 02:13:47] Questão 76/200 analisada em 4.30 segundos
+[2024-12-11 02:13:51] Questão 77/200 analisada em 4.61 segundos
+[2024-12-11 02:13:55] Questão 78/200 analisada em 3.68 segundos
+[2024-12-11 02:14:01] Questão 79/200 analisada em 6.25 segundos
+[2024-12-11 02:14:06] Questão 80/200 analisada em 4.61 segundos
+[2024-12-11 02:14:06] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_80_20241211_021406
+[2024-12-11 02:14:06] Progresso: 80/200 questões. Tempo médio por questão: 6.30s. ETA: 755.77s
+[2024-12-11 02:14:10] Questão 81/200 analisada em 4.38 segundos
+[2024-12-11 02:14:15] Questão 82/200 analisada em 5.10 segundos
+[2024-12-11 02:14:20] Questão 83/200 analisada em 5.19 segundos
+[2024-12-11 02:14:27] Questão 84/200 analisada em 6.37 segundos
+[2024-12-11 02:14:31] Questão 85/200 analisada em 3.99 segundos
+[2024-12-11 02:14:35] Questão 86/200 analisada em 3.79 segundos
+[2024-12-11 02:14:39] Questão 87/200 analisada em 4.61 segundos
+[2024-12-11 02:14:44] Questão 88/200 analisada em 4.75 segundos
+[2024-12-11 02:14:48] Questão 89/200 analisada em 4.46 segundos
+[2024-12-11 02:14:53] Questão 90/200 analisada em 4.20 segundos
+[2024-12-11 02:14:53] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_90_20241211_021453
+[2024-12-11 02:14:53] Progresso: 90/200 questões. Tempo médio por questão: 6.12s. ETA: 673.09s
+[2024-12-11 02:14:58] Questão 91/200 analisada em 5.61 segundos
+[2024-12-11 02:15:03] Questão 92/200 analisada em 4.38 segundos
+[2024-12-11 02:15:07] Questão 93/200 analisada em 4.32 segundos
+[2024-12-11 02:15:13] Questão 94/200 analisada em 6.02 segundos
+[2024-12-11 02:15:18] Questão 95/200 analisada em 5.04 segundos
+[2024-12-11 02:15:24] Questão 96/200 analisada em 6.25 segundos
+[2024-12-11 02:15:30] Questão 97/200 analisada em 5.33 segundos
+[2024-12-11 02:15:34] Questão 98/200 analisada em 4.56 segundos
+[2024-12-11 02:15:39] Questão 99/200 analisada em 4.70 segundos
+[2024-12-11 02:15:43] Questão 100/200 analisada em 4.56 segundos
+[2024-12-11 02:15:43] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_100_20241211_021543
+[2024-12-11 02:15:43] Progresso: 100/200 questões. Tempo médio por questão: 6.02s. ETA: 601.50s
+[2024-12-11 02:15:49] Questão 101/200 analisada em 5.71 segundos
+[2024-12-11 02:15:54] Questão 102/200 analisada em 4.59 segundos
+[2024-12-11 02:15:59] Questão 103/200 analisada em 4.94 segundos
+[2024-12-11 02:16:04] Questão 104/200 analisada em 5.10 segundos
+[2024-12-11 02:16:08] Questão 105/200 analisada em 4.61 segundos
+[2024-12-11 02:16:14] Questão 106/200 analisada em 5.23 segundos
+[2024-12-11 02:16:17] Questão 107/200 analisada em 3.58 segundos
+[2024-12-11 02:16:22] Questão 108/200 analisada em 4.30 segundos
+[2024-12-11 02:16:26] Questão 109/200 analisada em 4.42 segundos
+[2024-12-11 02:16:32] Questão 110/200 analisada em 5.61 segundos
+[2024-12-11 02:16:32] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_110_20241211_021632
+[2024-12-11 02:16:32] Progresso: 110/200 questões. Tempo médio por questão: 5.91s. ETA: 531.52s
+[2024-12-11 02:16:36] Questão 111/200 analisada em 4.46 segundos
+[2024-12-11 02:16:40] Questão 112/200 analisada em 3.90 segundos
+[2024-12-11 02:16:48] Questão 113/200 analisada em 7.70 segundos
+[2024-12-11 02:16:51] Questão 114/200 analisada em 3.25 segundos
+[2024-12-11 02:17:00] Questão 115/200 analisada em 9.01 segundos
+[2024-12-11 02:17:04] Questão 116/200 analisada em 3.68 segundos
+[2024-12-11 02:17:09] Questão 117/200 analisada em 4.92 segundos
+[2024-12-11 02:17:12] Questão 118/200 analisada em 3.68 segundos
+[2024-12-11 02:17:16] Questão 119/200 analisada em 3.38 segundos
+[2024-12-11 02:17:21] Questão 120/200 analisada em 4.91 segundos
+[2024-12-11 02:17:21] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_120_20241211_021721
+[2024-12-11 02:17:21] Progresso: 120/200 questões. Tempo médio por questão: 5.82s. ETA: 465.72s
+[2024-12-11 02:17:26] Questão 121/200 analisada em 5.09 segundos
+[2024-12-11 02:17:29] Questão 122/200 analisada em 3.38 segundos
+[2024-12-11 02:17:34] Questão 123/200 analisada em 4.96 segundos
+[2024-12-11 02:17:39] Questão 124/200 analisada em 4.79 segundos
+[2024-12-11 02:17:44] Questão 125/200 analisada em 5.00 segundos
+[2024-12-11 02:17:48] Questão 126/200 analisada em 4.09 segundos
+[2024-12-11 02:17:51] Questão 127/200 analisada em 3.58 segundos
+[2024-12-11 02:17:55] Questão 128/200 analisada em 3.90 segundos
+[2024-12-11 02:18:00] Questão 129/200 analisada em 4.60 segundos
+[2024-12-11 02:18:05] Questão 130/200 analisada em 5.12 segundos
+[2024-12-11 02:18:05] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_130_20241211_021805
+[2024-12-11 02:18:05] Progresso: 130/200 questões. Tempo médio por questão: 5.72s. ETA: 400.15s
+[2024-12-11 02:18:10] Questão 131/200 analisada em 4.98 segundos
+[2024-12-11 02:18:14] Questão 132/200 analisada em 4.09 segundos
+[2024-12-11 02:18:19] Questão 133/200 analisada em 4.81 segundos
+[2024-12-11 02:18:23] Questão 134/200 analisada em 4.35 segundos
+[2024-12-11 02:18:27] Questão 135/200 analisada em 3.74 segundos
+[2024-12-11 02:18:31] Questão 136/200 analisada em 4.03 segundos
+[2024-12-11 02:18:36] Questão 137/200 analisada em 4.78 segundos
+[2024-12-11 02:18:40] Questão 138/200 analisada em 3.89 segundos
+[2024-12-11 02:18:43] Questão 139/200 analisada em 3.49 segundos
+[2024-12-11 02:18:49] Questão 140/200 analisada em 5.95 segundos
+[2024-12-11 02:18:49] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_140_20241211_021849
+[2024-12-11 02:18:49] Progresso: 140/200 questões. Tempo médio por questão: 5.62s. ETA: 337.41s
+[2024-12-11 02:18:54] Questão 141/200 analisada em 5.05 segundos
+[2024-12-11 02:18:59] Questão 142/200 analisada em 4.63 segundos
+[2024-12-11 02:19:06] Questão 143/200 analisada em 7.16 segundos
+[2024-12-11 02:19:11] Questão 144/200 analisada em 4.66 segundos
+[2024-12-11 02:19:21] Questão 145/200 analisada em 10.33 segundos
+[2024-12-11 02:19:25] Questão 146/200 analisada em 4.37 segundos
+[2024-12-11 02:19:30] Questão 147/200 analisada em 4.61 segundos
+[2024-12-11 02:19:34] Questão 148/200 analisada em 4.09 segundos
+[2024-12-11 02:19:39] Questão 149/200 analisada em 5.02 segundos
+[2024-12-11 02:19:43] Questão 150/200 analisada em 3.85 segundos
+[2024-12-11 02:19:43] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_150_20241211_021943
+[2024-12-11 02:19:43] Progresso: 150/200 questões. Tempo médio por questão: 5.61s. ETA: 280.36s
+[2024-12-11 02:19:49] Questão 151/200 analisada em 6.05 segundos
+[2024-12-11 02:19:53] Questão 152/200 analisada em 4.35 segundos
+[2024-12-11 02:19:58] Questão 153/200 analisada em 4.35 segundos
+[2024-12-11 02:20:01] Questão 154/200 analisada em 3.50 segundos
+[2024-12-11 02:20:08] Questão 155/200 analisada em 6.21 segundos
+[2024-12-11 02:20:12] Questão 156/200 analisada em 4.31 segundos
+[2024-12-11 02:20:16] Questão 157/200 analisada em 3.94 segundos
+[2024-12-11 02:20:20] Questão 158/200 analisada em 4.15 segundos
+[2024-12-11 02:20:24] Questão 159/200 analisada em 3.89 segundos
+[2024-12-11 02:20:28] Questão 160/200 analisada em 4.50 segundos
+[2024-12-11 02:20:28] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_160_20241211_022028
+[2024-12-11 02:20:28] Progresso: 160/200 questões. Tempo médio por questão: 5.54s. ETA: 221.60s
+[2024-12-11 02:20:34] Questão 161/200 analisada em 5.19 segundos
+[2024-12-11 02:20:38] Questão 162/200 analisada em 4.81 segundos
+[2024-12-11 02:20:44] Questão 163/200 analisada em 5.32 segundos
+[2024-12-11 02:20:48] Questão 164/200 analisada em 4.44 segundos
+[2024-12-11 02:20:51] Questão 165/200 analisada em 3.17 segundos
+[2024-12-11 02:20:55] Questão 166/200 analisada em 4.16 segundos
+[2024-12-11 02:21:00] Questão 167/200 analisada em 4.92 segundos
+[2024-12-11 02:21:04] Questão 168/200 analisada em 3.89 segundos
+[2024-12-11 02:21:08] Questão 169/200 analisada em 4.09 segundos
+[2024-12-11 02:21:12] Questão 170/200 analisada em 3.79 segundos
+[2024-12-11 02:21:12] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_170_20241211_022112
+[2024-12-11 02:21:12] Progresso: 170/200 questões. Tempo médio por questão: 5.47s. ETA: 164.16s
+[2024-12-11 02:21:18] Questão 171/200 analisada em 5.49 segundos
+[2024-12-11 02:21:22] Questão 172/200 analisada em 4.74 segundos
+[2024-12-11 02:21:27] Questão 173/200 analisada em 4.21 segundos
+[2024-12-11 02:21:33] Questão 174/200 analisada em 6.23 segundos
+[2024-12-11 02:21:37] Questão 175/200 analisada em 4.09 segundos
+[2024-12-11 02:21:45] Questão 176/200 analisada em 7.65 segundos
+[2024-12-11 02:21:49] Questão 177/200 analisada em 4.51 segundos
+[2024-12-11 02:21:53] Questão 178/200 analisada em 3.58 segundos
+[2024-12-11 02:21:58] Questão 179/200 analisada em 4.81 segundos
+[2024-12-11 02:22:03] Questão 180/200 analisada em 5.01 segundos
+[2024-12-11 02:22:03] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_180_20241211_022203
+[2024-12-11 02:22:03] Progresso: 180/200 questões. Tempo médio por questão: 5.45s. ETA: 108.96s
+[2024-12-11 02:22:07] Questão 181/200 analisada em 4.46 segundos
+[2024-12-11 02:22:12] Questão 182/200 analisada em 4.81 segundos
+[2024-12-11 02:22:16] Questão 183/200 analisada em 4.09 segundos
+[2024-12-11 02:22:23] Questão 184/200 analisada em 6.63 segundos
+[2024-12-11 02:22:28] Questão 185/200 analisada em 5.05 segundos
+[2024-12-11 02:22:32] Questão 186/200 analisada em 3.99 segundos
+[2024-12-11 02:22:38] Questão 187/200 analisada em 6.04 segundos
+[2024-12-11 02:22:42] Questão 188/200 analisada em 4.61 segundos
+[2024-12-11 02:22:47] Questão 189/200 analisada em 4.67 segundos
+[2024-12-11 02:22:56] Questão 190/200 analisada em 9.36 segundos
+[2024-12-11 02:22:56] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_190_20241211_022256
+[2024-12-11 02:22:56] Progresso: 190/200 questões. Tempo médio por questão: 5.44s. ETA: 54.44s
+[2024-12-11 02:23:01] Questão 191/200 analisada em 4.88 segundos
+[2024-12-11 02:23:08] Questão 192/200 analisada em 6.77 segundos
+[2024-12-11 02:23:13] Questão 193/200 analisada em 5.41 segundos
+[2024-12-11 02:23:19] Questão 194/200 analisada em 5.94 segundos
+[2024-12-11 02:23:24] Questão 195/200 analisada em 4.61 segundos
+[2024-12-11 02:23:28] Questão 196/200 analisada em 4.00 segundos
+[2024-12-11 02:23:32] Questão 197/200 analisada em 3.84 segundos
+[2024-12-11 02:23:35] Questão 198/200 analisada em 3.63 segundos
+[2024-12-11 02:23:41] Questão 199/200 analisada em 5.11 segundos
+[2024-12-11 02:23:46] Questão 200/200 analisada em 5.34 segundos
+[2024-12-11 02:23:46] Resultados salvos em: resultados/resultados_batch_simulado_port_2.pdf_200_20241211_022346
+[2024-12-11 02:23:46] Progresso: 200/200 questões. Tempo médio por questão: 5.42s. ETA: 0.00s
+[2024-12-11 02:23:46] Análise de simulado_port_2.pdf concluída em 1083.93 segundos
+[2024-12-11 02:23:46] Resultados salvos em: resultados/resultados_batch_completo_simulado_port_2.pdf_20241211_022346
+[2024-12-11 02:23:46] 
+Processando PDF 5/5: simulado_port_3.pdf
+[2024-12-11 02:23:46] Iniciando processamento de simulado_port_3.pdf
+[2024-12-11 02:23:46] Fase 1: Extraindo texto do PDF...
+[2024-12-11 02:24:03] Texto extraído em 17.08 segundos
+[2024-12-11 02:24:03] Fase 2: Separando questões...
+[2024-12-11 02:24:03] Encontradas 200 questões em 0.01 segundos
+[2024-12-11 02:24:03] Fase 3: Iniciando análise das questões...
+[2024-12-11 02:24:08] Questão 1/200 analisada em 5.44 segundos
+[2024-12-11 02:24:16] Questão 2/200 analisada em 7.10 segundos
+[2024-12-11 02:24:25] Questão 3/200 analisada em 9.22 segundos
+[2024-12-11 02:24:31] Questão 4/200 analisada em 5.86 segundos
+[2024-12-11 02:24:36] Questão 5/200 analisada em 5.00 segundos
+[2024-12-11 02:24:40] Questão 6/200 analisada em 4.40 segundos
+[2024-12-11 02:24:45] Questão 7/200 analisada em 4.81 segundos
+[2024-12-11 02:24:51] Questão 8/200 analisada em 5.82 segundos
+[2024-12-11 02:24:55] Questão 9/200 analisada em 4.31 segundos
+[2024-12-11 02:25:04] Questão 10/200 analisada em 9.08 segundos
+[2024-12-11 02:25:04] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_10_20241211_022504
+[2024-12-11 02:25:04] Progresso: 10/200 questões. Tempo médio por questão: 6.10s. ETA: 1159.70s
+[2024-12-11 02:25:08] Questão 11/200 analisada em 4.38 segundos
+[2024-12-11 02:25:14] Questão 12/200 analisada em 5.33 segundos
+[2024-12-11 02:25:18] Questão 13/200 analisada em 4.04 segundos
+[2024-12-11 02:25:23] Questão 14/200 analisada em 5.32 segundos
+[2024-12-11 02:25:28] Questão 15/200 analisada em 4.71 segundos
+[2024-12-11 02:25:32] Questão 16/200 analisada em 4.40 segundos
+[2024-12-11 02:25:37] Questão 17/200 analisada em 4.92 segundos
+[2024-12-11 02:25:42] Questão 18/200 analisada em 4.92 segundos
+[2024-12-11 02:25:47] Questão 19/200 analisada em 4.87 segundos
+[2024-12-11 02:25:51] Questão 20/200 analisada em 4.44 segundos
+[2024-12-11 02:25:51] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_20_20241211_022551
+[2024-12-11 02:25:51] Progresso: 20/200 questões. Tempo médio por questão: 5.42s. ETA: 975.56s
+[2024-12-11 02:25:57] Questão 21/200 analisada em 5.72 segundos
+[2024-12-11 02:26:01] Questão 22/200 analisada em 4.25 segundos
+[2024-12-11 02:26:09] Questão 23/200 analisada em 7.14 segundos
+[2024-12-11 02:26:13] Questão 24/200 analisada em 4.10 segundos
+[2024-12-11 02:26:17] Questão 25/200 analisada em 4.53 segundos
+[2024-12-11 02:26:22] Questão 26/200 analisada em 4.90 segundos
+[2024-12-11 02:26:28] Questão 27/200 analisada em 5.60 segundos
+[2024-12-11 02:26:32] Questão 28/200 analisada em 4.47 segundos
+[2024-12-11 02:26:37] Questão 29/200 analisada em 4.95 segundos
+[2024-12-11 02:26:42] Questão 30/200 analisada em 5.33 segundos
+[2024-12-11 02:26:42] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_30_20241211_022642
+[2024-12-11 02:26:42] Progresso: 30/200 questões. Tempo médio por questão: 5.31s. ETA: 903.23s
+[2024-12-11 02:26:50] Questão 31/200 analisada em 7.25 segundos
+[2024-12-11 02:26:57] Questão 32/200 analisada em 6.96 segundos
+[2024-12-11 02:27:01] Questão 33/200 analisada em 4.40 segundos
+[2024-12-11 02:27:07] Questão 34/200 analisada em 6.35 segundos
+[2024-12-11 02:27:12] Questão 35/200 analisada em 4.30 segundos
+[2024-12-11 02:27:16] Questão 36/200 analisada em 4.50 segundos
+[2024-12-11 02:27:21] Questão 37/200 analisada em 4.71 segundos
+[2024-12-11 02:27:28] Questão 38/200 analisada em 6.66 segundos
+[2024-12-11 02:27:34] Questão 39/200 analisada em 6.25 segundos
+[2024-12-11 02:27:39] Questão 40/200 analisada em 4.92 segundos
+[2024-12-11 02:27:39] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_40_20241211_022739
+[2024-12-11 02:27:39] Progresso: 40/200 questões. Tempo médio por questão: 5.39s. ETA: 862.86s
+[2024-12-11 02:27:45] Questão 41/200 analisada em 5.86 segundos
+[2024-12-11 02:27:49] Questão 42/200 analisada em 4.77 segundos
+[2024-12-11 02:27:53] Questão 43/200 analisada em 4.09 segundos
+[2024-12-11 02:27:59] Questão 44/200 analisada em 5.07 segundos
+[2024-12-11 02:28:04] Questão 45/200 analisada em 5.27 segundos
+[2024-12-11 02:28:08] Questão 46/200 analisada em 4.61 segundos
+[2024-12-11 02:28:13] Questão 47/200 analisada em 4.91 segundos
+[2024-12-11 02:28:18] Questão 48/200 analisada em 4.30 segundos
+[2024-12-11 02:28:22] Questão 49/200 analisada em 4.30 segundos
+[2024-12-11 02:28:27] Questão 50/200 analisada em 4.79 segundos
+[2024-12-11 02:28:27] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_50_20241211_022827
+[2024-12-11 02:28:27] Progresso: 50/200 questões. Tempo médio por questão: 5.27s. ETA: 791.13s
+[2024-12-11 02:28:31] Questão 51/200 analisada em 4.62 segundos
+[2024-12-11 02:28:40] Questão 52/200 analisada em 8.35 segundos
+[2024-12-11 02:28:46] Questão 53/200 analisada em 6.39 segundos
+[2024-12-11 02:28:51] Questão 54/200 analisada em 4.52 segundos
+[2024-12-11 02:28:55] Questão 55/200 analisada em 4.19 segundos
+[2024-12-11 02:28:59] Questão 56/200 analisada em 4.50 segundos
+[2024-12-11 02:29:04] Questão 57/200 analisada em 4.41 segundos
+[2024-12-11 02:29:09] Questão 58/200 analisada em 5.22 segundos
+[2024-12-11 02:29:13] Questão 59/200 analisada em 4.40 segundos
+[2024-12-11 02:29:19] Questão 60/200 analisada em 5.53 segundos
+[2024-12-11 02:29:19] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_60_20241211_022919
+[2024-12-11 02:29:19] Progresso: 60/200 questões. Tempo médio por questão: 5.26s. ETA: 737.02s
+[2024-12-11 02:29:23] Questão 61/200 analisada em 4.59 segundos
+[2024-12-11 02:29:28] Questão 62/200 analisada em 4.44 segundos
+[2024-12-11 02:29:32] Questão 63/200 analisada em 4.19 segundos
+[2024-12-11 02:29:37] Questão 64/200 analisada em 4.45 segundos
+[2024-12-11 02:29:41] Questão 65/200 analisada em 4.33 segundos
+[2024-12-11 02:29:45] Questão 66/200 analisada em 4.50 segundos
+[2024-12-11 02:29:50] Questão 67/200 analisada em 4.61 segundos
+[2024-12-11 02:29:54] Questão 68/200 analisada em 4.20 segundos
+[2024-12-11 02:29:59] Questão 69/200 analisada em 4.71 segundos
+[2024-12-11 02:30:06] Questão 70/200 analisada em 6.87 segundos
+[2024-12-11 02:30:06] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_70_20241211_023006
+[2024-12-11 02:30:06] Progresso: 70/200 questões. Tempo médio por questão: 5.18s. ETA: 673.75s
+[2024-12-11 02:30:15] Questão 71/200 analisada em 9.38 segundos
+[2024-12-11 02:30:19] Questão 72/200 analisada em 3.99 segundos
+[2024-12-11 02:30:26] Questão 73/200 analisada em 6.65 segundos
+[2024-12-11 02:30:32] Questão 74/200 analisada em 6.24 segundos
+[2024-12-11 02:30:38] Questão 75/200 analisada em 5.74 segundos
+[2024-12-11 02:30:42] Questão 76/200 analisada em 4.40 segundos
+[2024-12-11 02:30:47] Questão 77/200 analisada em 4.83 segundos
+[2024-12-11 02:30:52] Questão 78/200 analisada em 5.10 segundos
+[2024-12-11 02:31:06] Questão 79/200 analisada em 14.03 segundos
+[2024-12-11 02:31:11] Questão 80/200 analisada em 4.39 segundos
+[2024-12-11 02:31:11] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_80_20241211_023111
+[2024-12-11 02:31:11] Progresso: 80/200 questões. Tempo médio por questão: 5.34s. ETA: 641.35s
+[2024-12-11 02:31:15] Questão 81/200 analisada em 4.60 segundos
+[2024-12-11 02:31:22] Questão 82/200 analisada em 6.96 segundos
+[2024-12-11 02:31:27] Questão 83/200 analisada em 4.71 segundos
+[2024-12-11 02:31:36] Questão 84/200 analisada em 8.91 segundos
+[2024-12-11 02:31:41] Questão 85/200 analisada em 4.81 segundos
+[2024-12-11 02:31:46] Questão 86/200 analisada em 5.12 segundos
+[2024-12-11 02:31:51] Questão 87/200 analisada em 4.99 segundos
+[2024-12-11 02:31:56] Questão 88/200 analisada em 5.56 segundos
+[2024-12-11 02:32:03] Questão 89/200 analisada em 6.24 segundos
+[2024-12-11 02:32:07] Questão 90/200 analisada em 4.61 segundos
+[2024-12-11 02:32:07] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_90_20241211_023207
+[2024-12-11 02:32:07] Progresso: 90/200 questões. Tempo médio por questão: 5.38s. ETA: 591.69s
+[2024-12-11 02:32:12] Questão 91/200 analisada em 4.49 segundos
+[2024-12-11 02:32:17] Questão 92/200 analisada em 5.21 segundos
+[2024-12-11 02:32:24] Questão 93/200 analisada em 6.76 segundos
+[2024-12-11 02:32:28] Questão 94/200 analisada em 4.69 segundos
+[2024-12-11 02:32:33] Questão 95/200 analisada em 4.36 segundos
+[2024-12-11 02:32:37] Questão 96/200 analisada em 4.17 segundos
+[2024-12-11 02:32:44] Questão 97/200 analisada em 7.18 segundos
+[2024-12-11 02:32:48] Questão 98/200 analisada em 4.20 segundos
+[2024-12-11 02:32:54] Questão 99/200 analisada em 5.63 segundos
+[2024-12-11 02:33:06] Questão 100/200 analisada em 12.39 segundos
+[2024-12-11 02:33:06] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_100_20241211_023306
+[2024-12-11 02:33:06] Progresso: 100/200 questões. Tempo médio por questão: 5.43s. ETA: 543.24s
+[2024-12-11 02:33:10] Questão 101/200 analisada em 4.15 segundos
+[2024-12-11 02:33:15] Questão 102/200 analisada em 4.33 segundos
+[2024-12-11 02:33:22] Questão 103/200 analisada em 7.32 segundos
+[2024-12-11 02:33:27] Questão 104/200 analisada em 5.17 segundos
+[2024-12-11 02:33:31] Questão 105/200 analisada em 3.89 segundos
+[2024-12-11 02:33:38] Questão 106/200 analisada em 7.17 segundos
+[2024-12-11 02:33:44] Questão 107/200 analisada em 5.73 segundos
+[2024-12-11 02:33:51] Questão 108/200 analisada em 6.95 segundos
+[2024-12-11 02:33:56] Questão 109/200 analisada em 4.83 segundos
+[2024-12-11 02:34:01] Questão 110/200 analisada em 5.43 segundos
+[2024-12-11 02:34:01] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_110_20241211_023401
+[2024-12-11 02:34:01] Progresso: 110/200 questões. Tempo médio por questão: 5.44s. ETA: 489.46s
+[2024-12-11 02:34:09] Questão 111/200 analisada em 7.65 segundos
+[2024-12-11 02:34:14] Questão 112/200 analisada em 4.74 segundos
+[2024-12-11 02:34:18] Questão 113/200 analisada em 4.17 segundos
+[2024-12-11 02:34:22] Questão 114/200 analisada em 4.50 segundos
+[2024-12-11 02:34:28] Questão 115/200 analisada em 5.53 segundos
+[2024-12-11 02:34:39] Questão 116/200 analisada em 10.79 segundos
+[2024-12-11 02:34:43] Questão 117/200 analisada em 4.65 segundos
+[2024-12-11 02:34:49] Questão 118/200 analisada em 6.16 segundos
+[2024-12-11 02:34:54] Questão 119/200 analisada em 4.40 segundos
+[2024-12-11 02:34:59] Questão 120/200 analisada em 4.91 segundos
+[2024-12-11 02:34:59] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_120_20241211_023459
+[2024-12-11 02:34:59] Progresso: 120/200 questões. Tempo médio por questão: 5.46s. ETA: 437.19s
+[2024-12-11 02:35:03] Questão 121/200 analisada em 4.19 segundos
+[2024-12-11 02:35:08] Questão 122/200 analisada em 5.29 segundos
+[2024-12-11 02:35:13] Questão 123/200 analisada em 4.45 segundos
+[2024-12-11 02:35:18] Questão 124/200 analisada em 5.70 segundos
+[2024-12-11 02:35:23] Questão 125/200 analisada em 4.81 segundos
+[2024-12-11 02:35:28] Questão 126/200 analisada em 4.60 segundos
+[2024-12-11 02:35:33] Questão 127/200 analisada em 5.54 segundos
+[2024-12-11 02:35:39] Questão 128/200 analisada em 5.12 segundos
+[2024-12-11 02:35:44] Questão 129/200 analisada em 5.51 segundos
+[2024-12-11 02:35:49] Questão 130/200 analisada em 5.14 segundos
+[2024-12-11 02:35:49] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_130_20241211_023549
+[2024-12-11 02:35:49] Progresso: 130/200 questões. Tempo médio por questão: 5.43s. ETA: 380.25s
+[2024-12-11 02:35:55] Questão 131/200 analisada em 5.39 segundos
+[2024-12-11 02:35:59] Questão 132/200 analisada em 4.81 segundos
+[2024-12-11 02:36:05] Questão 133/200 analisada em 5.29 segundos
+[2024-12-11 02:36:16] Questão 134/200 analisada em 11.30 segundos
+[2024-12-11 02:36:22] Questão 135/200 analisada em 5.63 segundos
+[2024-12-11 02:36:25] Questão 136/200 analisada em 3.58 segundos
+[2024-12-11 02:36:29] Questão 137/200 analisada em 4.00 segundos
+[2024-12-11 02:36:34] Questão 138/200 analisada em 4.80 segundos
+[2024-12-11 02:36:39] Questão 139/200 analisada em 5.12 segundos
+[2024-12-11 02:36:45] Questão 140/200 analisada em 5.53 segundos
+[2024-12-11 02:36:45] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_140_20241211_023645
+[2024-12-11 02:36:45] Progresso: 140/200 questões. Tempo médio por questão: 5.44s. ETA: 326.43s
+[2024-12-11 02:36:49] Questão 141/200 analisada em 4.16 segundos
+[2024-12-11 02:36:57] Questão 142/200 analisada em 8.44 segundos
+[2024-12-11 02:37:01] Questão 143/200 analisada em 3.85 segundos
+[2024-12-11 02:37:05] Questão 144/200 analisada em 4.20 segundos
+[2024-12-11 02:37:11] Questão 145/200 analisada em 5.32 segundos
+[2024-12-11 02:37:15] Questão 146/200 analisada em 4.11 segundos
+[2024-12-11 02:37:20] Questão 147/200 analisada em 5.00 segundos
+[2024-12-11 02:37:25] Questão 148/200 analisada em 5.42 segundos
+[2024-12-11 02:37:29] Questão 149/200 analisada em 3.89 segundos
+[2024-12-11 02:37:35] Questão 150/200 analisada em 6.14 segundos
+[2024-12-11 02:37:35] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_150_20241211_023735
+[2024-12-11 02:37:35] Progresso: 150/200 questões. Tempo médio por questão: 5.42s. ETA: 270.75s
+[2024-12-11 02:37:40] Questão 151/200 analisada em 4.78 segundos
+[2024-12-11 02:37:44] Questão 152/200 analisada em 4.40 segundos
+[2024-12-11 02:37:49] Questão 153/200 analisada em 4.57 segundos
+[2024-12-11 02:37:53] Questão 154/200 analisada em 4.38 segundos
+[2024-12-11 02:37:57] Questão 155/200 analisada em 3.49 segundos
+[2024-12-11 02:38:02] Questão 156/200 analisada em 4.65 segundos
+[2024-12-11 02:38:08] Questão 157/200 analisada em 6.35 segundos
+[2024-12-11 02:38:16] Questão 158/200 analisada em 8.19 segundos
+[2024-12-11 02:38:21] Questão 159/200 analisada em 4.71 segundos
+[2024-12-11 02:38:26] Questão 160/200 analisada em 4.81 segundos
+[2024-12-11 02:38:26] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_160_20241211_023826
+[2024-12-11 02:38:26] Progresso: 160/200 questões. Tempo médio por questão: 5.39s. ETA: 215.66s
+[2024-12-11 02:38:31] Questão 161/200 analisada em 5.70 segundos
+[2024-12-11 02:38:39] Questão 162/200 analisada em 7.83 segundos
+[2024-12-11 02:38:43] Questão 163/200 analisada em 3.95 segundos
+[2024-12-11 02:38:48] Questão 164/200 analisada em 4.58 segundos
+[2024-12-11 02:38:52] Questão 165/200 analisada em 4.11 segundos
+[2024-12-11 02:38:56] Questão 166/200 analisada em 4.20 segundos
+[2024-12-11 02:39:00] Questão 167/200 analisada em 4.20 segundos
+[2024-12-11 02:39:05] Questão 168/200 analisada em 4.81 segundos
+[2024-12-11 02:39:13] Questão 169/200 analisada em 8.29 segundos
+[2024-12-11 02:39:18] Questão 170/200 analisada em 4.20 segundos
+[2024-12-11 02:39:18] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_170_20241211_023918
+[2024-12-11 02:39:18] Progresso: 170/200 questões. Tempo médio por questão: 5.38s. ETA: 161.39s
+[2024-12-11 02:39:21] Questão 171/200 analisada em 3.85 segundos
+[2024-12-11 02:39:27] Questão 172/200 analisada em 5.06 segundos
+[2024-12-11 02:39:33] Questão 173/200 analisada em 6.53 segundos
+[2024-12-11 02:39:38] Questão 174/200 analisada em 4.75 segundos
+[2024-12-11 02:39:42] Questão 175/200 analisada em 3.72 segundos
+[2024-12-11 02:39:47] Questão 176/200 analisada em 5.02 segundos
+[2024-12-11 02:39:51] Questão 177/200 analisada em 4.09 segundos
+[2024-12-11 02:39:56] Questão 178/200 analisada em 4.92 segundos
+[2024-12-11 02:40:01] Questão 179/200 analisada em 5.22 segundos
+[2024-12-11 02:40:06] Questão 180/200 analisada em 5.02 segundos
+[2024-12-11 02:40:06] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_180_20241211_024006
+[2024-12-11 02:40:06] Progresso: 180/200 questões. Tempo médio por questão: 5.35s. ETA: 106.98s
+[2024-12-11 02:40:11] Questão 181/200 analisada em 4.87 segundos
+[2024-12-11 02:40:16] Questão 182/200 analisada em 5.13 segundos
+[2024-12-11 02:40:20] Questão 183/200 analisada em 4.19 segundos
+[2024-12-11 02:40:25] Questão 184/200 analisada em 4.63 segundos
+[2024-12-11 02:40:30] Questão 185/200 analisada em 5.80 segundos
+[2024-12-11 02:40:34] Questão 186/200 analisada em 3.70 segundos
+[2024-12-11 02:40:39] Questão 187/200 analisada em 4.50 segundos
+[2024-12-11 02:40:44] Questão 188/200 analisada em 5.01 segundos
+[2024-12-11 02:40:50] Questão 189/200 analisada em 6.04 segundos
+[2024-12-11 02:40:55] Questão 190/200 analisada em 5.02 segundos
+[2024-12-11 02:40:55] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_190_20241211_024055
+[2024-12-11 02:40:55] Progresso: 190/200 questões. Tempo médio por questão: 5.32s. ETA: 53.25s
+[2024-12-11 02:41:00] Questão 191/200 analisada em 4.87 segundos
+[2024-12-11 02:41:04] Questão 192/200 analisada em 4.50 segundos
+[2024-12-11 02:41:08] Questão 193/200 analisada em 4.04 segundos
+[2024-12-11 02:41:12] Questão 194/200 analisada em 3.92 segundos
+[2024-12-11 02:41:16] Questão 195/200 analisada em 4.35 segundos
+[2024-12-11 02:41:24] Questão 196/200 analisada em 7.95 segundos
+[2024-12-11 02:41:30] Questão 197/200 analisada em 5.33 segundos
+[2024-12-11 02:41:35] Questão 198/200 analisada em 5.73 segundos
+[2024-12-11 02:41:42] Questão 199/200 analisada em 6.14 segundos
+[2024-12-11 02:41:46] Questão 200/200 analisada em 4.10 segundos
+[2024-12-11 02:41:46] Resultados salvos em: resultados/resultados_batch_simulado_port_3.pdf_200_20241211_024146
+[2024-12-11 02:41:46] Progresso: 200/200 questões. Tempo médio por questão: 5.31s. ETA: 0.00s
+[2024-12-11 02:41:46] Análise de simulado_port_3.pdf concluída em 1062.74 segundos
+[2024-12-11 02:41:46] Resultados salvos em: resultados/resultados_batch_completo_simulado_port_3.pdf_20241211_024146
+[2024-12-11 02:41:46] Resultados salvos em: resultados/resultados_batch_todos_resultados_20241211_024146
+[2024-12-11 02:41:46] 
+Processamento completo finalizado em 5671.05 segundos
+[2024-12-11 02:41:46] 
+=== Processamento concluído! ===
+[2024-12-11 02:41:46] Total de questões analisadas: 1000
+[2024-12-11 02:41:46] Verifique a pasta 'resultados' para ver os arquivos gerados
+[2024-12-11 02:41:46] Verifique os arquivos de log para ver o progresso e possíveis erros

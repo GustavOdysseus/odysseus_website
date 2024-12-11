@@ -1,0 +1,1486 @@
+ANÁLISE RESUMIDA DAS QUESTÕES
+
+ANÁLISE QUANTITATIVA GERAL
+==================================================
+Total de questões analisadas: 1000
+Número de categorias principais: 56
+
+DISTRIBUIÇÃO POR CATEGORIA:
+• INTERPRETAÇÃO DE TEXTO: 51.1% (511 questões)
+• LÍNGUA PORTUGUESA: 11.2% (112 questões)
+• PONTUAÇÃO: 6.8% (68 questões)
+• VERBOS: 6.4% (64 questões)
+• ANÁLISE SINTÁTICA: 4.5% (45 questões)
+• ORTOGRAFIA: 1.8% (18 questões)
+• PRONOMES: 1.8% (18 questões)
+• ACENTUAÇÃO GRÁFICA: 1.6% (16 questões)
+• MORFOLOGIA: 1.6% (16 questões)
+• CONCORDÂNCIA VERBAL: 1.5% (15 questões)
+• REGÊNCIA VERBAL: 1.0% (10 questões)
+• COLOCAÇÃO PRONOMINAL: 0.9% (9 questões)
+• MORFOSSINTAXE: 0.9% (9 questões)
+• CONCORDÂNCIA VERBAL E NOMINAL: 0.8% (8 questões)
+• CLASSES GRAMATICAIS: 0.5% (5 questões)
+• SEMÂNTICA: 0.5% (5 questões)
+• SINTAXE: 0.5% (5 questões)
+• FIGURAS DE LINGUAGEM: 0.4% (4 questões)
+• SINTAXE DE REGÊNCIA: 0.3% (3 questões)
+• CONJUNÇÕES: 0.3% (3 questões)
+• ACENTUAÇÃO: 0.3% (3 questões)
+• TIPOS TEXTUAIS: 0.3% (3 questões)
+• FORMAÇÃO DAS PALAVRAS: 0.3% (3 questões)
+• CONCORDÂNCIA: 0.3% (3 questões)
+• REGÊNCIA NOMINAL E VERBAL: 0.3% (3 questões)
+• CLASSES MORFOLÓGICAS: 0.2% (2 questões)
+• CLASSES DE PALAVRAS: 0.2% (2 questões)
+• ANÁLISE MORFOLÓGICA: 0.2% (2 questões)
+• ANÁLISE LINGUÍSTICA: 0.2% (2 questões)
+• MORFOSSINTAXE DO PERÍODO: 0.2% (2 questões)
+• SUBSTANTIVOS: 0.2% (2 questões)
+• COESÃO REFERENCIAL: 0.2% (2 questões)
+• PREPOSIÇÃO: 0.2% (2 questões)
+• CONCORDÂNCIA NOMINAL: 0.2% (2 questões)
+• REGÊNCIA: 0.2% (2 questões)
+• SUJEITO: 0.1% (1 questões)
+• LINGUAGEM ORAL E LINGUAGEM ESCRITA: 0.1% (1 questões)
+• SINÔNIMOS: 0.1% (1 questões)
+• VOZ ATIVA E VOZ PASSIVA: 0.1% (1 questões)
+• REGÊNCIA VERBAL E NOMINAL: 0.1% (1 questões)
+• FONOLOGIA: 0.1% (1 questões)
+• REESCRITA DE FRASES: 0.1% (1 questões)
+• REGRAS DE ACENTUAÇÃO: 0.1% (1 questões)
+• CLASSIFICAÇÃO DOS SUBSTANTIVOS: 0.1% (1 questões)
+• ADJETIVOS E SUBSTANTIVOS: 0.1% (1 questões)
+• CLASSIFICAÇÃO DO SUJEITO: 0.1% (1 questões)
+• EFEITOS DE SENTIDO: 0.1% (1 questões)
+• CONCORDÂNCIA E REGÊNCIA: 0.1% (1 questões)
+• HÍFEN: 0.1% (1 questões)
+• RELAÇÕES DE SINONIMIA: 0.1% (1 questões)
+• FUNÇÕES DA LINGUAGEM: 0.1% (1 questões)
+• TERMOS INTEGRANTES DA ORAÇÃO: 0.1% (1 questões)
+• FUNÇÃO SINTÁTICA: 0.1% (1 questões)
+• REGÊNCIA NOMINAL: 0.1% (1 questões)
+• LINGUAGEM E LINGUÍSTICA: 0.1% (1 questões)
+• GRAMÁTICA: 0.1% (1 questões)
+
+
+==================================================
+CATEGORIA: INTERPRETAÇÃO DE TEXTO (Total: 511 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Pressupostos e subentendidos (21 questões)
+- Inferência Textual (16 questões)
+- Tipologias Textuais (12 questões)
+- Análise de Afirmativas (8 questões)
+- Figuras de linguagem (8 questões)
+- Análise Sintática (6 questões)
+- Gêneros Textuais (5 questões)
+- Figuras de Linguagem (5 questões)
+- Compreensão de informações e inferências (4 questões)
+- Sinônimos e Contexto (4 questões)
+- Compreensão de Ideias e Inferências (4 questões)
+- Coesão e Conectores (3 questões)
+- Inferência de Significado (3 questões)
+- Uso de Conectivos (3 questões)
+- Relação entre forma e conteúdo (3 questões)
+- Tipologia Textual (3 questões)
+- Pressupostos e Subentendidos (3 questões)
+- Figuras de Estilo (3 questões)
+- Semântica (significação das palavras) (3 questões)
+- Funções da Linguagem (3 questões)
+- Relações de sinonímia e antonímia (3 questões)
+- Relações de sentido entre orações (2 questões)
+- Substituição de expressões (2 questões)
+- Emprego dos conectivos (2 questões)
+- Análise de Conjunções e seus Valores Semânticos (2 questões)
+- Reescrita de frases (2 questões)
+- Sentido denotativo e conotativo (2 questões)
+- Locução adjetiva e subjetividade na comunicação (2 questões)
+- Análise de Ponto de Vista (2 questões)
+- Análise de metáforas e significados implícitos (2 questões)
+- Análise de afirmações e inferências (2 questões)
+- Inferência de Significados (2 questões)
+- Tipos de Narrador (2 questões)
+- Compreensão de personagens e suas relações (2 questões)
+- Generalização e Indeterminação Sintática (2 questões)
+- Compreensão de Sentido e Contexto (2 questões)
+- Indeterminação do agente (2 questões)
+- Relação de conectivos no texto (2 questões)
+- Substituição de palavras e expressões (2 questões)
+- Análise de vocábulos e suas funções no contexto (2 questões)
+- Coesão Referencial (2 questões)
+- Identificação de variantes linguísticas (2 questões)
+- Emprego de Conectivos (2 questões)
+- Identificação de Pronomes (2 questões)
+- Análise de Conteúdo e Temática (2 questões)
+- Relação entre textos (2 questões)
+- Pronomes demonstrativos (2 questões)
+- Análise de Tempos e Modos Verbais (2 questões)
+- Modalidade de uso da Língua (2 questões)
+- Análise de Argumentos (2 questões)
+- Predicativo do sujeito (2 questões)
+- Orações subordinadas adjetivas restritivas (2 questões)
+- Uso das Aspas (2 questões)
+- Análise de Narrativa e Ponto de Vista (2 questões)
+- Denotação e Conotação (2 questões)
+- Análise de tiras e linguagem não-verbal (2 questões)
+- Análise de tiras e quadrinhos (2 questões)
+- Análise semântica de expressões adverbiais (2 questões)
+- Conotação e Denotação (2 questões)
+- Relações de sinonímia (2 questões)
+- Análise de Verbos e Modos Verbais (2 questões)
+- Sentido de palavras e expressões no contexto (2 questões)
+- Ambiguidade (2 questões)
+- Análise Sintática e Semântica (2 questões)
+- Análise de Charge (2 questões)
+- Análise do Tempo Verbal (2 questões)
+- Identificação de Gêneros Textuais (2 questões)
+- Análise de Relações e Significados no Texto (2 questões)
+- Análise de Crítica e Ironia (2 questões)
+- Equivalência e substituição de palavras (2 questões)
+- Análise das estruturas linguísticas do texto (2 questões)
+- Análise do uso do Presente do Indicativo (2 questões)
+- Análise de Sentido e Compreensão de Texto (1 questões)
+- Identificação de Significado de Palavras em Contexto (1 questões)
+- Coesão e Recursos Linguísticos (1 questões)
+- Identificação de Expressões Adverbiais (1 questões)
+- Análise de valores semânticos em construções frasais (1 questões)
+- Anáfora (1 questões)
+- Compreensão e Análise Crítica de Crônicas (1 questões)
+- Análise de Temas e Sentimentos (1 questões)
+- Análise do enunciador e suas intenções no texto (1 questões)
+- Análise de personagens e elementos narrativos (1 questões)
+- Encadeamento de Ideias (1 questões)
+- Sentido Indeterminado do Agente (1 questões)
+- Compreensão e Interpretação de Texto (1 questões)
+- Relações semânticas entre orações (1 questões)
+- Locuções Adverbiais (1 questões)
+- Análise de Pronomes (1 questões)
+- Análise Morfológica e Sintática (1 questões)
+- Significado de Palavras no Contexto (1 questões)
+- Preenchimento de lacunas e concordância (1 questões)
+- Análise de diálogos e expressões (1 questões)
+- Análise de tirinhas e elementos não-verbais (1 questões)
+- Uso de Conectivos e Coesão Textual (1 questões)
+- Uso de sinônimos e substituição de palavras (1 questões)
+- Análise de figuras de linguagem e conotação (1 questões)
+- Análise do eu lírico e suas intenções (1 questões)
+- Compreensão de informações e inferências no texto (1 questões)
+- Análise de Afirmativas em Texto Poético (1 questões)
+- Sentido de Conectivos (1 questões)
+- Classificação de Textos (1 questões)
+- Análise de Infográficos (1 questões)
+- Sinônimos e substituição de expressões (1 questões)
+- Coesão e coerência (1 questões)
+- Objetividade na Redação (1 questões)
+- Análise de Posicionamento em Texto Literário (1 questões)
+- Análise de Comparação e Significado (1 questões)
+- Análise de Posicionamento e Temática (1 questões)
+- Análise de sentimentos e emoções no texto (1 questões)
+- Características do gênero notícia (1 questões)
+- Análise de Conectivos e Sentidos (1 questões)
+- Oposição e Antítese (1 questões)
+- Análise do Humor em Tirinhas (1 questões)
+- Análise de Oposição Semântica e Significados (1 questões)
+- Compreensão e Análise de Informações (1 questões)
+- Análise de fragmento textual (1 questões)
+- Inferência e Análise de Sentido (1 questões)
+- Análise de Prefixos e Significados (1 questões)
+- Conjunções subordinativas condicionais (1 questões)
+- Análise de Relações entre Natureza e Sentimentos (1 questões)
+- Relação entre textos e perspectivas de leitura (1 questões)
+- Análise de ideias e sugestões no texto (1 questões)
+- Identificação de Linguagem (1 questões)
+- Flexão verbal de tempo (1 questões)
+- Variação Linguística (1 questões)
+- Análise de personagens e suas relações (1 questões)
+- Funções morfossintáticas da palavra QUE (1 questões)
+- Humor na Literatura (1 questões)
+- Compreensão de Significado e Inferência (1 questões)
+- Análise de Crônicas e Opiniões (1 questões)
+- Ritos de Passagem (1 questões)
+- Análise de recursos linguísticos que conferem generalização (1 questões)
+- Análise de tirinhas e quadrinhos (1 questões)
+- Posicionamento do autor em relação à privacidade e liberdade de expressão (1 questões)
+- Análise de Oração e Circunstâncias (1 questões)
+- Compreensão de Atitudes e Comportamentos (1 questões)
+- Sentidos do texto e humor (1 questões)
+- Pontuação e seus efeitos no texto (1 questões)
+- Humor em tiras e suas representações (1 questões)
+- Elementos que contribuem para a mudança de realidade no texto (1 questões)
+- Uso de Advérbios e Referência Contextual (1 questões)
+- Substituição de Pronomes (1 questões)
+- Análise de Distinções e Inferências (1 questões)
+- Análise de Sentidos e Temas em Poemas (1 questões)
+- Identificação do objetivo do texto (1 questões)
+- Análise de Ponto de Vista e Conotação (1 questões)
+- Elementos Gramaticais e seu Efeito no Texto (1 questões)
+- Coesão e Referência Pronominal (1 questões)
+- Análise de Sentido e Relações de Ideia (1 questões)
+- Análise de Opiniões e Argumentos (1 questões)
+- Compreensão e análise de informações sobre procrastinação (1 questões)
+- Oposição entre substantivos concretos e abstratos (1 questões)
+- Uso de Sinônimos (1 questões)
+- Uso do Advérbio de Modo (1 questões)
+- Compreensão e Inferência Textual (1 questões)
+- Análise de contexto e relações entre tempo e espaço (1 questões)
+- Análise de metáforas e linguagem simbólica (1 questões)
+- Reescrita de frases e parágrafos (1 questões)
+- Sinônimos e substituição de palavras (1 questões)
+- Análise de Afirmativas sobre o Poema "Annabel Lee" (1 questões)
+- Relação de Conjunções (1 questões)
+- Sentido das palavras no contexto (1 questões)
+- Sentidos do texto e significados das palavras (1 questões)
+- Análise de Afirmativas e Compreensão de Conteúdo (1 questões)
+- Compreensão de Informações em Infográficos (1 questões)
+- Compreensão de informações implícitas e explícitas (1 questões)
+- Análise de Charges e Elementos Linguísticos (1 questões)
+- Identificação de Discurso Direto (1 questões)
+- Conjunções e seus sentidos (1 questões)
+- Análise de Afirmativas em Texto (1 questões)
+- Análise de Pronomes Possessivos e Posicionamento Discursivo (1 questões)
+- Compreensão do sentido global do texto (1 questões)
+- Emprego dos conectivos e suas relações semânticas (1 questões)
+- Coerência e Ideia Principal (1 questões)
+- Análise de Visão de Mundo (1 questões)
+- Advérbio de modo e advérbio de lugar (1 questões)
+- Compreensão de Intenções do Narrador (1 questões)
+- Identificação de estratégias argumentativas (1 questões)
+- Percepção Sensorial no Texto (1 questões)
+- Análise de Gêneros Textuais (1 questões)
+- Relação entre estrutura e tema (1 questões)
+- Análise de Afirmativas e Indignação do Cronista (1 questões)
+- Relação entre texto e tese de autor (1 questões)
+- Análise Crítica de Afirmações (1 questões)
+- Análise de personagens e simbolismos (1 questões)
+- Coesão e Coerência Textual (1 questões)
+- Relação entre o espaço físico e o mundo interior dos indivíduos (1 questões)
+- Análise de características humanas a partir de metáforas (1 questões)
+- Relação entre exemplos e teses (1 questões)
+- Relação entre Comunidade e Sociedade (1 questões)
+- Compreensão de conceitos sociais (1 questões)
+- Identificação de Conectivos e Substituição Lexical (1 questões)
+- Análise de Estruturas Frasais e Sujeito (1 questões)
+- Análise de Posicionamento (1 questões)
+- Inferência e Análise Crítica (1 questões)
+- Compreensão de Tema e Tese (1 questões)
+- Análise Sintática e Uso de Preposições (1 questões)
+- Identificação de interlocutores no texto (1 questões)
+- Análise de estratégias linguísticas em crônicas (1 questões)
+- Análise de Oração e seus Valores Semânticos (1 questões)
+- Identificação de informações e argumentos no texto (1 questões)
+- Inferência a partir de vocábulos (1 questões)
+- Sinônimos (1 questões)
+- Análise de Afirmações (1 questões)
+- Análise de Expressões e Estruturas Frasais (1 questões)
+- Análise de Elementos Textuais (1 questões)
+- Compreensão e Análise de Afirmativas (1 questões)
+- Oposição de ideias (1 questões)
+- Uso do Advérbio "meio" (1 questões)
+- Identificação do assunto geral do texto (1 questões)
+- Compreensão de Contexto e Relação de Ideias (1 questões)
+- Substituição de palavras e sinônimos (1 questões)
+- Análise de Afirmativas sobre o Texto (1 questões)
+- Conjunções (1 questões)
+- Análise de Conectivos (1 questões)
+- Significado de expressões no contexto (1 questões)
+- Relações familiares e dinâmicas de poder (1 questões)
+- Metáfora (1 questões)
+- Análise de Charge e Humor (1 questões)
+- Análise de informações em infográficos (1 questões)
+- Análise de Charge e Função Sintática (1 questões)
+- Identificação de discurso direto (1 questões)
+- Análise de Memes e sua Função Comunicativa (1 questões)
+- Análise de Pronomes Possessivos (1 questões)
+- Compreensão do sentido global do texto (Questão: 2) (1 questões)
+- Análise de ironia e crítica social (1 questões)
+- Diálogo entre textos (1 questões)
+- Análise de Visão do Emissor (1 questões)
+- Análise de visões e sentimentos expressos no texto (1 questões)
+- Advérbio de modo e lugar (1 questões)
+- Análise de Intenções e Sentimentos do Narrador (1 questões)
+- Percepção Sensorial (1 questões)
+- Análise da Estrutura e Tema do Texto (1 questões)
+- Análise de Crônica (1 questões)
+- Relação Semântica entre Orações (1 questões)
+- Análise de Afirmações e Contexto (1 questões)
+- Crítica à concepção de beleza (1 questões)
+- Análise de personagens e contextos (1 questões)
+- Conectivos e suas relações (1 questões)
+- Emprego dos elementos de sequenciação (uso de conectivos) (1 questões)
+- Relação entre texto e seus significados (1 questões)
+- Comparação e Contraste (1 questões)
+- Relação entre ideias e argumentos (1 questões)
+- Análise de Estruturas Frasais (1 questões)
+- Informalidade na Língua (1 questões)
+- Relação entre o título e o conteúdo do texto (1 questões)
+- Análise de Conceitos Sociológicos (1 questões)
+- Inferência e Compreensão de Texto (1 questões)
+- Análise de referências culturais e argumentativas (1 questões)
+- Ironia (1 questões)
+- Inferência de opinião do autor (1 questões)
+- Inferência de significados no contexto (1 questões)
+- Identificação de Tema e Abordagem (1 questões)
+- Identificação de interlocutores e referências no texto (1 questões)
+- Sujeito da Oração (1 questões)
+- Análise de orações e seus valores semânticos (1 questões)
+- Análise de Afirmações e Argumentos (1 questões)
+- Análise de expressões e estrutura frasal (1 questões)
+- Análise de Sentido e Uso de Artigos (1 questões)
+- Análise de afirmações sobre o texto (1 questões)
+- Análise de informações implícitas e explícitas no texto (1 questões)
+- Análise de Contrastes e Objetivos dos Jogos (1 questões)
+- Relação entre orações em períodos compostos (1 questões)
+- Definição de Procrastinação (1 questões)
+- Análise de opinião e influência de personagens (1 questões)
+- Análise de Discurso Direto (1 questões)
+- Antônimos (1 questões)
+- Compreensão de informações e identificação do tema central (1 questões)
+- Sujeito Indeterminado (1 questões)
+- Conjunções e seus valores semânticos (1 questões)
+- Relações de sinonímia e antonímia (sinônimos e antônimos) (1 questões)
+- Análise de Textos Complementares (1 questões)
+- Análise de Infográficos e Reportagens (1 questões)
+- Compreensão de Ideias e Relações Textuais (1 questões)
+- Análise de Sentido e Contexto (1 questões)
+- Análise de letras de canções (1 questões)
+- Análise de Discurso e Contradições (1 questões)
+- Análise de Significação e Contexto (1 questões)
+- Análise de Enunciados e Uso de Recursos Linguísticos (1 questões)
+- Comparação de Sentidos e Paráfrases (1 questões)
+- Compreensão de informações e inferências a partir de um texto (1 questões)
+- Identificação do tema central e compreensão de informações específicas (1 questões)
+- Análise de Sentido e Função Sintática (1 questões)
+- Relações de significação entre as palavras (1 questões)
+- Análise de Títulos e Sufixos (1 questões)
+- Relação entre ideias (1 questões)
+- Valor Semântico de Conectivos (1 questões)
+- Referência e Ambiguidade (1 questões)
+- Relação entre fatos no texto (1 questões)
+- Análise de Sentimentos e Ideias no Texto (1 questões)
+- Análise de Estilo e Abordagem do Texto (1 questões)
+- Gêneros textuais (1 questões)
+- Uso do Pronome "este" (1 questões)
+- Compreensão de Ideias e Argumentos (1 questões)
+- Análise de expressões e linguagem coloquial (1 questões)
+- Uso do Pronome de Tratamento (1 questões)
+- Análise de Charge e Paralelismo (1 questões)
+- Sentido das Palavras e Figuras de Linguagem (1 questões)
+- Coesão e Conectivos (1 questões)
+- Progressão das ideias (1 questões)
+- Substituição de palavras (1 questões)
+- Análise Semântica de Palavras (1 questões)
+- Análise de tirinhas e suas linguagens (1 questões)
+- Título e sua função no texto (1 questões)
+- Análise de registro de linguagem (1 questões)
+- Análise de trechos e inferências (1 questões)
+- Análise de Estruturas e Estratégias Textuais (1 questões)
+- Identificação de Ações do Sujeito Lírico (1 questões)
+- Análise do uso da terceira pessoa gramatical (1 questões)
+- Identificação de Objetivo do Texto (1 questões)
+- Análise de Frases e Contexto (1 questões)
+- Análise de Afirmações em Texto (1 questões)
+- Relações Semânticas entre Opostos (1 questões)
+- Tese central do texto (1 questões)
+- Identificação de relações lógicas em orações (1 questões)
+- Sentido atribuído aos incêndios no texto (1 questões)
+- Relações de Conectivos (1 questões)
+- Sentidos do texto (1 questões)
+- Identificação de Significado de Palavras no Contexto (1 questões)
+- Análise de Informações e Inferências (1 questões)
+- Análise de Contraposição entre Ideias (1 questões)
+- Conectivos e seus valores semânticos (1 questões)
+- Uso de Pronomes Relativos (1 questões)
+- Análise do discurso e estratégias de envolvimento do leitor (1 questões)
+- Definição e compreensão de conceitos (1 questões)
+- Análise de Opiniões e Mudanças de Percepção (1 questões)
+- Discurso Direto (1 questões)
+- Reescrita de orações (1 questões)
+- Análise de Posicionamento do Autor (1 questões)
+- Análise de Comparações e Paradoxos (1 questões)
+- Pressupostos e Subentendidos (Questão 7) (1 questões)
+- Análise de Opiniões e Temáticas em Textos (1 questões)
+- Análise de informações e inferências em textos (1 questões)
+- Compreensão de conceitos e expressões (1 questões)
+- Análise de significados e relações no texto (1 questões)
+- Análise de letras de canções e suas implicações sociais (1 questões)
+- Análise Comparativa de Textos (1 questões)
+- Compreensão e preenchimento de lacunas (1 questões)
+- Compreensão do Tema Central (1 questões)
+- Análise de Sentido e Classificação Sintática (1 questões)
+- Referência Pronominal (1 questões)
+- Análise de figuras de linguagem e uso de maiúsculas (1 questões)
+- Compreensão de Relações entre Personagens (1 questões)
+- Análise de Afirmativas sobre Classes Gramaticais e Significados (1 questões)
+- Uso de Pronomes e Coesão Textual (1 questões)
+- Análise de Argumentos e Críticas (1 questões)
+- Uso do pronome de tratamento (1 questões)
+- Análise de Charge e Recursos Linguísticos (1 questões)
+- Progressão das Ideias (1 questões)
+- Compreensão de Ideias e Intenções do Autor (1 questões)
+- Contradições no discurso (1 questões)
+- Relação entre título e conteúdo do texto (1 questões)
+- Análise de registro de linguagem no texto (1 questões)
+- Comparação e Relações entre Personagens (1 questões)
+- Análise de Metáforas e Significados (1 questões)
+- Análise de Ponto de Vista e Inclusão/Exclusão do Leitor (1 questões)
+- Compreensão de Objetivo de Pesquisa (1 questões)
+- Análise de trechos e suas implicações (1 questões)
+
+Principais armadilhas:
+• **Afirmativa II - Concordância Verbal**: A afirmativa "A maioria dos estudantes de engenharia estavam na sala de aula" apresenta um erro de concordância. O correto seria "A maioria dos estudantes de engenharia estava na sala de aula", pois "maioria" é um substantivo singular.
+• **Afirmativa IV - Tempo Verbal**: A afirmativa "Há uma hora e meio o curso se encerrou" também contém um erro. O correto seria "Há uma hora e meia", pois "meia" deve concordar em gênero e número com "hora".
+• **Comparação de Percentuais**: A afirmativa II sugere que o aumento do tomate é cerca de 50% maior que o da cenoura, mas, na verdade, o aumento da cenoura (178%) é muito maior que o do tomate (103%), o que pode confundir o candidato.
+• **Comparação de porcentagens**: A afirmativa II apresenta uma comparação incorreta entre os aumentos de preços, pois o aumento do tomate (103%) é maior que o da cenoura (178%), o que pode levar o leitor a uma conclusão errada se não prestar atenção aos números.
+• **Condição irrelevante**: A opção (e) "tudo é gravado mesmo que ninguém mais seja anônimo" sugere uma condição que não é pertinente à ideia original, pois a frase original não apresenta uma relação de concessão.
+
+
+==================================================
+CATEGORIA: LÍNGUA PORTUGUESA (Total: 112 questões)
+==================================================
+Dificuldade média: 2.9/5
+
+Subtemas identificados:
+- Emprego do sinal indicativo de crase (9 questões)
+- Regras práticas de ocorrência de crase (4 questões)
+- Classificação dos advérbios (4 questões)
+- Regras de Acentuação (4 questões)
+- Uso da Crase (4 questões)
+- Casos obrigatórios de crase (3 questões)
+- Antônimos (3 questões)
+- Grafia correta das palavras (3 questões)
+- Colocação Pronominal (3 questões)
+- Classificação das palavras quanto à posição da sílaba tônica (3 questões)
+- Adjetivos Pátrios e Gentílicos (2 questões)
+- Uso de Sinônimos (2 questões)
+- Classificação do sujeito (2 questões)
+- Advérbios (2 questões)
+- Uso de Palavras e Expressões (2 questões)
+- Uso do sinal indicativo de crase (2 questões)
+- Classificação das palavras quanto à posição da sílaba tônica > Proparoxítonas (2 questões)
+- Acentuação Gráfica (2 questões)
+- Termos integrantes da oração (2 questões)
+- Sintaxe de regência (2 questões)
+- Ortografia (2 questões)
+- Hiato e Acentuação Gráfica (2 questões)
+- Concordância Nominal (2 questões)
+- Sujeito Indeterminado (2 questões)
+- Classes Gramaticais (2 questões)
+- Regras de acentuação (2 questões)
+- Grafia correta das palavras e uso de expressões (1 questões)
+- Funções Sintáticas (1 questões)
+- Acentuação de vocábulos (1 questões)
+- Acentuação Gráfica e Novo Acordo Ortográfico (1 questões)
+- Acentuação de vocábulos oxítonos (1 questões)
+- Uso do "por que", "porque", "porquê" e "por quê" (1 questões)
+- Preposição (1 questões)
+- Acentuação gráfica (1 questões)
+- Adjetivos e Locuções Adjetivas (1 questões)
+- Derivação (1 questões)
+- Locuções adverbiais (1 questões)
+- Adjetivos (1 questões)
+- Análise Sintática (1 questões)
+- Emprego de preposições e conectivos (1 questões)
+- Uso do Acento Grave (1 questões)
+- Sintaxe de Regência (1 questões)
+- Emprego de Conectivos (1 questões)
+- Conjunções coordenativas adversativas (1 questões)
+- Uso de Pronomes Pessoais (1 questões)
+- Acentuação e Divisão Silábica (1 questões)
+- Sujeito, Verbos de ligação e Predicativo do sujeito (1 questões)
+- Classificação de Substantivos (1 questões)
+- Elipse (1 questões)
+- Anáfora e Pronomes Pessoais Retos (1 questões)
+- Conjunções (1 questões)
+- Uso de sinônimos (1 questões)
+- Uso de Conectivos (1 questões)
+- Uso de por que/porque/porquê/por quê (1 questões)
+- Conjunções coordenativas (1 questões)
+- Regras de Acentuação Gráfica (1 questões)
+- Flexão verbal de número (singular, plural) (1 questões)
+- Predicativo do sujeito e adjunto adverbial (1 questões)
+- Hífen e Formação de Palavras (1 questões)
+- Regência Verbal (1 questões)
+- Relações de sinonímia e antonímia (sinônimos e antônimos) (1 questões)
+- Concordância Verbal e Uso do Hífen (1 questões)
+- Uso de por que / porque / porquê / por quê (1 questões)
+- Uso do Hífen e Ortografia (1 questões)
+- Formação de Palavras e Hífen (1 questões)
+- Ortografia oficial e acentuação gráfica (1 questões)
+
+Principais armadilhas:
+• "incerto" - O candidato pode confundir "incerto" como um adjetivo, uma vez que descreve uma qualidade, mas na frase é um complemento do substantivo "banhista", o que pode levar à confusão sobre sua função.
+• "incerto" - O candidato pode confundir "incerto" como um advérbio, pois a terminação pode sugerir uma relação com a maneira como algo é feito, mas na verdade é um adjetivo que descreve o substantivo "banhista".
+• "um" - A palavra "um" pode ser confundida com um numeral em algumas situações, mas neste contexto, ela é um artigo indefinido que acompanha o substantivo "banhista".
+• "um" - O uso do artigo indefinido pode ser confundido com um numeral, pois "um" também pode ser interpretado como a representação do número 1 em outros contextos, levando a uma escolha errada.
+• **Confusão entre "malcriado" e "mal criado"**: Muitos candidatos podem não saber que "malcriado" é uma palavra única que significa alguém que não tem educação, enquanto "mal criado" pode ser interpretado como alguém que foi criado de forma inadequada, mas não é uma expressão comum.
+
+
+==================================================
+CATEGORIA: PONTUAÇÃO (Total: 68 questões)
+==================================================
+Dificuldade média: 2.9/5
+
+Subtemas identificados:
+- Uso da Vírgula (35 questões)
+- Uso da Crase (10 questões)
+- Uso do sinal indicativo de crase (7 questões)
+- Emprego do sinal indicativo de crase (3 questões)
+- Uso do Ponto de Exclamação (2 questões)
+- Uso das aspas (2 questões)
+- Uso do Ponto Final, Dois-Pontos e Ponto de Exclamação (2 questões)
+- Uso da Vírgula, Ponto final, Ponto de exclamação, Uso das reticências (1 questões)
+- Uso das Reticências (1 questões)
+- Uso da Vírgula e do Travessão (1 questões)
+- Uso de Aspas (1 questões)
+- Uso do acento grave (crase) (1 questões)
+- Uso do Ponto Final e da Vírgula (1 questões)
+- Uso do Acento Grave (Crase) (1 questões)
+
+Principais armadilhas:
+• A alternativa b) sugere que a vírgula após "vizinhança" deve ser eliminada, mas a frase está correta com a vírgula, pois separa elementos da enumeração de características da comunidade.
+• A alternativa c) menciona que a palavra "indivíduos" está errada por não ter acento, mas a palavra está correta segundo a nova ortografia, o que pode levar a confusão.
+• A ausência de vírgula antes de "nasceu em Salvador" na alternativa (a) pode levar o candidato a pensar que a frase está correta, mas a vírgula é necessária para separar o aposto.
+• A confusão entre a crase e a preposição: Muitos candidatos podem errar ao não perceber que "à" é a junção da preposição "a" com o artigo feminino "a", como em "àquela situação".
+• A confusão entre a função de conjunções coordenativas e subordinativas, levando o candidato a escolher uma opção que não mantém a relação de sentido da frase original. Por exemplo, escolher "porque" poderia sugerir uma relação causal que não existe na frase.
+
+
+==================================================
+CATEGORIA: VERBOS (Total: 64 questões)
+==================================================
+Dificuldade média: 2.8/5
+
+Subtemas identificados:
+- Regência Verbal (11 questões)
+- Concordância Verbal (7 questões)
+- Emprego dos tempos verbais (6 questões)
+- Conjugação Verbal (4 questões)
+- Flexão verbal de tempo (3 questões)
+- Modo Imperativo (3 questões)
+- Flexão verbal de modo e tempo (3 questões)
+- Pretérito Imperfeito do Indicativo (2 questões)
+- Transitividade Verbal e Modos Verbais (2 questões)
+- Conversão das vozes do verbo (2 questões)
+- Flexão verbal de pessoa e número (2 questões)
+- Gerúndio (2 questões)
+- Concordância Verbal e Uso de Tempos Verbais (1 questões)
+- Flexão Verbal e Equivalência Semântica (1 questões)
+- Concordância Verbal e Uso do Modo Verbal (1 questões)
+- Flexão verbal de tempo e modo (1 questões)
+- Uso do verbo "haver" em orações sem sujeito (1 questões)
+- Flexão de voz (ativa, passiva, reflexiva) (1 questões)
+- Flexão Verbal e Tempos Verbais (1 questões)
+- Uso do verbo "Haver" em orações sem sujeito (1 questões)
+- Regência verbal (1 questões)
+- Predicação Verbal (1 questões)
+- Concordância Verbal e Tempos Verbais (1 questões)
+- Tempos Verbais (1 questões)
+- Flexão de número e pessoa do verbo "haver" (1 questões)
+- Flexão verbal de modo (1 questões)
+- Modo Verbal (1 questões)
+- Flexões Verbais (1 questões)
+- Flexão Verbal de Modo (1 questões)
+
+Principais armadilhas:
+• "assistir o paciente" - O verbo "assistir" exige a preposição "a" quando se refere a ajudar ou prestar assistência, portanto, o correto seria "assistir ao paciente".
+• "obedecem menos os pais" - A falta da preposição "a" após o verbo "obedecer" é um erro comum, pois o correto é "obedecem menos aos pais".
+• **Confusão entre singular e plural**: A opção "Estão" (b) pode parecer correta, pois "funcionários" está no plural, mas a forma correta do verbo "estar" deve concordar com "maioria", que é singular.
+• **Uso incorreto do verbo "ser"**: A opção "São" (c) pode ser tentadora, pois "são" é a forma plural do verbo "ser", mas o contexto exige o verbo "estar", que expressa um estado temporário, e não uma característica permanente.
+• A confusão entre o uso de preposição e artigo, como no primeiro item, onde o verbo "observar" é frequentemente confundido com a regência de preposição.
+
+
+==================================================
+CATEGORIA: ANÁLISE SINTÁTICA (Total: 45 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Funções sintáticas (5 questões)
+- Complemento Verbal (2 questões)
+- Classificação de Oração e Termos da Oração (2 questões)
+- Oração Subordinada (2 questões)
+- Funções Sintáticas (2 questões)
+- Função Sintática dos Termos (2 questões)
+- Análise de Estruturas Frasais (1 questões)
+- Funções sintáticas e tipos de orações (1 questões)
+- Funções sintáticas e classificação de termos na oração (1 questões)
+- Classificação de termos da oração (1 questões)
+- Tipos de Oração (1 questões)
+- Relações de Dependência Sintática (1 questões)
+- Classificação do sujeito e do predicado (1 questões)
+- Estrutura da Oração e Classificação dos Termos (1 questões)
+- Classificação Sintática de Expressões (1 questões)
+- Função Sintática dos Pronomes (1 questões)
+- Função Sintática das Orações (1 questões)
+- Valor Semântico das Oração Subordinadas (1 questões)
+- Funções sintáticas dos termos em uma oração (1 questões)
+- Estrutura de Oração e Funções Sintáticas (1 questões)
+- Função Sintática (1 questões)
+- Função sintática dos pronomes (1 questões)
+- Função sintática das orações introduzidas por conectivos (1 questões)
+- Valor Semântico das Oração Subordinada (1 questões)
+- Função sintática dos termos na oração (1 questões)
+- Estruturas Introduzidas por Conjunções e Preposições (1 questões)
+- Análise das estruturas linguísticas do texto (1 questões)
+- Relação entre orações e suas funções sintáticas (1 questões)
+- Locuções Adverbiais (1 questões)
+- Função das orações introduzidas por conectivos (1 questões)
+- Conjunções e suas orações (1 questões)
+- Oração (1 questões)
+- Função da Conjunção (1 questões)
+- Relação entre orações e seus papéis sintáticos (1 questões)
+- Identificação do sujeito e vocativo (1 questões)
+- Estrutura da Oração (1 questões)
+
+Principais armadilhas:
+• A alternativa (a) afirma que "sabe também driblar as angústias" contém um verbo transitivo direto e indireto. Isso pode confundir o candidato, pois "driblar" é um verbo transitivo direto, e a presença de "as angústias" pode levar a uma interpretação errônea sobre a transitividade do verbo.
+• A alternativa (b) classifica a oração "quando recebem dos professores uma tarefa complicada" como Oração Subordinada Adverbial Temporal. A armadilha aqui é que muitos podem confundir a função temporal da oração com a de uma oração subordinada adverbial causal ou condicional, dada a complexidade da relação entre as orações.
+• A confusão entre "aposto" e "oração subordinada" - Por exemplo, muitos podem interpretar erroneamente a expressão "jornalistas de Galileu" como uma oração subordinada em vez de um aposto.
+• A confusão entre a função de "Mensagens tristes" e "Pensamentos", pois ambos podem ser interpretados como sujeitos ou objetos, dependendo do contexto.
+• A confusão entre locuções adverbiais e outras construções frasais. Por exemplo, a alternativa "c" apresenta uma estrutura que pode ser confundida com uma locução adverbial, mas não é.
+
+
+==================================================
+CATEGORIA: ORTOGRAFIA (Total: 18 questões)
+==================================================
+Dificuldade média: 2.8/5
+
+Subtemas identificados:
+- Acentuação Gráfica (2 questões)
+- Grafia de Palavras (2 questões)
+- Emprego da letra X (2 questões)
+- Uso de homônimos e grafia correta de palavras (1 questões)
+- Uso de Grafia e Acentuação (1 questões)
+- Escrita correta de palavras (1 questões)
+- Uso do Z e do S na Ortografia (1 questões)
+- Ortografia das palavras (1 questões)
+- Erros de ortografia e grafia de palavras (1 questões)
+- Ortografia de palavras com erro (1 questões)
+- Uso de S, SS e Ç (1 questões)
+- Grafia correta das palavras (1 questões)
+- Acentuação Gráfica e Ortografia Oficial (1 questões)
+- Acentuação Gráfica e Regras de Acentuação (1 questões)
+- Uso de ss, ç e s (1 questões)
+
+Principais armadilhas:
+• "cafageste" na alternativa a) - A palavra correta é "cafajeste", que é um erro comum de grafia.
+• "despege" e "esteje" na alternativa b) - As formas corretas são "despeje" e "esteja", que podem ser confundidas por candidatos que não dominam a conjugação verbal.
+• "lage" na alternativa d) - A forma correta é "laje", que é uma confusão comum entre palavras homófonas.
+• "viajem" na alternativa c) - A forma correta é "viajem" (do verbo viajar) que pode ser confundida com o substantivo "viagem", levando a um erro comum.
+• A confusão entre "faxina" e "fachina". Muitos candidatos podem não ter certeza sobre a forma correta, pois "faxina" é a forma mais comum, enquanto "fachina" é uma variante menos utilizada.
+
+
+==================================================
+CATEGORIA: PRONOMES (Total: 18 questões)
+==================================================
+Dificuldade média: 2.9/5
+
+Subtemas identificados:
+- Classificação dos Pronomes (5 questões)
+- Classificação do pronome "se" (1 questões)
+- Pronomes pessoais oblíquos átonos (1 questões)
+- Pronomes Oblíquos Átonos (1 questões)
+- Pronomes pessoais retos (1 questões)
+- Pronomes Possessivos (1 questões)
+- Emprego dos Pronomes Pessoais (1 questões)
+- Classificação de Pronomes (1 questões)
+- Uso de Pronomes Relativos (1 questões)
+- Pronomes possessivos (1 questões)
+- Uso de Pronomes Pessoais (1 questões)
+- Colocação Pronominal (1 questões)
+- Uso de pronomes relativos e preposições (1 questões)
+- Concordância Verbal e Pronomes Relativos (1 questões)
+
+Principais armadilhas:
+• A forma reflexiva em "Algo rompeu-se dentro dele" pode gerar confusão, pois o aluno pode não perceber que o pronome "se" está corretamente empregado como parte de uma construção reflexiva.
+• Confusão entre "ela" (pronome reto) e "a" (pronome oblíquo): A opção "A tripulação optou por colocar ela na primeira classe" utiliza "ela" de forma incorreta, pois o correto seria "a" (pronome oblíquo) após o verbo "optar por colocar".
+• Confusão entre "lhe" e "o": Muitos candidatos podem não perceber que "lhe" é o pronome correto para substituir o objeto indireto, enquanto "o" é usado para objetos diretos.
+• Confusão entre "que" e "o qual": Muitos candidatos podem optar por "que" por ser mais comum, mas "o qual" é mais formal e pode ser considerado em contextos específicos.
+• Confusão entre formas verbais - A opção d) "A tripulação colocá-la-ia na primeira classe" apresenta um erro de conjugação verbal, pois a forma correta deveria ser "colocaria".
+
+
+==================================================
+CATEGORIA: ACENTUAÇÃO GRÁFICA (Total: 16 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regras de Acentuação (5 questões)
+- Acentuação de palavras paroxítonas e oxítonas (4 questões)
+- Acentuação de palavras paroxítonas (2 questões)
+- Regras de acentuação e uso do trema (2 questões)
+- Regras de acentuação (1 questões)
+- Novo Acordo Ortográfico (1 questões)
+- Uso de Acentos Gráficos (1 questões)
+
+Principais armadilhas:
+• A interpretação da acentuação de palavras oxítonas e paroxítonas pode levar a confusões, especialmente em palavras que não seguem as regras esperadas, como "saúde".
+• A mudança no acento da palavra "ideia" pode ser mal compreendida, levando candidatos a acreditarem que ainda é acentuada.
+• A palavra "comentários" pode ser confundida com a regra de acentuação das paroxítonas, já que muitos candidatos podem não lembrar que palavras terminadas em "s" não recebem acento.
+• A palavra "comentários" pode ser confundida com uma palavra oxítona, mas na verdade é paroxítona e não leva acento.
+• A palavra "mínimas" pode gerar dúvida, pois a presença do acento circunflexo pode ser confundida com a acentuação de outras palavras que não seguem a mesma regra.
+
+
+==================================================
+CATEGORIA: MORFOLOGIA (Total: 16 questões)
+==================================================
+Dificuldade média: 2.8/5
+
+Subtemas identificados:
+- Classificação de Palavras (5 questões)
+- Análise Morfológica de Artigos e Numerais (2 questões)
+- Classificação dos termos destacados (1 questões)
+- Ortografia de Substantivos Derivados (1 questões)
+- Formação de Palavras (1 questões)
+- Concordância e Regência Verbal (1 questões)
+- Classificação de palavras (1 questões)
+- Classificação dos Artigos (1 questões)
+- Análise de Classes Gramaticais (1 questões)
+- Classificação Gramatical das Palavras (1 questões)
+- Classificação das Palavras (1 questões)
+
+Principais armadilhas:
+• Confusão entre "ao" e "o": Muitos candidatos podem não perceber que "assistir" exige a preposição "a", resultando em "assistirmos ao novo filme" em vez de "assistirmos o novo filme".
+• Confusão entre "compreensão" e "compreenção": A forma correta é "compreensão", que é frequentemente escrita incorretamente por causa da pronúncia.
+• Confusão entre adjetivo e advérbio: O candidato pode pensar que "tão" é um adjetivo por estar associado a adjetivos ("modesta", "lavada", "risonha"), sem perceber que sua função na frase é de intensidade, característica dos advérbios.
+• Confusão entre adjetivos e advérbios: Os candidatos podem confundir a função de um adjetivo com a de um advérbio, especialmente em frases onde ambos podem parecer ter uma função similar.
+• Confusão entre adjetivos e advérbios: Os candidatos podem confundir o uso de "muita" como um adjetivo (modificando um substantivo) e não perceber que "muita coisa" se refere a uma expressão que indica quantidade.
+
+
+==================================================
+CATEGORIA: CONCORDÂNCIA VERBAL (Total: 15 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Concordância do verbo com o sujeito (4 questões)
+- Concordância com sujeito composto (3 questões)
+- Concordância entre sujeito e verbo (3 questões)
+- Concordância com expressões partitivas (2 questões)
+- Regras de Concordância Verbal (1 questões)
+- Concordância em construções impessoais (1 questões)
+- Concordância entre orações (1 questões)
+
+Principais armadilhas:
+• **Interpretação do sujeito na segunda oração**: A expressão "Choveu aplausos" pode levar à confusão, pois o verbo "chover" é impessoal e não admite sujeito. A interpretação correta é que "aplausos" é o objeto direto da ação de "chover", o que pode causar dúvidas sobre a concordância.
+• **Uso incorreto do verbo "haver"**: A forma "Houveram" está errada, pois "haver" no sentido de existir é impessoal e deve ser utilizado na forma singular ("Houve").
+• A confusão entre o sujeito oculto e o sujeito explícito. Por exemplo, candidatos podem pensar que "eles" é o sujeito do verbo "aprimoraram-se", quando na verdade o sujeito é "os mecanismos".
+• A interpretação errônea de que o pronome "se" indica um sujeito indeterminado, levando à conclusão incorreta de que o verbo deve concordar com ele, em vez de com o núcleo do sujeito.
+• A possibilidade de substituir “quem” por “que” sem alterar a concordância pode levar a uma interpretação errônea sobre a flexão dos verbos.
+
+
+==================================================
+CATEGORIA: REGÊNCIA VERBAL (Total: 10 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência de verbos e preposições (4 questões)
+- Uso da Crase e Regência do Verbo "Dar" (1 questões)
+- Regência Verbal na Língua Portuguesa (1 questões)
+- Regência de Verbos e Objetos (1 questões)
+- Uso do verbo "assistir" (1 questões)
+- Regência Verbal e Estrutura Oracional (1 questões)
+- Regência de verbos (1 questões)
+
+Principais armadilhas:
+• **Confusão entre preposição e artigo**: Na alternativa b), o termo "a" pode ser confundido com um artigo definido, levando o candidato a errar ao identificar sua função.
+• **Interpretação errada de objeto indireto**: Na alternativa c), a expressão "para as mulheres" pode ser mal interpretada como um objeto direto, quando na verdade é um objeto indireto.
+• Afirmativa I: A expressão "devotos por Deus" é uma construção comum, mas a regência correta seria "devotos a Deus". Isso pode levar o candidato a confundir a construção usual com a regência gramatical correta.
+• Afirmativa II: A preposição "para" é frequentemente utilizada de forma errada. O correto seria "chegamos ao local indicado no mapa", o que pode causar confusão em candidatos que não dominam a regência de verbos que indicam movimento.
+• Confundir regência verbal com concordância nominal ou verbal. Por exemplo, o candidato pode achar que a frase "Chegam na consulta" está correta por conta da concordância, quando na verdade o problema é a regência do verbo "chegar".
+
+
+==================================================
+CATEGORIA: COLOCAÇÃO PRONOMINAL (Total: 9 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Uso de Pronomes Oblíquos (2 questões)
+- Uso do pronome oblíquo átono (2 questões)
+- Uso de Pronomes Oblíquos Átonos (2 questões)
+- Próclise e suas regras (1 questões)
+- Ênclise, Próclise e Mesóclise (1 questões)
+- Colocação de Pronomes Objeto (1 questões)
+
+Principais armadilhas:
+• **Confusão entre próclise e ênclise**: Candidatos podem errar ao não perceber que a presença de palavras atrativas (como advérbios ou pronomes relativos) pode exigir a próclise, como em "se gabavam".
+• **Desconhecimento das exceções**: Alguns podem não lembrar que em certas construções, como após vírgulas ou em orações subordinadas, a ênclise é a forma correta, como em "se tornou imprevisível".
+• A confusão entre a colocação pronominal em frases afirmativas e negativas, como em "Ninguém se assusta por não saber o que acontece", onde o pronome "se" é corretamente posicionado antes do verbo.
+• A interpretação errônea da expressão "montá-los", que pode levar à dúvida sobre a colocação do pronome "os" em relação ao verbo, uma vez que a forma correta é a próclise.
+• Colocação errada do pronome reflexivo: "não conhece-se" em vez de "não se conhece". A armadilha é a inversão da ordem correta do pronome reflexivo.
+
+
+==================================================
+CATEGORIA: MORFOSSINTAXE (Total: 9 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Colocação Pronominal (1 questões)
+- Predicativo do sujeito (1 questões)
+- Oração Subordinada Substantiva (1 questões)
+- Funções Sintáticas (1 questões)
+- Identificação do sujeito nas orações (1 questões)
+- Concordância Verbal (1 questões)
+- Análise do Sujeito (1 questões)
+- Análise de Verbos e Estruturas Frasais (1 questões)
+- Funções sintáticas (1 questões)
+
+Principais armadilhas:
+• A confusão entre o sujeito composto e o sujeito simples. Exemplo: "Só o mastigar e o barulho dos talheres nos pratos podiam ser ouvidos." Aqui, o sujeito é composto e a concordância está correta.
+• A interpretação errônea da forma verbal em relação ao sujeito. Exemplo: "Só podia ser ouvido o mastigar e o barulho dos talheres nos pratos." Neste caso, o uso do singular "podia" pode parecer correto, mas desvia a concordância com o sujeito composto.
+• Confusão entre Oração Subordinada Substantiva Objetiva Direta e Subjetiva: Muitos candidatos podem não perceber que a oração "que nós ainda não sabemos" é o complemento do verbo "sabem", o que a classifica como objetiva direta.
+• Confusão entre formas verbais: O candidato pode não perceber que "respirar" é um verbo no infinitivo, enquanto "é" está conjugado na terceira pessoa do singular do presente do indicativo.
+• Confusão entre próclise e ênclise: Muitos candidatos podem achar que, por se tratar de uma oração afirmativa, o pronome deve ser posposto ao verbo, quando na verdade, a ênclise é a forma correta apenas em certos contextos.
+
+
+==================================================
+CATEGORIA: CONCORDÂNCIA VERBAL E NOMINAL (Total: 8 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Concordância nominal (2 questões)
+- Concordância Verbal e Nominal (2 questões)
+- Regência Verbal (1 questões)
+- Concordância nominal e uso de pronomes (1 questões)
+- Concordância entre sujeito e verbo (1 questões)
+- Concordância Verbal (1 questões)
+
+Principais armadilhas:
+• "A redução da maioridade penal trata-se de um assunto polêmico." - A expressão "trata-se de" é frequentemente utilizada de forma errada, pois o correto seria "A redução da maioridade penal é um assunto polêmico."
+• "Não se precisam de justificativas para essa atitude." - O verbo "precisar" deve ser utilizado na forma impessoal, ou seja, "Não se precisa de justificativas para essa atitude."
+• **Concordância com expressões que indicam quantidade**: Na alternativa (b), a expressão "nenhum dos presentes" é singular, mas a palavra "perspectivas" está no plural, o que gera um erro de concordância. O correto seria "excelente perspectiva".
+• **Interpretação de concordância com sujeitos compostos**: Na alternativa (a), o sujeito "Os especialistas" é plural, mas o verbo "tem" está no singular. O correto seria "têm".
+• A confusão entre "bastante" e "muitas" pode levar o candidato a considerar que a frase está correta, uma vez que "bastante" é frequentemente usado em contextos informais, mas não é o mais apropriado aqui.
+
+
+==================================================
+CATEGORIA: CLASSES GRAMATICAIS (Total: 5 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Identificação de classes gramaticais (2 questões)
+- Identificação de Classes de Palavras (1 questões)
+- Classificação Gramatical de Palavras (1 questões)
+- Classificação de palavras (1 questões)
+
+Principais armadilhas:
+• "incerto" - O candidato pode confundir "incerto" como um adjetivo, já que é uma característica que descreve "banhista", mas na frase é usado como parte de uma locução adjetiva.
+• "um" - O candidato pode não perceber que "um" é um artigo indefinido e confundir com um numeral, pois "um" pode ser interpretado como a representação do número 1 em outros contextos.
+• Confusão entre "um" como artigo indefinido e numeral: Muitos candidatos podem não perceber que "um" na frase se refere a um artigo indefinido e não a um numeral, levando a uma escolha errada.
+• Confusão entre adjetivo e substantivo: Muitos candidatos podem pensar que "meio" é um adjetivo, pois pode qualificar algo, mas na verdade, em muitos contextos, "meio" é um substantivo.
+• Confusão entre preposição e conjunção: Muitos candidatos podem confundir o uso de preposições e conjunções, especialmente em versos poéticos onde a estrutura pode ser menos convencional.
+
+
+==================================================
+CATEGORIA: SEMÂNTICA (Total: 5 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Relações de significação entre as palavras (2 questões)
+- Significação das Palavras (2 questões)
+- Significação das palavras e expressões (1 questões)
+
+Principais armadilhas:
+• A opção (a) "Bonito é um lugar maravilhoso no Mato Grosso do Sul." pode confundir o candidato, pois "Bonito" é um nome próprio e não se relaciona ao sentido figurado da expressão "fazer bonito".
+• A opção (b) "Paletó e belas botas fazem bonito em um casamento de fazenda, mas não combinam com a ocasião, é que vamos para a praia no Guarujá agora." pode levar à confusão, pois o uso de "fazer bonito" está em um contexto que pode ser interpretado como algo que se destaca, mas não é o mesmo sentido da expressão no texto.
+• Alternativas que parecem corretas: As opções b) e c) podem enganar o candidato, pois incluem palavras como "reforçar" e "reafirmar", que podem parecer sinônimos em alguns contextos, mas não se aplicam corretamente aos significados de "ratificar" e "retificar".
+• Alternativas semelhantes: As opções a) e b) apresentam palavras que podem parecer sinônimos, mas têm significados distintos, o que pode causar dúvida.
+• Confusão entre "ratificar" e "retificar": Muitos candidatos podem achar que as duas palavras têm significados semelhantes, pois ambas envolvem a ideia de "fazer algo novamente", mas na verdade têm significados distintos.
+
+
+==================================================
+CATEGORIA: SINTAXE (Total: 5 questões)
+==================================================
+Dificuldade média: 2.8/5
+
+Subtemas identificados:
+- Predicado e Sujeito (1 questões)
+- Classificação do sujeito (1 questões)
+- Classificação do Sujeito (1 questões)
+- Colocação Pronominal (1 questões)
+- Oração Subordinada e Coordenada (1 questões)
+
+Principais armadilhas:
+• Confusão entre orações subordinadas e coordenadas: Muitos candidatos podem não perceber que a oração "que a maldade do mundo te pareça normal" é uma oração subordinada e não coordenada.
+• Confusão entre os tipos de pronomes: Muitos candidatos podem confundir pronomes oblíquos átonos com pronomes retos, levando a uma escolha errada.
+• Confusão entre sujeito e adjunto: A alternativa (a) sugere que "não" é adjunto do sujeito "aluno", o que é incorreto, pois "não" é um advérbio que modifica o verbo ou a oração, não o sujeito.
+• Confusão entre sujeito indeterminado e sujeito passivo: O candidato pode achar que a frase "Fizeram estátuas" implica que as estátuas são o sujeito passivo, quando na verdade o sujeito é indeterminado, pois não se sabe quem fez as estátuas.
+• Confusão entre sujeito simples e composto: O candidato pode achar que "mantas de carne-seca e pedaços de toicinho" formam um sujeito composto, mas na verdade, o sujeito é a oração como um todo, e a estrutura é mais complexa.
+
+
+==================================================
+CATEGORIA: FIGURAS DE LINGUAGEM (Total: 4 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Comparação (2 questões)
+- Figuras de pensamento e palavras (1 questões)
+- Elipse (1 questões)
+
+Principais armadilhas:
+• Confusão entre comparação e metáfora: Muitos candidatos podem pensar que "como" indica uma metáfora, quando na verdade a frase em questão utiliza uma comparação.
+• Confusão entre comparação e metáfora: Os candidatos podem pensar que "como um animalzinho" é uma metáfora, pois envolve uma relação simbólica, mas na verdade é uma comparação explícita.
+• Confusão entre elipse e outras figuras sintáticas: Por exemplo, a frase "A mim me parece estranha sua colocação" pode ser confundida com uma construção que não apresenta elipse, mas sim uma estrutura normal.
+• Confusão entre figuras de palavras e figuras de pensamento: Muitos candidatos podem não perceber a diferença entre essas categorias e escolher a alternativa errada.
+• Interpretação errônea de frases que não apresentam omissões: A frase "Terminou o curso de inglês mais cedo hoje" pode levar o candidato a pensar que há elipse, quando na verdade a frase é completa.
+
+
+==================================================
+CATEGORIA: SINTAXE DE REGÊNCIA (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Desvio de Regência (1 questões)
+- Uso de locuções prepositivas e pronomes relativos (1 questões)
+- Regência Verbal (1 questões)
+
+Principais armadilhas:
+• "A cidade aonde ele nasceu é muito pequena." - A utilização de "aonde" é incorreta, pois o correto seria "onde", já que se refere a um lugar sem movimento.
+• "A obra a que o professor se referiu não é muito divulgada." - A expressão "a que" pode ser confusa, pois muitos candidatos podem optar por "que", que não é a forma correta neste contexto.
+• A confusão entre a regência correta e a regência utilizada no texto, como em "com a efetiva participação de representantes das Perícias Médicas", onde a preposição "com" pode gerar dúvida sobre a regência do verbo "participar".
+• A interpretação de expressões que podem parecer corretas à primeira vista, mas que, ao serem analisadas sob a perspectiva da norma padrão, revelam desvios, como em "visando abordar todos os aspectos relevantes sobre o assunto", onde o uso do gerúndio pode ser considerado inadequado em contextos formais.
+• Confusão entre os termos: Os candidatos podem confundir "emoções" com "excitação", pois ambos estão relacionados ao contexto emocional, mas apenas um é o regente da preposição.
+
+
+==================================================
+CATEGORIA: CONJUNÇÕES (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Valor Semântico das Conjunções (1 questões)
+- Valores semânticos das preposições (1 questões)
+- Classificação das conjunções (1 questões)
+
+Principais armadilhas:
+• A confusão entre as expressões "portanto" e "pois", que podem ser mal interpretadas quanto ao seu sentido conclusivo e explicativo, respectivamente.
+• A interpretação errônea do sentido de "não somente... mas também", que pode levar o candidato a pensar que a expressão é adversativa, quando na verdade é aditiva.
+• Confusão entre causa e consequência: Muitos candidatos podem confundir conjunções que indicam causa (ex: "porque") com aquelas que indicam consequência (ex: "portanto"). Isso pode levar a uma escolha errada entre as opções.
+• Confusão entre preposições e conjunções: Candidatos podem confundir o uso de preposições com o de conjunções, levando a respostas incorretas.
+• Interpretação errônea do contexto: A falta de atenção ao contexto da frase pode fazer com que o candidato escolha uma conjunção que não se encaixa na relação que a frase estabelece.
+
+
+==================================================
+CATEGORIA: ACENTUAÇÃO (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Acentuação de Vocábulos Oxítonos e Proparoxítonos (1 questões)
+- Acentuação de palavras paroxítonas (1 questões)
+- Acentuação de vocábulos oxítonos, paroxítonos e proparoxítonos (1 questões)
+
+Principais armadilhas:
+• Confusão entre oxítonas e paroxítonas: Muitos candidatos podem não lembrar que as oxítonas são acentuadas quando terminam em "a", "e", "o", "em", e suas formas plurais, podendo errar na identificação de "importância" como oxítona.
+• Confusão entre oxítonas e proparoxítonas: Muitos candidatos podem errar ao classificar 'faraó' como uma oxítona dissílaba, pois a palavra é, na verdade, uma oxítona trissílaba (fa-ra-ó).
+• Confusão entre palavras paroxítonas e oxítonas: Muitos candidatos podem se confundir e incluir palavras que não são paroxítonas, como "dá" (oxítona).
+• Erro na contagem de sílabas: A palavra 'distância' pode ser confundida com uma dissílaba, mas é uma proparoxítona polissílaba, o que pode levar à escolha errada.
+• Ignorar a acentuação correta: Candidatos podem não perceber que algumas palavras listadas não são acentuadas, como "sólido" e "núcleo", que são paroxítonas, mas a questão pede uma sequência de palavras acentuadas.
+
+
+==================================================
+CATEGORIA: TIPOS TEXTUAIS (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Tipologia Textual (1 questões)
+- Tipologia Textual e suas características (1 questões)
+- Classificação de Tipos Textuais (1 questões)
+
+Principais armadilhas:
+• A confusão entre texto injuntivo e texto expositivo. Muitos candidatos podem achar que um texto injuntivo é aquele que expõe um tema, quando na verdade ele tem a função de instruir ou orientar.
+• A interpretação da dissertação. A afirmação que descreve a dissertação pode ser mal interpretada, pois a dissertação não apenas apresenta resultados de estudos, mas também argumenta e discute ideias.
+• Confusão entre Dissertação e Prescrição: Muitos candidatos podem confundir a dissertação, que é um texto que expõe e argumenta sobre um tema, com a prescrição, que é um texto que orienta ou recomenda ações. Por exemplo, a frase "defender princípios e tomar decisões" pode levar à confusão se o candidato não tiver clareza sobre o que caracteriza cada tipo.
+• Confusão entre texto injuntivo e texto expositivo: A afirmativa que define o texto injuntivo pode levar à confusão, pois muitos candidatos podem associar características de um texto expositivo a um injuntivo, sem perceber a diferença entre as finalidades de cada um.
+• Interpretação errônea da descrição: A descrição é muitas vezes confundida com a narração. A descrição foca em características e detalhes, enquanto a narração envolve contar uma história com enredo. Um exemplo disso é a frase "apresenta-se uma estória contada de acordo com certas convenções", que pode levar candidatos a escolherem a opção errada se não perceberem a diferença.
+
+
+==================================================
+CATEGORIA: FORMAÇÃO DAS PALAVRAS (Total: 3 questões)
+==================================================
+Dificuldade média: 2.7/5
+
+Subtemas identificados:
+- Composição de Palavras (2 questões)
+- Derivação (1 questões)
+
+Principais armadilhas:
+• A confusão entre os termos "determinado" e "determinante". Por exemplo, muitos podem achar que "gente" é o determinante por ser o primeiro termo do composto, quando na verdade é o determinado.
+• A interpretação do uso do hífen (III) pode ser enganosa, pois muitos candidatos podem não considerar que o hífen é utilizado para unir elementos que formam um significado único, confundindo com outros tipos de composição.
+• A interpretação do uso do hífen. Alguns candidatos podem não perceber que o hífen é usado para unir os dois termos em uma unidade semântica, confundindo com outros casos de uso do hífen.
+• Afirmar que "gente" é o termo determinado do composto (I) pode levar à confusão, pois "gente" é o núcleo do composto, enquanto "casa" é o que determina o tipo de gente.
+• Confusão entre palavras derivadas e palavras simples: Por exemplo, "novos" pode ser confundido como derivado, mas é apenas a forma plural de "novo".
+
+
+==================================================
+CATEGORIA: CONCORDÂNCIA (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Concordância nominal e verbal (1 questões)
+- Concordância verbal e nominal (1 questões)
+- Concordância verbal (1 questões)
+
+Principais armadilhas:
+• A confusão entre o sujeito e o predicado: O erro de concordância está na expressão "ainda é necessário algumas precauções", onde o verbo "é" deve concordar com o núcleo do sujeito, que é "precauções" (plural). A forma correta seria "ainda são necessárias algumas precauções".
+• A interpretação da vírgula: A questão menciona a vírgula, mas não há vírgula a ser analisada no período apresentado. Isso pode levar o candidato a pensar que há um erro de pontuação quando, na verdade, o foco deve ser apenas a concordância.
+• Concordância nominal: A alternativa (a) sugere que o adjetivo "inadequado" deveria estar no feminino e no plural, o que é incorreto, pois refere-se a "ideias", mas o adjetivo concorda com "o diretor", que é masculino singular.
+• Concordância verbal: A frase "ainda é necessário algumas precauções" apresenta um erro de concordância, pois "é necessário" deve concordar com "precauções", que está no plural. O correto seria "ainda são necessárias algumas precauções".
+• Uso da vírgula: A vírgula antes de "que" não é necessária, mas a questão não menciona um erro claro sobre a vírgula, o que pode levar o candidato a pensar que há um erro quando, na verdade, a vírgula não é o foco do problema.
+
+
+==================================================
+CATEGORIA: REGÊNCIA NOMINAL E VERBAL (Total: 3 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência Verbal e Nominal (3 questões)
+
+Principais armadilhas:
+• **Confusão entre regência verbal e nominal**: Muitos candidatos podem não perceber que algumas alternativas envolvem mais de uma regra de regência, levando a erros na escolha da resposta correta.
+• **Interpretação errônea de expressões idiomáticas**: A expressão "obedece às normas" pode ser mal interpretada, levando o candidato a escolher a alternativa errada.
+• Confusão entre "assistir" e "assistir a": Muitos candidatos podem não lembrar que o verbo "assistir" exige a preposição "a" quando se refere a algo que se assiste, como programas de TV.
+• Confusão entre o uso de preposições: A alternativa "b" apresenta um erro comum, onde o verbo "obedecer" exige a preposição "a", formando "obedecer às normas de trânsito".
+• Interpretação errada de expressões: Na alternativa "d", a expressão "acessível à cadeirantes" está incorreta, pois o correto seria "acessível a cadeirantes", já que "cadeirantes" é um substantivo plural.
+
+
+==================================================
+CATEGORIA: CLASSES MORFOLÓGICAS (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Classificação do vocábulo "que" (2 questões)
+
+Principais armadilhas:
+• Confundir o pronome relativo com a conjunção integrante. Por exemplo, o "que" que introduz orações adjetivas (pronome relativo) pode ser confundido com o "que" que inicia orações subordinadas (conjunção integrante).
+• Confusão entre pronome relativo e conjunção integrante: O candidato pode não perceber que "que" pode atuar como pronome relativo em algumas construções e como conjunção integrante em outras, levando a uma escolha errada.
+• Interpretação errada do contexto: O uso do "que" em frases complexas pode levar o candidato a interpretar erroneamente a função do vocábulo, especialmente em frases que envolvem orações subordinadas.
+• Não perceber que o "que" pode ter diferentes funções na mesma frase, levando a uma escolha errada na classificação. Por exemplo, na frase "é verdade que a Vanda tampouco se preocupava", o "que" é uma conjunção integrante, enquanto em "grandes escritores eram esses que eu encontrava", o "que" é um pronome relativo.
+
+
+==================================================
+CATEGORIA: CLASSES DE PALAVRAS (Total: 2 questões)
+==================================================
+Dificuldade média: 2.5/5
+
+Subtemas identificados:
+- Análise de Pronomes e Verbos (1 questões)
+- Classificação de termos dentro de uma frase (1 questões)
+
+Principais armadilhas:
+• A alternativa (a) pode confundir candidatos que não distinguem entre pronomes interrogativos e pronomes relativos, pois "quem" pode ser utilizado em diferentes contextos.
+• A alternativa (c) pode levar à confusão, pois "rolando" é um gerúndio, e não um verbo no infinitivo, o que pode ser um ponto de atenção para candidatos que não têm clareza sobre as formas verbais.
+• Confusão entre pronomes: O candidato pode confundir o pronome "que" com um pronome demonstrativo, levando a uma resposta incorreta.
+• Interpretação errônea do contexto: O termo "o que" pode ser mal interpretado como um artigo definido, quando na verdade se refere a uma oração relativa.
+
+
+==================================================
+CATEGORIA: ANÁLISE MORFOLÓGICA (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Classificação de termos (1 questões)
+- Classificação de Pronomes e Conjunções (1 questões)
+
+Principais armadilhas:
+• Confusão entre diferentes classes gramaticais: O candidato pode confundir a classificação de "escritora" como substantivo com outras classes, como verbos ou adjetivos, levando a uma escolha errada.
+• Confusão entre pronome relativo e conjunção integrante: O candidato pode achar que “que” é uma conjunção que introduz uma oração subordinada, sem perceber que, neste contexto, ele está se referindo a um antecedente (homem).
+• Interpretação do contexto: A falta de atenção ao contexto em que os termos são utilizados pode levar a uma escolha inadequada, já que a questão não se limita apenas à identificação da classe gramatical, mas também à relação contextual entre os termos.
+• Interpretação errônea do contexto: O uso do “que” pode ser confundido com uma conjunção explicativa, levando o candidato a escolher uma alternativa incorreta.
+
+
+==================================================
+CATEGORIA: ANÁLISE LINGUÍSTICA (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Análise de termos e funções sintáticas (2 questões)
+
+Principais armadilhas:
+• A interpretação do termo "Acoplado" pode levar a confusão, pois muitos candidatos podem não lembrar que se trata de um particípio e podem confundi-lo com um adjetivo ou um verbo no infinitivo.
+• Confusão entre pronomes: A alternativa II afirma que "esse" é um pronome possessivo, quando na verdade é um pronome demonstrativo. Essa confusão é comum, pois os candidatos podem não lembrar a classificação correta dos pronomes.
+• Interpretação da crase: A alternativa III menciona a crase como a união da preposição com o artigo, mas não especifica que a crase ocorre apenas em certos contextos, o que pode levar a uma interpretação errada sobre seu uso em geral.
+• O pronome "esse" é frequentemente confundido com pronomes possessivos, levando candidatos a escolherem alternativas erradas que afirmam que "esse" é um pronome possessivo, quando na verdade é um pronome demonstrativo.
+
+
+==================================================
+CATEGORIA: MORFOSSINTAXE DO PERÍODO (Total: 2 questões)
+==================================================
+Dificuldade média: 3.5/5
+
+Subtemas identificados:
+- Classificação dos Períodos Simples e Compostos (1 questões)
+- Classificação de Períodos Simples e Compostos (1 questões)
+
+Principais armadilhas:
+• Confusão entre Período Simples e Composto: A afirmação I pode levar o candidato a pensar que todas as orações que não possuem conectivos são simples, desconsiderando a possibilidade de haver orações subordinadas.
+• Confusão entre Período Simples e Composto: A afirmação de que as orações 1 e 4 são períodos simples pode levar a erro, pois a definição de oração absoluta pode ser mal interpretada.
+• Interpretação errônea de Coordenação e Subordinação: A afirmação IV pode ser mal interpretada, levando o candidato a não perceber que a oração 5 contém tanto uma oração subordinada quanto uma coordenada, o que pode gerar confusão sobre a classificação correta.
+• Interpretação errônea de orações coordenadas: A oração 3 é uma coordenada sindética alternativa, mas candidatos podem não reconhecer a função da conjunção "ou", levando a uma classificação errada.
+
+
+==================================================
+CATEGORIA: SUBSTANTIVOS (Total: 2 questões)
+==================================================
+Dificuldade média: 2.0/5
+
+Subtemas identificados:
+- Flexão de Número (Plural) (2 questões)
+
+Principais armadilhas:
+• Confusão com a forma composta: O candidato pode se confundir com a forma "beija-flor", que é um substantivo composto, e não perceber que o plural deve ser feito em relação ao elemento "flor".
+• Confusão com a formação do plural de substantivos compostos: Muitos candidatos podem não lembrar que, em substantivos compostos, a flexão do plural pode ocorrer apenas em um dos elementos, levando a respostas incorretas.
+• Erro na concordância: O candidato pode errar ao tentar aplicar a regra do plural de forma inadequada, como por exemplo, ao pensar que "beijas" é a forma correta, quando na verdade o correto é "beija".
+• Erro na identificação do núcleo do substantivo: O candidato pode se confundir ao identificar "beija-flor" como um único substantivo, sem perceber que a flexão deve ser aplicada ao primeiro elemento "beija".
+
+
+==================================================
+CATEGORIA: COESÃO REFERENCIAL (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Emprego de elementos de referenciação (1 questões)
+- Emprego de elementos de referênciação (1 questões)
+
+Principais armadilhas:
+• Confusão entre anáfora e catafora: O candidato pode confundir a referência do pronome "nesse" como uma antecipação (catafórica) em vez de uma retomada (anafórica) de uma ideia já apresentada no texto.
+• Confusão entre coesão e coerência: O candidato pode achar que a questão se refere à relação lógica entre as ideias (coerência) em vez de focar na referência específica do vocábulo “nesse”.
+• Interpretação errônea do contexto: O candidato pode não perceber que "nesse triste fenômeno" se refere especificamente ao bullying, que já foi mencionado anteriormente, levando a uma escolha incorreta da alternativa.
+• Interpretação errônea do contexto: O uso do vocábulo “nesse” pode levar o candidato a pensar que se refere a uma ideia futura ou a um conceito mais amplo, quando na verdade está resgatando uma ideia já apresentada no texto.
+
+
+==================================================
+CATEGORIA: PREPOSIÇÃO (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência de Preposições com Pronomes Relativos (1 questões)
+- Regência de Preposição com Pronome Relativo (1 questões)
+
+Principais armadilhas:
+• Confundir o uso de "em que" e "em quem": A opção d) "Vejamos o aluno em quem dei o livro" pode causar confusão, pois "quem" é um pronome relativo que se refere a pessoas, mas a preposição "em" não é a mais adequada nesse contexto, onde "a quem" seria mais apropriado.
+• Confusão entre "em que" e "a que": "O apartamento em que moro foi reformado." (Aqui, "em que" está correto, mas pode ser confundido com "a que" em outros contextos.)
+• Ignorar a regência dos verbos: A opção a) "Encontrei o ingrediente de que falara" pode ser confundida, pois o verbo "falar" exige a preposição "de" quando se refere a um conteúdo ou assunto.
+• Uso incorreto da preposição: "O aluno em quem dei o livro." (O correto seria "O aluno a quem dei o livro.", pois "dar" exige a preposição "a".)
+
+
+==================================================
+CATEGORIA: CONCORDÂNCIA NOMINAL (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Uso de Mal/Mau e Concordância de Adjetivos (2 questões)
+
+Principais armadilhas:
+• Concordância de "bastante" e "bastantes": A forma "bastante" é singular e "bastantes" é plural, o que pode gerar confusão na hora de escolher a forma adequada em relação a "dores".
+• Concordância do adjetivo "bastante" e "bastantes": A escolha entre "bastante" (singular) e "bastantes" (plural) pode causar confusão, especialmente se o candidato não considerar o contexto da frase.
+• Confusão entre "mal" e "mau": Muitos candidatos podem não perceber que "mal" é um advérbio e "mau" é um adjetivo, levando a erros na escolha da palavra correta.
+• Confusão entre "mal" e "mau": Muitos candidatos podem não perceber que "mal" é um advérbio e "mau" é um adjetivo, o que pode levar a erros na escolha da palavra correta.
+
+
+==================================================
+CATEGORIA: REGÊNCIA (Total: 2 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência Verbal e Nominal (2 questões)
+
+Principais armadilhas:
+• Confusão entre regência e concordância: O candidato pode achar que a questão se refere à concordância nominal, quando na verdade trata-se da regência da expressão "precisam de".
+• Confusão entre regência e crase: Muitos candidatos podem achar que a presença da preposição está relacionada ao uso da crase, quando na verdade se trata de uma exigência de regência.
+• Interpretação errada da citação: O uso da citação de Aristóteles pode levar o candidato a focar na filosofia em vez de perceber que a estrutura "precisam de" exige a preposição "de" devido à regência do verbo "precisar".
+• Interpretação errônea do contexto: A frase "Eles precisam de tempo e de intimidade" pode levar alguns a pensar que a preposição "de" é uma questão de concordância, quando na verdade é uma questão de regência que exige a preposição para ligar o verbo "precisar" ao seu complemento.
+
+
+==================================================
+CATEGORIA: SUJEITO (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Identificação do sujeito nas orações (1 questões)
+
+Principais armadilhas:
+• A opção "a" sugere que o sujeito é indeterminado, o que pode levar à confusão, já que o sujeito é explícito nas orações.
+• A opção "c" menciona que o sujeito sofre as ações, o que pode ser enganoso, pois o sujeito é ativo nas orações apresentadas.
+
+
+==================================================
+CATEGORIA: LINGUAGEM ORAL E LINGUAGEM ESCRITA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Marcas da linguagem oral (1 questões)
+
+Principais armadilhas:
+• Confundir a linguagem informal com o uso formal da linguagem escrita. Exemplo: A opção "a" sugere que a linguagem é formal, mas o contexto é claramente informal.
+• Não perceber que a expressão "você sabe que eu não gosto de me expor" é uma marca da oralidade, que pode levar o candidato a escolher uma alternativa que não reflete a natureza da comunicação. Exemplo: A opção "d" sugere preocupação com clareza, mas a forma como a mensagem é estruturada é mais típica da oralidade.
+
+
+==================================================
+CATEGORIA: SINÔNIMOS (Total: 1 questões)
+==================================================
+Dificuldade média: 2.0/5
+
+Subtemas identificados:
+- Uso de sinônimos (1 questões)
+
+Principais armadilhas:
+• Confusão entre "afim" e "a fim": "afim" refere-se a algo que é semelhante ou relacionado, enquanto "a fim" é uma locução que indica intenção ou propósito. Exemplo: "Estou a fim de ir ao cinema" (intenção) versus "Os dois projetos são afins" (semelhança).
+• Interpretação errônea de "por fim": Alguns candidatos podem não perceber que "por fim" é uma expressão que indica conclusão ou finalização, confundindo-a com expressões que não têm o mesmo sentido. Exemplo: "Por fim, entreguei o trabalho" (conclusão) versus "Por fim, ele chegou" (não necessariamente implica conclusão).
+
+
+==================================================
+CATEGORIA: VOZ ATIVA E VOZ PASSIVA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Flexão de Voz (1 questões)
+
+Principais armadilhas:
+• Confusão entre voz ativa e passiva: Muitos candidatos podem ter dificuldade em diferenciar a voz ativa (sujeito que pratica a ação) da voz passiva (sujeito que sofre a ação).
+• Interpretação errônea da voz mediana: A voz mediana, que é menos comum, pode gerar confusão, pois envolve a ideia de que o sujeito pratica e sofre a mesma ação, o que não é amplamente discutido em muitos materiais didáticos.
+
+
+==================================================
+CATEGORIA: REGÊNCIA VERBAL E NOMINAL (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência de verbos e preposições (1 questões)
+
+Principais armadilhas:
+• Confusão entre as preposições "para" e "com": Muitos candidatos podem pensar que "para" é a preposição correta para expressar a incompatibilidade, mas "com" é a escolha adequada.
+• Interpretação errada da expressão "aspirava a": A expressão "aspirar a" pode ser confundida com outras formas de uso do verbo "aspirar", levando a uma escolha inadequada da preposição.
+
+
+==================================================
+CATEGORIA: FONOLOGIA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Relação letra-fonema (1 questões)
+
+Principais armadilhas:
+• Confundir letras com fonemas: Por exemplo, a palavra "tóxico" possui 6 letras, mas é importante contar os fonemas, que são os sons que realmente ouvimos.
+• Ignorar a presença de ditongos ou encontros vocálicos: A palavra "hoje" pode ser mal interpretada, pois o "j" não é um fonema separado, e a contagem correta deve considerar a junção dos sons.
+
+
+==================================================
+CATEGORIA: REESCRITA DE FRASES (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Correção Gramatical (1 questões)
+
+Principais armadilhas:
+• Confusão entre "possuir" e "existir": A alternativa b) "Na minha rua, existe avenidas escuras e feias" apresenta um erro de concordância, pois "existir" deve ser seguido por um sujeito no singular, como "existe uma avenida".
+• Uso de "contém" em vez de "possui": A alternativa c) "A minha rua contém avenidas escuras e feias" pode parecer correta à primeira vista, mas o verbo "contém" é mais adequado para se referir a algo que está dentro de outra coisa, o que pode gerar confusão no contexto.
+
+
+==================================================
+CATEGORIA: REGRAS DE ACENTUAÇÃO (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Acentuação gráfica (1 questões)
+
+Principais armadilhas:
+• Confusão entre palavras paroxítonas e oxítonas: O candidato pode se confundir ao analisar a acentuação de "cérebro" (oxítona) e "indivíduo" (paroxítona), levando a uma escolha errada.
+• Desconhecimento das exceções nas regras de acentuação: O candidato pode não lembrar que "diagnóstico" é acentuado por ser uma paroxítona terminada em ditongo, enquanto "únicos" também é paroxítona, mas com acento por ser uma vogal tônica.
+
+
+==================================================
+CATEGORIA: CLASSIFICAÇÃO DOS SUBSTANTIVOS (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Identificação de Substantivos (1 questões)
+
+Principais armadilhas:
+• Confusão entre substantivos e adjetivos: Por exemplo, na opção b) "criança ignorante", a palavra "ignorante" pode ser confundida como um substantivo, mas é um adjetivo que descreve a criança.
+• Interpretação errônea do contexto: Na opção d) "Hoje são adultos que falam diversos idiomas", a palavra "adultos" é um substantivo, mas a estrutura da frase pode levar o candidato a pensar que "falam" é a palavra a ser analisada.
+
+
+==================================================
+CATEGORIA: ADJETIVOS E SUBSTANTIVOS (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Substituição de Adjetivos e Significado de Substantivos (1 questões)
+
+Principais armadilhas:
+• Confusão de sinônimos: O candidato pode achar que "atônita" e "quieta" têm significados semelhantes, quando na verdade "atônita" implica uma falta de reação ou surpresa, enquanto "quieta" refere-se a ausência de movimento ou som.
+• Interpretação errônea de substantivos: O termo "transeuntes" pode ser confundido com "passantes" ou "viajantes", levando o candidato a pensar que se refere a um grupo mais amplo do que apenas pedestres.
+
+
+==================================================
+CATEGORIA: CLASSIFICAÇÃO DO SUJEITO (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Sujeito Simples e Indeterminado (1 questões)
+
+Principais armadilhas:
+• Afirmar que "mãe" é o sujeito simples da oração sem considerar o contexto da tira pode levar a um erro, pois o sujeito pode ser mais complexo dependendo da estrutura da frase.
+• Confundir a expressão "os poluentes" como sujeito do verbo "dizer" quando, na verdade, é necessário analisar a construção da frase e o que realmente está sendo dito.
+
+
+==================================================
+CATEGORIA: EFEITOS DE SENTIDO (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Reorganização e reescrita de orações e períodos (1 questões)
+
+Principais armadilhas:
+• Confusão entre a ordem das palavras e o significado: O candidato pode achar que a mudança de ordem não afeta o sentido, mas a fluidez e a clareza podem ser comprometidas.
+• Interpretação errônea da expressão "em primeiro lugar": O candidato pode não perceber que a expressão deve ser mantida em uma posição que preserve a ênfase correta na sequência de ideias.
+
+
+==================================================
+CATEGORIA: CONCORDÂNCIA E REGÊNCIA (Total: 1 questões)
+==================================================
+Dificuldade média: 2.0/5
+
+Subtemas identificados:
+- Concordância Verbal e Regência Verbal (1 questões)
+
+Principais armadilhas:
+• Confusão entre concordância verbal e nominal: O candidato pode achar que a expressão "a maioria dos meus amigos" exige um verbo no singular, quando na verdade "maioria" é um substantivo coletivo que exige concordância no plural.
+• Interpretação errônea da regência: O candidato pode não perceber que a expressão "aspira uma vida tranquila" está correta, pois "aspirar" pode ser usado no sentido de desejar, não exigindo preposição.
+
+
+==================================================
+CATEGORIA: HÍFEN (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Uso do Hífen em Palavras Compostas e Derivadas (1 questões)
+
+Principais armadilhas:
+• Confusão entre palavras que devem e não devem ser hifenizadas: Muitos candidatos podem confundir o uso do hífen em palavras compostas, como "mal-cheiro", que é uma exceção à regra geral de não usar hífen em palavras formadas por substantivos.
+• Interpretação errada de palavras com prefixos: A palavra "comprá-las" pode gerar dúvida, pois o uso do hífen não se aplica aqui, mas a presença do prefixo "com-" pode levar à confusão sobre a necessidade de hifenização.
+
+
+==================================================
+CATEGORIA: RELAÇÕES DE SINONIMIA (Total: 1 questões)
+==================================================
+Dificuldade média: 2.0/5
+
+Subtemas identificados:
+- Sinônimos e Antônimos (1 questões)
+
+Principais armadilhas:
+• A interpretação do verbo "suscitar" em diferentes contextos pode levar a erros. Por exemplo, "aparece" pode ser visto como um sinônimo em um contexto mais amplo, mas não se alinha com o sentido de "suscitar".
+• Confusão entre sinônimos e palavras que podem ter significados relacionados, mas não são sinônimos diretos. Por exemplo, "suspeita" pode ser confundida com "suscita" por causa da similaridade sonora, mas não compartilham o mesmo significado.
+
+
+==================================================
+CATEGORIA: FUNÇÕES DA LINGUAGEM (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Funções da linguagem segundo Roman Jakobson (1 questões)
+
+Principais armadilhas:
+• Confusão entre função conativa e função emotiva: Muitos candidatos podem confundir a função conativa (apelativa) com a emotiva, pois ambas envolvem a intenção do emissor, mas têm focos diferentes (a primeira visa influenciar o destinatário, enquanto a segunda expressa sentimentos do emissor).
+• Interpretação errada do contexto: A tirinha pode conter elementos que levam o candidato a interpretar erroneamente a função predominante, especialmente se o contexto não for claro ou se a mensagem tiver múltiplas interpretações.
+
+
+==================================================
+CATEGORIA: TERMOS INTEGRANTES DA ORAÇÃO (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Funções sintáticas (1 questões)
+
+Principais armadilhas:
+• Confusão entre objeto direto e objeto indireto: Muitos candidatos podem confundir a função de um termo preposicionado como objeto indireto, quando na verdade ele pode estar exercendo outra função, como adjunto adverbial.
+• Interpretação errônea do contexto: O candidato pode não considerar o contexto da frase e, portanto, não identificar corretamente a função do termo preposicionado.
+
+
+==================================================
+CATEGORIA: FUNÇÃO SINTÁTICA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Predicativo do sujeito e Sujeito simples (1 questões)
+
+Principais armadilhas:
+• Confusão entre sujeito simples e sujeito indeterminado: Muitos candidatos podem achar que "ela" é um sujeito indeterminado, quando na verdade é um sujeito simples, pois se refere a uma pessoa específica.
+• Erro na classificação do verbo "fica": O verbo "ficar" é um verbo de ligação, mas candidatos podem confundi-lo com verbos transitivos, levando a uma interpretação errada da função sintática da oração.
+
+
+==================================================
+CATEGORIA: REGÊNCIA NOMINAL (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Regência de substantivos e adjetivos (1 questões)
+
+Principais armadilhas:
+• Confusão entre preposições: A afirmativa I usa "para" de forma inadequada, quando o correto seria "por" (Sentimos muita admiração por ela).
+• Uso incorreto de preposição: A afirmativa II utiliza "pelo" de forma errada, quando o correto seria "ao" (Nos acostumamos ao melhor).
+
+
+==================================================
+CATEGORIA: LINGUAGEM E LINGUÍSTICA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Formação de Palavras (1 questões)
+
+Principais armadilhas:
+• Confusão entre aglutinação e justaposição: Muitos candidatos podem não distinguir corretamente entre esses dois processos, levando a uma escolha errada.
+• Interpretação errônea do termo "mesmice": O vocábulo pode ser mal interpretado como um adjetivo, quando na verdade é um substantivo, o que pode induzir o candidato a escolher uma alternativa incorreta.
+
+
+==================================================
+CATEGORIA: GRAMÁTICA (Total: 1 questões)
+==================================================
+Dificuldade média: 3.0/5
+
+Subtemas identificados:
+- Locução Conjuntiva e Classificação de Expressões (1 questões)
+
+Principais armadilhas:
+• Confusão entre locução conjuntiva e locução prepositiva: A afirmativa I menciona "locução conjuntiva", mas a expressão "tão necessário quanto" é uma locução comparativa, o que pode levar a erro na classificação.
+• Interpretação errônea de conjunções integrantes: A afirmativa II classifica "que" como conjunção integrante, mas, na verdade, é uma conjunção subordinativa que introduz uma oração subordinada, o que pode confundir os candidatos.
+
