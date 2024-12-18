@@ -1,0 +1,392 @@
+""""
+Fetch Google Calendar :
+ 
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_GET_CALENDAR'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+----------------------------------------------
+
+Quick Add Event :
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+ed_account_id = composio_toolsetconnect.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_QUICK_ADD'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+--------    
+
+Delete event: 
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_DELETE_EVENT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+-------------------
+
+Find Event:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_FIND_EVENT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+--------------
+
+Patch Calendar:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_PATCH_CALENDAR'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+----------
+
+Duplicate Calendar:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_DUPLICATE_CALENDAR'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+----------
+
+Find Free Slots:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_FIND_FREE_SLOTS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+----------------------
+
+List Google Calendars:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_LIST_CALENDARS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+------------------
+
+Remove Attendee from Event:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_REMOVE_ATTENDEE'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+--------------
+
+
+Update Google Event:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_UPDATE_EVENT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+----------------------
+
+Get Current Date and Time:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_GET_CURRENT_DATE_TIME'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+--------------------
+
+Create Event:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GOOGLECALENDAR_CREATE_EVENT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+""""
+
+
+
+
+

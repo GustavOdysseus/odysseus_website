@@ -1,0 +1,43 @@
+Colors:
+
+get: 
+HTTP request
+
+GET https://www.googleapis.com/calendar/v3/colors
+Authorization
+This request allows authorization with at least one of the following scopes:
+
+Scope
+https://www.googleapis.com/auth/calendar
+https://www.googleapis.com/auth/calendar.readonly
+For more information, see the authentication and authorization page.
+
+Request body
+Do not supply a request body with this method.
+
+Response
+If successful, this method returns a Colors resource in the response body.
+
+Examples
+Note: The code examples available for this method do not represent all supported programming languages (see the client libraries page for a list of supported languages).
+
+Java
+Python
+PHP
+Ruby
+.NET
+Uses the Python client library.
+
+
+colors = service.colors().get().execute()
+
+# Print available calendarListEntry colors.
+for id, color in colors['calendar'].iteritem():
+  print 'colorId: %s' % id
+  print '  Background: %s' % color['background']
+  print '  Foreground: %s' % color['foreground']
+# Print available event colors.
+for id, color in colors['event'].iteritem():
+  print 'colorId: %s' % id
+  print '  Background: %s' % color['background']
+  print '  Foreground: %s' % color['foreground']

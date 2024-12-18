@@ -1,0 +1,186 @@
+calendarlist
+
+list:
+
+Request
+HTTP request
+
+GET https://www.googleapis.com/calendar/v3/users/me/calendarList
+Parameters
+Parameter name	Value	Description
+Optional query parameters
+maxResults	integer	Maximum number of entries returned on one result page. By default the value is 100 entries. The page size can never be larger than 250 entries. Optional.
+minAccessRole	string	The minimum access role for the user in the returned entries. Optional. The default is no restriction.
+
+Acceptable values are:
+"freeBusyReader": The user can read free/busy information.
+"owner": The user can read and modify events and access control lists.
+"reader": The user can read events that are not private.
+"writer": The user can read and modify events.
+pageToken	string	Token specifying which result page to return. Optional.
+showDeleted	boolean	Whether to include deleted calendar list entries in the result. Optional. The default is False.
+showHidden	boolean	Whether to show hidden entries. Optional. The default is False.
+syncToken	string	Token obtained from the nextSyncToken field returned on the last page of results from the previous list request. It makes the result of this list request contain only entries that have changed since then. If only read-only fields such as calendar properties or ACLs have changed, the entry won't be returned. All entries deleted and hidden since the previous list request will always be in the result set and it is not allowed to set showDeleted neither showHidden to False.
+To ensure client state consistency minAccessRole query parameter cannot be specified together with nextSyncToken.
+If the syncToken expires, the server will respond with a 410 GONE response code and the client should clear its storage and perform a full synchronization without any syncToken.
+Learn more about incremental synchronization.
+Optional. The default is to return all entries.
+Authorization
+This request requires authorization with at least one of the following scopes:
+
+Scope
+https://www.googleapis.com/auth/calendar.readonly
+https://www.googleapis.com/auth/calendar
+For more information, see the authentication and authorization page.
+
+Request body
+Do not supply a request body with this method.
+
+Response
+If successful, this method returns a response body with the following structure:
+
+
+{
+  "kind": "calendar#calendarList",
+  "etag": etag,
+  "nextPageToken": string,
+  "nextSyncToken": string,
+  "items": [
+    calendarList Resource
+  ]
+}
+Property name	Value	Description	Notes
+kind	string	Type of the collection ("calendar#calendarList").	
+etag	etag	ETag of the collection.	
+nextPageToken	string	Token used to access the next page of this result. Omitted if no further results are available, in which case nextSyncToken is provided.	
+items[]	list	Calendars that are present on the user's calendar list.	
+nextSyncToken	string	Token used at a later point in time to retrieve only the entries that have changed since this result was returned. Omitted if further results are available, in which case nextPageToken is provided.	
+Examples
+Note: The code examples available for this method do not represent all supported programming languages (see the client libraries page for a list of supported languages).
+
+Java
+Python
+PHP
+Ruby
+Uses the Python client library.
+
+
+page_token = None
+while True:
+  calendar_list = service.calendarList().list(pageToken=page_token).execute()
+  for calendar_list_entry in calendar_list['items']:
+    print calendar_list_entry['summary']
+  page_token = calendar_list.get('nextPageToken')
+  if not page_token:
+    break
+
+    
+insert:
+
+HTTP request
+
+POST https://www.googleapis.com/calendar/v3/users/me/calendarList
+Parameters
+Parameter name	Value	Description
+Optional query parameters
+colorRgbFormat	boolean	Whether to use the foregroundColor and backgroundColor fields to write the calendar colors (RGB). If this feature is used, the index-based colorId field will be set to the best matching option automatically. Optional. The default is False.
+Authorization
+This request requires authorization with the following scope:
+
+Scope
+https://www.googleapis.com/auth/calendar
+For more information, see the authentication and authorization page.
+
+Request body
+In the request body, supply a CalendarList resource with the following properties:
+
+Property name	Value	Description	Notes
+Required Properties
+id	string	Identifier of the calendar.	
+Optional Properties
+backgroundColor	string	The main color of the calendar in the hexadecimal format "#0088aa". This property supersedes the index-based colorId property. To set or change this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.	writable
+colorId	string	The color of the calendar. This is an ID referring to an entry in the calendar section of the colors definition (see the colors endpoint). This property is superseded by the backgroundColor and foregroundColor properties and can be ignored when using these properties. Optional.	writable
+defaultReminders[]	list	The default reminders that the authenticated user has for this calendar.	writable
+defaultReminders[].method	string	The method used by this reminder. Possible values are:
+"email" - Reminders are sent via email.
+"popup" - Reminders are sent via a UI popup.
+Required when adding a reminder.
+
+writable
+defaultReminders[].minutes	integer	Number of minutes before the start of the event when the reminder should trigger. Valid values are between 0 and 40320 (4 weeks in minutes).
+Required when adding a reminder.
+
+writable
+foregroundColor	string	The foreground color of the calendar in the hexadecimal format "#ffffff". This property supersedes the index-based colorId property. To set or change this property, you need to specify colorRgbFormat=true in the parameters of the insert, update and patch methods. Optional.	writable
+hidden	boolean	Whether the calendar has been hidden from the list. Optional. The attribute is only returned when the calendar is hidden, in which case the value is true.	writable
+notificationSettings	object	The notifications that the authenticated user is receiving for this calendar.	writable
+notificationSettings.notifications[].method	string	The method used to deliver the notification. The possible value is:
+"email" - Notifications are sent via email.
+Required when adding a notification.
+
+writable
+notificationSettings.notifications[].type	string	The type of notification. Possible values are:
+"eventCreation" - Notification sent when a new event is put on the calendar.
+"eventChange" - Notification sent when an event is changed.
+"eventCancellation" - Notification sent when an event is cancelled.
+"eventResponse" - Notification sent when an attendee responds to the event invitation.
+"agenda" - An agenda with the events of the day (sent out in the morning).
+Required when adding a notification.
+
+writable
+selected	boolean	Whether the calendar content shows up in the calendar UI. Optional. The default is False.	writable
+summaryOverride	string	The summary that the authenticated user has set for this calendar. Optional.	writable
+Response
+If successful, this method returns a CalendarList resource in the response body.
+
+Examples
+Note: The code examples available for this method do not represent all supported programming languages (see the client libraries page for a list of supported languages).
+
+Java
+Python
+PHP
+Ruby
+Uses the Python client library.
+
+
+calendar_list_entry = {
+    'id': 'calendarId'
+}
+
+created_calendar_list_entry = service.calendarList().insert(body=calendar_list_entry).execute()
+
+print created_calendar_list_entry['summary']
+
+delete:
+
+HTTP request
+
+DELETE https://www.googleapis.com/calendar/v3/users/me/calendarList/calendarId
+Parameters
+Parameter name	Value	Description
+Path parameters
+calendarId	string	Calendar identifier. To retrieve calendar IDs call the calendarList.list method. If you want to access the primary calendar of the currently logged in user, use the "primary" keyword.
+Authorization
+This request requires authorization with the following scope:
+
+Scope
+https://www.googleapis.com/auth/calendar
+For more information, see the authentication and authorization page.
+
+Request body
+Do not supply a request body with this method.
+
+Response
+If successful, this method returns an empty response body.
+
+Examples
+Note: The code examples available for this method do not represent all supported programming languages (see the client libraries page for a list of supported languages).
+
+Java
+Python
+PHP
+Ruby
+Uses the Python client library.
+
+
+service.calendarList().delete(calendarId='calendarId').execute()
