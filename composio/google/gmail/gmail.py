@@ -9,7 +9,7 @@ from langchain import hub
 dotenv.load_dotenv()
 composio_toolset = ComposioToolSet()
 gmail_tools = composio_toolset.get_actions(actions=[Action.GMAIL_SEND_EMAIL])
-llm = ChatOpenAI(model="gpt-4", openai_api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(model="gpt-4omini", openai_api_key=os.getenv("OPENAI_API_KEY"))
 gmail_send_email = "YOUR_EMAIL_KEY"
 
 prompt = hub.pull("hwchase17/openai-functions-agent")
