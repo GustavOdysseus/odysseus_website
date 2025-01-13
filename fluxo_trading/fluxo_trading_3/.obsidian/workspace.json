@@ -1,0 +1,238 @@
+{
+  "main": {
+    "id": "b50b1ac0ddcc95a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e3dce2361525897",
+        "type": "tabs",
+        "dimension": 47.17460317460318,
+        "children": [
+          {
+            "id": "6cb0b099c033c718",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Automated Trading Project/02-Fluxos de Trabalho/Monitoramento e Atualizações Contínuas.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Monitoramento e Atualizações Contínuas"
+            }
+          }
+        ]
+      },
+      {
+        "id": "eeef341c920ecc56",
+        "type": "tabs",
+        "dimension": 30.349206349206348,
+        "children": [
+          {
+            "id": "4ebe4d25f0189c28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Estrutura de Pastas e Notas no Obsidian.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Estrutura de Pastas e Notas no Obsidian"
+            }
+          }
+        ]
+      },
+      {
+        "id": "85667932ee25f6a8",
+        "type": "tabs",
+        "dimension": 22.476190476190478,
+        "children": [
+          {
+            "id": "f844ef6a5538ed08",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "255d4977ca49c5f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6266ce80c7899dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb8abc6de5f359ca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "56b6a783eda5904c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "16a8d45ef7ebfcec",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "740fd68f053d62c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "ddf79f9588e82086",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "928b5b1cffd52543",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Automated Trading Project/02-Fluxos de Trabalho/Roteamento e Decisões (Router).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Roteamento e Decisões (Router)"
+            }
+          },
+          {
+            "id": "cabca7ebfde68502",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Automated Trading Project/02-Fluxos de Trabalho/Roteamento e Decisões (Router).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Roteamento e Decisões (Router)"
+            }
+          },
+          {
+            "id": "81f80d6a0ede0ffc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9624247c019169ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Automated Trading Project/02-Fluxos de Trabalho/Roteamento e Decisões (Router).md"
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Roteamento e Decisões (Router)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "f844ef6a5538ed08",
+  "lastOpenFiles": [
+    "Estrutura de Pastas e Notas no Obsidian.md",
+    "Automated Trading Project/02-Fluxos de Trabalho/Monitoramento e Atualizações Contínuas.md",
+    "Automated Trading Project/02-Fluxos de Trabalho/Ciclo de Iterações.md",
+    "Automated Trading Project/02-Fluxos de Trabalho/Roteamento e Decisões (Router).md",
+    "Automated Trading Project/02-Fluxos de Trabalho/Fluxo Principal de Desenvolvimento.md",
+    "Automated Trading Project/01-Equipes/Equipe de Documentação e Deploy.md",
+    "Automated Trading Project/02-Fluxos de Trabalho",
+    "Automated Trading Project/01-Equipes/Equipe de Estratégia.md",
+    "Compilado Obsidian.md",
+    "Compilado projeto.md",
+    "Automated Trading Project/01-Equipes/Equipe de Otimização de Parâmetros.md",
+    "Automated Trading Project/01-Equipes/Equipe de Gestão de Riscos e Compliance.md",
+    "Automated Trading Project/01-Equipes/Equipe de Análise Quantitativa.md",
+    "Automated Trading Project/01-Equipes/Equipe de Dados e Integração.md",
+    "Automated Trading Project/01-Equipes/Equipe de Pesquisa Quantitativa.md",
+    "Automated Trading Project/01-Equipes/Equipe de Inteligência de Mercado.md",
+    "Estruturação das Notas Internas.md",
+    "Automated Trading Project/00-Introdução/Glossário de Termos.md",
+    "Automated Trading Project/00-Introdução/Visão Geral do Projeto.md",
+    "Estrutura Genérica para Criação de Notas no Obsidian.md",
+    "Automated Trading Project/01-Equipes",
+    "Recursos de Visualização no Obsidian.md",
+    "Exemplo Genérico de Formatação das Notas.md",
+    "Automated Trading Project/00-Introdução/Objetivos e Escopo.md",
+    "Automated Trading Project/00-Introdução/Sem título.canvas",
+    "Automated Trading Project/00-Introdução",
+    "Sem título",
+    "Automated Trading Project",
+    "Welcome.md"
+  ]
+}

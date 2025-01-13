@@ -1,0 +1,27 @@
+{
+  "graph:animate": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "editor:delete-paragraph": [],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "graph:open-local": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
+}

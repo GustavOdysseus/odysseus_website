@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: '{"model": "llama3.2:3b", "prompt": "### System:\nYou are test role. test
+      backstory\nYour personal goal is: test goal\nTo give my best complete final
+      answer to the task use the exact following format:\n\nThought: I now can give
+      a great answer\nFinal Answer: Your final answer must be the great and the most
+      complete as possible, it must be outcome described.\n\nI MUST use these formats,
+      my job depends on it!\n\n### User:\n\nCurrent Task: Explain what AI is in one
+      sentence\n\nThis is the expect criteria for your final answer: A one-sentence
+      explanation of AI\nyou MUST return the actual complete content as the final
+      answer, not a summary.\n\nBegin! This is VERY important to you, use the tools
+      available and give your best Final Answer, your job depends on it!\n\nThought:\n\n",
+      "options": {"stop": ["\nObservation:"]}, "stream": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '839'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: http://localhost:11434/api/generate
+  response:
+    body:
+      string: '{"model":"llama3.2:3b","created_at":"2025-01-02T20:05:52.24992Z","response":"Final
+        Answer: Artificial Intelligence (AI) refers to the development of computer
+        systems capable of performing tasks that typically require human intelligence,
+        such as learning, problem-solving, decision-making, and perception.","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,14711,744,512,2675,527,1296,3560,13,1296,93371,198,7927,4443,5915,374,25,1296,5915,198,1271,3041,856,1888,4686,1620,4320,311,279,3465,1005,279,4839,2768,3645,1473,85269,25,358,1457,649,3041,264,2294,4320,198,19918,22559,25,4718,1620,4320,2011,387,279,2294,323,279,1455,4686,439,3284,11,433,2011,387,15632,7633,382,40,28832,1005,1521,20447,11,856,2683,14117,389,433,2268,14711,2724,1473,5520,5546,25,83017,1148,15592,374,304,832,11914,271,2028,374,279,1755,13186,369,701,1620,4320,25,362,832,1355,18886,16540,315,15592,198,9514,28832,471,279,5150,4686,2262,439,279,1620,4320,11,539,264,12399,382,11382,0,1115,374,48174,3062,311,499,11,1005,279,7526,2561,323,3041,701,1888,13321,22559,11,701,2683,14117,389,433,2268,85269,1473,128009,128006,78191,128007,271,19918,22559,25,59294,22107,320,15836,8,19813,311,279,4500,315,6500,6067,13171,315,16785,9256,430,11383,1397,3823,11478,11,1778,439,6975,11,3575,99246,11,5597,28846,11,323,21063,13],"total_duration":1461909875,"load_duration":39886208,"prompt_eval_count":181,"prompt_eval_duration":701000000,"eval_count":39,"eval_duration":719000000}'
+    headers:
+      Content-Length:
+      - '1537'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 02 Jan 2025 20:05:52 GMT
+    status:
+      code: 200
+      message: OK
+version: 1

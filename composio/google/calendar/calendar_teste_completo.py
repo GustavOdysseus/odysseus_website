@@ -52,7 +52,7 @@ class CalendarTestSuite:
                 backstory="You are an AI agent that manages calendar operations efficiently. Always use the primary calendar unless specified otherwise. Format dates in RFC3339 format. For send_updates parameter, use 'none' unless specified otherwise.",
                 verbose=True,
                 tools=tools,
-                llm=ChatOpenAI(temperature=0),
+                llm=ChatOpenAI(model="gpt-4o-mini", temperature=0),
             )
             
             task = Task(

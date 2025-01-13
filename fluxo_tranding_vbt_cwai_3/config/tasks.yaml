@@ -1,0 +1,69 @@
+define_goals:
+  description: > 
+    "Definir metas iniciais."
+  expected_output: "Metas definidas com sucesso."
+  agent: "Comitê de Estratégia"
+  async_execution: false
+  tools: []
+  output_format: "RAW"
+  human_input: false
+  output_file: "outputs/metas.json"
+
+collect_market_data:
+  description: > 
+    "Coletar dados macroeconômicos e microeconômicos."
+  expected_output: "Dados macroeconômicos e microeconômicos coletados."
+  agent: "Analista de Mercado"
+  async_execution: true
+  tools:
+    - "fetch_market_data"
+  output_format: "JSON"
+  human_input: false
+  output_file: "outputs/market_data.json"
+
+analyze_data:
+  description: > 
+    "Analisar dados e gerar indicadores."
+  expected_output: "Indicadores calculados com sucesso."
+  agent: "Pesquisador Quantitativo"
+  async_execution: false
+  tools:
+    - "calculate_metrics"
+  output_format: "PYDANTIC"
+  human_input: true
+  output_file: "outputs/indicators.json"
+
+prepare_historical_data:
+  description: > 
+    "Coletar e preparar dados históricos."
+  expected_output: "Dados históricos coletados e normalizados."
+  agent: "Analista de Dados"
+  async_execution: true
+  tools:
+    - "fetch_historical_data"
+  output_format: "RAW"
+  human_input: false
+  output_file: "outputs/historical_data.json"
+
+validate_compliance:
+  description: > 
+    "Validar conformidade com politicas de risco."
+  expected_output: "Conformidade validada ou ajustes necessários."
+  agent: "Gestor de Riscos"
+  async_execution: false
+  tools:
+    - "validate_compliance"
+  output_format: "RAW"
+  human_input: false
+  output_file: "outputs/compliance_report.json"
+
+document_results:
+  description: > 
+    "Documentar os resultados finais."
+  expected_output: "Resultados finais documentados no formato JSON."
+  agent: "Comitê de Estratégia"
+  async_execution: false
+  tools: []
+  output_format: "JSON"
+  human_input: false
+  output_file: "outputs/final_results.json"

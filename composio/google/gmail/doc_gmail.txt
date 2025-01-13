@@ -1,0 +1,469 @@
+Fetch Message by Message ID
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_FETCH_MESSAGE_BY_MESSAGE_ID'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+
+Fetch Message by Thread ID
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_FETCH_MESSAGE_BY_THREAD_ID'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+List Gmail Labels:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_LIST_LABELS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Create Email Draft:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_CREATE_EMAIL_DRAFT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Get People:
+
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_GET_PEOPLE'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Remove Label
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_REMOVE_LABEL'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+List Threads:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_LIST_THREADS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+
+
+Modify Label to Email:
+
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_ADD_LABEL_TO_EMAIL'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Modify Thread Labels:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_MODIFY_THREAD_LABELS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Send Email:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_SEND_EMAIL'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Reply to Email Thread:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_REPLY_TO_THREAD'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Get Profile:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_GET_PROFILE'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+Get Gmail Attachment:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_GET_ATTACHMENT'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+
+
+Create Label:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_CREATE_LABEL'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
+Fetch Emails:
+
+from crewai import Agent, Task, Crew
+from langchain_openai import ChatOpenAI
+from composio_crewai import ComposioToolSet, Action, App
+composio_toolset = ComposioToolSet(api_key="2nfz9k9ke2hir9bvto33jr")
+connected_account_id = composio_toolset.get_connected_account_id()
+tools = composio_toolset.get_tools(actions=['GMAIL_FETCH_EMAILS'], connected_account_id=connected_account_id  )
+
+# Define agent
+crewai_agent = Agent(
+    role="Sample Agent",
+    goal="""You are an AI agent that is responsible for taking actions based on the tools you have""",
+    backstory=(
+        "You are AI agent that is responsible for taking actions based on the tools you have"
+    ),
+    verbose=True,
+    tools=tools,
+    llm=ChatOpenAI(),
+)
+task = Task(
+    description="your task description here",
+    agent=crewai_agent,
+    expected_output=""
+)
+my_crew = Crew(agents=[crewai_agent], tasks=[task])
+
+result = my_crew.kickoff()
+print(result)
+
