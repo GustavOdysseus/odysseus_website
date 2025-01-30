@@ -1,0 +1,47 @@
+"""
+@settings(dict(
+    factory_kwargs=dict(
+        class_name='ConfiguracaoBase',
+        # Inputs: além dos OHLCV, supõe-se que existam series 
+        # com macro_news (para "notícias") e daily_zones (para níveis marcados).
+        input_names=['open', 'high', 'low', 'close', 'macro_news', 'daily_zones'],
+        param_names=['atr_period', 'news_threshold', 'zone_spacing_threshold'],
+        output_names=[
+            'alta_volatilidade', 
+            'baixa_volatilidade',
+            'zonas_validas',
+            'zonas_confluencia'
+        ]
+    ),
+    # Exemplos de ranges de parâmetros
+    atr_period = np.arange(14, 31, 2),
+    news_threshold = np.arange(0.5, 2.1, 0.5),
+    zone_spacing_threshold = np.arange(10, 51, 10)
+))
+
+# Cálculo de volatilidade via ATR
+atr = @talib_ATR(high, low, close, timeperiod=@p_atr_period)
+atr_mean = atr.rolling(window=@p_atr_period).mean()
+
+# Simulação de "impacto de notícias" com base em macro_news
+# (Se macro_news for p.ex. um valor normalizado, poderíamos comparar com news_threshold)
+news_impact = macro_news > @p_news_threshold
+
+# Alta/baixa volatilidade: ex. se ATR atual > (média * fator) e se notícias são relevantes
+alta_volatilidade = (atr > atr_mean * 1.2) & news_impact
+baixa_volatilidade = (atr < atr_mean * 0.8) & ~(news_impact)
+
+# Verificação do espaçamento entre zonas marcadas (daily_zones).
+# daily_zones pode ser array/series de preços-chave; 
+# aqui é só uma ideia de como checar se há zonas 'muito próximas'
+zone_diff = daily_zones.diff().abs()
+zonas_validas = zone_diff > @p_zone_spacing_threshold
+
+# "zonas_confluencia" = quando encontramos zonas distantes (validadas)
+# mas que combinam com regiões de interesse (por exemplo, overlap ou junção de suporte/resistência).
+# Aqui é só um placeholder para exemplificar.
+zonas_confluencia = (zonas_validas) & (daily_zones > close.mean())
+
+# Retorno na ordem definida em output_names
+alta_volatilidade, baixa_volatilidade, zonas_validas, zonas_confluencia
+"""

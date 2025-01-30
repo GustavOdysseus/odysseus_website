@@ -1,50 +1,52 @@
 import vectorbtpro as vbt
 import numpy as np
 import pandas as pd
-from signal_tools_final import CrossSignalTool, ThresholdSignalTool, StopSignalTool
+from signal_tools_gemini import CrossSignalTool, ThresholdSignalTool, StopSignalTool
 from datetime import datetime, timedelta
+
 
 def run_backtest(symbol="BTCUSDT", timeframe="1h", start="6 months ago"):
     """
     Executa um backtest completo usando dados da Binance via VectorBT Pro.
     
     Args:
-        symbol (str): Par de trading na Binance
-        timeframe (str): Timeframe para os dados (ex: "1h", "4h", "1d")
-        start (str): Data inicial para os dados (ex: "6 months ago", "1 year ago")
+        symbol (str): Trading pair
+        timeframe (str): Frame for download, example: "1h" "4h" , "1d"
+        start (str): Period data range to analyse by now, example "6 months ago"
+
+    Returns:
+        tuple: (Portfolio object, metrics dictionary)
     """
     print(f"\nIniciando backtest para {symbol}")
     print(f"Timeframe: {timeframe}")
     print(f"Período: {start} até agora")
-    
-    # 1. Baixar dados da Binance via VectorBT Pro
+
     print("\nBaixando dados...")
     binance_data = vbt.BinanceData.pull(
         symbol,
         start=start,
-        end="now UTC",  # Até agora em UTC
+        end="now UTC",
         timeframe=timeframe
     )
-    # Selecionar dados do símbolo
-    data = binance_data.select_symbol(symbol)
-    print(f"Dados baixados: {len(data)} candles")
+    
+    data = binance_data.select_symbols(symbol)
+    print(f"Dados baixados: {len(data.data[symbol])} candles")
     
     # Extrair OHLCV
-    close = data['Close']
-    high = data['High']
-    
-    # 2. Calcular indicadores
+    close = data.data[symbol]['Close']
+    high = data.data[symbol]['High']
+    low = data.data[symbol]['Low']
+
     print("\nCalculando indicadores...")
-    # Médias móveis para cruzamento
+    # Médias móveis para sinais de entrada
     fast_ma = vbt.MA.run(close, window=20).ma
     slow_ma = vbt.MA.run(close, window=50).ma
     
-    # RSI para threshold
+    # RSI para sinais de saída
     rsi = vbt.RSI.run(close, window=14).rsi
-    
-    # 3. Gerar sinais
+
     print("\nGerando sinais...")
-    # Sinais de cruzamento (entrada)
+    # Sinais de entrada baseados em cruzamento de médias
     cross_tool = CrossSignalTool()
     entry_signals = cross_tool._run(
         shape=close.shape,
@@ -53,43 +55,44 @@ def run_backtest(symbol="BTCUSDT", timeframe="1h", start="6 months ago"):
         wait=1
     )
     
-    # Sinais de threshold RSI (saída)
+    # Sinais de saída baseados em RSI sobrecomprado
     threshold_tool = ThresholdSignalTool()
-    exit_signals = threshold_tool._run(
-        shape=close.shape,
+    exit_signals_rsi = threshold_tool._run(
+        shape=rsi.shape,
         values=rsi.to_numpy(),
-        threshold=70,  # Sobrecomprado
-        operation="greater",
-        wait=1
+        threshold=70,  # Nível de sobrecompra
+        direction="above"
     )
-    
-    # Adicionar stop loss
+
+    # Sinais de saída baseados em stop loss
     stop_tool = StopSignalTool()
     stop_signals = stop_tool._run(
         shape=close.shape,
-        close=close.to_numpy(),
-        high=high.to_numpy(),
-        entry_price=close.iloc[0],  # Exemplo simples
-        stop_loss=0.02,  # 2% stop loss
-        take_profit=0.05,  # 5% take profit
-        trailing_stop=0.03  # 3% trailing stop
+        values=close.to_numpy(),
+        stop_type="trailing",  # Usando trailing stop
+        stop_value=2.0,  # 2% trailing stop
+        entry_price=close.iloc[0],
+        trailing_offset=None
     )
     
-    # Combinar sinais de saída
-    exit_signals = np.logical_or(exit_signals, stop_signals)
-    
-    # 4. Criar portfolio
+    # Combinar sinais de saída (RSI ou stop loss)
+    exit_signals = np.logical_or(exit_signals_rsi, stop_signals)
+
     print("\nCriando portfolio e executando backtest...")
     portfolio = vbt.Portfolio.from_signals(
         close=close,
         entries=entry_signals,
         exits=exit_signals,
-        init_cash=10000,  # Dinheiro inicial
-        fees=0.001,  # 0.1% de taxa
-        freq=timeframe
+        init_cash=10000,
+        fees=0.001,
+        freq=timeframe,
+        direction='longonly',  # Apenas posições long
+        size=np.inf,  # Usar todo o capital disponível
+        price=close,  # Usar preço de fechamento
+        slippage=0.001,  # 0.1% de slippage
+        log=True  # Registrar todas as operações
     )
-    
-    # 5. Analisar resultados
+
     print("\n=== Resultados do Backtest ===")
     metrics = portfolio.stats()
     
@@ -105,15 +108,12 @@ def run_backtest(symbol="BTCUSDT", timeframe="1h", start="6 months ago"):
     print(f"Worst Trade: {metrics['Worst Trade [%]']:.2f}%")
     print(f"Profit Factor: {metrics['Profit Factor']:.2f}")
     
-    print("\nMétricas detalhadas:")
-    print(metrics)
-    
-    # 6. Plotar resultados
-    print("\nGerando gráficos...")
+    # Plotar gráfico do portfolio
     portfolio.plot().show()
     
     return portfolio, metrics
-    
+
+
 if __name__ == "__main__":
     # Executar backtest
     portfolio, metrics = run_backtest(

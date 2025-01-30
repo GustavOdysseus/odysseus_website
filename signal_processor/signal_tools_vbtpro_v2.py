@@ -108,7 +108,7 @@ class CrossSignalTool(BaseTool):
             slow_values = slow_values.reshape(-1, 1)
             
         # Gerar sinais de cruzamento usando a função otimizada do VectorBT Pro
-        signals = crossed_above_nb(
+        signals = vbt.crossed_above_nb(
             fast_values,
             slow_values,
             wait=wait

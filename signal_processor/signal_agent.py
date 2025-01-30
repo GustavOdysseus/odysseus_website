@@ -3,7 +3,7 @@ from typing import Dict, List
 import vectorbtpro as vbt
 import pandas as pd
 import numpy as np
-from signal_tools_vbtpro_v2 import CrossSignalTool, ThresholdSignalTool, StopSignalTool
+from signal_tools_final import CrossSignalTool, ThresholdSignalTool, StopSignalTool
 
 class SignalGeneratorAgent:
     def __init__(self):
@@ -31,14 +31,15 @@ class SignalGeneratorAgent:
             data: DataFrame com dados OHLCV
         """
         # Calcular indicadores
-        close = data['Close']
+        close = data['Close'].to_numpy()
+        high = data['High'].to_numpy()
         
         # Médias móveis para CrossSignalTool
-        ma_fast = vbt.MA.run(close, window=20).ma
-        ma_slow = vbt.MA.run(close, window=50).ma
+        ma_fast = vbt.MA.run(close, window=20).ma.to_numpy()
+        ma_slow = vbt.MA.run(close, window=50).ma.to_numpy()
         
         # RSI para ThresholdSignalTool
-        rsi = vbt.RSI.run(close, window=14).rsi
+        rsi = vbt.RSI.run(close, window=14).rsi.to_numpy()
         
         # Criar tarefa de análise
         task = Task(
@@ -48,57 +49,55 @@ class SignalGeneratorAgent:
                           3. Stop loss and trailing stop signals
                           
                           Current market data summary:
-                          Close Price: {close.iloc[-1]:.2f}
-                          Fast MA: {ma_fast.iloc[-1]:.2f}
-                          Slow MA: {ma_slow.iloc[-1]:.2f}
-                          RSI: {rsi.iloc[-1]:.2f}""",
+                          Close Price: {close[-1]:.2f}
+                          Fast MA: {ma_fast[-1]:.2f}
+                          Slow MA: {ma_slow[-1]:.2f}
+                          RSI: {rsi[-1]:.2f}""",
             expected_output="""A dictionary containing:
                              - Entry signals from MA crossover
                              - Exit signals from RSI and stops
                              - Risk management levels"""
         )
         
-        # Gerar sinais
+        # Gerar sinais de entrada (MA Cross)
         entry_signals = self.cross_tool._run(
             shape=close.shape,
-            fast_values=ma_fast,
-            slow_values=ma_slow,
+            fast_ma=ma_fast,
+            slow_ma=ma_slow,
             wait=1
-        )
+        ).entries
         
-        # Sinais de saída baseados em RSI
-        rsi_exit = self.threshold_tool._run(
+        # Gerar sinais de saída baseados em RSI
+        rsi_signals = self.threshold_tool._run(
             shape=close.shape,
             values=rsi,
-            threshold=70,
-            direction="above"
-        )
+            threshold=70,  # Overbought
+            operation="greater",
+            wait=1
+        ).exits
         
-        # Stop loss e trailing stop
+        # Gerar sinais de stop
         stop_signals = self.stop_tool._run(
             shape=close.shape,
-            values=close,
-            stop_type="trailing",
-            stop_value=2.0,  # 2% trailing stop
-            entry_price=close.iloc[-1],
-            trailing_offset=1.0  # 1% offset
-        )
+            close=close,
+            high=high,
+            entry_price=close[-1],  # Usar último preço como referência
+            stop_loss=0.02,  # 2% stop loss
+            take_profit=0.04,  # 4% take profit
+            trailing_stop=0.015  # 1.5% trailing stop
+        ).exits
         
-        # Combinar sinais de saída
-        exit_signals = np.logical_or(rsi_exit, stop_signals)
+        # Combinar sinais de saída (RSI ou stops)
+        exit_signals = np.logical_or(rsi_signals, stop_signals)
         
         return {
             'entries': entry_signals,
             'exits': exit_signals,
-            'last_close': close.iloc[-1],
-            'last_rsi': rsi.iloc[-1],
+            'last_close': close[-1],
+            'last_rsi': rsi[-1],
             'ma_cross': {
-                'fast': ma_fast.iloc[-1],
-                'slow': ma_slow.iloc[-1]
-            },
-            'risk_levels': {
-                'trailing_stop': close.iloc[-1] * 0.98,  # 2% abaixo
-                'rsi_level': 70
+                'fast': ma_fast[-1],
+                'slow': ma_slow[-1]
             }
         }
 
@@ -123,7 +122,8 @@ def main():
         entries=signals['entries'],
         exits=signals['exits'],
         init_cash=10000,
-        fees=0.001
+        fees=0.001,
+        freq='1h'  # Adicionar frequência
     )
     
     # Mostrar resultados

@@ -1,0 +1,31 @@
+tasks:
+  generate_signals:
+    description: "Gerar sinais de trading usando indicadores técnicos e VectorBT Pro"
+    expected_output: "Conjunto de sinais de trading com parâmetros iniciais definidos"
+    tools:
+      - "vectorbt_pro_knowledge_tool"
+      - "talib_available_indicators_tool"
+      - "talib_indicator_params_tool"
+    agent: "signal_specialist"
+    async_execution: false
+    priority: 1
+
+  optimize_signals:
+    description: "Otimizar os parâmetros dos sinais gerados para maximizar performance"
+    expected_output: "Sinais otimizados com métricas de performance e parâmetros ajustados"
+    tools:
+      - "vectorbt_pro_knowledge_tool"
+      - "talib_indicator_params_tool"
+    agent: "signal_optimizer"
+    async_execution: false
+    priority: 2
+
+  validate_signals:
+    description: "Validar e avaliar a qualidade dos sinais otimizados"
+    expected_output: "Relatório de validação com métricas de performance e recomendações"
+    tools:
+      - "vectorbt_pro_knowledge_tool"
+      - "file_writer_tool"
+    agent: "signal_validator"
+    async_execution: false
+    priority: 3

@@ -1,0 +1,41 @@
+**Relatório de Validação de Sinais Otimizados**
+
+**Objetivo:** Validar a eficácia dos sinais gerados através de backtesting em diferentes condições de mercado. O foco será em analisar robustez, métricas de performance e recomendações.
+
+**Conjunto de Sinais Otimizados:**  
+1. **Índice de Força Relativa (RSI)**  
+   - **Parâmetros Padrão:**  
+     - `janela (window)`: 14  
+     - `tipo (wtype)`: wilder  
+   - **Aplicação:** Identificar condições de sobrecompra ou sobrevenda. Valores acima de 70 indicam sobrecompra, enquanto valores abaixo de 30 indicam sobrevenda.
+   - **Testes a Realizar:** Testar janelas de 10 e 20 para avaliar o impacto sobre os sinais gerados.
+
+2. **Convergência/Divergência de Médias Móveis (MACD)**  
+   - **Parâmetros Padrão:**  
+     - `janela rápida (fast_window)`: 12  
+     - `janela lenta (slow_window)`: 26  
+     - `janela de sinal (signal_window)`: 9  
+     - `tipo (wtype)`: exp  
+   - **Aplicação:** Identificar a direção da tendência e a força do movimento. Sinais de compra ao cruzar acima da linha de sinal.  
+   - **Testes a Realizar:** Varietar a janela rápida com 9 e 15, e a lenta com 21 e 30.
+
+3. **Average True Range (ATR)**  
+   - **Parâmetros Padrão:**  
+     - `janela (window)`: 14  
+     - `tipo (wtype)`: wilder  
+   - **Aplicação:** Medir a volatilidade. Aumentos podem indicar volatilidade crescente, útil para ajustes de stop-loss.  
+   - **Testes a Realizar:** Testar janelas de 10 e 20.
+
+**Metodologia de Validação:**  
+1. Implementar os indicadores conforme os parâmetros padrão.  
+2. Gerar sinais de compra/venda baseados nos critérios acordados.  
+3. Testar as variações dos parâmetros em diferentes cenários de mercado: bullish, bearish e sideways.  
+4. Coletar métricas de performance para cada teste realizado, como lucro total, taxa de acerto, drawdown máximo e outros KPIs relevantes.  
+
+**Resultados Esperados:**  
+Compilar as métricas obtidas e compará-las com os parâmetros padrões para identificar quais configurações maximizam a eficácia dos sinais de trading.  
+
+**Recomendações:**  
+Analisar a sensibilidade dos resultados em relação às variações de parâmetros e ponderar sobre optimizações futuras com base nas condições de mercado observadas.  
+
+Esse relatório será atualizado conforme os testes de backtesting forem realizados e as métricas coletadas.

@@ -1,0 +1,100 @@
+{
+  "modulos_estrategia": [
+    {
+      "nome_modulo": "configuracao_base",
+      "descricao_modulo": "Aqui entra a descrição geral de como o ambiente de análise é preparado, incluindo notícias, análise macro, ferramentas gráficas etc.",
+      "objetivos_principais": [
+        "Ex: Verificar condições de volatilidade (alta/baixa) no mercado",
+        "Ex: Identificar potenciais zonas de reversão no gráfico diário"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Ler notícias e macro, 2) Marcar zonas-chave, 3) Validar espaçamentos entre zonas"
+      ],
+      "observacoes_adicionais": "Qualquer detalhe importante que não se encaixa nos campos acima."
+    },
+    {
+      "nome_modulo": "parametros_ranges",
+      "descricao_modulo": "Aqui entra a lógica de como a estratégia ajusta seus parâmetros em tempo real (ex: multi-timeframe, variação de zonas, etc.).",
+      "objetivos_principais": [
+        "Ex: Alinhar a análise do gráfico semanal com o diário e o 4H",
+        "Ex: Respeitar a tendência macro, evitar trades contra ela"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Iniciar no semanal, 2) Refinar no diário, 3) Ajustar/validar no 4H"
+      ],
+      "observacoes_adicionais": "Notas sobre eventos extremos (guerras, correções globais), horários, etc."
+    },
+    {
+      "nome_modulo": "calculo_indicadores",
+      "descricao_modulo": "Listar os indicadores técnicos possíveis (momentum, volatilidade, volume, etc.) e como podem ser combinados.",
+      "objetivos_principais": [
+        "Ex: Integrar indicadores de maneira flexível, podendo ativar/desativar conforme necessidade",
+        "Ex: Permitir ajustes nos parâmetros de cada indicador"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Carregar dados de preço/volume, 2) Calcular indicadores selecionados, 3) Armazenar resultados"
+      ],
+      "observacoes_adicionais": "Indicar se o cálculo é diário, intradiário, ou se requer histórico específico."
+    },
+    {
+      "nome_modulo": "sinais_trading",
+      "descricao_modulo": "Descrever como nascem os sinais de entrada/saída, validando movimentos, volatilidade, desvio padrão etc.",
+      "objetivos_principais": [
+        "Ex: Entrar em zonas de confluência (suportes/resistências) após movimentos fortes",
+        "Ex: Utilizar formato de 'Caixote' para identificar lateralizações seguras"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Verificar volatilidade acima do normal, 2) Checar zona marcada, 3) Confirmar tendência macro, 4) Gerar sinal de compra/venda"
+      ],
+      "observacoes_adicionais": "Critérios de não operar (notícias de alto impacto, por exemplo)."
+    },
+    {
+      "nome_modulo": "niveis_risco",
+      "descricao_modulo": "Explicar como stops são colocados e como o risco é calculado (ex: 5% máximo).",
+      "objetivos_principais": [
+        "Ex: Stop técnico abaixo do fundo/Topo anterior",
+        "Ex: Ajustar stop para break-even após confirmação de rompimento"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Calcular stop conforme zona de proteção, 2) Verificar se risco não excede 5%, 3) Monitorar para eventuais ajustes (break-even)"
+      ],
+      "observacoes_adicionais": "Quando e por que encurtar stops em cenários extremos."
+    },
+    {
+      "nome_modulo": "alavancagem_dinamica",
+      "descricao_modulo": "Definir como o fator de alavancagem se adapta para respeitar o risco máximo tolerado por trade.",
+      "objetivos_principais": [
+        "Ex: Vincular alavancagem à distância do stop para não exceder perda de 5% do capital",
+        "Ex: Diminuir alavancagem se volatilidade/risco subir demais"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Verificar distância do stop, 2) Calcular risco, 3) Ajustar alavancagem para não ultrapassar 5%"
+      ],
+      "observacoes_adicionais": "Quais métricas de volatilidade podem disparar redução de alavancagem."
+    },
+    {
+      "nome_modulo": "position_size",
+      "descricao_modulo": "Explicar como o tamanho de posição (quantidade de contratos, ações etc.) é definido e distribuído em partes.",
+      "objetivos_principais": [
+        "Ex: Iniciar posição pequena e aumentar conforme o preço se aproxima da zona ideal (dentro do Caixote)",
+        "Ex: Nunca exceder 5% de risco total do capital"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Calcular capital destinado à operação, 2) Dividir em frações para preço médio, 3) Checar risco total ao somar todas as frações"
+      ],
+      "observacoes_adicionais": "O que fazer se o preço se move rapidamente e não permite adicionar novas frações com segurança."
+    },
+    {
+      "nome_modulo": "retorno_valores",
+      "descricao_modulo": "Padronizar como o resultado de cada trade (ou cada sinal) é retornado ou armazenado (ex: JSON).",
+      "objetivos_principais": [
+        "Ex: Registrar ativo, preço de entrada, stop, alvo, tamanho de posição, desvio padrão, status (hit stop, hit alvo, etc.)",
+        "Ex: Facilitar análise posterior por LLMs e outros sistemas"
+      ],
+      "fluxo_resumido": [
+        "Ex: 1) Ao encerrar operação, compor os dados em um JSON, 2) Armazenar/retornar para auditoria"
+      ],
+      "observacoes_adicionais": "Exemplos de formatação, campos extras (spread, horário do dia, etc.)."
+    }
+  ]
+}

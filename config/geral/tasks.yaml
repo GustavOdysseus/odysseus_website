@@ -1,0 +1,9 @@
+tasks:
+  provide_vbt_expertise:
+    description: "Fornecer conhecimento técnico sobre recursos do VectorBT PRO"
+    expected_output: "Explicação detalhada sobre funcionalidades e uso do VectorBT PRO"
+    tools:
+      - "vectorbt_pro_knowledge_tool"
+    agent: "signal_specialist"
+    async_execution: false
+    priority: 1

@@ -119,7 +119,13 @@ class FetchBinanceDataTool(BaseTool):
                 
                 # Resample se necessário usando o método nativo do VBT
                 if timeframe != "1m":
-                    symbol_data = vbt_data.resample(timeframe).get()
+                    symbol_data = symbol_data.resample(timeframe).agg({
+                        'Open': 'first',
+                        'High': 'max',
+                        'Low': 'min',
+                        'Close': 'last',
+                        'Volume': 'sum'
+                    })
                 
                 all_data[symbol] = symbol_data
             
