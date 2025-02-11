@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
       container.textContent = `Error loading logs: ${error.message}`;
     });
 
+  document.title = "Final Considerations | Transaction Registry";
+
   function escapeHtml(unsafe) {
     return unsafe?.toString()?.replace(/[&<"'>]/g, match => ({
       '&': '&amp;',
