@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("logs-container");
   
-  fetch('transaction_logs.json')
+  fetch('https://raw.githubusercontent.com/GustavOdysseus/odysseus_website/main/transaction_logs.json')
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       return response.json();
